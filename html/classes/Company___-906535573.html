@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Ontology Browser</title>
+<meta http-equiv='content-type' content='text/html;charset=UTF-8'>
+<link rel='stylesheet' href='../css/default.css' type='text/css' />
+</head>
+
+<body>
+
+<div id='tabs'>
+<a href='../ontologies/index.html' class='' >Ontologies</a>
+<a href='index.html' class='' >Classes</a>
+<a href='../objectproperties/index.html' class='' >Object Properties</a>
+<a href='../dataproperties/index.html' class='' >Data Properties</a>
+<a href='../annotationproperties/index.html' class='' >Annotation Properties</a>
+Individuals
+<a href='../datatypes/index.html' class='' >Datatypes</a>
+<a href='../cloud/' class='' >Clouds</a>
+</div> <!-- tabs -->
+
+
+<div class='summary'><h2>Class: Company</h2>
+
+<div id='annotations_(2)'>
+<h4>Annotations (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="../annotationproperties/comment___1501100887.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#comment">rdfs:comment</a> <span class='literal'>"A company is a legal entity formed by a group of individuals to engage in and operate a business—commercial or industrial—enterprise. A company may be organized in various ways for tax and financial liability purposes depending on the corporate law of its jurisdiction."</span> <span style='color: black;'>@en</span></li>
+<li class="asserted"><a href="../annotationproperties/label___653429740.html" class='Annotation Property' title="http://www.w3.org/2000/01/rdf-schema#label">rdfs:label</a> <span class='literal'>"Company"</span> <span style='color: black;'>@en</span></li>
+</ul>
+</div>
+</div><!-- annotations (2) -->
+
+
+<div id='superclasses_(2)'>
+<h4>Superclasses (2)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="Organisation___468102927.html" class='Class' title="http://www.w3.org/ns/org#Organisation">org:Organisation</a></li>
+<li class="asserted"><a href="../objectproperties/hasParentCompany___-645838585.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany">hasParentCompany</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+</ul>
+</div>
+</div><!-- superclasses (2) -->
+
+
+<div id='usage_(10)'>
+<h4>Usage (10)</h4>
+<div class='codebox'>
+<ul>
+<li class="asserted"><a href="AcquiringCompany___-1384688104.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany">AcquiringCompany</a> <span class='keyword'>&equiv;</span> <span class='Class active-entity'>Company</span> <span class='keyword'>and</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='some'>some</span> <a href="CompanyMerger___-1869237499.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger">CompanyMerger</a> <span class='keyword'>and</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='some'>some</span> <a href="MergingCompany___-610383626.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany">MergingCompany</a></li>
+<li class="asserted"><a href="CompanyTransaction___-1939946673.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction">CompanyTransaction</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="CrossBorderCompanyConversion___1420256117.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderCompanyConversion">CrossBorderCompanyConversion</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="CrossBorderSeatTransfer___986914986.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderSeatTransfer">CrossBorderSeatTransfer</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='exactly'>exactly</span> 1 <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="ManagementBoard___459897169.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementBoard">ManagementBoard</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/partOf___-222116296.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf">partOf</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="NationalRegistry___1755198781.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistry">NationalRegistry</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="Shareholder___-1193039047.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder">Shareholder</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/partOf___-222116296.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf">partOf</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="Stakeholder___1428995732.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder">Stakeholder</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/involves___1410027620.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">involves</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="SupervisoryBoard___-1824500605.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SupervisoryBoard">SupervisoryBoard</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/partOf___-222116296.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf">partOf</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+<li class="asserted"><a href="WorksCouncil___1650842093.html" class='Class' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#WorksCouncil">WorksCouncil</a> <span class='keyword'>&sube;</span> <a href="../objectproperties/partOf___-222116296.html" class='Object Property' title="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf">partOf</a> <span class='some'>some</span> <span class='Class active-entity'>Company</span></li>
+</ul>
+</div>
+</div><!-- usage (10) -->
+
+</div> <!-- summary -->
+<p class='footer'>
+<a href='http://code.google.com/p/ontology-browser/' target='_blank'>OWL HTML inside</a>
+</p>
+</body>
+</html>

@@ -22,7 +22,7 @@
 <style type="text/css" media="all">
 #sliding-popup.sliding-popup-bottom{background:#0779BF;}#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text p{color:#ffffff !important;}
 </style>
-<link type="text/css" rel="stylesheet" href="style.css" media="all" />
+<link type="text/css" rel="stylesheet" href="css/style.css" media="all" />
 </head>
 <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-41 node-type-page" >
 
@@ -34,11 +34,11 @@
         <div class="content">
           <div class="menu-block-wrapper menu-block-4 menu-name-main-menu parent-mlid-0 menu-level-2">
             <ul class="menu">
-              <li class="first leaf menu-mlid-1561"><a href="description.html" class="active-trail active">Description</a></li>
+              <li class="first leaf active-trail active menu-mlid-1561"><a href="description.html" class="active-trail active">Description</a></li>
               <li class="leaf menu-mlid-1562"><a href="contact.html">Contact</a></li>
               <!--<li class="leaf menu-mlid-1382"><a href="/support">Support</a></li>-->
               <li class="leaf menu-mlid-811"><a href="download.html">Download</a></li>
-              <li class="last leaf menu-mlid-809"><a href="browse.html">Browse</a></li>
+              <li class="last leaf menu-mlid-809"><a href="html/index.html">Browse</a></li>
             </ul>
           </div>
         </div>
@@ -73,85 +73,6 @@
   
   <div class="field field-name-title field-type-ds field-label-hidden"><div class="field-items"><div class="field-item even" property="dc:title"><h1>Description</h1></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p>The EU Cross-border Company Mobility (EU-CBCM) Ontology is a shallow, domain ontology, which has been developed to cover terms related to cross-border company movement within the EU. 
 
-    <!--manually created based on the most commonly used infoboxes within Wikipedia. The ontology currently covers 685 classes which form a subsumption hierarchy and are described by 2,795 different properties.-->
-  
-    </p>
-
-<p>With the DBpedia 3.2 release, we introduced a new infobox extraction method based on hand-generated mappings of Wikipedia infoboxes to the DBpedia ontology. The mappings defined fine-granular rules on how to parse infobox values. The mappings also addressed weaknesses in the Wikipedia infobox system, like having different infoboxes for the same class, using different property names for the same property, and not having clearly defined datatypes for property values. Therefore, the instance data within the infobox ontology is much cleaner and better structured than the infobox data within the DBpedia infobox dataset which was generated using the old infobox extraction code.</p>
-
-<p>With the DBpedia 3.5 release, we introduced a <a class="outerlink" href="http://mappings.dbpedia.org" title="Outgoing link">public wiki</a> for writing infobox mappings, editing existing ones as well as editing the DBpedia ontology. This allows external contributors to define mappings for the infoboxes they are interested in and to extend the existing DBpedia ontology with additional classes and properties.</p>
-
-<p>Since the DBpedia 3.7 release, the ontology is a directed-acyclic graph, not a tree. Classes may have multiple superclasses, which was important for the mappings to <a class="outerlink" href="http://schema.org" title="Outgoing link">schema.org</a>. A taxonomy can still be constructed by ignoring all superclasses except the one that is specified first in the list and is considered the most important.</p>
-
-<p><a class="outerlink" href="http://mappings.dbpedia.org/server/ontology/classes" title="Outgoing link">Browse the current version of the Ontology</a> as defined in the <a class="outerlink" href="http://mappings.dbpedia.org/index.php/Main_Page" title="Outgoing link">Mapping Wiki</a></p>
-
-<p>See also the <a class="outerlink" href="http://mappings.dbpedia.org/index.php/Mapping_Statistics" title="Outgoing link">mapping statistics</a>.</p>
-
-<p>The DBpedia Ontology currently contains about 4,233,000 instances. The table below lists the number of instances for several classes within the ontology:</p>
-
-<table align="left" border="1" cellpadding="1" cellspacing="1" style="height:184px; width:500px"><thead><tr><th scope="col">Class</th>
-			<th scope="col">Instances</th>
-		</tr></thead><caption><strong>Instances per class</strong></caption>
-	<tbody><tr><td>Resource (overall)</td>
-			<td>4,233,000</td>
-		</tr><tr><td>Place</td>
-			<td>735,000</td>
-		</tr><tr><td>Person</td>
-			<td>1,450,000</td>
-		</tr><tr><td>Work</td>
-			<td>411,000</td>
-		</tr><tr><td>Species</td>
-			<td>251,000</td>
-		</tr><tr><td>Organisation</td>
-			<td>241,000</td>
-		</tr></tbody></table><p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p> </p>
-
-<p>The DBpedia Ontology is provided for download in four parts:</p>
-
-<ol><li><a class="outerlink" href="http://downloads.dbpedia.org/2014/dbpedia_2014.owl.bz2" title="">DBpedia Ontology T-BOX (Schema</a>)</li>
-	<li><a class="outerlink" href="http://downloads.dbpedia.org/2014/en/instance_types_en.nt.bz2" title="">DBpedia Ontology RDF type statements</a> (Instance Data)</li>
-	<li><a class="outerlink" href="http://downloads.dbpedia.org/2014/en/mappingbased_properties_en.nt.bz2" title="">DBpedia Ontology other A-Box properties</a> (Instance Data, <a href="http://wiki.dbpedia.org/Datasets2014#h338-10" name="datasets2014" title="Datasets 2014" id="datasets2014">mapping-based properties</a>)</li>
-	<li><a class="outerlink" href="http://downloads.dbpedia.org/2014/en/specific_mappingbased_properties_en.nt.bz2" title="">DBpedia Ontology other A-Box specific properties</a> (Instance Data, <a href="http://wiki.dbpedia.org/Datasets2014#h434-10" title="Datasets 2014 /">mapping-based properties (specific</a>))</li>
-</ol><p><br />
-The DBpedia Ontology can also be queried via the <a class="outerlink" href="http://dbpedia.org/sparql" title="Outgoing link">DBpedia SPARQL endpoint</a> and can be explored via the DBpedia Linked Data interface. Examples: Class <a class="outerlink" href="http://dbpedia.org/ontology/Place" title="Outgoing link">Place</a>, property <a class="outerlink" href="http://dbpedia.org/ontology/elevation" title="Outgoing link">elevation</a>.</p>
-
-<p> </p>
-</div></div></div></div>
-
-  </div>
-</div>
-  </div>
-                            
-                        </div>
-                        <!-- EOF:#content-wrapper -->
-
-                    </div>
-                    <!-- EOF:#main -->
-
-               
-
-        
-        
 
         </div>
     </div>
