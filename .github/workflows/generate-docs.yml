@@ -28,10 +28,10 @@ jobs:
         pip install ontospy[FULL]
     - name: Generate docs
       run: |
-        ontospy gendocs -o docs/summary --type 1 --nobrowser working_copy/eu-cm-ontology.owl
-        ontospy gendocs -o docs/browse --type 2 --nobrowser working_copy/eu-cm-ontology.owl
-        ontospy gendocs -o docs/classtree --type 4 --nobrowser working_copy/eu-cm-ontology.owl
-        ontospy gendocs -o docs/graph --type 10 --nobrowser working_copy/eu-cm-ontology.owl
+        sudo ontospy gendocs -o docs/summary --type 1 --nobrowser working_copy/eu-cm-ontology.owl
+        sudo ontospy gendocs -o docs/browse --type 2 --nobrowser working_copy/eu-cm-ontology.owl
+        sudo ontospy gendocs -o docs/classtree --type 4 --nobrowser working_copy/eu-cm-ontology.owl
+        sudo ontospy gendocs -o docs/graph --type 10 --nobrowser working_copy/eu-cm-ontology.owl
 
     - name: Commit and push
       run: |
