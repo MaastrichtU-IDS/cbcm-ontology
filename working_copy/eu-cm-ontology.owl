@@ -69,6 +69,14 @@
     
 
 
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTPROPERTY -->
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTPROPERTY">
+        <rdfs:comment>asdsadasdasada</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany -->
 
     <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany">
@@ -967,7 +975,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTCLASS -->
 
-    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTCLASS"/>
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTCLASS">
+        <rdfs:comment>asdasd</rdfs:comment>
+    </owl:Class>
     
 
 
