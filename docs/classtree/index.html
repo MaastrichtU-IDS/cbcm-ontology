@@ -187,7 +187,7 @@
 	<h1 class="title">Ontology:&nbsp;<a href="javascript:showpanel('ontoinfo');">http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology</a></h1>
 
 	<p>
-    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 14th August 2020 09:36 </small>
+    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 14th August 2020 09:58 </small>
   </p>
 
 	<hr>
@@ -224,7 +224,7 @@
 
 
 	<hr>
-    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 14th August 2020 09:36 </small>
+    <small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 14th August 2020 09:58 </small>
 
 
 
@@ -323,7 +323,7 @@
 	<p><b class="section-title">Label: </b>Annual account</p>
     
     
-        <p><b class="section-title">Description: </b>Revenue and financial performance of a company - Annual reports measure a company&#39;s financial health. They focus on past and present financial performance, and make predictions about future prospects.</p>
+        <p><b class="section-title">Description: </b>Annual reports measure a company&#x27;s financial health. They focus on past and present financial performance, and make predictions about future prospects. - Revenue and financial performance of a company</p>
     
 
 
@@ -358,7 +358,7 @@
 :AnnualAccount a owl:Class ;
     rdfs:label &quot;Annual account&quot;@en,
         &quot;Annual report&quot;@en ;
-    rdfs:comment &quot;Annual reports measure a company&#39;s financial health. They focus on past and present financial performance, and make predictions about future prospects.&quot;@en,
+    rdfs:comment &quot;Annual reports measure a company&#x27;s financial health. They focus on past and present financial performance, and make predictions about future prospects.&quot;@en,
         &quot;Revenue and financial performance of a company&quot;@en ;
     rdfs:subClassOf :AnnualAccount,
         :CompanyMobilityDocument .
@@ -445,7 +445,7 @@
 	<p><b class="section-title">Label: </b>Board resolution</p>
     
     
-        <p><b class="section-title">Description: </b>A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company&#39;s Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing.</p>
+        <p><b class="section-title">Description: </b>A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company&#x27;s Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing.</p>
     
 
 
@@ -479,7 +479,7 @@
 
 :BoardResolution a owl:Class ;
     rdfs:label &quot;Board resolution&quot;@en ;
-    rdfs:comment &quot;A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company&#39;s Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing.&quot;@en ;
+    rdfs:comment &quot;A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company&#x27;s Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing.&quot;@en ;
     rdfs:subClassOf :Resolution .
 
 </pre>
@@ -600,22 +600,22 @@
             owl:someValuesFrom :DivisionPlan ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :ConversionPlan ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :MergerPlan ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :TransactionNotice ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
+            owl:someValuesFrom :IndependentExpertReport ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :ConversionPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
             owl:someValuesFrom :Resolution ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :SeatTransferPlan ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :IndependentExpertReport ],
         :CompanyTransaction .
 
 </pre>
@@ -638,7 +638,7 @@
     
     
         <p><b class="section-title">Description: </b>Article 160b - Division means:
-a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares (&#39;full division&#39;);
+a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares (&#x27;full division&#x27;);
 
 (b) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies or in the company being divided or in both the recipient companies and in the company being divided, and if any a cash payment not exceeding 10 % of the nominal value of those securities or shares, or in the absence of a nominal value, a cash payment not exceeding 10 % of the accounting par value of their securities or shares (‘partial division’).
    	
@@ -677,7 +677,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 :CompanyDivision a owl:Class ;
     rdfs:label &quot;Company division&quot;@en ;
     rdfs:comment &quot;&quot;&quot;Article 160b - Division means:
-a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares (&#39;full division&#39;);
+a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares (&#x27;full division&#x27;);
 
 (b) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies or in the company being divided or in both the recipient companies and in the company being divided, and if any a cash payment not exceeding 10 % of the nominal value of those securities or shares, or in the absence of a nominal value, a cash payment not exceeding 10 % of the accounting par value of their securities or shares (‘partial division’).
    	
@@ -829,7 +829,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Company mobility document</p>
     
     
-        <p><b class="section-title">Description: </b>A legal document which provides information related to, or influencing, a company&#39;s mobility within a specific country or across national boundaries.</p>
+        <p><b class="section-title">Description: </b>A legal document which provides information related to, or influencing, a company&#x27;s mobility within a specific country or across national boundaries.</p>
     
 
 
@@ -863,7 +863,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :CompanyMobilityDocument a owl:Class ;
     rdfs:label &quot;Company mobility document&quot;@en ;
-    rdfs:comment &quot;A legal document which provides information related to, or influencing, a company&#39;s mobility within a specific country or across national boundaries.&quot;@en .
+    rdfs:comment &quot;A legal document which provides information related to, or influencing, a company&#x27;s mobility within a specific country or across national boundaries.&quot;@en .
 
 </pre>
 
@@ -1040,10 +1040,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
         &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :Employee ],
+            owl:someValuesFrom :WorksCouncil ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :WorksCouncil ],
+            owl:someValuesFrom :Employee ],
         :SocialRight .
 
 </pre>
@@ -1102,13 +1102,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;A document issued by a Competent Authority declaring that the legally required steps of a conversion are completed. The certificate needs to be presented by a company to either be registered in another company registry or to be removed from a company register.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
+            owl:someValuesFrom :TransferredCompany ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
             owl:someValuesFrom :ConversionPlan ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :OriginalCompany ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :TransferredCompany ],
         :TransactionCertificate .
 
 </pre>
@@ -1130,7 +1130,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Company conversion plan</p>
     
     
-        <p><b class="section-title">Description: </b>Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d - A document providing details of how the conversion of a company will be implemented.</p>
+        <p><b class="section-title">Description: </b>A document providing details of how the conversion of a company will be implemented. - Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d</p>
     
 
 
@@ -1244,7 +1244,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Creditor</p>
     
     
-        <p><b class="section-title">Description: </b>A person, organization, or government that is owed money. A creditor&#39;s claims and the safeguarding of these creditor rights is laid down in the company law of the Member States and EU law.</p>
+        <p><b class="section-title">Description: </b>A person, organization, or government that is owed money. A creditor&#x27;s claims and the safeguarding of these creditor rights is laid down in the company law of the Member States and EU law.</p>
     
 
 
@@ -1276,7 +1276,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :Creditor a owl:Class ;
     rdfs:label &quot;Creditor&quot;@en ;
-    rdfs:comment &quot;A person, organization, or government that is owed money. A creditor&#39;s claims and the safeguarding of these creditor rights is laid down in the company law of the Member States and EU law.&quot;@en ;
+    rdfs:comment &quot;A person, organization, or government that is owed money. A creditor&#x27;s claims and the safeguarding of these creditor rights is laid down in the company law of the Member States and EU law.&quot;@en ;
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
@@ -1641,41 +1641,41 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;A cross-border conversion is an operation through which a company, formed in one country (with the EU/EEA set of countries) is converted into a company governed by the law of another.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :OfficialJournalPublication ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :TransactionCertificate ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :IndependentExpertReport ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :TransferredCompany ],
         [ a owl:Restriction ;
             owl:onClass :Company ;
             owl:onProperty :involves ;
             owl:qualifiedCardinality &quot;1&quot;^^xsd:nonNegativeInteger ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :Resolution ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :OriginalCompany ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :Stakeholder ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :TransactionRight ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :PreConversionCertificate ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :ManagementReport ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
+            owl:someValuesFrom :Resolution ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
             owl:someValuesFrom :ConversionPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :TransactionCertificate ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :OfficialJournalPublication ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :TransferredCompany ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :TransactionRight ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :Stakeholder ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :PreConversionCertificate ],
         :CompanyConversion .
 
 </pre>
@@ -1791,10 +1791,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :MergingCompany ],
+            owl:someValuesFrom :AcquiringCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :AcquiringCompany ],
+            owl:someValuesFrom :MergingCompany ],
         :CompanyMerger .
 
 </pre>
@@ -1854,14 +1854,14 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), across national boundaries.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :TransferOfRegisteredOffice ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :TransferOfCentralAdministration ],
         [ a owl:Restriction ;
             owl:onClass :Company ;
             owl:onProperty :involves ;
             owl:qualifiedCardinality &quot;1&quot;^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :TransferOfRegisteredOffice ],
         :SeatTransfer .
 
 </pre>
@@ -1883,7 +1883,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Shareholder decision right</p>
     
     
-        <p><b class="section-title">Description: </b>The shareholders can take a number of decisions affecting the company, such as amending the company&#39;s articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution.</p>
+        <p><b class="section-title">Description: </b>The shareholders can take a number of decisions affecting the company, such as amending the company&#x27;s articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution.</p>
     
 
 
@@ -1917,7 +1917,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :DecisionRight a owl:Class ;
     rdfs:label &quot;Shareholder decision right&quot;@en ;
-    rdfs:comment &quot;The shareholders can take a number of decisions affecting the company, such as amending the company&#39;s articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution.&quot;@en ;
+    rdfs:comment &quot;The shareholders can take a number of decisions affecting the company, such as amending the company&#x27;s articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution.&quot;@en ;
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
@@ -1986,10 +1986,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
             owl:someValuesFrom :EmergingCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :OriginalCompany ],
+            owl:someValuesFrom :DivisionPlan ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :DivisionPlan ],
+            owl:someValuesFrom :OriginalCompany ],
         :TransactionCertificate .
 
 </pre>
@@ -2068,7 +2068,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Domestic company conversion</p>
     
     
-        <p><b class="section-title">Description: </b>A domestic conversion is an operation through which a company&#39;s form is converted into a another while still remaining governed by the same law as the original company. For instance, the modification of a company&#39;s form from a public to a private limited company.</p>
+        <p><b class="section-title">Description: </b>A domestic conversion is an operation through which a company&#x27;s form is converted into a another while still remaining governed by the same law as the original company. For instance, the modification of a company&#x27;s form from a public to a private limited company.</p>
     
 
 
@@ -2102,7 +2102,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :DomesticCompanyConversion a owl:Class ;
     rdfs:label &quot;Domestic company conversion&quot;@en ;
-    rdfs:comment &quot;A domestic conversion is an operation through which a company&#39;s form is converted into a another while still remaining governed by the same law as the original company. For instance, the modification of a company&#39;s form from a public to a private limited company.&quot;@en ;
+    rdfs:comment &quot;A domestic conversion is an operation through which a company&#x27;s form is converted into a another while still remaining governed by the same law as the original company. For instance, the modification of a company&#x27;s form from a public to a private limited company.&quot;@en ;
     rdfs:subClassOf :CompanyConversion .
 
 </pre>
@@ -2341,13 +2341,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;A company being divided transfers part of its assets and liabilities to one or more newly formed companies, which are the recipient companies in a (cross-border) division.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompanyDivision ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :OriginalCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :EmergingCompany ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :CompanyDivision ],
         :Company .
 
 </pre>
@@ -2578,10 +2578,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :WorksCouncil ],
+            owl:someValuesFrom :Employee ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :Employee ],
+            owl:someValuesFrom :WorksCouncil ],
         :InformationRight .
 
 </pre>
@@ -2782,7 +2782,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Interim account</p>
     
     
-        <p><b class="section-title">Description: </b>Interim accounts are accounts that are published during a company&#39;s financial year and that show the financial situation on a given accounting date.</p>
+        <p><b class="section-title">Description: </b>Interim accounts are accounts that are published during a company&#x27;s financial year and that show the financial situation on a given accounting date.</p>
     
 
 
@@ -2816,7 +2816,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :InterimAccount a owl:Class ;
     rdfs:label &quot;Interim account&quot;@en ;
-    rdfs:comment &quot;Interim accounts are accounts that are published during a company&#39;s financial year and that show the financial situation on a given accounting date.&quot;@en ;
+    rdfs:comment &quot;Interim accounts are accounts that are published during a company&#x27;s financial year and that show the financial situation on a given accounting date.&quot;@en ;
     rdfs:subClassOf :AnnualAccount .
 
 </pre>
@@ -2897,7 +2897,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Management report</p>
     
     
-        <p><b class="section-title">Description: </b>A report drawn up by the company&#39;s management on the intended transaction, laying out the main features of the transactions and its consequences.</p>
+        <p><b class="section-title">Description: </b>A report drawn up by the company&#x27;s management on the intended transaction, laying out the main features of the transactions and its consequences.</p>
     
 
 
@@ -2931,7 +2931,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :ManagementReport a owl:Class ;
     rdfs:label &quot;Management report&quot;@en ;
-    rdfs:comment &quot;A report drawn up by the company&#39;s management on the intended transaction, laying out the main features of the transactions and its consequences.&quot;@en ;
+    rdfs:comment &quot;A report drawn up by the company&#x27;s management on the intended transaction, laying out the main features of the transactions and its consequences.&quot;@en ;
     rdfs:subClassOf :TransactionDocument .
 
 </pre>
@@ -3347,13 +3347,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompanyMerger ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :MergingCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :AcquiringCompany ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :CompanyMerger ],
         :TransactionCertificate .
 
 </pre>
@@ -3413,10 +3413,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :EmergingCompany ],
+            owl:someValuesFrom :MergingCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :MergingCompany ],
+            owl:someValuesFrom :EmergingCompany ],
         :CompanyMerger .
 
 </pre>
@@ -3533,10 +3533,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :AcquiringCompany ],
+            owl:someValuesFrom :CompanyMerger ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompanyMerger ],
+            owl:someValuesFrom :AcquiringCompany ],
         :Company .
 
 </pre>
@@ -3593,10 +3593,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;A national registry is a business registry in a Member State, which includes information on the population of companies in the jurisdiction and holds inter alia data on registration numbers, place of registration, notices and transaction documents in the national registry repository.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :Company ],
+            owl:someValuesFrom :NationalRegistryRepository ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :NationalRegistryRepository ],
+            owl:someValuesFrom :Company ],
         &lt;http://www.w3.org/ns/org#Organisation&gt; .
 
 </pre>
@@ -3653,13 +3653,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;The digital repository in which documents published in the official journal or by by the national registry (on behalf of a company) are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the Official Journal Repository.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
+            owl:someValuesFrom :OfficialJournal ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
             owl:someValuesFrom :NationalRegistry ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :OfficialJournalRepository ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :OfficialJournal ],
         :Repository .
 
 </pre>
@@ -3772,13 +3772,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;The official gazette of record for the European Union or national gazette of record of a Member State. In the official journal companies publish transaction notices in order to inform concerned stakeholders and interested parties.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompetentAuthority ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
             owl:someValuesFrom :TransactionNotice ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :OfficialJournalRepository ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :CompetentAuthority ],
         &lt;http://www.w3.org/ns/org#Organisation&gt; .
 
 </pre>
@@ -3889,13 +3889,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:comment &quot;The digital repository in which documents published in the official journal are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the National Registry Repository.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
+            owl:someValuesFrom :NationalRegistry ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
             owl:someValuesFrom :NationalRegistryRepository ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :OfficialJournal ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :NationalRegistry ],
         :Repository .
 
 </pre>
@@ -3955,10 +3955,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompanyDivision ],
+            owl:someValuesFrom :EmergingCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :EmergingCompany ],
+            owl:someValuesFrom :CompanyDivision ],
         :Company .
 
 </pre>
@@ -4081,13 +4081,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
+            owl:someValuesFrom :ConversionPlan ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
             owl:someValuesFrom :OriginalCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :TransferredCompany ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :ConversionPlan ],
         :TransactionCertificate .
 
 </pre>
@@ -4147,10 +4147,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :DivisionPlan ],
+            owl:someValuesFrom :OriginalCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :OriginalCompany ],
+            owl:someValuesFrom :DivisionPlan ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :EmergingCompany ],
@@ -4213,10 +4213,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :MergingCompany ],
+            owl:someValuesFrom :AcquiringCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :AcquiringCompany ],
+            owl:someValuesFrom :MergingCompany ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :MergerPlan ],
@@ -4563,10 +4563,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
     rdfs:seeAlso &lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt; ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :ShareholderResolution ],
+            owl:someValuesFrom :Shareholder ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :Shareholder ],
+            owl:someValuesFrom :ShareholderResolution ],
         :ShareholderRight .
 
 </pre>
@@ -4648,7 +4648,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Shareholder resolution</p>
     
     
-        <p><b class="section-title">Description: </b>a shareholder resolution is a proposal submitted by shareholders for a vote at the company&#39;s shareholder meeting.</p>
+        <p><b class="section-title">Description: </b>a shareholder resolution is a proposal submitted by shareholders for a vote at the company&#x27;s shareholder meeting.</p>
     
 
 
@@ -4682,7 +4682,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :ShareholderResolution a owl:Class ;
     rdfs:label &quot;Shareholder resolution&quot;@en ;
-    rdfs:comment &quot;a shareholder resolution is a proposal submitted by shareholders for a vote at the company&#39;s shareholder meeting.&quot;@en ;
+    rdfs:comment &quot;a shareholder resolution is a proposal submitted by shareholders for a vote at the company&#x27;s shareholder meeting.&quot;@en ;
     rdfs:subClassOf :Resolution .
 
 </pre>
@@ -4936,7 +4936,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 	<p><b class="section-title">Label: </b>Stakeholder in a company</p>
     
     
-        <p><b class="section-title">Description: </b>A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company&#39;s actions, objectives and policies.</p>
+        <p><b class="section-title">Description: </b>A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company&#x27;s actions, objectives and policies.</p>
     
 
 
@@ -4970,13 +4970,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 :Stakeholder a owl:Class ;
     rdfs:label &quot;Stakeholder in a company&quot;@en ;
-    rdfs:comment &quot;A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company&#39;s actions, objectives and policies.&quot;@en ;
+    rdfs:comment &quot;A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company&#x27;s actions, objectives and policies.&quot;@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompetentAuthority ],
+            owl:someValuesFrom :Company ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :Company ] .
+            owl:someValuesFrom :CompetentAuthority ] .
 
 </pre>
 
@@ -5727,16 +5727,16 @@ a) company being divided, on being dissolved without going into liquidation, tra
             owl:someValuesFrom :Company ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :CompanyTransaction ],
-        [ a owl:Restriction ;
-            owl:onProperty :involves ;
-            owl:someValuesFrom :InformationRight ],
+            owl:someValuesFrom :ImpactOnEmployment ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :Employee ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
-            owl:someValuesFrom :ImpactOnEmployment ],
+            owl:someValuesFrom :CompanyTransaction ],
+        [ a owl:Restriction ;
+            owl:onProperty :involves ;
+            owl:someValuesFrom :InformationRight ],
         [ a owl:Restriction ;
             owl:onProperty :involves ;
             owl:someValuesFrom :BoardLevelEmployeeRepresentationRight ],
@@ -6385,7 +6385,7 @@ terms:license a owl:AnnotationProperty .
 
 
 
-	var json1 = {"id": "None", "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:AcquiringCompany", "objid": 2, "name": "Acquiring company"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CompanyLegalForm", "objid": 9, "name": "Company form"}, {"name": "Company mobility document", "qname": "eu-cm-ontology:CompanyMobilityDocument", "objid": 11, "size": 8, "children": [{"name": "Annual account", "qname": "eu-cm-ontology:AnnualAccount", "objid": 3, "size": 6, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:InterimAccount", "objid": 43, "name": "Interim account"}], "realsize": 1}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:OfficialJournalPublication", "objid": 60, "name": "Official journal publication"}, {"name": "Transaction document", "qname": "eu-cm-ontology:TransactionDocument", "objid": 85, "size": 15, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ConversionPlan", "objid": 16, "name": "Company conversion plan"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DivisionPlan", "objid": 30, "name": "Company division plan"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:IndependentExpertReport", "objid": 41, "name": "Report by an independent expert"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ManagementReport", "objid": 45, "name": "Management report"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:MergerPlan", "objid": 54, "name": "Company merger plan"}, {"name": "Resolution", "qname": "eu-cm-ontology:Resolution", "objid": 68, "size": 7, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:BoardResolution", "objid": 5, "name": "Board resolution"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ShareholderResolution", "objid": 74, "name": "Shareholder resolution"}], "realsize": 2}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:SeatTransferPlan", "objid": 70, "name": "Company seat transfer plan"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:SpecialNegotiationBodyAgreement", "objid": 78, "name": "Special negotiating body agreement"}, {"name": "Company transaction certificate", "qname": "eu-cm-ontology:TransactionCertificate", "objid": 84, "size": 11, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ConversionCertificate", "objid": 15, "name": "Company conversion certificate"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DivisionCertificate", "objid": 29, "name": "Company division certificate"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:MergerCertificate", "objid": 52, "name": "Company merger certificate"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:PreConversionCertificate", "objid": 64, "name": "Company pre-conversion certificate"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:PreDivisionCertificate", "objid": 65, "name": "Company pre-division certificate"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:PreMergerCertificate", "objid": 66, "name": "Company pre-merger certificate"}], "realsize": 6}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:TransactionNotice", "objid": 86, "name": "Company transaction notice"}], "realsize": 10}], "realsize": 3}, {"name": "Company transaction", "qname": "eu-cm-ontology:CompanyTransaction", "objid": 12, "size": 9, "children": [{"name": "Company conversion", "qname": "eu-cm-ontology:CompanyConversion", "objid": 7, "size": 7, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CrossBorderCompanyConversion", "objid": 24, "name": "Cross-border conversion"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DomesticCompanyConversion", "objid": 31, "name": "Domestic company conversion"}], "realsize": 2}, {"name": "Company division", "qname": "eu-cm-ontology:CompanyDivision", "objid": 8, "size": 7, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CrossBorderDivision", "objid": 25, "name": "Cross-border company division"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DomesticDivision", "objid": 32, "name": "Company domestic division"}], "realsize": 2}, {"name": "Company merger", "qname": "eu-cm-ontology:CompanyMerger", "objid": 10, "size": 9, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CrossBorderMerger", "objid": 26, "name": "Cross-border merger"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DomesticMerger", "objid": 33, "name": "Company domestic merger"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:MergerByAcquisition", "objid": 51, "name": "Company merger by acquisition"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:MergerIntoNewCompany", "objid": 53, "name": "Merger into a new company"}], "realsize": 4}, {"name": "Company seat transfer", "qname": "eu-cm-ontology:SeatTransfer", "objid": 69, "size": 9, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CrossBorderSeatTransfer", "objid": 27, "name": "Cross-border company seat transfer"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DomesticSeatTransfer", "objid": 34, "name": "Domestic company seat transfer"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:TransferOfCentralAdministration", "objid": 88, "name": "Transfer of company central administration"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:TransferOfRegisteredOffice", "objid": 89, "name": "Transfer of company registered office"}], "realsize": 4}], "realsize": 4}, {"name": "Company mobility document repository", "qname": "eu-cm-ontology:Repository", "objid": 67, "size": 7, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:NationalRegistryRepository", "objid": 57, "name": "National registry repository"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:OfficialJournalRepository", "objid": 61, "name": "Official journal repository"}], "realsize": 2}, {"name": "Stakeholder in a company", "qname": "eu-cm-ontology:Stakeholder", "objid": 79, "size": 10, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:Creditor", "objid": 18, "name": "Creditor"}, {"name": "Company employee", "qname": "eu-cm-ontology:Employee", "objid": 36, "size": 6, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:WorksCouncil", "objid": 92, "name": "Employee works council"}], "realsize": 1}, {"name": "Manager", "qname": "eu-cm-ontology:Manager", "objid": 46, "size": 7, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ManagementBoard", "objid": 44, "name": "Management board"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:SupervisoryBoard", "objid": 82, "name": "Supervisory board"}], "realsize": 2}, {"name": "Company shareholder", "qname": "eu-cm-ontology:Shareholder", "objid": 71, "size": 6, "children": [{"name": "Ultimate beneficial owner", "qname": "eu-cm-ontology:UltimateBeneficialOwner", "objid": 91, "size": 6, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:GlobalUltimateOwner", "objid": 38, "name": "Global ultimate owner"}], "realsize": 1}], "realsize": 1}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:Society", "objid": 77, "name": "Society"}], "realsize": 5}, {"name": "Transaction right", "qname": "eu-cm-ontology:TransactionRight", "objid": 87, "size": 9, "children": [{"name": "Creditor right", "qname": "eu-cm-ontology:CreditorRight", "objid": 22, "size": 9, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CreditorDecisionRight", "objid": 19, "name": "Creditor decision right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CreditorExitRight", "objid": 20, "name": "Creditor exit right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CreditorInformationRight", "objid": 21, "name": "Creditor information right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:CreditorSecurityRight", "objid": 23, "name": "Creditor security right"}], "realsize": 4}, {"name": "Manager right", "qname": "eu-cm-ontology:ManagerRight", "objid": 50, "size": 8, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ManagerDecisionRight", "objid": 47, "name": "Manager decision right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ManagerExitRight", "objid": 48, "name": "Manager exit right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ManagerInformationRight", "objid": 49, "name": "Manager information right"}], "realsize": 3}, {"name": "Shareholder right", "qname": "eu-cm-ontology:ShareholderRight", "objid": 75, "size": 8, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:DecisionRight", "objid": 28, "name": "Shareholder decision right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ShareholderExitRight", "objid": 72, "name": "Shareholder exit right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ShareholderInformationRight", "objid": 73, "name": "Shareholder information right"}], "realsize": 3}, {"name": "Social right", "qname": "eu-cm-ontology:SocialRight", "objid": 76, "size": 8, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:BoardLevelEmployeeRepresentationRight", "objid": 4, "name": "Board-level employee representation right"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ConsultationRight", "objid": 14, "name": "Consultation right"}, {"name": "Information right", "qname": "eu-cm-ontology:InformationRight", "objid": 42, "size": 6, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ImpactOnEmployment", "objid": 39, "name": "Impact on employment information right"}], "realsize": 1}], "realsize": 3}], "realsize": 4}, {"name": "Organisation", "qname": "http://www.w3.org/ns/org#Organisation", "objid": 93, "size": 11, "children": [{"name": "Company", "qname": "eu-cm-ontology:Company", "objid": 6, "size": 12, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:EmergingCompany", "objid": 35, "name": "Emerging company"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:GlobalUltimateOwner", "objid": 38, "name": "Global ultimate owner"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:MergingCompany", "objid": 55, "name": "Merging company"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:OriginalCompany", "objid": 62, "name": "Original company"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:ParentCompany", "objid": 63, "name": "Parent company"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:SubsidiaryCompany", "objid": 80, "name": "Subsidiary company"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:TransferredCompany", "objid": 90, "name": "Transferred company"}], "realsize": 7}, {"name": "Competent authority", "qname": "eu-cm-ontology:CompetentAuthority", "objid": 13, "size": 9, "children": [{"realsize": 0, "size": 1, "qname": "eu-cm-ontology:Court", "objid": 17, "name": "Court"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:FinancialServiceAuthority", "objid": 37, "name": "Financial service authority"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:Notary", "objid": 58, "name": "Notary"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:TaxAuthority", "objid": 83, "name": "Tax authority"}], "realsize": 4}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:IndependentExpert", "objid": 40, "name": "Independent expert"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:NationalRegistry", "objid": 56, "name": "National registry"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:OfficialJournal", "objid": 59, "name": "Official journal"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:SupervisoryAuthority", "objid": 81, "name": "SupervisoryAuthority"}], "realsize": 6}], "name": "owl:Thing"};
+	var json1 = {"children": [{"qname": "eu-cm-ontology:AcquiringCompany", "name": "Acquiring company", "objid": 2, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:CompanyLegalForm", "name": "Company form", "objid": 9, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:CompanyMobilityDocument", "name": "Company mobility document", "objid": 11, "size": 8, "realsize": 3, "children": [{"qname": "eu-cm-ontology:AnnualAccount", "name": "Annual account", "objid": 3, "size": 6, "realsize": 1, "children": [{"qname": "eu-cm-ontology:InterimAccount", "name": "Interim account", "objid": 43, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:OfficialJournalPublication", "name": "Official journal publication", "objid": 60, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:TransactionDocument", "name": "Transaction document", "objid": 85, "size": 15, "realsize": 10, "children": [{"qname": "eu-cm-ontology:ConversionPlan", "name": "Company conversion plan", "objid": 16, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:DivisionPlan", "name": "Company division plan", "objid": 30, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:IndependentExpertReport", "name": "Report by an independent expert", "objid": 41, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ManagementReport", "name": "Management report", "objid": 45, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:MergerPlan", "name": "Company merger plan", "objid": 54, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:Resolution", "name": "Resolution", "objid": 68, "size": 7, "realsize": 2, "children": [{"qname": "eu-cm-ontology:BoardResolution", "name": "Board resolution", "objid": 5, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ShareholderResolution", "name": "Shareholder resolution", "objid": 74, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:SeatTransferPlan", "name": "Company seat transfer plan", "objid": 70, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:SpecialNegotiationBodyAgreement", "name": "Special negotiating body agreement", "objid": 78, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:TransactionCertificate", "name": "Company transaction certificate", "objid": 84, "size": 11, "realsize": 6, "children": [{"qname": "eu-cm-ontology:ConversionCertificate", "name": "Company conversion certificate", "objid": 15, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:DivisionCertificate", "name": "Company division certificate", "objid": 29, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:MergerCertificate", "name": "Company merger certificate", "objid": 52, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:PreConversionCertificate", "name": "Company pre-conversion certificate", "objid": 64, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:PreDivisionCertificate", "name": "Company pre-division certificate", "objid": 65, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:PreMergerCertificate", "name": "Company pre-merger certificate", "objid": 66, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:TransactionNotice", "name": "Company transaction notice", "objid": 86, "size": 1, "realsize": 0}]}]}, {"qname": "eu-cm-ontology:CompanyTransaction", "name": "Company transaction", "objid": 12, "size": 9, "realsize": 4, "children": [{"qname": "eu-cm-ontology:CompanyConversion", "name": "Company conversion", "objid": 7, "size": 7, "realsize": 2, "children": [{"qname": "eu-cm-ontology:CrossBorderCompanyConversion", "name": "Cross-border conversion", "objid": 24, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:DomesticCompanyConversion", "name": "Domestic company conversion", "objid": 31, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:CompanyDivision", "name": "Company division", "objid": 8, "size": 7, "realsize": 2, "children": [{"qname": "eu-cm-ontology:CrossBorderDivision", "name": "Cross-border company division", "objid": 25, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:DomesticDivision", "name": "Company domestic division", "objid": 32, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:CompanyMerger", "name": "Company merger", "objid": 10, "size": 9, "realsize": 4, "children": [{"qname": "eu-cm-ontology:CrossBorderMerger", "name": "Cross-border merger", "objid": 26, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:DomesticMerger", "name": "Company domestic merger", "objid": 33, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:MergerByAcquisition", "name": "Company merger by acquisition", "objid": 51, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:MergerIntoNewCompany", "name": "Merger into a new company", "objid": 53, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:SeatTransfer", "name": "Company seat transfer", "objid": 69, "size": 9, "realsize": 4, "children": [{"qname": "eu-cm-ontology:CrossBorderSeatTransfer", "name": "Cross-border company seat transfer", "objid": 27, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:DomesticSeatTransfer", "name": "Domestic company seat transfer", "objid": 34, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:TransferOfCentralAdministration", "name": "Transfer of company central administration", "objid": 88, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:TransferOfRegisteredOffice", "name": "Transfer of company registered office", "objid": 89, "size": 1, "realsize": 0}]}]}, {"qname": "eu-cm-ontology:Repository", "name": "Company mobility document repository", "objid": 67, "size": 7, "realsize": 2, "children": [{"qname": "eu-cm-ontology:NationalRegistryRepository", "name": "National registry repository", "objid": 57, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:OfficialJournalRepository", "name": "Official journal repository", "objid": 61, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:Stakeholder", "name": "Stakeholder in a company", "objid": 79, "size": 10, "realsize": 5, "children": [{"qname": "eu-cm-ontology:Creditor", "name": "Creditor", "objid": 18, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:Employee", "name": "Company employee", "objid": 36, "size": 6, "realsize": 1, "children": [{"qname": "eu-cm-ontology:WorksCouncil", "name": "Employee works council", "objid": 92, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:Manager", "name": "Manager", "objid": 46, "size": 7, "realsize": 2, "children": [{"qname": "eu-cm-ontology:ManagementBoard", "name": "Management board", "objid": 44, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:SupervisoryBoard", "name": "Supervisory board", "objid": 82, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:Shareholder", "name": "Company shareholder", "objid": 71, "size": 6, "realsize": 1, "children": [{"qname": "eu-cm-ontology:UltimateBeneficialOwner", "name": "Ultimate beneficial owner", "objid": 91, "size": 6, "realsize": 1, "children": [{"qname": "eu-cm-ontology:GlobalUltimateOwner", "name": "Global ultimate owner", "objid": 38, "size": 1, "realsize": 0}]}]}, {"qname": "eu-cm-ontology:Society", "name": "Society", "objid": 77, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:TransactionRight", "name": "Transaction right", "objid": 87, "size": 9, "realsize": 4, "children": [{"qname": "eu-cm-ontology:CreditorRight", "name": "Creditor right", "objid": 22, "size": 9, "realsize": 4, "children": [{"qname": "eu-cm-ontology:CreditorDecisionRight", "name": "Creditor decision right", "objid": 19, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:CreditorExitRight", "name": "Creditor exit right", "objid": 20, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:CreditorInformationRight", "name": "Creditor information right", "objid": 21, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:CreditorSecurityRight", "name": "Creditor security right", "objid": 23, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:ManagerRight", "name": "Manager right", "objid": 50, "size": 8, "realsize": 3, "children": [{"qname": "eu-cm-ontology:ManagerDecisionRight", "name": "Manager decision right", "objid": 47, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ManagerExitRight", "name": "Manager exit right", "objid": 48, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ManagerInformationRight", "name": "Manager information right", "objid": 49, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:ShareholderRight", "name": "Shareholder right", "objid": 75, "size": 8, "realsize": 3, "children": [{"qname": "eu-cm-ontology:DecisionRight", "name": "Shareholder decision right", "objid": 28, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ShareholderExitRight", "name": "Shareholder exit right", "objid": 72, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ShareholderInformationRight", "name": "Shareholder information right", "objid": 73, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:SocialRight", "name": "Social right", "objid": 76, "size": 8, "realsize": 3, "children": [{"qname": "eu-cm-ontology:BoardLevelEmployeeRepresentationRight", "name": "Board-level employee representation right", "objid": 4, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ConsultationRight", "name": "Consultation right", "objid": 14, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:InformationRight", "name": "Information right", "objid": 42, "size": 6, "realsize": 1, "children": [{"qname": "eu-cm-ontology:ImpactOnEmployment", "name": "Impact on employment information right", "objid": 39, "size": 1, "realsize": 0}]}]}]}, {"qname": "http://www.w3.org/ns/org#Organisation", "name": "Organisation", "objid": 93, "size": 11, "realsize": 6, "children": [{"qname": "eu-cm-ontology:Company", "name": "Company", "objid": 6, "size": 12, "realsize": 7, "children": [{"qname": "eu-cm-ontology:EmergingCompany", "name": "Emerging company", "objid": 35, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:GlobalUltimateOwner", "name": "Global ultimate owner", "objid": 38, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:MergingCompany", "name": "Merging company", "objid": 55, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:OriginalCompany", "name": "Original company", "objid": 62, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:ParentCompany", "name": "Parent company", "objid": 63, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:SubsidiaryCompany", "name": "Subsidiary company", "objid": 80, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:TransferredCompany", "name": "Transferred company", "objid": 90, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:CompetentAuthority", "name": "Competent authority", "objid": 13, "size": 9, "realsize": 4, "children": [{"qname": "eu-cm-ontology:Court", "name": "Court", "objid": 17, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:FinancialServiceAuthority", "name": "Financial service authority", "objid": 37, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:Notary", "name": "Notary", "objid": 58, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:TaxAuthority", "name": "Tax authority", "objid": 83, "size": 1, "realsize": 0}]}, {"qname": "eu-cm-ontology:IndependentExpert", "name": "Independent expert", "objid": 40, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:NationalRegistry", "name": "National registry", "objid": 56, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:OfficialJournal", "name": "Official journal", "objid": 59, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:SupervisoryAuthority", "name": "SupervisoryAuthority", "objid": 81, "size": 1, "realsize": 0}]}], "name": "owl:Thing", "id": "None"};
 
 	
 	var variable_height1 = 800;
@@ -6433,7 +6433,7 @@ terms:license a owl:AnnotationProperty .
 
 
 
-	var json2 = {"id": "None", "children": [{"realsize": 0, "size": 1, "qname": "dc:description", "objid": 94, "name": "description"}, {"realsize": 0, "size": 1, "qname": "dc:title", "objid": 95, "name": "title"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:hasParentCompany", "objid": 99, "name": "hasParentCompany"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:hasPart", "objid": 100, "name": "hasPart"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:involves", "objid": 101, "name": "involves"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:mergesWith", "objid": 102, "name": "mergesWith"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:mustHave", "objid": 103, "name": "mustHave"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:partOf", "objid": 104, "name": "partOf"}, {"realsize": 0, "size": 1, "qname": "eu-cm-ontology:transfers", "objid": 98, "name": "transfers"}, {"realsize": 0, "size": 1, "qname": "terms:contributor", "objid": 96, "name": "contributor"}, {"realsize": 0, "size": 1, "qname": "terms:license", "objid": 97, "name": "license"}], "name": "Properties"};
+	var json2 = {"children": [{"qname": "dc:description", "name": "description", "objid": 94, "size": 1, "realsize": 0}, {"qname": "dc:title", "name": "title", "objid": 95, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:hasParentCompany", "name": "hasParentCompany", "objid": 99, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:hasPart", "name": "hasPart", "objid": 100, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:involves", "name": "involves", "objid": 101, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:mergesWith", "name": "mergesWith", "objid": 102, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:mustHave", "name": "mustHave", "objid": 103, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:partOf", "name": "partOf", "objid": 104, "size": 1, "realsize": 0}, {"qname": "eu-cm-ontology:transfers", "name": "transfers", "objid": 98, "size": 1, "realsize": 0}, {"qname": "terms:contributor", "name": "contributor", "objid": 96, "size": 1, "realsize": 0}, {"qname": "terms:license", "name": "license", "objid": 97, "size": 1, "realsize": 0}], "name": "Properties", "id": "None"};
 
 
 	
