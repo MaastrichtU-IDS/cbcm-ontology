@@ -1,1 +1,129 @@
 
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+<title></title>
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+
+
+
+<style type="text/css" media="screen">
+
+
+
+	body {
+	    margin-left: 6em;
+	    margin-right: 12em;
+	    font-size: 14px;
+	    font-family: "Helvetica Neue", Helvetica;
+	}
+
+	h1, h2, h3, h4, h5, h6 { text-align: left }
+
+	h1, h2, h3, h4, h5 { color: #000000;}
+	h2 { font: 140% sans-serif }
+	h3 { font: 120% sans-serif }
+	h4 { font: bold 100% sans-serif }
+	h5 { font: italic 100% sans-serif }
+	h6 { font: small-caps 100% sans-serif }
+
+	.margintop {
+		 margin-top: 40px;
+	}
+
+
+    #container {
+        /*max-width: 400px;*/
+        height: 600px;
+        margin: auto;
+    }
+
+</style>
+
+
+</head>
+
+
+<body>
+
+	
+
+	
+
+	<h1 class="title">Ontology:&nbsp;<a href="javascript:showpanel('ontoinfo');"></a></h1>
+	<h3></h3>
+
+	<p><small class="credits">Ontology documentation automatically generated with <a class="greylink" href="http://lambdamusic.github.io/Ontospy/" target="_blank">Ontospy</a> on 14th August 2020 09:05</small></p>
+
+
+
+	<hr>
+
+
+
+    <div id="container"></div>
+
+    
+
+    <script type="text/javascript" src="static/libs/sigma/sigma.min.js"></script>
+
+    <script type="text/javascript" src="static/libs/sigma/plugins/sigma.parsers.json.min.js"></script>
+    <script type="text/javascript" src="static/libs/sigma/plugins/sigma.layout.forceAtlas2.min.js"></script>
+
+
+
+
+	<hr>
+	<small class="credits">Documentation automatically generated with <a href="https://github.com/lambdamusic/Ontospy" target="_blank" class="greylink">Ontospy</a> on 14th August 2020 09:05</small>
+
+
+
+
+
+   <script>
+    // these are just some preliminary settings
+    var g = {
+        nodes: [],
+        edges: []
+    };
+
+    var DATA_LOCAL = {"nodes": [{"id": "owlthing", "label": "owl:Thing", "x": 0.3812088902587175, "y": 0.07323466664364542, "color": "grey", "size": 5}, {"id": 2, "label": "Acquiring company", "x": 0.123987687682232, "y": 0.22932329842447852, "color": "#FFD8DD", "size": 1}, {"id": 3, "label": "Annual report", "x": 0.8846452605255677, "y": 0.6697576481938357, "color": "#C8FFB3", "size": 1}, {"id": 4, "label": "Board-level employee representation right", "x": 0.8762979724482376, "y": 0.8424316570961431, "color": "#C4F5FF", "size": 1}, {"id": 5, "label": "Board resolution", "x": 0.7770808229912375, "y": 0.9050236608934675, "color": "#C4F5FF", "size": 1}, {"id": 6, "label": "Company", "x": 0.37659126529620646, "y": 0.9108610794326935, "color": "#C8FFB3", "size": 7}, {"id": 7, "label": "Company conversion", "x": 0.5154260955003894, "y": 0.3277892314901113, "color": "#C8FFB3", "size": 2}, {"id": 8, "label": "Company division", "x": 0.9262450675724346, "y": 0.6127715405956812, "color": "#C8FFB3", "size": 2}, {"id": 9, "label": "Company form", "x": 0.6759558897776179, "y": 0.11455494783903186, "color": "#FFD8DD", "size": 1}, {"id": 10, "label": "Company merger", "x": 0.867473990488351, "y": 0.6518292893926235, "color": "#C8FFB3", "size": 4}, {"id": 11, "label": "Company mobility document", "x": 0.2378650230808842, "y": 0.589041095409921, "color": "#FFD8DD", "size": 22}, {"id": 12, "label": "Company transaction", "x": 0.32440097441681226, "y": 0.10189785463611922, "color": "#FFD8DD", "size": 16}, {"id": 13, "label": "Competent authority", "x": 0.47259378690843223, "y": 0.206749124436715, "color": "#C8FFB3", "size": 4}, {"id": 14, "label": "Consultation right", "x": 0.0031501170597207917, "y": 0.12784158560133785, "color": "#C4F5FF", "size": 1}, {"id": 15, "label": "Company conversion certificate", "x": 0.2956134794290526, "y": 0.12110184284153269, "color": "#C4F5FF", "size": 1}, {"id": 16, "label": "Company conversion plan", "x": 0.4886661241579964, "y": 0.8066745306668125, "color": "#C4F5FF", "size": 1}, {"id": 17, "label": "Court", "x": 0.19561901100383838, "y": 0.6379423710078924, "color": "#C4F5FF", "size": 1}, {"id": 18, "label": "Creditor", "x": 0.002222860319571085, "y": 0.06795733997820352, "color": "#C4F5FF", "size": 1}, {"id": 19, "label": "Creditor decision right", "x": 0.6798874163196368, "y": 0.17247650803967185, "color": "#C4F5FF", "size": 1}, {"id": 20, "label": "Creditor exit right", "x": 0.6436091396979265, "y": 0.6714859835093396, "color": "#C4F5FF", "size": 1}, {"id": 21, "label": "Creditor information right", "x": 0.473100455975324, "y": 0.9667588897802354, "color": "#C4F5FF", "size": 1}, {"id": 22, "label": "Creditor right", "x": 0.7016783042437659, "y": 0.2833553067440341, "color": "#C8FFB3", "size": 4}, {"id": 23, "label": "Creditor security right", "x": 0.18543260013671703, "y": 0.018130695012940512, "color": "#C4F5FF", "size": 1}, {"id": 24, "label": "Cross-border conversion", "x": 0.41249819299345547, "y": 0.9986037356436317, "color": "#C4F5FF", "size": 1}, {"id": 25, "label": "Cross-border company division", "x": 0.8436505441750255, "y": 0.441979721488689, "color": "#C4F5FF", "size": 1}, {"id": 26, "label": "Cross-border merger", "x": 0.36006304708319015, "y": 0.09660932691988999, "color": "#C4F5FF", "size": 1}, {"id": 27, "label": "Cross-border company seat transfer", "x": 0.5614327548300232, "y": 0.47675651803584596, "color": "#C4F5FF", "size": 1}, {"id": 28, "label": "Shareholder decision right", "x": 0.5719077495699991, "y": 0.8261587908699689, "color": "#C4F5FF", "size": 1}, {"id": 29, "label": "Company division certificate", "x": 0.5538147498290223, "y": 0.5142248424301771, "color": "#C4F5FF", "size": 1}, {"id": 30, "label": "Company division plan", "x": 0.3501852306196602, "y": 0.5336548190431518, "color": "#C4F5FF", "size": 1}, {"id": 31, "label": "Domestic company conversion", "x": 0.39128263438324273, "y": 0.604477480187911, "color": "#C4F5FF", "size": 1}, {"id": 32, "label": "Company domestic division", "x": 0.17598544653836656, "y": 0.22069933324715252, "color": "#C4F5FF", "size": 1}, {"id": 33, "label": "Company domestic merger", "x": 0.6471672619305128, "y": 0.27847293797605266, "color": "#C4F5FF", "size": 1}, {"id": 34, "label": "Domestic company seat transfer", "x": 0.41879888805559906, "y": 0.47289880639564896, "color": "#C4F5FF", "size": 1}, {"id": 35, "label": "Emerging company", "x": 0.10318318664705961, "y": 0.47096347348472245, "color": "#C4F5FF", "size": 1}, {"id": 36, "label": "Company employee", "x": 0.09691262480650509, "y": 0.27761457212037965, "color": "#C8FFB3", "size": 1}, {"id": 37, "label": "Financial service authority", "x": 0.2561479084081736, "y": 0.8879504346022737, "color": "#C4F5FF", "size": 1}, {"id": 38, "label": "Global ultimate owner", "x": 0.7410625199035075, "y": 0.8723262090319933, "color": "#C4F5FF", "size": 1}, {"id": 39, "label": "Impact on employment information right", "x": 0.5236122247604859, "y": 0.5115867690657752, "color": "#C4F5FF", "size": 1}, {"id": 40, "label": "Independent expert", "x": 0.13688933547585658, "y": 0.7902761401610372, "color": "#C4F5FF", "size": 1}, {"id": 41, "label": "Report by an independent expert", "x": 0.6600570488523755, "y": 0.4618760115249504, "color": "#C4F5FF", "size": 1}, {"id": 42, "label": "Information right", "x": 0.5503190013651883, "y": 0.9380565009444204, "color": "#C8FFB3", "size": 1}, {"id": 43, "label": "Interim account", "x": 0.4482361061955995, "y": 0.4256838810243645, "color": "#C4F5FF", "size": 1}, {"id": 44, "label": "Management board", "x": 0.3357627824901993, "y": 0.5690752748775012, "color": "#C4F5FF", "size": 1}, {"id": 45, "label": "Management report", "x": 0.9889017983915223, "y": 0.3674810985522371, "color": "#C4F5FF", "size": 1}, {"id": 46, "label": "Manager", "x": 0.020734183049451405, "y": 0.18986622804106046, "color": "#C8FFB3", "size": 2}, {"id": 47, "label": "Manager decision right", "x": 0.35235382608146937, "y": 0.4746430421524722, "color": "#C4F5FF", "size": 1}, {"id": 48, "label": "Manager exit right", "x": 0.08455565234417428, "y": 0.9138057648188926, "color": "#C4F5FF", "size": 1}, {"id": 49, "label": "Manager information right", "x": 0.6860222558517262, "y": 0.0070645092784354935, "color": "#C4F5FF", "size": 1}, {"id": 50, "label": "Manager right", "x": 0.24998448920699234, "y": 0.2890610274407529, "color": "#C8FFB3", "size": 3}, {"id": 51, "label": "Company merger by acquisition", "x": 0.2734611240036645, "y": 0.7296378675186908, "color": "#C4F5FF", "size": 1}, {"id": 52, "label": "Company merger certificate", "x": 0.9268008702321793, "y": 0.2524439479885966, "color": "#C4F5FF", "size": 1}, {"id": 53, "label": "Merger into a new company", "x": 0.16552192899078888, "y": 0.7886501639338387, "color": "#C4F5FF", "size": 1}, {"id": 54, "label": "Company merger plan", "x": 0.950178025288004, "y": 0.3802277511662071, "color": "#C4F5FF", "size": 1}, {"id": 55, "label": "Merging company", "x": 0.2698819788101313, "y": 0.7901804139010123, "color": "#C4F5FF", "size": 1}, {"id": 56, "label": "National registry", "x": 0.974477854372372, "y": 0.7732847651371033, "color": "#C4F5FF", "size": 1}, {"id": 57, "label": "National registry repository", "x": 0.6439345864005661, "y": 0.03275681464821201, "color": "#C4F5FF", "size": 1}, {"id": 58, "label": "Notary", "x": 0.7247599281752894, "y": 0.7450896554032829, "color": "#C4F5FF", "size": 1}, {"id": 59, "label": "Official journal", "x": 0.9524423509770811, "y": 0.47172485390964136, "color": "#C4F5FF", "size": 1}, {"id": 60, "label": "Official journal publication", "x": 0.8548429892971866, "y": 0.05535614788449972, "color": "#C4F5FF", "size": 1}, {"id": 61, "label": "Official journal repository", "x": 0.8455113618932305, "y": 0.47000421540052295, "color": "#C4F5FF", "size": 1}, {"id": 62, "label": "Original company", "x": 0.24624365950343408, "y": 0.03751826578836259, "color": "#C4F5FF", "size": 1}, {"id": 63, "label": "Parent company", "x": 0.30000344209675267, "y": 0.48000413021714194, "color": "#C4F5FF", "size": 1}, {"id": 64, "label": "Company pre-conversion certificate", "x": 0.0017837328467652513, "y": 0.7348062628795722, "color": "#C4F5FF", "size": 1}, {"id": 65, "label": "Company pre-division certificate", "x": 0.3384459727584149, "y": 0.22945555584607413, "color": "#C4F5FF", "size": 1}, {"id": 66, "label": "Company pre-merger certificate", "x": 0.8151009695201394, "y": 0.6842340400608871, "color": "#C4F5FF", "size": 1}, {"id": 67, "label": "Company mobility document repository", "x": 0.021308242242115805, "y": 0.10572842705489538, "color": "#FFD8DD", "size": 2}, {"id": 68, "label": "Resolution", "x": 0.368227793151337, "y": 0.07134818092647277, "color": "#C8FFB3", "size": 2}, {"id": 69, "label": "Company seat transfer", "x": 0.40204893356202354, "y": 0.5164520474783003, "color": "#C8FFB3", "size": 4}, {"id": 70, "label": "Company seat transfer plan", "x": 0.13818114949410043, "y": 0.37901903570138007, "color": "#C4F5FF", "size": 1}, {"id": 71, "label": "Company shareholder", "x": 0.48484322138670055, "y": 0.9008208314365397, "color": "#C8FFB3", "size": 2}, {"id": 72, "label": "Shareholder exit right", "x": 0.5207744647316892, "y": 0.8765680594925171, "color": "#C4F5FF", "size": 1}, {"id": 73, "label": "Shareholder information right", "x": 0.3434292739531728, "y": 0.07947664019345324, "color": "#C4F5FF", "size": 1}, {"id": 74, "label": "Shareholder resolution", "x": 0.6088731206203808, "y": 0.7452965749202413, "color": "#C4F5FF", "size": 1}, {"id": 75, "label": "Shareholder right", "x": 0.8751051781868404, "y": 0.33731946307880056, "color": "#C8FFB3", "size": 3}, {"id": 76, "label": "Social right", "x": 0.8451804454755417, "y": 0.3436483286744928, "color": "#C8FFB3", "size": 4}, {"id": 77, "label": "Society", "x": 0.12587784736226826, "y": 0.8481294990221777, "color": "#C4F5FF", "size": 1}, {"id": 78, "label": "Special negotiating body agreement", "x": 0.16081796177441166, "y": 0.2810794988158799, "color": "#C4F5FF", "size": 1}, {"id": 79, "label": "Stakeholder in a company", "x": 0.5204730421468841, "y": 0.7371354647025002, "color": "#FFD8DD", "size": 10}, {"id": 80, "label": "Subsidiary company", "x": 0.07623031575037797, "y": 0.9954582481090835, "color": "#C4F5FF", "size": 1}, {"id": 81, "label": "SupervisoryAuthority", "x": 0.12725410706392493, "y": 0.8129931543347831, "color": "#C4F5FF", "size": 1}, {"id": 82, "label": "Supervisory board", "x": 0.8744832272999338, "y": 0.6120761600590972, "color": "#C4F5FF", "size": 1}, {"id": 83, "label": "Tax authority", "x": 0.7624423337985523, "y": 0.774337923390406, "color": "#C4F5FF", "size": 1}, {"id": 84, "label": "Company transaction certificate", "x": 0.054734216779100175, "y": 0.5454963339762389, "color": "#C8FFB3", "size": 6}, {"id": 85, "label": "Transaction document", "x": 0.7321928678350266, "y": 0.45909880901854805, "color": "#C8FFB3", "size": 18}, {"id": 86, "label": "Company transaction notice", "x": 0.9665801404160971, "y": 0.7427107291629085, "color": "#C4F5FF", "size": 1}, {"id": 87, "label": "Transaction right", "x": 0.829362267124492, "y": 0.022322811396440767, "color": "#FFD8DD", "size": 18}, {"id": 88, "label": "Transfer of company central administration", "x": 0.8967158726447663, "y": 0.8781221056135415, "color": "#C4F5FF", "size": 1}, {"id": 89, "label": "Transfer of company registered office", "x": 0.5462482767908101, "y": 0.9160239702460612, "color": "#C4F5FF", "size": 1}, {"id": 90, "label": "Transferred company", "x": 0.6020121159630394, "y": 0.008914176318774558, "color": "#C4F5FF", "size": 1}, {"id": 91, "label": "Ultimate beneficial owner", "x": 0.9880474913629206, "y": 0.7557769051076819, "color": "#C8FFB3", "size": 1}, {"id": 92, "label": "Employee works council", "x": 0.7485333168600667, "y": 0.9846176758412659, "color": "#C4F5FF", "size": 1}, {"id": 93, "label": "Organisation", "x": 0.3912811898803322, "y": 0.7256192272161919, "color": "#FFD8DD", "size": 17}], "edges": [{"id": "2-owlthing", "source": "owlthing", "target": 2, "color": "#ccc", "hover_color": "#000"}, {"id": "3-43", "source": 3, "target": 43, "color": "#ccc", "hover_color": "#000"}, {"id": "6-35", "source": 6, "target": 35, "color": "#ccc", "hover_color": "#000"}, {"id": "6-38", "source": 6, "target": 38, "color": "#ccc", "hover_color": "#000"}, {"id": "6-55", "source": 6, "target": 55, "color": "#ccc", "hover_color": "#000"}, {"id": "6-62", "source": 6, "target": 62, "color": "#ccc", "hover_color": "#000"}, {"id": "6-63", "source": 6, "target": 63, "color": "#ccc", "hover_color": "#000"}, {"id": "6-80", "source": 6, "target": 80, "color": "#ccc", "hover_color": "#000"}, {"id": "6-90", "source": 6, "target": 90, "color": "#ccc", "hover_color": "#000"}, {"id": "7-24", "source": 7, "target": 24, "color": "#ccc", "hover_color": "#000"}, {"id": "7-31", "source": 7, "target": 31, "color": "#ccc", "hover_color": "#000"}, {"id": "8-25", "source": 8, "target": 25, "color": "#ccc", "hover_color": "#000"}, {"id": "8-32", "source": 8, "target": 32, "color": "#ccc", "hover_color": "#000"}, {"id": "9-owlthing", "source": "owlthing", "target": 9, "color": "#ccc", "hover_color": "#000"}, {"id": "10-26", "source": 10, "target": 26, "color": "#ccc", "hover_color": "#000"}, {"id": "10-33", "source": 10, "target": 33, "color": "#ccc", "hover_color": "#000"}, {"id": "10-51", "source": 10, "target": 51, "color": "#ccc", "hover_color": "#000"}, {"id": "10-53", "source": 10, "target": 53, "color": "#ccc", "hover_color": "#000"}, {"id": "11-owlthing", "source": "owlthing", "target": 11, "color": "#ccc", "hover_color": "#000"}, {"id": "11-3", "source": 11, "target": 3, "color": "#ccc", "hover_color": "#000"}, {"id": "11-60", "source": 11, "target": 60, "color": "#ccc", "hover_color": "#000"}, {"id": "11-85", "source": 11, "target": 85, "color": "#ccc", "hover_color": "#000"}, {"id": "12-owlthing", "source": "owlthing", "target": 12, "color": "#ccc", "hover_color": "#000"}, {"id": "12-7", "source": 12, "target": 7, "color": "#ccc", "hover_color": "#000"}, {"id": "12-8", "source": 12, "target": 8, "color": "#ccc", "hover_color": "#000"}, {"id": "12-10", "source": 12, "target": 10, "color": "#ccc", "hover_color": "#000"}, {"id": "12-69", "source": 12, "target": 69, "color": "#ccc", "hover_color": "#000"}, {"id": "13-17", "source": 13, "target": 17, "color": "#ccc", "hover_color": "#000"}, {"id": "13-37", "source": 13, "target": 37, "color": "#ccc", "hover_color": "#000"}, {"id": "13-58", "source": 13, "target": 58, "color": "#ccc", "hover_color": "#000"}, {"id": "13-83", "source": 13, "target": 83, "color": "#ccc", "hover_color": "#000"}, {"id": "22-19", "source": 22, "target": 19, "color": "#ccc", "hover_color": "#000"}, {"id": "22-20", "source": 22, "target": 20, "color": "#ccc", "hover_color": "#000"}, {"id": "22-21", "source": 22, "target": 21, "color": "#ccc", "hover_color": "#000"}, {"id": "22-23", "source": 22, "target": 23, "color": "#ccc", "hover_color": "#000"}, {"id": "36-92", "source": 36, "target": 92, "color": "#ccc", "hover_color": "#000"}, {"id": "42-39", "source": 42, "target": 39, "color": "#ccc", "hover_color": "#000"}, {"id": "46-44", "source": 46, "target": 44, "color": "#ccc", "hover_color": "#000"}, {"id": "46-82", "source": 46, "target": 82, "color": "#ccc", "hover_color": "#000"}, {"id": "50-47", "source": 50, "target": 47, "color": "#ccc", "hover_color": "#000"}, {"id": "50-48", "source": 50, "target": 48, "color": "#ccc", "hover_color": "#000"}, {"id": "50-49", "source": 50, "target": 49, "color": "#ccc", "hover_color": "#000"}, {"id": "67-owlthing", "source": "owlthing", "target": 67, "color": "#ccc", "hover_color": "#000"}, {"id": "67-57", "source": 67, "target": 57, "color": "#ccc", "hover_color": "#000"}, {"id": "67-61", "source": 67, "target": 61, "color": "#ccc", "hover_color": "#000"}, {"id": "68-5", "source": 68, "target": 5, "color": "#ccc", "hover_color": "#000"}, {"id": "68-74", "source": 68, "target": 74, "color": "#ccc", "hover_color": "#000"}, {"id": "69-27", "source": 69, "target": 27, "color": "#ccc", "hover_color": "#000"}, {"id": "69-34", "source": 69, "target": 34, "color": "#ccc", "hover_color": "#000"}, {"id": "69-88", "source": 69, "target": 88, "color": "#ccc", "hover_color": "#000"}, {"id": "69-89", "source": 69, "target": 89, "color": "#ccc", "hover_color": "#000"}, {"id": "71-91", "source": 71, "target": 91, "color": "#ccc", "hover_color": "#000"}, {"id": "75-28", "source": 75, "target": 28, "color": "#ccc", "hover_color": "#000"}, {"id": "75-72", "source": 75, "target": 72, "color": "#ccc", "hover_color": "#000"}, {"id": "75-73", "source": 75, "target": 73, "color": "#ccc", "hover_color": "#000"}, {"id": "76-4", "source": 76, "target": 4, "color": "#ccc", "hover_color": "#000"}, {"id": "76-14", "source": 76, "target": 14, "color": "#ccc", "hover_color": "#000"}, {"id": "76-42", "source": 76, "target": 42, "color": "#ccc", "hover_color": "#000"}, {"id": "79-owlthing", "source": "owlthing", "target": 79, "color": "#ccc", "hover_color": "#000"}, {"id": "79-18", "source": 79, "target": 18, "color": "#ccc", "hover_color": "#000"}, {"id": "79-36", "source": 79, "target": 36, "color": "#ccc", "hover_color": "#000"}, {"id": "79-46", "source": 79, "target": 46, "color": "#ccc", "hover_color": "#000"}, {"id": "79-71", "source": 79, "target": 71, "color": "#ccc", "hover_color": "#000"}, {"id": "79-77", "source": 79, "target": 77, "color": "#ccc", "hover_color": "#000"}, {"id": "84-15", "source": 84, "target": 15, "color": "#ccc", "hover_color": "#000"}, {"id": "84-29", "source": 84, "target": 29, "color": "#ccc", "hover_color": "#000"}, {"id": "84-52", "source": 84, "target": 52, "color": "#ccc", "hover_color": "#000"}, {"id": "84-64", "source": 84, "target": 64, "color": "#ccc", "hover_color": "#000"}, {"id": "84-65", "source": 84, "target": 65, "color": "#ccc", "hover_color": "#000"}, {"id": "84-66", "source": 84, "target": 66, "color": "#ccc", "hover_color": "#000"}, {"id": "85-16", "source": 85, "target": 16, "color": "#ccc", "hover_color": "#000"}, {"id": "85-30", "source": 85, "target": 30, "color": "#ccc", "hover_color": "#000"}, {"id": "85-41", "source": 85, "target": 41, "color": "#ccc", "hover_color": "#000"}, {"id": "85-45", "source": 85, "target": 45, "color": "#ccc", "hover_color": "#000"}, {"id": "85-54", "source": 85, "target": 54, "color": "#ccc", "hover_color": "#000"}, {"id": "85-68", "source": 85, "target": 68, "color": "#ccc", "hover_color": "#000"}, {"id": "85-70", "source": 85, "target": 70, "color": "#ccc", "hover_color": "#000"}, {"id": "85-78", "source": 85, "target": 78, "color": "#ccc", "hover_color": "#000"}, {"id": "85-84", "source": 85, "target": 84, "color": "#ccc", "hover_color": "#000"}, {"id": "85-86", "source": 85, "target": 86, "color": "#ccc", "hover_color": "#000"}, {"id": "87-owlthing", "source": "owlthing", "target": 87, "color": "#ccc", "hover_color": "#000"}, {"id": "87-22", "source": 87, "target": 22, "color": "#ccc", "hover_color": "#000"}, {"id": "87-50", "source": 87, "target": 50, "color": "#ccc", "hover_color": "#000"}, {"id": "87-75", "source": 87, "target": 75, "color": "#ccc", "hover_color": "#000"}, {"id": "87-76", "source": 87, "target": 76, "color": "#ccc", "hover_color": "#000"}, {"id": "91-38", "source": 91, "target": 38, "color": "#ccc", "hover_color": "#000"}, {"id": "93-owlthing", "source": "owlthing", "target": 93, "color": "#ccc", "hover_color": "#000"}, {"id": "93-6", "source": 93, "target": 6, "color": "#ccc", "hover_color": "#000"}, {"id": "93-13", "source": 93, "target": 13, "color": "#ccc", "hover_color": "#000"}, {"id": "93-40", "source": 93, "target": 40, "color": "#ccc", "hover_color": "#000"}, {"id": "93-56", "source": 93, "target": 56, "color": "#ccc", "hover_color": "#000"}, {"id": "93-59", "source": 93, "target": 59, "color": "#ccc", "hover_color": "#000"}, {"id": "93-81", "source": 93, "target": 81, "color": "#ccc", "hover_color": "#000"}]};
+
+
+    // Create new Sigma instance in graph-container div (use your div name here)
+    s = new sigma({
+        graph: DATA_LOCAL,
+        container: 'container',
+        renderer: {
+            container: document.getElementById('container'),
+            type: 'canvas'
+        },
+        settings: {
+            doubleClickEnabled: false,
+            minNodeSize: 1,
+            maxNodeSize: 30,
+            enableEdgeHovering: true,
+            edgeHoverColor: 'edge',
+            defaultEdgeHoverColor: '#000',
+            edgeHoverSizeRatio: 1,
+            edgeHoverExtremities: true
+          }
+    });
+
+    // ? this runs the force atlas, but the rendering is not smooth!
+
+    s.refresh();
+    s.startForceAtlas2();
+
+
+    </script>
+
+
+
+</body>
+</html>
