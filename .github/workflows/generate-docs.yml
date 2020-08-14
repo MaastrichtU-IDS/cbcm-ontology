@@ -24,18 +24,18 @@ jobs:
 
     - name: Install dependencies
       run: |
-        sudo python -m pip install --upgrade pip
-        sudo pip install ontospy[FULL]
+        python -m pip install --upgrade pip
+        pip install ontospy[FULL]
     - name: Generate docs
       run: |
-        sudo ontospy gendocs -o docs/summary --type 1 --nobrowser working_copy/eu-cm-ontology.owl
-        sudo ontospy gendocs -o docs/browse --type 2 --nobrowser working_copy/eu-cm-ontology.owl
-        sudo ontospy gendocs -o docs/classtree --type 4 --nobrowser working_copy/eu-cm-ontology.owl
-        sudo ontospy gendocs -o docs/graph --type 10 --nobrowser working_copy/eu-cm-ontology.owl
+        ontospy gendocs -o docs/summary --type 1 --nobrowser working_copy/eu-cm-ontology.owl
+        ontospy gendocs -o docs/browse --type 2 --nobrowser working_copy/eu-cm-ontology.owl
+        ontospy gendocs -o docs/classtree --type 4 --nobrowser working_copy/eu-cm-ontology.owl
+        ontospy gendocs -o docs/graph --type 10 --nobrowser working_copy/eu-cm-ontology.owl
 
     - name: Commit and push
       run: |
-        sudo git config --global user.name 'Tim Hendriks'
-        sudo git config --global user.email 't.hendriks@maastrichtuniversity.nl'
-        sudo git commit -am "Automatically generate documentation from the CBCM OWL ontology file using Ontospy gendocs."
-        sudo git push
+        git config --global user.name 'Tim Hendriks'
+        git config --global user.email 't.hendriks@maastrichtuniversity.nl'
+        git add -A && git commit -m "Automatically generate documentation from the CBCM OWL ontology file using Ontospy gendocs."
+        git push
