@@ -2,10 +2,10 @@ name: Generate documentation
 
 on:
   workflow_dispatch:
-    push:
-     branches: [ master ]
-     paths:
-     - 'working_copy/eu-cm-ontology.owl'
+  push:
+    branches: [ master ]
+    paths:
+    - 'working_copy/eu-cm-ontology.owl'
 
 jobs:
   generate-docs:
