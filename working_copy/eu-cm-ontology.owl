@@ -158,6 +158,14 @@
     
 
 
+    <!-- http://cair.za.net/TIMTESTCLASS -->
+
+    <owl:Class rdf:about="http://cair.za.net/TIMTESTCLASS">
+        <rdfs:comment>Test class to see if docs are automatically regenerating on push</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany -->
 
     <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany">
