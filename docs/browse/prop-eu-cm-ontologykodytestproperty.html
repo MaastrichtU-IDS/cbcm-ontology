@@ -518,9 +518,9 @@
           
               <li class="second-level" style="line-height: 20px;" id="sd_96"><a   href="prop-dcdescription.html">dc:description</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_97"><a class="active"  href="prop-dctitle.html">dc:title</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_97"><a   href="prop-dctitle.html">dc:title</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_101"><a   href="prop-eu-cm-ontologykodytestproperty.html">eu-cm-ontology:KODYTESTPROPERTY</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_101"><a class="active"  href="prop-eu-cm-ontologykodytestproperty.html">eu-cm-ontology:KODYTESTPROPERTY</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_102"><a   href="prop-eu-cm-ontologyhasparentcompany.html">eu-cm-ontology:hasParentCompany</a></li>
           
@@ -638,7 +638,7 @@
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            http://purl.org/dc/elements/1.1/title
+            http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTPROPERTY
         </li>
   </ol>
 
@@ -659,7 +659,7 @@
 
             <h1>
 
-                dc:title
+                eu-cm-ontology:KODYTESTPROPERTY
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -678,7 +678,7 @@
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'title'">dc:title</a>
+                            <li><a style="font-weight: bold;" title="'KODYTESTPROPERTY' - asdsadasdasada">eu-cm-ontology:KODYTESTPROPERTY</a>
 
                             
                               </li>
@@ -702,7 +702,7 @@
              </div>
              <div class="panel-body">
 
-                 <code>http://purl.org/dc/elements/1.1/title</code>
+                 <code>http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#KODYTESTPROPERTY</code>
              </div>
            </div>
             </div></div>
@@ -717,7 +717,7 @@
              </div>
              <div class="panel-body">
 
-                 title
+                 KODYTESTPROPERTY
              </div>
            </div>
             </div></div>
@@ -725,6 +725,18 @@
 
 
             
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Description</h3>
+            </div>
+            <div class="panel-body">
+
+                asdsadasdasada
+            </div>
+          </div>
+           </div></div>
+           
 
 
 
@@ -754,7 +766,7 @@
                    </td>
 
                     <td>
-                      dc:title
+                      eu-cm-ontology:KODYTESTPROPERTY
                     </td>
 
                     <td>
@@ -778,10 +790,12 @@
 
                 
 
-                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">dc:</span><span class="w"> </span><span class="nv">&lt;http://purl.org/dc/elements/1.1/&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">:</span><span class="w"> </span><span class="nv">&lt;http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
-<span class="nn">dc:</span><span class="nt">title</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">AnnotationProperty</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="nn">:</span><span class="nt">KODYTESTPROPERTY</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">ObjectProperty</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;asdsadasdasada&quot;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </pre></div>
 
 
@@ -881,7 +895,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_97").offset().top - 100
+          scrollTop: $("#sd_101").offset().top - 100
       }, 100);
     });
 
