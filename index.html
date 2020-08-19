@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr"
   xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -10,106 +9,207 @@
   xmlns:sioct="http://rdfs.org/sioc/types#"
   xmlns:skos="http://www.w3.org/2004/02/skos/core#"
   xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta name="HandheldFriendly" content="true" />
-<link rel="shortlink" href="/node/41" />
-<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
-<link rel="canonical" href="/services-resources/ontology" />
-<meta name="MobileOptimized" content="width" />
-<title>EU-CBCM Ontology</title>
-<style type="text/css" media="all">
-#sliding-popup.sliding-popup-bottom{background:#0779BF;}#sliding-popup .popup-content #popup-text h2,#sliding-popup .popup-content #popup-text p{color:#ffffff !important;}
-</style>
-<link type="text/css" rel="stylesheet" href="css/style.css" media="all" />
-</head>
-<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-41 node-type-page" >
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+    <meta name="MobileOptimized" content="width" />
+    <link rel="shortlink" href="/node/41" />
+    <link rel="canonical" href="/services-resources/ontology" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="all" />
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>EU-CBCM Ontology</title>
+  </head>
+  
+  <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-41 node-type-page">
+    
+    <div id="navbar" class="topnav">
+      <a class="navoption active" href="#home">Home</a>
+      <a class="navoption" href="#contact">People</a>
+      <a class="navoption" href="#download">Download</a>
+      <a class="navoption" href="#browse">Browse</a>
+    </div>
 
-<!-- #navigation -->
-<div id="sub-navigation">
-  <div class="container">
-    <div class="region region-sub-navigation">
-      <div id="block-menu-block-4" class="block block-menu-block subnavigation-slider clearfix">
-        <div class="content">
-          <div class="menu-block-wrapper menu-block-4 menu-name-main-menu parent-mlid-0 menu-level-2">
-            <ul class="menu">
-              <li class="first leaf active-trail active menu-mlid-1561"><a href="description.html" class="active-trail active">Description</a></li>
-              <li class="leaf menu-mlid-1562"><a href="contact.html">Contact</a></li>
-              <!--<li class="leaf menu-mlid-1382"><a href="/support">Support</a></li>-->
-              <li class="leaf menu-mlid-811"><a href="download.html">Download</a></li>
-              <li class="last leaf menu-mlid-809"><a href="html/index.html">Browse</a></li>
+    <script>
+      // Get the container element
+      var btnContainer = document.getElementById("navbar");
+
+      // Get all buttons with class="btn" inside the container
+      var btns = btnContainer.getElementsByClassName("navoption");
+
+      // Loop through the buttons and add the active class to the current/clicked button
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <div id="home">
+      <div class="content">
+        <div class="field-item even" property="dc:title"><h1>The EU Cross-border Company Mobility (EU-CBCM) Ontology</h1>
+        </div>
+        <div class="field-item even" property="content:encoded">
+          <p>The EU Cross-border Company Mobility (EU-CBCM) Ontology is an application ontology developed using the <a href="https://www.w3.org/TR/owl2-overview/" target="_blank">Web Ontology Language (OWL)</a> to cover relevant terminology from EU Law related to cross-border company movement within the EU <a class="github-button" href="https://github.com/maastrichtU-IDS/cbcm-ontology" aria-label="Follow cbcm-ontology on GitHub" target="_blank">cbcm-ontology</a></p>
+        </div>
+        <img src="images/eu-cbcm-ontology.png" alt="CBCM ontology diagram" width="960"></img>
+      </div>
+    </div>
+
+
+    <div id="contact">
+      <div class="content">
+        <div class="field-item even" property="dc:title"><h1>People</h1>
+        </div>
+      </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="images/kodymoodley.jpg" alt="Kody" style="width:100%">
+              <div class="container">
+                <h2>Kody Moodley</h2>
+                <p class="title">Joint Postdoctoral Researcher</p>
+                <p>Kody is a Joint Postdoctoral Researcher at the <a href="https://www.maastrichtuniversity.nl/research/institute-data-science" target="_blank">Institute of Data Science</a> and the <a href="https://www.maastrichtuniversity.nl/about-um/faculties/law/research/law-and-tech-lab" target="_blank">Maastricht Law & Tech Lab</a></p>
+                <p><a class="button" href="mailto:kody.moodley@maastrichtuniversity.nl" target="_blank">Contact</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="images/marcusmeyer.jpg" alt="Mike" style="width:100%;">
+              <div class="container">
+                <h2>Marcus Meyer</h2>
+                <p class="title">Assistant Professor</p>
+                <p>Marcus is an Assistant Professor at the <a href="https://www.maastrichtuniversity.nl/about-um/faculties/faculty-law" target="_blank">Faculty of Law</a> at <a href="https://www.maastrichtuniversity.nl/" target="_blank">Maastricht University</a> and the <a href="https://www.maastrichtuniversity.nl/about-um/faculties/law/research/law-and-tech-lab" target="_blank">Maastricht Law & Tech Lab</a> </p>
+                <p><a class="button" href="mailto:marcus.meyer@maastrichtuniversity.nl" target="_blank">Contact</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <img src="images/thomasbiermeyer.png" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Thomas Biermeyer</h2>
+                <p class="title">Assistant Professor</p>
+                <p>Thomas is an Assistant Professor at the <a href="https://www.maastrichtuniversity.nl/about-um/faculties/faculty-law" target="_blank">Faculty of Law</a> at <a href="https://www.maastrichtuniversity.nl/" target="_blank">Maastricht University</a></p>
+                <p><a class="button" href="mailto:thomas.biermeyer@maastrichtuniversity.nl" target="_blank">Contact</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="card">
+              <img src="images/stephanrammelloo.jpg" alt="John" style="width:100%">
+              <div class="container">
+                <h2>Stephan Rammelloo</h2>
+                <p class="title">Associate Professor</p>
+                <p>Stephan is an Associate Professor of Private Law at the <a href="https://www.maastrichtuniversity.nl/about-um/faculties/faculty-law" target="_blank">Faculty of Law</a> at <a href="https://www.maastrichtuniversity.nl/" target="_blank">Maastricht University</a>.</p>
+                <p><a class="button" href="mailto:s.rammeloo@maastrichtuniversity.nl" target="_blank">Contact</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- </div> -->
+    </div>
+
+
+<!--       <div class="row ">  
+  <div class="col-sm-12 panel-builder-100-col ">
+    <div class="panel_0 parsys">
+      <div class="text-image section">
+        <div class="text-image row">
+            <img src="images/kodymoodley.jpg" alt="Dr. Kody Moodley" width="200" height="200">
+            <div class="text col-md-8">
+              <h3>Dr. Kody Moodley<br />Postdoctoral Researcher in Computer Science</h3>
+              <h4>Affiliation: The Institute of Data Science & The Faculty of Law at Maastricht University</h4>
+              <p>Research Interests: Ontologies, data-driven legal decision making, knowledge representation, automated reasoning</p>
+              <p><a href="https://www.maastrichtuniversity.nl/k.moodley" target="_blank">Profile</a></p>
+              <p><a href="mailto:kody.moodley@maastrichtuniversity.nl" target="_blank">Email</a></p>
+            </div>
+        </div>
+        <div class="text-image row">
+            <img src="images/marcusmeyer.jpg" alt="Prof. Marcus Meyer" width="200" height="200">
+            <div class="text col-md-8">
+              <h3>Marcus Meyer<br />Assistant Professor in Public Law</h3>
+              <h4>Affiliation: The Faculty of Law at Maastricht University</h4>
+              <p>Research Interests: Employee Participation, Cross-border Company Mobility in the EU, Empirical Legal Research</p>
+              <p><a href="https://www.maastrichtuniversity.nl/marcus.meyer" target="_blank">Profile</a></p>
+              <p><a href="mailto:marcus.meyer@maastrichtuniversity.nl" target="_blank">Email</a></p>
+            </div>
+        </div>
+        <div class="text-image row">
+            <img src="images/thomasbiermeyer.png" alt="Prof. Thomas Biermeyer" width="200" height="200">
+            <div class="text col-md-8">
+              <h3>Thomas Biermeyer<br />Assistant Professor in EU Corporate Law</h3>
+              <h4>Affiliation: The Faculty of Law at Maastricht University</h4>
+              <p>Research Interests: Corporate finance law, EU corporate law and EU law in general</p>
+              <p><a href="https://www.maastrichtuniversity.nl/thomas.biermeyer" target="_blank">Profile</a></p>
+              <p><a href="mailto:thomas.biermeyer@maastrichtuniversity.nl" target="_blank">Email</a></p>
+            </div>
+        </div>
+        <div class="text-image row">
+            <img src="images/stephanrammelloo.jpg" alt="Prof. Stephan Rammeloo" width="200" height="200">
+            <div class="text col-md-8">
+              <h3>Prof. Stephan Rammeloo<br />Associate Professor in Private Law</h3>
+              <h4>Affiliation: The Faculty of Law at Maastricht University</h4>
+              <p>Research Interests: European Company Law, Private International Law and Comparative Law</p>
+              <p><a href="https://www.maastrichtuniversity.nl/s.rammeloo" target="_blank">Profile</a></p>
+              <p><a href="mailto:s.rammeloo@maastrichtuniversity.nl" target="_blank">Email</a></p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+</div>
+    </div>
+    
+
+    <div id="download">
+      <div class="content">
+        <div class="field-item even" property="dc:title"><h1>Download</h1>
+        </div>
+        <div class="field-item even" property="content:encoded">
+          <p>The EU Cross-border Company Mobility (EU-CBCM) Ontology is expressed in the <a href="https://www.w3.org/TR/owl2-overview/" target="_blank">Web Ontology Language (OWL)</a> and is available for download in the <a href="https://www.w3.org/TR/rdf-syntax-grammar/" target="_blank">RDF/XML</a> and <a href="https://www.w3.org/TR/owl-xmlsyntax/" target="_blank">OWL/XML</a> syntaxes here: <a class="github-button" href="https://github.com/MaastrichtU-IDS/cbcm-ontology/releases" aria-label="Download the latest release of the CBCM OWL ontology on GitHub" target="_blank">releases</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div id="browse">
+      <div class="content">
+        <div class="field-item even" property="dc:title"><h1>Documentation</h1>
+        </div>
+        <div class="field-item even" property="content:encoded">
+          <p>The complete and latest version of the EU Cross-border Company Mobility (EU-CBCM) Ontology can be browsed at the following links below. This documentation is automatically generated with each new release of the ontology using the <a href="http://lambdamusic.github.io/Ontospy/" target="_blank">OntoSpy</a> <a href="https://www.python.org/" target="_blank">Python</a> library</p>
+        </div>
+      </div>
+      <div class="content">
+        <div class="hlist">
+          <div class="list">
+            <ul>
+              <li><a href="docs/browse/index.html" target="_blank">Statistics & metadata</a></li>
+              <li><a href="docs/classtree/index.html" target="_blank">Class hierarchy</a></li>
+              <li><a href="docs/graph/index.html" target="_blank">Graph</a></li>
+              <li><a href="docs/summary/index.html" target="_blank">Summary</a></li>
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-<!-- EOF:#banner -->
-<!-- #page -->
-<div id="page" class="clearfix">
-  <!-- #main-content -->
-  <div id="main-content">
-    <div class="container">
-      <!-- #main -->
-      <div id="main" class="clearfix">
-        <!-- EOF:#content-wrapper -->
-        <div id="content-wrapper">
-          <div class="tabs">
-          </div>                                                                
-        
-          <div class="region region-content">
-            <div id="block-system-main" class="block block-system clearfix">
-              <div class="content">
-                <div  about="/services-resources/ontology" typeof="foaf:Document" class="ds-1col node node-page view-mode-full clearfix">
-                  <div class="field field-name-title field-type-ds field-label-hidden">
-                    <div class="field-items">
-                      <div class="field-item even" property="dc:title">
-                        <h1>The EU Cross-border Company Mobility (EU-CBCM) Ontology</h1>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-                    <div class="field-items"><div class="field-item even" property="content:encoded">
-                      <p>The EU Cross-border Company Mobility (EU-CBCM) Ontology is a shallow, domain ontology, which has been developed to cover terms related to cross-border company movement within the European Union. <a href="https://github.com/maastrichtU-IDS/cbcm-ontology">Github</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+    <div id="footer">
+      <div class="footertext">
+        <h2>EU-CBCM</h2>
+        <p>Studying the mobility of companies in the EU.</p>
+        <p>© Copyright 2020&nbsp;by EU Cross-border Company Mobility (EU-CBCM). All Rights Reserved.</p>
       </div>
     </div>
-  </div>
-</div>
-<!-- EOF:#page -->
-
-<!-- #footer -->
-<footer id="footer" class="clearfix">
-  <div class="container">
-    <!-- #footer-inside -->
-    <div id="footer-inside" class="clearfix">
-      <div class="row">
-        <div class="col-md-10">
-          <div class="footer-area">
-            <div class="region region-footer-first">
-              <div id="block-block-42" class="block block-block copyright clearfix">
-                <div class="content">
-                  <h2>EU-CBCM</h2>
-                  <p>Studying the mobility of companies in the EU.</p>
-                  <p>© Copyright 2019&nbsp;by EU Cross-border Company Mobility (EU-CBCM). All Rights Reserved.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>                 
-</footer> 
-
-<!-- EOF #footer -->
-  <script type="text/javascript" src="https://wiki.dbpedia.org/sites/default/files/js/js_paiTaEsc1HNeBS2rkLc1NrprKrFnApv70kuY8awAaTI.js"></script>
-</body>
+  </body>
 </html>
