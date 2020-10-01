@@ -6,6 +6,7 @@ on:
     branches: [ master ]
     paths:
     - 'working_copy/eu-cm-ontology.owl'
+    - 'scripts/generate_ontology_terms_flatfile.py'
 
 jobs:
   generate-docs:
@@ -26,16 +27,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install ontospy[FULL]
+        pip install owlready2
     - name: Generate docs
       run: |
         ontospy gendocs -o docs/summary --type 1 --nobrowser working_copy/eu-cm-ontology.owl
         ontospy gendocs -o docs/browse --type 2 --nobrowser working_copy/eu-cm-ontology.owl
         ontospy gendocs -o docs/classtree --type 4 --nobrowser working_copy/eu-cm-ontology.owl
         ontospy gendocs -o docs/graph --type 10 --nobrowser working_copy/eu-cm-ontology.owl
-
+        python scripts/generate_ontology_terms_flatfile.py
     - name: Commit and push
       run: |
-        git config --global user.name 'Tim Hendriks'
-        git config --global user.email 't.hendriks@maastrichtuniversity.nl'
-        git add -A && git commit -m "Automatically generate documentation from the CBCM OWL ontology file using Ontospy gendocs."
+        git config --global user.name 'Kody Moodley'
+        git config --global user.email 'kody.moodley@gmail.com'
+        git add -A && git commit -m "Automatically generate ontology documentation using Ontospy gendocs and a flatfile of ontology terms for annotation."
         git push

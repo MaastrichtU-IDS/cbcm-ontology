@@ -1,0 +1,2727 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology"
+     versionIRI="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/1.0.0">
+    <Prefix name="" IRI="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>This ontology describes terms concerning company mobility and their cross-border transactions within the European Union.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+        <Literal>The European Union Company Mobility Ontology (EU-CMO)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Kody Moodley</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Marcus Meyer</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Stephan Rammeloo</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+        <Literal>Thomas Biermeyer</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <Literal>Creative Commons Attribution 3.0 (CC BY 3.0)</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://maastrichtu-ids.github.io/cbcm-ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>EU-CM ontology (EU-CMO), version 1.0.0, (2019), the Maastricht Law &amp; Techlab, Maastricht University, The Netherlands</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#AcquiringCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AnnualAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoardLevelEmployeeRepresentationRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoardResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Company"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyConversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyDivision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyLegalForm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyMerger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyMobilityDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompanyTransaction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CompetentAuthority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConsultationRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConversionCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ConversionPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Court"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Creditor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditorDecisionRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditorExitRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditorInformationRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditorRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CreditorSecurityRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossBorderDivision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossBorderMerger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrossBorderSeatTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DecisionRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DivisionCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DivisionPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticCompanyConversion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticDivision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticMerger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DomesticSeatTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#EmergingCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Employee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FinancialServiceAuthority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GlobalUltimateOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImpactOnEmployment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentExpert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IndependentExpertReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InformationRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InterimAccount"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagementBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagementReport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Manager"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagerDecisionRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagerExitRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagerInformationRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ManagerRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergerByAcquisition"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergerCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergerIntoNewCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergerPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MergingCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalRegistry"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NationalRegistryRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notary"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficialJournal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficialJournalPublication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OfficialJournalRepository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OriginalCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ParentCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreConversionCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreDivisionCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PreMergerCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Repository"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeatTransfer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeatTransferPlan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shareholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShareholderExitRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShareholderInformationRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShareholderResolution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShareholderRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SocialRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Society"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpecialNegotiationBodyAgreement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stakeholder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubsidiaryCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupervisoryAuthority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SupervisoryBoard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TaxAuthority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionCertificate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionDocument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionNotice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransactionRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransferOfCentralAdministration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransferOfRegisteredOffice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TransferredCompany"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#UltimateBeneficialOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorksCouncil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParentCompany"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involves"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mergesWith"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mustHave"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#partOf"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#transfers"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:contributor"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#AcquiringCompany"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Company"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#involves"/>
+                <Class IRI="#CompanyMerger"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#involves"/>
+                <Class IRI="#MergingCompany"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CompanyMerger"/>
+        <ObjectUnionOf>
+            <Class IRI="#MergerByAcquisition"/>
+            <Class IRI="#MergerIntoNewCompany"/>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#AnnualAccount"/>
+        <Class IRI="#AnnualAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AnnualAccount"/>
+        <Class IRI="#CompanyMobilityDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoardLevelEmployeeRepresentationRight"/>
+        <Class IRI="#SocialRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoardLevelEmployeeRepresentationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Employee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoardLevelEmployeeRepresentationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#WorksCouncil"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoardResolution"/>
+        <Class IRI="#Resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Company"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasParentCompany"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <Class IRI="#CompanyTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ConversionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#DivisionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#IndependentExpertReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergerPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Resolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#SeatTransferPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransactionNotice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyDivision"/>
+        <Class IRI="#CompanyTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyMerger"/>
+        <Class IRI="#CompanyTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompanyTransaction"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CompetentAuthority"/>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsultationRight"/>
+        <Class IRI="#SocialRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsultationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Employee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConsultationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#WorksCouncil"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionCertificate"/>
+        <Class IRI="#TransactionCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ConversionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OriginalCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferredCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ConversionPlan"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Court"/>
+        <Class IRI="#CompetentAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creditor"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Creditor"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompanyTransaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorDecisionRight"/>
+        <Class IRI="#CreditorRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorDecisionRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Creditor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorExitRight"/>
+        <Class IRI="#CreditorRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorExitRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Creditor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorInformationRight"/>
+        <Class IRI="#CreditorRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorInformationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Creditor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorRight"/>
+        <Class IRI="#TransactionRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Creditor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorSecurityRight"/>
+        <Class IRI="#CreditorRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CreditorSecurityRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Creditor"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <Class IRI="#CompanyConversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ConversionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#IndependentExpertReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ManagementReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OfficialJournalPublication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OriginalCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#PreConversionCertificate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Resolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Stakeholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransactionCertificate"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransactionRight"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferredCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderCompanyConversion"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Company"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderDivision"/>
+        <Class IRI="#CompanyDivision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderMerger"/>
+        <Class IRI="#CompanyMerger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderMerger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#AcquiringCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderMerger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderSeatTransfer"/>
+        <Class IRI="#SeatTransfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderSeatTransfer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferOfCentralAdministration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderSeatTransfer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferOfRegisteredOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrossBorderSeatTransfer"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Company"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionRight"/>
+        <Class IRI="#ShareholderRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Shareholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DecisionRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ShareholderResolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionCertificate"/>
+        <Class IRI="#TransactionCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#DivisionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#EmergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OriginalCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DivisionPlan"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticCompanyConversion"/>
+        <Class IRI="#CompanyConversion"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticDivision"/>
+        <Class IRI="#CompanyDivision"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticMerger"/>
+        <Class IRI="#CompanyMerger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticMerger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#AcquiringCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticMerger"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticSeatTransfer"/>
+        <Class IRI="#SeatTransfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticSeatTransfer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferOfCentralAdministration"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DomesticSeatTransfer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferOfRegisteredOffice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergingCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergingCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompanyDivision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergingCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#EmergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#EmergingCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OriginalCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Employee"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FinancialServiceAuthority"/>
+        <Class IRI="#CompetentAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalUltimateOwner"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GlobalUltimateOwner"/>
+        <Class IRI="#UltimateBeneficialOwner"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactOnEmployment"/>
+        <Class IRI="#InformationRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactOnEmployment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Employee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImpactOnEmployment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#WorksCouncil"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentExpert"/>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentExpert"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#IndependentExpertReport"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentExpertReport"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IndependentExpertReport"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#IndependentExpert"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InformationRight"/>
+        <Class IRI="#SocialRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InterimAccount"/>
+        <Class IRI="#AnnualAccount"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagementBoard"/>
+        <Class IRI="#Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagementBoard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partOf"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagementReport"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Manager"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerDecisionRight"/>
+        <Class IRI="#ManagerRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerDecisionRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#BoardResolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerDecisionRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ManagementBoard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerExitRight"/>
+        <Class IRI="#ManagerRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerExitRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ManagementBoard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerInformationRight"/>
+        <Class IRI="#ManagerRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerInformationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ManagementBoard"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ManagerRight"/>
+        <Class IRI="#TransactionRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerByAcquisition"/>
+        <Class IRI="#CompanyMerger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerByAcquisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#AcquiringCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerByAcquisition"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerCertificate"/>
+        <Class IRI="#TransactionCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#AcquiringCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompanyMerger"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerIntoNewCompany"/>
+        <Class IRI="#CompanyMerger"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerIntoNewCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#EmergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerIntoNewCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergerPlan"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergingCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergingCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#AcquiringCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MergingCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompanyMerger"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistry"/>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistry"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#NationalRegistryRepository"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistryRepository"/>
+        <Class IRI="#Repository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistryRepository"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#NationalRegistry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistryRepository"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OfficialJournal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NationalRegistryRepository"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OfficialJournalRepository"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Notary"/>
+        <Class IRI="#CompetentAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournal"/>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompetentAuthority"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OfficialJournalRepository"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransactionNotice"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournalPublication"/>
+        <Class IRI="#CompanyMobilityDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournalRepository"/>
+        <Class IRI="#Repository"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournalRepository"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#NationalRegistry"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournalRepository"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#NationalRegistryRepository"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OfficialJournalRepository"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OfficialJournal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OriginalCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OriginalCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompanyDivision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OriginalCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#EmergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParentCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParentCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#GlobalUltimateOwner"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ParentCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#SubsidiaryCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreConversionCertificate"/>
+        <Class IRI="#TransactionCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreConversionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ConversionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreConversionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OriginalCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreConversionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#TransferredCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreDivisionCertificate"/>
+        <Class IRI="#TransactionCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreDivisionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#DivisionPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreDivisionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#EmergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreDivisionCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#OriginalCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreMergerCertificate"/>
+        <Class IRI="#TransactionCertificate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreMergerCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#AcquiringCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreMergerCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergerPlan"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PreMergerCertificate"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#MergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Resolution"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeatTransfer"/>
+        <Class IRI="#CompanyTransaction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeatTransferPlan"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shareholder"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shareholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partOf"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderExitRight"/>
+        <Class IRI="#ShareholderRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderExitRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Shareholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderExitRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ShareholderResolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderInformationRight"/>
+        <Class IRI="#ShareholderRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderInformationRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Shareholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderResolution"/>
+        <Class IRI="#Resolution"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderRight"/>
+        <Class IRI="#TransactionRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Shareholder"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShareholderRight"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ShareholderResolution"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SocialRight"/>
+        <Class IRI="#TransactionRight"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Society"/>
+        <Class IRI="#Stakeholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpecialNegotiationBodyAgreement"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stakeholder"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompetentAuthority"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubsidiaryCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubsidiaryCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ParentCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupervisoryAuthority"/>
+        <Class IRI="http://www.w3.org/ns/org#Organisation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupervisoryBoard"/>
+        <Class IRI="#Manager"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SupervisoryBoard"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partOf"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TaxAuthority"/>
+        <Class IRI="#CompetentAuthority"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionCertificate"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionDocument"/>
+        <Class IRI="#CompanyMobilityDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionNotice"/>
+        <Class IRI="#TransactionDocument"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransactionNotice"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partOf"/>
+            <Class IRI="#OfficialJournalPublication"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransferOfCentralAdministration"/>
+        <Class IRI="#SeatTransfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransferOfRegisteredOffice"/>
+        <Class IRI="#SeatTransfer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransferredCompany"/>
+        <Class IRI="#Company"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TransferredCompany"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#EmergingCompany"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#UltimateBeneficialOwner"/>
+        <Class IRI="#Shareholder"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <Class IRI="#Employee"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#BoardLevelEmployeeRepresentationRight"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#CompanyTransaction"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#Employee"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#ImpactOnEmployment"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#involves"/>
+            <Class IRI="#InformationRight"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WorksCouncil"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#partOf"/>
+            <Class IRI="#Company"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#MergerByAcquisition"/>
+        <Class IRI="#MergerIntoNewCompany"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasParentCompany"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mergesWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#partOf"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involves"/>
+        <Class IRI="#CompanyTransaction"/>
+    </ObjectPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AcquiringCompany</IRI>
+        <Literal xml:lang="en">Acquiring Company means the resulting or surviving company in a transaction that takes over another, merging company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AcquiringCompany</IRI>
+        <Literal xml:lang="en">Acquiring company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#AcquiringCompany</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnualAccount</IRI>
+        <Literal xml:lang="en">Annual reports measure a company&apos;s financial health. They focus on past and present financial performance, and make predictions about future prospects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AnnualAccount</IRI>
+        <Literal xml:lang="en">Revenue and financial performance of a company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnualAccount</IRI>
+        <Literal xml:lang="en">Annual account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#AnnualAccount</IRI>
+        <Literal xml:lang="en">Annual report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BoardLevelEmployeeRepresentationRight</IRI>
+        <Literal xml:lang="en">Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-rinciple.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BoardLevelEmployeeRepresentationRight</IRI>
+        <Literal xml:lang="en">Board-level employee representation right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#BoardLevelEmployeeRepresentationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BoardResolution</IRI>
+        <Literal xml:lang="en">A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company&apos;s Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#BoardResolution</IRI>
+        <Literal xml:lang="en">Board resolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Company</IRI>
+        <Literal xml:lang="en">A company is a legal entity formed by a group of individuals to engage in and operate a business—commercial or industrial—enterprise. A company may be organized in various ways for tax and financial liability purposes depending on the corporate law of its jurisdiction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Company</IRI>
+        <Literal xml:lang="en">Company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompanyConversion</IRI>
+        <Literal xml:lang="en">The process of changing or converting the corporate structure of a company. For example, a limited liability company of one country to one of another country, or from a private to a public limited liability company, or vice-versa by means of the continuance of an entity into another entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompanyConversion</IRI>
+        <Literal xml:lang="en">Company conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompanyDivision</IRI>
+        <Literal xml:lang="en">Article 160b - Division means:
+a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares (&apos;full division&apos;);
+
+(b) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies or in the company being divided or in both the recipient companies and in the company being divided, and if any a cash payment not exceeding 10 % of the nominal value of those securities or shares, or in the absence of a nominal value, a cash payment not exceeding 10 % of the accounting par value of their securities or shares (‘partial division’).
+   	
+(c) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue of securities or shares in the recipient companies to the company being divided (‘division by separation’).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompanyDivision</IRI>
+        <Literal xml:lang="en">Company division</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CompanyDivision</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompanyLegalForm</IRI>
+        <Literal xml:lang="en">Name given to describe the structure of a corporation or buiness in the different legal orders. For example Limited (Ltd.), Public Limited Company (PLC), Gesellschaft mit beschränkter Haftung (GmbH), Aktiengesellschaft (AG). The company legal form is regulated under national law and grants specific rights and obligations to the company stakeholders (such as shareholders, management &amp; employees).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompanyLegalForm</IRI>
+        <Literal xml:lang="en">Company form</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CompanyLegalForm</IRI>
+        <IRI>https://www.ecb.europa.eu/stats/money/aggregates/anacredit/shared/pdf/List_of_legal_forms.xlsx</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompanyMerger</IRI>
+        <Literal xml:lang="en">‘merger’ in Directive (EU) 2017/1132 means an operation whereby:
+
+(a) one or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to another existing company, the acquiring company, in exchange for the issue to their members of securities or shares representing the capital of that other company and, if applicable, a cash payment not exceeding 10 % of the nominal value, or, in the absence of a nominal value, of the accounting par value of those securities or shares; or
+
+(b) two or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to a company that they form, the new company, in exchange for the issue to their members of securities or shares representing the capital of that new company and, if applicable, a cash payment not exceeding 10 % of the nominal value, or in the absence of a nominal value, of the accounting par value of those securities or shares; or
+
+(c) a company, on being dissolved without going into liquidation, transfers all its assets and liabilities to the company holding all the securities or shares representing its capital;&quot;
+
+(d) one or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to another existing company, the acquiring company, without the issue of any new shares by the acquiring company, provided that one person holds directly or indirectly all the shares in the merging companies or the members of the merging companies hold their shares in the same proportion in all merging companies.&quot;;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompanyMerger</IRI>
+        <Literal xml:lang="en">Company merger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompanyMobilityDocument</IRI>
+        <Literal xml:lang="en">A legal document which provides information related to, or influencing, a company&apos;s mobility within a specific country or across national boundaries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompanyMobilityDocument</IRI>
+        <Literal xml:lang="en">Company mobility document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompanyTransaction</IRI>
+        <Literal xml:lang="en">An action taken by a company that modifies its corporate structure with a change of control (for e.g. through either a merger, division, conversion or seat transfer in a domestic or cross-border setting). It involves one or more companies, each of which have a company legal form valid in a Member State of the European Union.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompanyTransaction</IRI>
+        <Literal xml:lang="en">Company transaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CompetentAuthority</IRI>
+        <Literal xml:lang="en">The monitoring of the completion and legality of the decision-making process in each company involved in a transaction is carried out by a national authority having jurisdiction over each of those companies. The national authority could be a court, a notary or any other competent authority appointed by the Member State concerned.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CompetentAuthority</IRI>
+        <Literal xml:lang="en">Competent authority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CompetentAuthority</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConsultationRight</IRI>
+        <Literal xml:lang="en">The right of employees or their representatives to be consulted and to give advice on a business decision, such as an intended merger/division/conversion/seat transfer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConsultationRight</IRI>
+        <Literal xml:lang="en">Consultation right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ConsultationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2002/14/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ConsultationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConversionCertificate</IRI>
+        <Literal xml:lang="en">A document issued by a Competent Authority declaring that the legally required steps of a conversion are completed. The certificate needs to be presented by a company to either be registered in another company registry or to be removed from a company register.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConversionCertificate</IRI>
+        <Literal xml:lang="en">Company conversion certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConversionPlan</IRI>
+        <Literal xml:lang="en">A document providing details of how the conversion of a company will be implemented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConversionPlan</IRI>
+        <Literal xml:lang="en">Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ConversionPlan</IRI>
+        <Literal xml:lang="en">Company conversion plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ConversionPlan</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Court</IRI>
+        <Literal xml:lang="en">Legal forum in which a body of people presided over by a judge, judges, or magistrate, and acting as a tribunal in civil and criminal cases resolve legal disputes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Court</IRI>
+        <Literal xml:lang="en">Court</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Creditor</IRI>
+        <Literal xml:lang="en">A person, organization, or government that is owed money. A creditor&apos;s claims and the safeguarding of these creditor rights is laid down in the company law of the Member States and EU law.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Creditor</IRI>
+        <Literal xml:lang="en">Creditor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Creditor</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CreditorDecisionRight</IRI>
+        <Literal xml:lang="en">The right of a creditor to influence or take a decision in the context of a transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditorDecisionRight</IRI>
+        <Literal xml:lang="en">Creditor decision right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CreditorDecisionRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CreditorExitRight</IRI>
+        <Literal xml:lang="en">The creditors right to be paid out and therefore to exit the company in the context of a transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditorExitRight</IRI>
+        <Literal xml:lang="en">Creditor exit right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CreditorExitRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CreditorInformationRight</IRI>
+        <Literal xml:lang="en">The information rights of creditors in the context of a company transaction, which includes for instance access to documents.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditorInformationRight</IRI>
+        <Literal xml:lang="en">Creditor information right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CreditorInformationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CreditorRight</IRI>
+        <Literal xml:lang="en">The rights of creditors, which includes debenture holders, vis-a-vis the company that obtained credit from the individual or organisation. Legal safeguards are put in place to ensure that rights of creditors are not negatively affected by a company transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditorRight</IRI>
+        <Literal xml:lang="en">Creditor right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CreditorRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CreditorSecurityRight</IRI>
+        <Literal xml:lang="en">Member States shall provide for an adequate system of protection of the interest of creditors, and shall ensure that creditors who are dissatisfied with the safeguards offered in the draft terms of the transaction, as provided for in Article 86d (1) point (f), may apply to the appropriate administrative or judicial authority for adequate safeguards provided that they can credibly demonstrate that due to the transaction the satisfaction of their claims is at stake and that no adequate safeguards have been obtained from the company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CreditorSecurityRight</IRI>
+        <Literal xml:lang="en">Creditor security right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CreditorSecurityRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CreditorSecurityRight</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CrossBorderCompanyConversion</IRI>
+        <Literal xml:lang="en">A cross-border conversion is an operation through which a company, formed in one country (with the EU/EEA set of countries) is converted into a company governed by the law of another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CrossBorderCompanyConversion</IRI>
+        <Literal xml:lang="en">Cross-border conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CrossBorderDivision</IRI>
+        <Literal xml:lang="en">A company which in a process of the cross-border division in case of a full division transfers all its assets and liabilities to two or more companies, or in case of a partial division or division by separation transfers part of its assets and liabilities to one or more companies</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CrossBorderDivision</IRI>
+        <Literal xml:lang="en">Cross-border company division</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CrossBorderMerger</IRI>
+        <Literal xml:lang="en">A cross border merger involves at least one company based in an EU Member State and one company that is registered elsewhere within the European Union and is leading to a universal transfer of assets and liabilities from the merging company to the acquiring company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CrossBorderMerger</IRI>
+        <Literal xml:lang="en">Cross-border merger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#CrossBorderMerger</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CrossBorderSeatTransfer</IRI>
+        <Literal xml:lang="en">The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), across national boundaries.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#CrossBorderSeatTransfer</IRI>
+        <Literal xml:lang="en">Cross-border company seat transfer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DecisionRight</IRI>
+        <Literal xml:lang="en">The shareholders can take a number of decisions affecting the company, such as amending the company&apos;s articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DecisionRight</IRI>
+        <Literal xml:lang="en">Shareholder decision right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#DecisionRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DivisionCertificate</IRI>
+        <Literal xml:lang="en">A document issued by a Competent Authority declaring that the legally required steps of a division are completed. The certificate needs to be presented by a company to either be registered (or register a newly established emerging/recipient company) in another company registry or to be removed from a company register.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DivisionCertificate</IRI>
+        <Literal xml:lang="en">Company division certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DivisionPlan</IRI>
+        <Literal xml:lang="en">The management or administrative organ of the company shall draw up the draft terms of a division. The draft terms of a division shall include at least the particulars listed in article 160d.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DivisionPlan</IRI>
+        <Literal xml:lang="en">Company division plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#DivisionPlan</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DomesticCompanyConversion</IRI>
+        <Literal xml:lang="en">A domestic conversion is an operation through which a company&apos;s form is converted into a another while still remaining governed by the same law as the original company. For instance, the modification of a company&apos;s form from a public to a private limited company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomesticCompanyConversion</IRI>
+        <Literal xml:lang="en">Domestic company conversion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DomesticDivision</IRI>
+        <Literal xml:lang="en">A company which in a process of the domestic division - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomesticDivision</IRI>
+        <Literal xml:lang="en">Company domestic division</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DomesticMerger</IRI>
+        <Literal xml:lang="en">A domestic merger involves at least two companies based in the same EU Member State and is leading to a universal transfer of assets and liabilities from the merging company to the acquiring company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomesticMerger</IRI>
+        <Literal xml:lang="en">Company domestic merger</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DomesticSeatTransfer</IRI>
+        <Literal xml:lang="en">The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), within a specific country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#DomesticSeatTransfer</IRI>
+        <Literal xml:lang="en">Domestic company seat transfer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#EmergingCompany</IRI>
+        <Literal xml:lang="en">A company being divided transfers part of its assets and liabilities to one or more newly formed companies, which are the recipient companies in a (cross-border) division.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#EmergingCompany</IRI>
+        <Literal xml:lang="en">Emerging company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Employee</IRI>
+        <Literal xml:lang="en">The workforce of a company. An employee is a party to an employment relationship characterised as a contract of employment (or contract of service) between the employer and employee. However, this is only one of several different legal formulations of the concept of ‘worker’ in the EU which differ between Member States.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Employee</IRI>
+        <Literal xml:lang="en">Company employee</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#Employee</IRI>
+        <IRI>https://www.eurofound.europa.eu/observatories/eurwork/industrial-relations-dictionary/employee</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#FinancialServiceAuthority</IRI>
+        <Literal xml:lang="en">A body that regulates the financial services industry in a country (e.g. the UK), including most financial services markets, exchanges and firms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#FinancialServiceAuthority</IRI>
+        <Literal xml:lang="en">Financial service authority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#GlobalUltimateOwner</IRI>
+        <Literal xml:lang="en">A global ultimate owner (GUO) is the individual or entity at the top of the corporate ownership structure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#GlobalUltimateOwner</IRI>
+        <Literal xml:lang="en">Global ultimate owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#GlobalUltimateOwner</IRI>
+        <Literal xml:lang="en">Legal term : Ultimate Beneficial Owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImpactOnEmployment</IRI>
+        <Literal xml:lang="en">The right of employees or their representatives to be informed on the likely repercussions of the cross-border transaction on employment, which includes the dismissal as well as the hiring of employees or relocation of work. See for instance article 122 of Directive 2017/1132.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ImpactOnEmployment</IRI>
+        <Literal xml:lang="en">Impact on employment information right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ImpactOnEmployment</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndependentExpert</IRI>
+        <Literal xml:lang="en">An Independent Expert provides impartial advice to shareholders and other company stakeholders on the fairness and/or reasonableness of a transaction.  A company may be required to commission an Independent Expert Report (IER) in the case of a (cross-border) merger, division or conversion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndependentExpert</IRI>
+        <Literal xml:lang="en">Independent expert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#IndependentExpert</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#IndependentExpert</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IndependentExpertReport</IRI>
+        <Literal xml:lang="en">Article 86g and 160i: Member States must ensure that an independent expert examines the draft terms of the transaction and draws up a report intended for members which is made available to them not less than one month before the date of the general meeting. Depending on the law of Member States, the expert may be a natural person or a legal person. The report must assess the cash compensation proposed and valuation method.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#IndependentExpertReport</IRI>
+        <Literal xml:lang="en">Report by an independent expert</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#IndependentExpertReport</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InformationRight</IRI>
+        <Literal xml:lang="en">The right of employees or their representatives to be informed and to receive any documents necessary for the exercise of their consultation and board-level employee representation rights in the context of an intended merger/division/conversion/seat transfer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InformationRight</IRI>
+        <Literal xml:lang="en">Information right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#InformationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2002/14/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#InformationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InterimAccount</IRI>
+        <Literal xml:lang="en">Interim accounts are accounts that are published during a company&apos;s financial year and that show the financial situation on a given accounting date.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InterimAccount</IRI>
+        <Literal xml:lang="en">Interim account</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManagementBoard</IRI>
+        <Literal xml:lang="en">The group of persons comprising the governing body of the legal entity that is entrusted with the decision-making in the company. It is also called Executive Board in a one-tier board system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManagementBoard</IRI>
+        <Literal xml:lang="en">Management board</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManagementReport</IRI>
+        <Literal xml:lang="en">A report drawn up by the company&apos;s management on the intended transaction, laying out the main features of the transactions and its consequences.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManagementReport</IRI>
+        <Literal xml:lang="en">Management report</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Manager</IRI>
+        <Literal xml:lang="en">A person or group of persons that are responsible for overseeing the operations of a company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Manager</IRI>
+        <Literal xml:lang="en">Manager</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManagerDecisionRight</IRI>
+        <Literal xml:lang="en">The right of the board of management or individual managers to take decisions or to not take a decision in the context of a transaction. These are in the form of a board resolution.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManagerDecisionRight</IRI>
+        <Literal xml:lang="en">Manager decision right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManagerExitRight</IRI>
+        <Literal xml:lang="en">The right of a manager or the board of management to resign and therefore exit a company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManagerExitRight</IRI>
+        <Literal xml:lang="en">Manager exit right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManagerInformationRight</IRI>
+        <Literal xml:lang="en">The right of a manager to information and access to documents that he or she has in accordance with national or European company law.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManagerInformationRight</IRI>
+        <Literal xml:lang="en">Manager information right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ManagerRight</IRI>
+        <Literal xml:lang="en">The rights of members of the management in the context of a company transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ManagerRight</IRI>
+        <Literal xml:lang="en">Manager right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergerByAcquisition</IRI>
+        <Literal xml:lang="en">Article 89: The operation whereby one or more companies are wound up without going into liquidation and transfer to another all their assets and liabilities in exchange for the issue to the shareholders of the company or companies being acquired of shares in the acquiring company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MergerByAcquisition</IRI>
+        <Literal xml:lang="en">Company merger by acquisition</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MergerByAcquisition</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergerCertificate</IRI>
+        <Literal xml:lang="en">A document issued by a Competent Authority declaring that the legally required steps of a merger are completed. The certificate needs to be presented by a company to either be registered in another company registry or to be removed from a company register (depending on the company being the merging or acquiring company).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MergerCertificate</IRI>
+        <Literal xml:lang="en">Company merger certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MergerCertificate</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergerIntoNewCompany</IRI>
+        <Literal xml:lang="en">Article 90: the operation whereby several companies are wound up without going into liquidation and transfer to a company that they set up all their assets and liabilities in exchange for the issue to their shareholders of shares in the new company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MergerIntoNewCompany</IRI>
+        <Literal xml:lang="en">Merger into a new company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MergerIntoNewCompany</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergerPlan</IRI>
+        <Literal xml:lang="en">Article 91: The administrative or management bodies of the merging companies shall draw up draft terms of merger in writing by specifying at least the elements mentioned in article 91.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MergerPlan</IRI>
+        <Literal xml:lang="en">Company merger plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MergerPlan</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MergingCompany</IRI>
+        <Literal xml:lang="en">Merging Company means the dissolving company that is being acquired by another (acquiring) company in the process of a transaction. In the context of company mobility, this means a universal transfer of assets and liabilities from the merging to the acquiring company (see article 131 of Directive 2017/1132).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MergingCompany</IRI>
+        <Literal xml:lang="en">Merging company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#MergingCompany</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NationalRegistry</IRI>
+        <Literal xml:lang="en">A national registry is a business registry in a Member State, which includes information on the population of companies in the jurisdiction and holds inter alia data on registration numbers, place of registration, notices and transaction documents in the national registry repository.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NationalRegistry</IRI>
+        <Literal xml:lang="en">National registry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#NationalRegistryRepository</IRI>
+        <Literal xml:lang="en">The digital repository in which documents published in the official journal or by by the national registry (on behalf of a company) are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the Official Journal Repository.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#NationalRegistryRepository</IRI>
+        <Literal xml:lang="en">National registry repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Notary</IRI>
+        <Literal xml:lang="en">A person authorized to perform certain legal formalities, especially to draw up or certify contracts, deeds, and other documents for use in other jurisdictions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Notary</IRI>
+        <Literal xml:lang="en">Notary</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OfficialJournal</IRI>
+        <Literal xml:lang="en">The official gazette of record for the European Union or national gazette of record of a Member State. In the official journal companies publish transaction notices in order to inform concerned stakeholders and interested parties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OfficialJournal</IRI>
+        <Literal xml:lang="en">Official journal</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OfficialJournalPublication</IRI>
+        <Literal xml:lang="en">Publication of a legally valid record or act in an official national gazette to inform stakeholders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OfficialJournalPublication</IRI>
+        <Literal xml:lang="en">Official journal publication</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OfficialJournalRepository</IRI>
+        <Literal xml:lang="en">The digital repository in which documents published in the official journal are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the National Registry Repository.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OfficialJournalRepository</IRI>
+        <Literal xml:lang="en">Official journal repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#OriginalCompany</IRI>
+        <Literal xml:lang="en">An original company, in the context of a (cross-border) division, means a company which - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#OriginalCompany</IRI>
+        <Literal xml:lang="en">Original company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#OriginalCompany</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ParentCompany</IRI>
+        <Literal xml:lang="en">A parent company is a company that has a controlling interest in another company, the subsidiary company, giving it control of its operations through a majority stock-ownership, decisive control over management appointments and therefore over the decision-making process. In the absence of a natural person as ultimate beneficial owner, the highest parent company in a chain of companies is the global ultimate owner.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ParentCompany</IRI>
+        <Literal xml:lang="en">Parent company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ParentCompany</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PreConversionCertificate</IRI>
+        <Literal xml:lang="en">Article 86m: a pre-conversion certificate attests compliance with all the relevant conditions and the proper completion of all procedures and formalities in the departure Member State.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PreConversionCertificate</IRI>
+        <Literal xml:lang="en">Company pre-conversion certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#PreConversionCertificate</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PreDivisionCertificate</IRI>
+        <Literal xml:lang="en">Article 160o: a pre-division certificate attests compliance with all the relevant conditions and the proper completion of all procedures and formalities in the Member State concerned.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PreDivisionCertificate</IRI>
+        <Literal xml:lang="en">Company pre-division certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#PreDivisionCertificate</IRI>
+        <IRI>https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#PreMergerCertificate</IRI>
+        <Literal xml:lang="en">Article 127: a pre-merger certificate attests compliance with all the relevant conditions and the proper completion of all procedures and formalities in the Member State of the merging company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#PreMergerCertificate</IRI>
+        <Literal xml:lang="en">Company pre-merger certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#PreMergerCertificate</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Repository</IRI>
+        <Literal xml:lang="en">A digital document repository containing documents related to company mobility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Repository</IRI>
+        <Literal xml:lang="en">Company mobility document repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Resolution</IRI>
+        <Literal xml:lang="en">A document detailing a decision made by an individual or group of natural or legal persons. This can be a decision concerning the restructuring of a company by its shareholders.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Resolution</IRI>
+        <Literal xml:lang="en">Resolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SeatTransfer</IRI>
+        <Literal xml:lang="en">The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeatTransfer</IRI>
+        <Literal xml:lang="en">Company seat transfer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SeatTransferPlan</IRI>
+        <Literal xml:lang="en">The management or administrative organ of the company draws up the draft terms of a cross-border seat transfer. The draft terms of a cross-border seat transfer must include at least the particulars specified under national law.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SeatTransferPlan</IRI>
+        <Literal xml:lang="en">Company seat transfer plan</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Shareholder</IRI>
+        <Literal xml:lang="en">An individual, group, or organization that owns one or more shares in a company, and in whose name the share certificate is issued.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Shareholder</IRI>
+        <Literal xml:lang="en">Company shareholder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShareholderExitRight</IRI>
+        <Literal xml:lang="en">The right of a shareholder to exit the company by being bought out.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShareholderExitRight</IRI>
+        <Literal xml:lang="en">Shareholder exit right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ShareholderExitRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShareholderInformationRight</IRI>
+        <Literal xml:lang="en">It is particularly important that the shareholders of the companies involved in a transaction be kept adequately informed in an objective manner, and that their rights be suitably protected. This includes for instance the availability of documents for inspection by shareholders (e.g. article 97 of Directive 2017/1132).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShareholderInformationRight</IRI>
+        <Literal xml:lang="en">Shareholder information right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ShareholderInformationRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShareholderResolution</IRI>
+        <Literal xml:lang="en">a shareholder resolution is a proposal submitted by shareholders for a vote at the company&apos;s shareholder meeting.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShareholderResolution</IRI>
+        <Literal xml:lang="en">Shareholder resolution</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ShareholderRight</IRI>
+        <Literal xml:lang="en">The rights of shareholders of a company in the context of a transaction. Often, shreholder resolutions are used to effectuate shareholder rights. Many rights are laid down in the so-called Shareholder Rights Directive.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ShareholderRight</IRI>
+        <Literal xml:lang="en">Shareholder right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#ShareholderRight</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SocialRight</IRI>
+        <Literal xml:lang="en">Social rights, as opposed to rights arising from natural law, are rights for legal entities that entitle them to certain levels of societal living conditions (e.g. the right to housing, to food, to health care etc.)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SocialRight</IRI>
+        <Literal xml:lang="en">Social right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Society</IRI>
+        <Literal xml:lang="en">The society at large is a stakeholder in a company through, inter alia, the government and its agencies, suppliers, customers, trade unions and the communities from which the business draws its resources.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Society</IRI>
+        <Literal xml:lang="en">Society</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SpecialNegotiationBodyAgreement</IRI>
+        <Literal xml:lang="en">The Special Negotiation Body (SNB) or Special Negotiating Body is an organisation that represents the employees of companies in negotiations with the company authorities in order to reach a written agreement on the involvement of employees in company transactions. The agreement must be reached in accordance with the EU Company Law Directive and is laid down in the SNB-agreement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SpecialNegotiationBodyAgreement</IRI>
+        <Literal xml:lang="en">Special negotiating body agreement</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#SpecialNegotiationBodyAgreement</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2017/1132/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Stakeholder</IRI>
+        <Literal xml:lang="en">A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company&apos;s actions, objectives and policies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Stakeholder</IRI>
+        <Literal xml:lang="en">Stakeholder in a company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SubsidiaryCompany</IRI>
+        <Literal xml:lang="en">A subsidiary, subsidiary company or daughter company is a company that is owned or controlled by another company, which is called the parent company, parent, or holding company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SubsidiaryCompany</IRI>
+        <Literal xml:lang="en">Subsidiary company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SupervisoryAuthority</IRI>
+        <Literal xml:lang="en">An individual authority established by its member state to supervise the compliance with a specific regulation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SupervisoryAuthority</IRI>
+        <Literal xml:lang="en">SupervisoryAuthority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SupervisoryBoard</IRI>
+        <Literal xml:lang="en">A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the managgement board. It is also called non-executive board in a one-tier board system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#SupervisoryBoard</IRI>
+        <Literal xml:lang="en">Supervisory board</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TaxAuthority</IRI>
+        <Literal xml:lang="en">Tax Authority means any governmental authority having jurisdiction over the assessment, determination, collection or imposition of any tax.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TaxAuthority</IRI>
+        <Literal xml:lang="en">Tax authority</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransactionCertificate</IRI>
+        <Literal xml:lang="en">A document issued by a Competent Authority declaring that certain steps of the transaction are completed.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransactionCertificate</IRI>
+        <Literal xml:lang="en">Company transaction certificate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransactionDocument</IRI>
+        <Literal xml:lang="en">Document required by law to document the step of a company transaction or an agreement made between stakeholders involved in the transaction that are either printed, inserted and mailed, or electronically presented.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransactionDocument</IRI>
+        <Literal xml:lang="en">Transaction document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransactionNotice</IRI>
+        <Literal xml:lang="en">A written notice, published in an official journal of a Member State of the EU and/or the European Official Journal indicating the intention to engage in a transaction and which informs  the members, creditors and representatives of the employees of the company, or, where there are no such representatives, the employees themselves of said transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransactionNotice</IRI>
+        <Literal xml:lang="en">Company transaction notice</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransactionRight</IRI>
+        <Literal xml:lang="en">A legal right of a legal entity involved in the process of a company transaction.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransactionRight</IRI>
+        <Literal xml:lang="en">Transaction right</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransferOfCentralAdministration</IRI>
+        <Literal xml:lang="en">Act of modifying the location where the company’s business was managed or the place where that company’s business was actually conducted.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransferOfCentralAdministration</IRI>
+        <Literal xml:lang="en">Transfer of company central administration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#TransferOfCentralAdministration</IRI>
+        <Literal xml:lang="en">Legal term : Principal place of business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransferOfRegisteredOffice</IRI>
+        <Literal xml:lang="en">The act of changing the registered office, which is the official address of an incorporated company, association or any other legal entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransferOfRegisteredOffice</IRI>
+        <Literal xml:lang="en">Transfer of company registered office</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TransferredCompany</IRI>
+        <Literal xml:lang="en">Transferring Company means the company transferring its assets and liabilities to a recipient company.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TransferredCompany</IRI>
+        <Literal xml:lang="en">Transferred company</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UltimateBeneficialOwner</IRI>
+        <Literal xml:lang="en">Ultimate Beneficial owner refers to the natural person(s) who ultimately owns or controls a customer and/or the natural person on whose behalf a transaction is being conducted. It also includes those persons who exercise ultimate effective control over a legal person or arrangement.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#UltimateBeneficialOwner</IRI>
+        <Literal xml:lang="en">Ultimate beneficial owner</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WorksCouncil</IRI>
+        <Literal xml:lang="en">The exercise of employee participation through the representation of employees vis-a-vis the management of a company. The works council is a shop-floor level representation mechanism with information, consultation and veto-rights - depending on the extent of rights given in a Member State - and also at EU level through European Works Councils.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WorksCouncil</IRI>
+        <Literal xml:lang="en">Employee works council</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#WorksCouncil</IRI>
+        <IRI>http://data.europa.eu/eli/dir/2002/14/oj</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>#WorksCouncil</IRI>
+        <IRI>https://www.worker-participation.eu/National-Industrial-Relations/Across-Europe</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasParentCompany</IRI>
+        <Literal xml:lang="en">hasParentCompany</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#hasPart</IRI>
+        <Literal xml:lang="en">hasPart</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#mustHave</IRI>
+        <Literal xml:lang="en">mustHave</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#partOf</IRI>
+        <Literal xml:lang="en">partOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#transfers</IRI>
+        <Literal xml:lang="en">transfers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.w3.org/ns/org#Organisation</IRI>
+        <Literal xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.w3.org/ns/org#Organisation</IRI>
+        <Literal xml:lang="en">Organisation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <IRI>http://www.w3.org/ns/org#Organisation</IRI>
+        <Literal xml:lang="en">http://www.w3.org/ns/org#</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
