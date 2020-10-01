@@ -1,7 +1,7 @@
 from owlready2 import *
 import csv
 
-onto = get_ontology("../working_copy/eu-cm-ontology.owl").load()
+onto = get_ontology("working_copy/eu-cm-ontology.owl").load()
 
 def process(entities):
     newEntities = []
@@ -21,7 +21,7 @@ entities.extend(classes)
 entities.extend(object_properties)
 entities.extend(data_properties)
 
-with open("../working_copy/cbcm_ontology_terms_flatlist.csv", 'w', newline='') as myfile:
+with open("working_copy/cbcm_ontology_terms_flatlist.csv", 'w', newline='') as myfile:
     writer = csv.writer(myfile)
     for val in entities:
         writer.writerow([val])
