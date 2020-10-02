@@ -464,23 +464,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
     
 
 
-    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorDecisionRight -->
-
-    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorDecisionRight">
-        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
-                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The right of a creditor to influence or take a decision in the context of a transaction.</rdfs:comment>
-        <rdfs:label xml:lang="en">Creditor decision right</rdfs:label>
-        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
-    </owl:Class>
-    
-
-
     <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorExitRight -->
 
     <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorExitRight">
