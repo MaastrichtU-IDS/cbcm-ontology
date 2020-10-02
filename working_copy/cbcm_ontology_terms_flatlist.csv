@@ -32,8 +32,9 @@ cbcm:TransactionDocument
 cbcm:Court
 cbcm:Creditor
 cbcm:Stakeholder
-cbcm:CreditorExitRight
+cbcm:CreditorDecisionRight
 cbcm:CreditorRight
+cbcm:CreditorExitRight
 cbcm:CreditorInformationRight
 cbcm:TransactionRight
 cbcm:CreditorSecurityRight
