@@ -1210,12 +1210,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
                 <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
-                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The digital repository in which documents published in the official journal or by by the national registry (on behalf of a company) are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the Official Journal Repository.</rdfs:comment>
         <rdfs:label xml:lang="en">National registry repository</rdfs:label>
     </owl:Class>
@@ -1245,12 +1239,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
-                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
                 <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionNotice"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1266,34 +1254,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument"/>
         <rdfs:comment xml:lang="en">Publication of a legally valid record or act in an official national gazette to inform stakeholders.</rdfs:comment>
         <rdfs:label xml:lang="en">Official journal publication</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository -->
-
-    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository">
-        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Repository"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
-                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistry"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
-                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistryRepository"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
-                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment xml:lang="en">The digital repository in which documents published in the official journal are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the National Registry Repository.</rdfs:comment>
-        <rdfs:label xml:lang="en">Official journal repository</rdfs:label>
     </owl:Class>
     
 
@@ -1806,6 +1766,12 @@ a) company being divided, on being dissolved without going into liquidation, tra
     <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/NewTestClassKMO -->
 
     <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/NewTestClassKMO"/>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/YetAnotherTestClass -->
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/YetAnotherTestClass"/>
     
 
 
