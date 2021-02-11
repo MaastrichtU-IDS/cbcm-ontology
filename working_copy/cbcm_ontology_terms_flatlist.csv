@@ -90,6 +90,7 @@ cbcm:SpecialNegotiationBodyAgreement
 cbcm:SupervisoryAuthority
 cbcm:SupervisoryBoard
 cbcm:TaxAuthority
+cbcm:NewTestClassKMO
 cbcm:hasAcquiringCompany
 cbcm:hasMergingCompany
 cbcm:hasParentCompany
