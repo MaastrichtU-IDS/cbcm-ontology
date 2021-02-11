@@ -77,7 +77,6 @@ cbcm:NationalRegistry
 cbcm:NationalRegistryRepository
 cbcm:Repository
 cbcm:OfficialJournal
-cbcm:OfficialJournalRepository
 cbcm:Notary
 cbcm:ParentCompany
 cbcm:SubsidiaryCompany
@@ -91,6 +90,7 @@ cbcm:SupervisoryAuthority
 cbcm:SupervisoryBoard
 cbcm:TaxAuthority
 cbcm:NewTestClassKMO
+cbcm:YetAnotherTestClass
 cbcm:hasAcquiringCompany
 cbcm:hasMergingCompany
 cbcm:hasParentCompany
