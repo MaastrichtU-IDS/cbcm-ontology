@@ -1,0 +1,2478 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#"
+     xml:base="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology">
+        <owl:versionIRI rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/1.0.0"/>
+        <dc:description>This ontology describes terms concerning company mobility and their cross-border transactions within the European Union.</dc:description>
+        <dc:title>The European Union Company Mobility Ontology (EU-CMO)</dc:title>
+        <terms:contributor>Kody Moodley</terms:contributor>
+        <terms:contributor>Marcus Meyer</terms:contributor>
+        <terms:contributor>Stephan Rammeloo</terms:contributor>
+        <terms:contributor>Thomas Biermeyer</terms:contributor>
+        <terms:license>Creative Commons Attribution 3.0 (CC BY 3.0)</terms:license>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://maastrichtu-ids.github.io/cbcm-ontology</rdfs:seeAlso>
+        <owl:versionInfo>EU-CM ontology (EU-CMO), version 1.0.0, (2019), the Maastricht Law &amp; Techlab, Maastricht University, The Netherlands</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasAcquiringCompany -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasAcquiringCompany"/>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasMergingCompany -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasMergingCompany"/>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasParentCompany</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasPart -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasPart</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves">
+        <rdfs:domain rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#mergesWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#mergesWith">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#mustHave -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#mustHave">
+        <rdfs:label xml:lang="en">mustHave</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf -->
+
+
+    <owl:ObjectProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">partOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#transfers -->
+
+
+    <owl:DatatypeProperty rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#transfers">
+        <rdfs:label xml:lang="en">transfers</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany">
+        <opla-sd:entityPosition rdf:nodeID="genid1"/>
+        <rdfs:comment xml:lang="en">Acquiring Company means the resulting or surviving company in a transaction that takes over another, merging company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Acquiring company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid1">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.316332036142</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.95028341974285</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AnnualAccount -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AnnualAccount">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AnnualAccount"/>
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid2"/>
+        <rdfs:comment xml:lang="en">Annual reports measure a company&apos;s financial health. They focus on past and present financial performance, and make predictions about future prospects.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Revenue and financial performance of a company</rdfs:comment>
+        <rdfs:label xml:lang="en">Annual account</rdfs:label>
+        <rdfs:label xml:lang="en">Annual report</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid2">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">217.781961942788</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">224.7979276936274</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#BoardLevelEmployeeRepresentationRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#BoardLevelEmployeeRepresentationRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SocialRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#WorksCouncil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid5"/>
+        <rdfs:comment xml:lang="en">Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-rinciple.</rdfs:comment>
+        <rdfs:label xml:lang="en">Board-level employee representation right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid5">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">131.54816779005884</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.817742238887039</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#BoardResolution -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#BoardResolution">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Resolution"/>
+        <opla-sd:entityPosition rdf:nodeID="genid6"/>
+        <rdfs:comment xml:lang="en">A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company&apos;s Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing.</rdfs:comment>
+        <rdfs:label xml:lang="en">Board resolution</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid6">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.945899686803486</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.564885717520582</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid8"/>
+        <rdfs:comment xml:lang="en">A company is a legal entity formed by a group of individuals to engage in and operate a business—commercial or industrial—enterprise. A company may be organized in various ways for tax and financial liability purposes depending on the corporate law of its jurisdiction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid8">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.03229712273688</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">132.03848355417568</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyConversion -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyConversion">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpertReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Resolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransferPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionNotice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid16"/>
+        <rdfs:comment xml:lang="en">The process of changing or converting the corporate structure of a company. For example, a limited liability company of one country to one of another country, or from a private to a public limited liability company, or vice-versa by means of the continuance of an entity into another entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company conversion</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid16">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.12446089724935</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.267912068108608</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyDivision -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyDivision">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+        <opla-sd:entityPosition rdf:nodeID="genid17"/>
+        <rdfs:comment xml:lang="en">Article 160b - Division means:
+a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares (&apos;full division&apos;);
+
+(b) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies or in the company being divided or in both the recipient companies and in the company being divided, and if any a cash payment not exceeding 10 % of the nominal value of those securities or shares, or in the absence of a nominal value, a cash payment not exceeding 10 % of the accounting par value of their securities or shares (‘partial division’).
+   	
+(c) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue of securities or shares in the recipient companies to the company being divided (‘division by separation’).</rdfs:comment>
+        <rdfs:label xml:lang="en">Company division</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid17">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">153.2388903125871</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">111.86056274753707</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyLegalForm -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyLegalForm">
+        <opla-sd:entityPosition rdf:nodeID="genid18"/>
+        <rdfs:comment xml:lang="en">Name given to describe the structure of a corporation or buiness in the different legal orders. For example Limited (Ltd.), Public Limited Company (PLC), Gesellschaft mit beschränkter Haftung (GmbH), Aktiengesellschaft (AG). The company legal form is regulated under national law and grants specific rights and obligations to the company stakeholders (such as shareholders, management &amp; employees).</rdfs:comment>
+        <rdfs:label xml:lang="en">Company form</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.ecb.europa.eu/stats/money/aggregates/anacredit/shared/pdf/List_of_legal_forms.xlsx"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid18">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">272.6072752966426</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">207.15905473890163</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerByAcquisition"/>
+                    <rdf:Description rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerIntoNewCompany"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+        <opla-sd:entityPosition rdf:nodeID="genid22"/>
+        <rdfs:comment xml:lang="en">‘merger’ in Directive (EU) 2017/1132 means an operation whereby:
+
+(a) one or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to another existing company, the acquiring company, in exchange for the issue to their members of securities or shares representing the capital of that other company and, if applicable, a cash payment not exceeding 10 % of the nominal value, or, in the absence of a nominal value, of the accounting par value of those securities or shares; or
+
+(b) two or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to a company that they form, the new company, in exchange for the issue to their members of securities or shares representing the capital of that new company and, if applicable, a cash payment not exceeding 10 % of the nominal value, or in the absence of a nominal value, of the accounting par value of those securities or shares; or
+
+(c) a company, on being dissolved without going into liquidation, transfers all its assets and liabilities to the company holding all the securities or shares representing its capital;&quot;
+
+(d) one or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to another existing company, the acquiring company, without the issue of any new shares by the acquiring company, provided that one person holds directly or indirectly all the shares in the merging companies or the members of the merging companies hold their shares in the same proportion in all merging companies.&quot;;</rdfs:comment>
+        <rdfs:label xml:lang="en">Company merger</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid22">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.83544115187456</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">154.98450044856756</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument">
+        <opla-sd:entityPosition rdf:nodeID="genid23"/>
+        <rdfs:comment xml:lang="en">A legal document which provides information related to, or influencing, a company&apos;s mobility within a specific country or across national boundaries.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company mobility document</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid23">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.47238212220519</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">214.27123601513512</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid25"/>
+        <rdfs:comment xml:lang="en">An action taken by a company that modifies its corporate structure with a change of control (for e.g. through either a merger, division, conversion or seat transfer in a domestic or cross-border setting). It involves one or more companies, each of which have a company legal form valid in a Member State of the European Union.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company transaction</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid25">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.1721926344435</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">101.7341322933415</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation"/>
+        <opla-sd:entityPosition rdf:nodeID="genid26"/>
+        <rdfs:comment xml:lang="en">The monitoring of the completion and legality of the decision-making process in each company involved in a transaction is carried out by a national authority having jurisdiction over each of those companies. The national authority could be a court, a notary or any other competent authority appointed by the Member State concerned.</rdfs:comment>
+        <rdfs:label xml:lang="en">Competent authority</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid26">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">261.3991187414414</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">216.3773275625499</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConsultationRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConsultationRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SocialRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#WorksCouncil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid29"/>
+        <rdfs:comment xml:lang="en">The right of employees or their representatives to be consulted and to give advice on a business decision, such as an intended merger/division/conversion/seat transfer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Consultation right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2002/14/oj"/>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid29">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.104481168433864</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">57.8326666648158</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferredCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid33"/>
+        <rdfs:comment xml:lang="en">A document issued by a Competent Authority declaring that the legally required steps of a conversion are completed. The certificate needs to be presented by a company to either be registered in another company registry or to be removed from a company register.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company conversion certificate</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid33">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.28265001612223</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.779310164409353</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid34"/>
+        <rdfs:comment xml:lang="en">A document providing details of how the conversion of a company will be implemented.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d</rdfs:comment>
+        <rdfs:label xml:lang="en">Company conversion plan</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid34">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">202.01210091125137</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">299.5595446738471</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Court -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Court">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority"/>
+        <opla-sd:entityPosition rdf:nodeID="genid35"/>
+        <rdfs:comment xml:lang="en">Legal forum in which a body of people presided over by a judge, judges, or magistrate, and acting as a tribunal in civil and criminal cases resolve legal disputes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Court</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid35">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">86.70589945626561</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">80.59915240550438</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid37"/>
+        <rdfs:comment xml:lang="en">A person, organization, or government that is owed money. A creditor&apos;s claims and the safeguarding of these creditor rights is laid down in the company law of the Member States and EU law.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creditor</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid37">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.72631246318619</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.32884440106744</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorDecisionRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorDecisionRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid39"/>
+        <rdfs:comment xml:lang="en">The right of a creditor to influence or take a decision in the context of a transaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creditor decision right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid39">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">187.77010907114797</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.845654119928787</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorExitRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorExitRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid41"/>
+        <rdfs:comment xml:lang="en">The creditors right to be paid out and therefore to exit the company in the context of a transaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creditor exit right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid41">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">284.76647483358886</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">69.88501053785384</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorInformationRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorInformationRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">The information rights of creditors in the context of a company transaction, which includes for instance access to documents.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creditor information right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid44"/>
+        <rdfs:comment xml:lang="en">The rights of creditors, which includes debenture holders, vis-a-vis the company that obtained credit from the individual or organisation. Legal safeguards are put in place to ensure that rights of creditors are not negatively affected by a company transaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creditor right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid44">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.56315097749217</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">239.14678840881578</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorSecurityRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorSecurityRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Creditor"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid46"/>
+        <rdfs:comment xml:lang="en">Member States shall provide for an adequate system of protection of the interest of creditors, and shall ensure that creditors who are dissatisfied with the safeguards offered in the draft terms of the transaction, as provided for in Article 86d (1) point (f), may apply to the appropriate administrative or judicial authority for adequate safeguards provided that they can credibly demonstrate that due to the transaction the satisfaction of their claims is at stake and that no adequate safeguards have been obtained from the company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creditor security right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid46">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">225.48046952557277</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.03873148666065</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderCompanyConversion -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderCompanyConversion">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyConversion"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpertReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalPublication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreConversionCertificate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Resolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferredCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid59"/>
+        <rdfs:comment xml:lang="en">A cross-border conversion is an operation through which a company, formed in one country (with the EU/EEA set of countries) is converted into a company governed by the law of another.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross-border conversion</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid59">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">244.43186342713443</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">242.42091488245512</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderDivision -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderDivision">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyDivision"/>
+        <opla-sd:entityPosition rdf:nodeID="genid60"/>
+        <rdfs:comment xml:lang="en">A company which in a process of the cross-border division in case of a full division transfers all its assets and liabilities to two or more companies, or in case of a partial division or division by separation transfers part of its assets and liabilities to one or more companies</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross-border company division</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid60">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.13541617905973</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.028683306666812</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderMerger -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderMerger">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid63"/>
+        <rdfs:comment xml:lang="en">A cross border merger involves at least one company based in an EU Member State and one company that is registered elsewhere within the European Union and is leading to a universal transfer of assets and liabilities from the merging company to the acquiring company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross-border merger</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid63">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">181.53183624074484</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">279.75477353816734</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderSeatTransfer -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderSeatTransfer">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransfer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfCentralAdministration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfRegisteredOffice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid67"/>
+        <rdfs:comment xml:lang="en">The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), across national boundaries.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cross-border company seat transfer</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid67">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">144.54909990026624</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.502018924869994</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DecisionRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DecisionRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid70"/>
+        <rdfs:comment xml:lang="en">The shareholders can take a number of decisions affecting the company, such as amending the company&apos;s articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shareholder decision right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid70">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.38141223492617</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.3640814981097</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid74"/>
+        <rdfs:comment xml:lang="en">A document issued by a Competent Authority declaring that the legally required steps of a division are completed. The certificate needs to be presented by a company to either be registered (or register a newly established emerging/recipient company) in another company registry or to be removed from a company register.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company division certificate</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid74">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.41529346648915</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">151.00297655613727</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionPlan -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionPlan">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid75"/>
+        <rdfs:comment xml:lang="en">The management or administrative organ of the company shall draw up the draft terms of a division. The draft terms of a division shall include at least the particulars listed in article 160d.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company division plan</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid75">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">143.47748596911322</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">219.3996038495368</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticCompanyConversion -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticCompanyConversion">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyConversion"/>
+        <opla-sd:entityPosition rdf:nodeID="genid76"/>
+        <rdfs:comment xml:lang="en">A domestic conversion is an operation through which a company&apos;s form is converted into a another while still remaining governed by the same law as the original company. For instance, the modification of a company&apos;s form from a public to a private limited company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Domestic company conversion</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid76">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.70103706546807</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.95180979707261</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticDivision -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticDivision">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyDivision"/>
+        <opla-sd:entityPosition rdf:nodeID="genid77"/>
+        <rdfs:comment xml:lang="en">A company which in a process of the domestic division - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company domestic division</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid77">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">262.7768499425678</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">245.55110052442663</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticMerger -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticMerger">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">A domestic merger involves at least two companies based in the same EU Member State and is leading to a universal transfer of assets and liabilities from the merging company to the acquiring company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company domestic merger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticSeatTransfer -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticSeatTransfer">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransfer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfCentralAdministration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfRegisteredOffice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid82"/>
+        <rdfs:comment xml:lang="en">The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), within a specific country.</rdfs:comment>
+        <rdfs:label xml:lang="en">Domestic company seat transfer</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid82">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">54.567750498984374</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.3528805993735</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyDivision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid86"/>
+        <rdfs:comment xml:lang="en">A company being divided transfers part of its assets and liabilities to one or more newly formed companies, which are the recipient companies in a (cross-border) division.</rdfs:comment>
+        <rdfs:label xml:lang="en">Emerging company</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid86">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">134.2048824296458</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.74535550131444</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder"/>
+        <opla-sd:entityPosition rdf:nodeID="genid87"/>
+        <rdfs:comment xml:lang="en">The workforce of a company. An employee is a party to an employment relationship characterised as a contract of employment (or contract of service) between the employer and employee. However, this is only one of several different legal formulations of the concept of ‘worker’ in the EU which differ between Member States.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company employee</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.eurofound.europa.eu/observatories/eurwork/industrial-relations-dictionary/employee"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid87">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.82391948733857</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">212.27581118427403</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#FinancialServiceAuthority -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#FinancialServiceAuthority">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority"/>
+        <opla-sd:entityPosition rdf:nodeID="genid88"/>
+        <rdfs:comment xml:lang="en">A body that regulates the financial services industry in a country (e.g. the UK), including most financial services markets, exchanges and firms.</rdfs:comment>
+        <rdfs:label xml:lang="en">Financial service authority</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid88">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.82910021828245</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.307924969462757</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#GlobalUltimateOwner -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#GlobalUltimateOwner">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#UltimateBeneficialOwner"/>
+        <opla-sd:entityPosition rdf:nodeID="genid89"/>
+        <rdfs:comment xml:lang="en">A global ultimate owner (GUO) is the individual or entity at the top of the corporate ownership structure.</rdfs:comment>
+        <rdfs:label xml:lang="en">Global ultimate owner</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Legal term : Ultimate Beneficial Owner</rdfs:seeAlso>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid89">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.62888044594364</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.84200669650346</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ImpactOnEmployment -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ImpactOnEmployment">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#InformationRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#WorksCouncil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid92"/>
+        <rdfs:comment xml:lang="en">The right of employees or their representatives to be informed on the likely repercussions of the cross-border transaction on employment, which includes the dismissal as well as the hiring of employees or relocation of work. See for instance article 122 of Directive 2017/1132.</rdfs:comment>
+        <rdfs:label xml:lang="en">Impact on employment information right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid92">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.621950598679454</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">294.2270568539971</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpert -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpert">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpertReport"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An Independent Expert provides impartial advice to shareholders and other company stakeholders on the fairness and/or reasonableness of a transaction.  A company may be required to commission an Independent Expert Report (IER) in the case of a (cross-border) merger, division or conversion.</rdfs:comment>
+        <rdfs:label xml:lang="en">Independent expert</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpertReport -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpertReport">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#IndependentExpert"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid95"/>
+        <rdfs:comment xml:lang="en">Article 86g and 160i: Member States must ensure that an independent expert examines the draft terms of the transaction and draws up a report intended for members which is made available to them not less than one month before the date of the general meeting. Depending on the law of Member States, the expert may be a natural person or a legal person. The report must assess the cash compensation proposed and valuation method.</rdfs:comment>
+        <rdfs:label xml:lang="en">Report by an independent expert</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid95">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">232.7136997444631</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.88266359209778</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#InformationRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#InformationRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SocialRight"/>
+        <opla-sd:entityPosition rdf:nodeID="genid96"/>
+        <rdfs:comment xml:lang="en">The right of employees or their representatives to be informed and to receive any documents necessary for the exercise of their consultation and board-level employee representation rights in the context of an intended merger/division/conversion/seat transfer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Information right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2002/14/oj"/>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid96">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.429893106041735</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.17776704067705</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#InterimAccount -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#InterimAccount">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AnnualAccount"/>
+        <opla-sd:entityPosition rdf:nodeID="genid97"/>
+        <rdfs:comment xml:lang="en">Interim accounts are accounts that are published during a company&apos;s financial year and that show the financial situation on a given accounting date.</rdfs:comment>
+        <rdfs:label xml:lang="en">Interim account</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid97">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">143.0121185287264</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">175.37034131435243</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementBoard -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementBoard">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Manager"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid99"/>
+        <rdfs:comment xml:lang="en">The group of persons comprising the governing body of the legal entity that is entrusted with the decision-making in the company. It is also called Executive Board in a one-tier board system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Management board</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid99">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">112.18668389761085</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.7975537218199</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementReport -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementReport">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid100"/>
+        <rdfs:comment xml:lang="en">A report drawn up by the company&apos;s management on the intended transaction, laying out the main features of the transactions and its consequences.</rdfs:comment>
+        <rdfs:label xml:lang="en">Management report</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid100">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.28614759312607</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.62242605720274</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Manager -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Manager">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder"/>
+        <opla-sd:entityPosition rdf:nodeID="genid101"/>
+        <rdfs:comment xml:lang="en">A person or group of persons that are responsible for overseeing the operations of a company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manager</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid101">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.67731560974352</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">281.3627119441426</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerDecisionRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerDecisionRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#BoardResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementBoard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid104"/>
+        <rdfs:comment xml:lang="en">The right of the board of management or individual managers to take decisions or to not take a decision in the context of a transaction. These are in the form of a board resolution.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manager decision right</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid104">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">176.55479364610375</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">193.0503398741002</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerExitRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerExitRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementBoard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid106"/>
+        <rdfs:comment xml:lang="en">The right of a manager or the board of management to resign and therefore exit a company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manager exit right</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid106">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.06439273412745</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.5983054032879</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerInformationRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerInformationRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagementBoard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid108"/>
+        <rdfs:comment xml:lang="en">The right of a manager to information and access to documents that he or she has in accordance with national or European company law.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manager information right</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid108">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.24400809699391</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.84827715993404</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight"/>
+        <opla-sd:entityPosition rdf:nodeID="genid109"/>
+        <rdfs:comment xml:lang="en">The rights of members of the management in the context of a company transaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Manager right</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid109">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.78934613918614</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">285.13237477555566</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerByAcquisition -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerByAcquisition">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerIntoNewCompany"/>
+        <opla-sd:entityPosition rdf:nodeID="genid112"/>
+        <rdfs:comment xml:lang="en">Article 89: The operation whereby one or more companies are wound up without going into liquidation and transfer to another all their assets and liabilities in exchange for the issue to the shareholders of the company or companies being acquired of shares in the acquiring company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company merger by acquisition</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid112">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.31957247761616</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">34.96391683939311</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid116"/>
+        <rdfs:comment xml:lang="en">A document issued by a Competent Authority declaring that the legally required steps of a merger are completed. The certificate needs to be presented by a company to either be registered in another company registry or to be removed from a company register (depending on the company being the merging or acquiring company).</rdfs:comment>
+        <rdfs:label xml:lang="en">Company merger certificate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid116">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.979425487423738</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">212.70736804000302</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerIntoNewCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerIntoNewCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid119"/>
+        <rdfs:comment xml:lang="en">Article 90: the operation whereby several companies are wound up without going into liquidation and transfer to a company that they set up all their assets and liabilities in exchange for the issue to their shareholders of shares in the new company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value.</rdfs:comment>
+        <rdfs:label xml:lang="en">Merger into a new company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid119">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">50.58595729952889</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">244.26994172626837</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerPlan -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerPlan">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid120"/>
+        <rdfs:comment xml:lang="en">Article 91: The administrative or management bodies of the merging companies shall draw up draft terms of merger in writing by specifying at least the elements mentioned in article 91.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company merger plan</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid120">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.85517389976832</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">271.5994274615904</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid123"/>
+        <rdfs:comment xml:lang="en">Merging Company means the dissolving company that is being acquired by another (acquiring) company in the process of a transaction. In the context of company mobility, this means a universal transfer of assets and liabilities from the merging to the acquiring company (see article 131 of Directive 2017/1132).</rdfs:comment>
+        <rdfs:label xml:lang="en">Merging company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid123">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.3474594368345</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">123.46221383706843</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistry -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistry">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistryRepository"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid126"/>
+        <rdfs:comment xml:lang="en">A national registry is a business registry in a Member State, which includes information on the population of companies in the jurisdiction and holds inter alia data on registration numbers, place of registration, notices and transaction documents in the national registry repository.</rdfs:comment>
+        <rdfs:label xml:lang="en">National registry</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid126">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">39.26582493769651</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">20.559888062141415</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistryRepository -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistryRepository">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Repository"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid130"/>
+        <rdfs:comment xml:lang="en">The digital repository in which documents published in the official journal or by by the national registry (on behalf of a company) are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the Official Journal Repository.</rdfs:comment>
+        <rdfs:label xml:lang="en">National registry repository</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid130">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.41568814879539</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.482295217479006</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Notary -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Notary">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority"/>
+        <opla-sd:entityPosition rdf:nodeID="genid131"/>
+        <rdfs:comment xml:lang="en">A person authorized to perform certain legal formalities, especially to draw up or certify contracts, deeds, and other documents for use in other jurisdictions.</rdfs:comment>
+        <rdfs:label xml:lang="en">Notary</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid131">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">93.06278917729631</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">31.878096888108217</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournal -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournal">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionNotice"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid135"/>
+        <rdfs:comment xml:lang="en">The official gazette of record for the European Union or national gazette of record of a Member State. In the official journal companies publish transaction notices in order to inform concerned stakeholders and interested parties.</rdfs:comment>
+        <rdfs:label xml:lang="en">Official journal</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid135">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">126.91251100807739</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">194.54094889701943</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalPublication -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalPublication">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid136"/>
+        <rdfs:comment xml:lang="en">Publication of a legally valid record or act in an official national gazette to inform stakeholders.</rdfs:comment>
+        <rdfs:label xml:lang="en">Official journal publication</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid136">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.28213929989567</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.86427483194888</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Repository"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistryRepository"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid140"/>
+        <rdfs:comment xml:lang="en">The digital repository in which documents published in the official journal are kept as well as related documents. In some EU Member States, this repository is overlapping or identical with the National Registry Repository.</rdfs:comment>
+        <rdfs:label xml:lang="en">Official journal repository</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid140">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">18.23164396733823</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">104.96258901033252</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation">
+        <opla-sd:entityPosition rdf:nodeID="genid141"/>
+        <rdfs:comment xml:lang="en">Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures.</rdfs:comment>
+        <rdfs:label xml:lang="en">Organisation</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">http://www.w3.org/ns/org#</rdfs:seeAlso>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid141">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.29243344570858</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.34073360301582</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyDivision"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en">An original company, in the context of a (cross-border) division, means a company which - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Original company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ParentCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ParentCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#GlobalUltimateOwner"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SubsidiaryCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid146"/>
+        <rdfs:comment xml:lang="en">A parent company is a company that has a controlling interest in another company, the subsidiary company, giving it control of its operations through a majority stock-ownership, decisive control over management appointments and therefore over the decision-making process. In the absence of a natural person as ultimate beneficial owner, the highest parent company in a chain of companies is the global ultimate owner.</rdfs:comment>
+        <rdfs:label xml:lang="en">Parent company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid146">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.33872816165007</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">101.74018980534287</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreConversionCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreConversionCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferredCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid150"/>
+        <rdfs:comment xml:lang="en">Article 86m: a pre-conversion certificate attests compliance with all the relevant conditions and the proper completion of all procedures and formalities in the departure Member State.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company pre-conversion certificate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid150">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.39903443255537</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">142.64906693661192</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreDivisionCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreDivisionCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid154"/>
+        <rdfs:comment xml:lang="en">Article 160o: a pre-division certificate attests compliance with all the relevant conditions and the proper completion of all procedures and formalities in the Member State concerned.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company pre-division certificate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid154">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.37433370834429</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">103.69004799077238</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreMergerCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreMergerCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AcquiringCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergerPlan"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#MergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid158"/>
+        <rdfs:comment xml:lang="en">Article 127: a pre-merger certificate attests compliance with all the relevant conditions and the proper completion of all procedures and formalities in the Member State of the merging company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company pre-merger certificate</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid158">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.764216387775047</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.23796989617148</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Repository -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Repository">
+        <opla-sd:entityPosition rdf:nodeID="genid159"/>
+        <rdfs:comment xml:lang="en">A digital document repository containing documents related to company mobility.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company mobility document repository</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid159">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.60865771127436</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">284.67062326777886</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Resolution -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Resolution">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid160"/>
+        <rdfs:comment xml:lang="en">A document detailing a decision made by an individual or group of natural or legal persons. This can be a decision concerning the restructuring of a company by its shareholders.</rdfs:comment>
+        <rdfs:label xml:lang="en">Resolution</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid160">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.11706116658252</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">293.43814503150423</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransfer -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransfer">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+        <opla-sd:entityPosition rdf:nodeID="genid161"/>
+        <rdfs:comment xml:lang="en">The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration).</rdfs:comment>
+        <rdfs:label xml:lang="en">Company seat transfer</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid161">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.28713943923407</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">277.7860413201921</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransferPlan -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransferPlan">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid162"/>
+        <rdfs:comment xml:lang="en">The management or administrative organ of the company draws up the draft terms of a cross-border seat transfer. The draft terms of a cross-border seat transfer must include at least the particulars specified under national law.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company seat transfer plan</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid162">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">67.26592136482995</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">195.39358378832364</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid164"/>
+        <rdfs:comment xml:lang="en">An individual, group, or organization that owns one or more shares in a company, and in whose name the share certificate is issued.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company shareholder</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid164">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">7.893435210269165</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">235.7528455758641</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderExitRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderExitRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid167"/>
+        <rdfs:comment xml:lang="en">The right of a shareholder to exit the company by being bought out.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shareholder exit right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid167">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">56.28944966538015</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">280.96796660163295</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderInformationRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderInformationRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid169"/>
+        <rdfs:comment xml:lang="en">It is particularly important that the shareholders of the companies involved in a transaction be kept adequately informed in an objective manner, and that their rights be suitably protected. This includes for instance the availability of documents for inspection by shareholders (e.g. article 97 of Directive 2017/1132).</rdfs:comment>
+        <rdfs:label xml:lang="en">Shareholder information right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid169">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">62.432611420326666</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.099202273356305</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderResolution -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderResolution">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Resolution"/>
+        <opla-sd:entityPosition rdf:nodeID="genid170"/>
+        <rdfs:comment xml:lang="en">a shareholder resolution is a proposal submitted by shareholders for a vote at the company&apos;s shareholder meeting.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shareholder resolution</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid170">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">182.4609448874594</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">175.2035610509981</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ShareholderResolution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid173"/>
+        <rdfs:comment xml:lang="en">The rights of shareholders of a company in the context of a transaction. Often, shreholder resolutions are used to effectuate shareholder rights. Many rights are laid down in the so-called Shareholder Rights Directive.</rdfs:comment>
+        <rdfs:label xml:lang="en">Shareholder right</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid173">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.645511128654</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.17768712299383</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SocialRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SocialRight">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight"/>
+        <opla-sd:entityPosition rdf:nodeID="genid174"/>
+        <rdfs:comment xml:lang="en">Social rights, as opposed to rights arising from natural law, are rights for legal entities that entitle them to certain levels of societal living conditions (e.g. the right to housing, to food, to health care etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">Social right</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid174">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">145.31812860041032</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.472621286432489</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Society -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Society">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder"/>
+        <opla-sd:entityPosition rdf:nodeID="genid175"/>
+        <rdfs:comment xml:lang="en">The society at large is a stakeholder in a company through, inter alia, the government and its agencies, suppliers, customers, trade unions and the communities from which the business draws its resources.</rdfs:comment>
+        <rdfs:label xml:lang="en">Society</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid175">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.8726186678454</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.42486588976413</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SpecialNegotiationBodyAgreement -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SpecialNegotiationBodyAgreement">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid176"/>
+        <rdfs:comment xml:lang="en">The Special Negotiation Body (SNB) or Special Negotiating Body is an organisation that represents the employees of companies in negotiations with the company authorities in order to reach a written agreement on the involvement of employees in company transactions. The agreement must be reached in accordance with the EU Company Law Directive and is laid down in the SNB-agreement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Special negotiating body agreement</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid176">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">71.03680677110084</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.05298320883994</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid179"/>
+        <rdfs:comment xml:lang="en">A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company&apos;s actions, objectives and policies.</rdfs:comment>
+        <rdfs:label xml:lang="en">Stakeholder in a company</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid179">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.42172416207433</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.50172216822966</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SubsidiaryCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SubsidiaryCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ParentCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid181"/>
+        <rdfs:comment xml:lang="en">A subsidiary, subsidiary company or daughter company is a company that is owned or controlled by another company, which is called the parent company, parent, or holding company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Subsidiary company</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid181">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">199.91687244031976</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">291.65970907681094</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SupervisoryAuthority -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SupervisoryAuthority">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Organisation"/>
+        <opla-sd:entityPosition rdf:nodeID="genid182"/>
+        <rdfs:comment xml:lang="en">An individual authority established by its member state to supervise the compliance with a specific regulation.</rdfs:comment>
+        <rdfs:label xml:lang="en">SupervisoryAuthority</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid182">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">203.15647508716086</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.47221136421604</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SupervisoryBoard -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SupervisoryBoard">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Manager"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid184"/>
+        <rdfs:comment xml:lang="en">A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the managgement board. It is also called non-executive board in a one-tier board system.</rdfs:comment>
+        <rdfs:label xml:lang="en">Supervisory board</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid184">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">130.95486209419764</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">146.4880897944417</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TaxAuthority -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TaxAuthority">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompetentAuthority"/>
+        <opla-sd:entityPosition rdf:nodeID="genid185"/>
+        <rdfs:comment xml:lang="en">Tax Authority means any governmental authority having jurisdiction over the assessment, determination, collection or imposition of any tax.</rdfs:comment>
+        <rdfs:label xml:lang="en">Tax authority</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid185">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">295.9330197078383</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">66.09191894254323</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionCertificate">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid186"/>
+        <rdfs:comment xml:lang="en">A document issued by a Competent Authority declaring that certain steps of the transaction are completed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company transaction certificate</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid186">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">131.11688892684865</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.35251365961733</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument"/>
+        <opla-sd:entityPosition rdf:nodeID="genid187"/>
+        <rdfs:comment xml:lang="en">Document required by law to document the step of a company transaction or an agreement made between stakeholders involved in the transaction that are either printed, inserted and mailed, or electronically presented.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transaction document</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid187">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.4737250571208</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.89354059165436</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionNotice -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionNotice">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalPublication"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid189"/>
+        <rdfs:comment xml:lang="en">A written notice, published in an official journal of a Member State of the EU and/or the European Official Journal indicating the intention to engage in a transaction and which informs  the members, creditors and representatives of the employees of the company, or, where there are no such representatives, the employees themselves of said transaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company transaction notice</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid189">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.86760350018855</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">168.21082276004154</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionRight">
+        <opla-sd:entityPosition rdf:nodeID="genid190"/>
+        <rdfs:comment xml:lang="en">A legal right of a legal entity involved in the process of a company transaction.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transaction right</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid190">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.011423587201364</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">77.61589925340833</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfCentralAdministration -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfCentralAdministration">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransfer"/>
+        <opla-sd:entityPosition rdf:nodeID="genid191"/>
+        <rdfs:comment xml:lang="en">Act of modifying the location where the company’s business was managed or the place where that company’s business was actually conducted.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transfer of company central administration</rdfs:label>
+        <rdfs:seeAlso xml:lang="en">Legal term : Principal place of business</rdfs:seeAlso>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid191">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">298.5674566125939</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.52226590467312</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfRegisteredOffice -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfRegisteredOffice">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransfer"/>
+        <opla-sd:entityPosition rdf:nodeID="genid192"/>
+        <rdfs:comment xml:lang="en">The act of changing the registered office, which is the official address of an incorporated company, association or any other legal entity.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transfer of company registered office</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid192">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.45559196571034</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">69.94751308456023</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferredCompany -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferredCompany">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#EmergingCompany"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid194"/>
+        <rdfs:comment xml:lang="en">Transferring Company means the company transferring its assets and liabilities to a recipient company.</rdfs:comment>
+        <rdfs:label xml:lang="en">Transferred company</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid194">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.11205052540654</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">260.3454725364793</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#UltimateBeneficialOwner -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#UltimateBeneficialOwner">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder"/>
+        <opla-sd:entityPosition rdf:nodeID="genid195"/>
+        <rdfs:comment xml:lang="en">Ultimate Beneficial owner refers to the natural person(s) who ultimately owns or controls a customer and/or the natural person on whose behalf a transaction is being conducted. It also includes those persons who exercise ultimate effective control over a legal person or arrangement.</rdfs:comment>
+        <rdfs:label xml:lang="en">Ultimate beneficial owner</rdfs:label>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid195">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.2005530811132</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">268.9536177481755</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#WorksCouncil -->
+
+
+    <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#WorksCouncil">
+        <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#BoardLevelEmployeeRepresentationRight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyTransaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Employee"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ImpactOnEmployment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#InformationRight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition rdf:nodeID="genid202"/>
+        <rdfs:comment xml:lang="en">The exercise of employee participation through the representation of employees vis-a-vis the management of a company. The works council is a shop-floor level representation mechanism with information, consultation and veto-rights - depending on the extent of rights given in a Member State - and also at EU level through European Works Councils.</rdfs:comment>
+        <rdfs:label xml:lang="en">Employee works council</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2002/14/oj"/>
+        <rdfs:seeAlso rdf:resource="https://www.worker-participation.eu/National-Industrial-Relations/Across-Europe"/>
+    </owl:Class>
+    <rdf:Description rdf:nodeID="genid202">
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">236.74617899157928</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">273.1051930252097</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/ -->
+
+
