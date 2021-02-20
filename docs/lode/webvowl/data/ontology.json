@@ -9,7 +9,7 @@
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
     "version" : "EU-CM ontology (EU-CMO), version 1.0.0, (2019), the Maastricht Law & Techlab, Maastricht University, The Netherlands",
     "description" : {
-      "undefined" : "This ontology describes terms concerning company mobility and their cross-border transactions within the European Union."
+      "undefined" : "This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation."
     },
     "other" : {
       "license" : [ {
@@ -21,7 +21,7 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Stephan Rammeloo",
+        "value" : "Kody Moodley",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -31,12 +31,12 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Marcus Meyer",
+        "value" : "Stephan Rammeloo",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Kody Moodley",
+        "value" : "Marcus Meyer",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -103,7 +103,7 @@
     "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "76",
+    "id" : "77",
     "type" : "owl:Class"
   }, {
     "id" : "79",
@@ -115,7 +115,7 @@
     "id" : "81",
     "type" : "owl:Class"
   }, {
-    "id" : "86",
+    "id" : "82",
     "type" : "owl:Class"
   }, {
     "id" : "13",
@@ -127,7 +127,7 @@
     "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "52",
+    "id" : "49",
     "type" : "owl:Class"
   }, {
     "id" : "34",
@@ -157,7 +157,7 @@
     "id" : "104",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "84",
     "type" : "owl:Class"
   }, {
     "id" : "107",
@@ -172,7 +172,7 @@
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "47",
     "type" : "owl:Class"
   }, {
     "id" : "133",
@@ -187,13 +187,13 @@
     "id" : "45",
     "type" : "owl:Class"
   }, {
-    "id" : "47",
-    "type" : "owl:Class"
-  }, {
-    "id" : "2",
+    "id" : "43",
     "type" : "owl:Class"
   }, {
     "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
     "type" : "owl:Class"
   }, {
     "id" : "160",
@@ -208,7 +208,7 @@
     "id" : "38",
     "type" : "owl:Class"
   }, {
-    "id" : "77",
+    "id" : "73",
     "type" : "owl:Class"
   }, {
     "id" : "56",
@@ -256,7 +256,7 @@
     "id" : "41",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "86",
     "type" : "owl:Class"
   }, {
     "id" : "134",
@@ -280,28 +280,28 @@
     "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "111",
+    "id" : "207",
     "type" : "owl:Class"
   }, {
-    "id" : "207",
+    "id" : "111",
     "type" : "owl:Class"
   }, {
     "id" : "92",
     "type" : "owl:Class"
   }, {
-    "id" : "43",
+    "id" : "61",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
     "type" : "owl:Class"
   }, {
     "id" : "121",
     "type" : "owl:Class"
   }, {
-    "id" : "82",
-    "type" : "owl:Class"
-  }, {
-    "id" : "84",
+    "id" : "85",
     "type" : "owl:Class"
   }, {
     "id" : "67",
@@ -310,7 +310,7 @@
     "id" : "27",
     "type" : "owl:Class"
   }, {
-    "id" : "75",
+    "id" : "76",
     "type" : "owl:Class"
   }, {
     "id" : "32",
@@ -328,10 +328,10 @@
     "id" : "99",
     "type" : "owl:Class"
   }, {
-    "id" : "4",
+    "id" : "54",
     "type" : "owl:Class"
   }, {
-    "id" : "54",
+    "id" : "4",
     "type" : "owl:Class"
   }, {
     "id" : "102",
@@ -426,7 +426,7 @@
       "en" : "Board-level employee representation right"
     },
     "comment" : {
-      "en" : "Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-rinciple."
+      "en" : "Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-principle."
     },
     "id" : "26",
     "superClasses" : [ "27" ]
@@ -660,11 +660,11 @@
       "IRI-based" : "Resolution",
       "en" : "Resolution"
     },
-    "subClasses" : [ "77", "78" ],
+    "subClasses" : [ "73", "78" ],
     "comment" : {
       "en" : "A document detailing a decision made by an individual or group of natural or legal persons. This can be a decision concerning the restructuring of a company by its shareholders."
     },
-    "id" : "76",
+    "id" : "77",
     "superClasses" : [ "45" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OfficialJournalRepository",
@@ -695,12 +695,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html",
+        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
+        "value" : "https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html",
         "type" : "iri"
       } ]
     },
@@ -713,6 +713,27 @@
     },
     "id" : "69",
     "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Society",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "entityPosition" : [ {
+        "identifier" : "entityPosition",
+        "language" : "undefined",
+        "value" : "_:genid2147483878",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Society",
+      "en" : "Society"
+    },
+    "comment" : {
+      "en" : "The society at large is a stakeholder in a company through, inter alia, the government and its agencies, suppliers, customers, trade unions and the communities from which the business draws its resources."
+    },
+    "id" : "81",
+    "superClasses" : [ "67" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -735,33 +756,12 @@
       "IRI-based" : "CreditorRight",
       "en" : "Creditor right"
     },
-    "subClasses" : [ "82", "83", "84", "85" ],
+    "subClasses" : [ "83", "84", "85", "86" ],
     "comment" : {
       "en" : "The rights of creditors, which includes debenture holders, vis-a-vis the company that obtained credit from the individual or organisation. Legal safeguards are put in place to ensure that rights of creditors are not negatively affected by a company transaction."
     },
-    "id" : "81",
+    "id" : "82",
     "superClasses" : [ "25" ]
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Society",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "instances" : 0,
-    "annotations" : {
-      "entityPosition" : [ {
-        "identifier" : "entityPosition",
-        "language" : "undefined",
-        "value" : "_:genid2147483878",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "Society",
-      "en" : "Society"
-    },
-    "comment" : {
-      "en" : "The society at large is a stakeholder in a company through, inter alia, the government and its agencies, suppliers, customers, trade unions and the communities from which the business draws its resources."
-    },
-    "id" : "86",
-    "superClasses" : [ "67" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Notary",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -864,11 +864,11 @@
       "IRI-based" : "InformationRight",
       "en" : "Information right"
     },
-    "subClasses" : [ "43" ],
+    "subClasses" : [ "52" ],
     "comment" : {
       "en" : "The right of employees or their representatives to be informed and to receive any documents necessary for the exercise of their consultation and board-level employee representation rights in the context of an intended merger/division/conversion/seat transfer."
     },
-    "id" : "52",
+    "id" : "49",
     "superClasses" : [ "27" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionNotice",
@@ -918,7 +918,7 @@
       "en" : "Article 160b - Division means:\na) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares ('full division');\n\n(b) \ta company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies or in the company being divided or in both the recipient companies and in the company being divided, and if any a cash payment not exceeding 10 % of the nominal value of those securities or shares, or in the absence of a nominal value, a cash payment not exceeding 10 % of the accounting par value of their securities or shares (‘partial division’).\n   \t\n(c) \ta company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue of securities or shares in the recipient companies to the company being divided (‘division by separation’)."
     },
     "id" : "90",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerInformationRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -977,7 +977,7 @@
       "IRI-based" : "TransactionRight",
       "en" : "Transaction right"
     },
-    "subClasses" : [ "27", "7", "94", "81" ],
+    "subClasses" : [ "27", "7", "94", "82" ],
     "comment" : {
       "en" : "A legal right of a legal entity involved in the process of a company transaction."
     },
@@ -1002,7 +1002,7 @@
       "en" : "A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company's Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing."
     },
     "id" : "78",
-    "superClasses" : [ "76" ]
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransferOfCentralAdministration",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1078,7 +1078,7 @@
       "en" : "The process of changing or converting the corporate structure of a company. For example, a limited liability company of one country to one of another country, or from a private to a public limited liability company, or vice-versa by means of the continuance of an entity into another entity."
     },
     "id" : "104",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorSecurityRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1109,8 +1109,8 @@
     "comment" : {
       "en" : "Member States shall provide for an adequate system of protection of the interest of creditors, and shall ensure that creditors who are dissatisfied with the safeguards offered in the draft terms of the transaction, as provided for in Article 86d (1) point (f), may apply to the appropriate administrative or judicial authority for adequate safeguards provided that they can credibly demonstrate that due to the transaction the satisfaction of their claims is at stake and that no adequate safeguards have been obtained from the company."
     },
-    "id" : "83",
-    "superClasses" : [ "81" ]
+    "id" : "84",
+    "superClasses" : [ "82" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConsultationRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1159,7 +1159,7 @@
       "IRI-based" : "Company",
       "en" : "Company"
     },
-    "subClasses" : [ "38", "2", "37", "110", "111", "28", "75" ],
+    "subClasses" : [ "38", "2", "37", "110", "111", "28", "76" ],
     "comment" : {
       "en" : "A company is a legal entity formed by a group of individuals to engage in and operate a business—commercial or industrial—enterprise. A company may be organized in various ways for tax and financial liability purposes depending on the corporate law of its jurisdiction."
     },
@@ -1239,7 +1239,7 @@
     "comment" : {
       "en" : "The workforce of a company. An employee is a party to an employment relationship characterised as a contract of employment (or contract of service) between the employer and employee. However, this is only one of several different legal formulations of the concept of ‘worker’ in the EU which differ between Member States."
     },
-    "id" : "50",
+    "id" : "47",
     "superClasses" : [ "67" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderMerger",
@@ -1338,7 +1338,7 @@
       "IRI-based" : "TransactionDocument",
       "en" : "Transaction document"
     },
-    "subClasses" : [ "76", "99", "44", "102", "154", "59", "155", "88", "156", "34" ],
+    "subClasses" : [ "77", "99", "44", "102", "154", "59", "155", "88", "156", "34" ],
     "comment" : {
       "en" : "Document required by law to document the step of a company transaction or an agreement made between stakeholders involved in the transaction that are either printed, inserted and mailed, or electronically presented."
     },
@@ -1364,7 +1364,28 @@
     "comment" : {
       "en" : "An action taken by a company that modifies its corporate structure with a change of control (for e.g. through either a merger, division, conversion or seat transfer in a domestic or cross-border setting). It involves one or more companies, each of which have a company legal form valid in a Member State of the European Union."
     },
-    "id" : "47"
+    "id" : "43"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerDecisionRight",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "entityPosition" : [ {
+        "identifier" : "entityPosition",
+        "language" : "undefined",
+        "value" : "_:genid2147483853",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ManagerDecisionRight",
+      "en" : "Manager decision right"
+    },
+    "comment" : {
+      "en" : "The right of the board of management or individual managers to take decisions or to not take a decision in the context of a transaction. These are in the form of a board resolution."
+    },
+    "id" : "157",
+    "superClasses" : [ "94" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#GlobalUltimateOwner",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1392,27 +1413,6 @@
     },
     "id" : "2",
     "superClasses" : [ "3", "29" ]
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerDecisionRight",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "instances" : 0,
-    "annotations" : {
-      "entityPosition" : [ {
-        "identifier" : "entityPosition",
-        "language" : "undefined",
-        "value" : "_:genid2147483853",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ManagerDecisionRight",
-      "en" : "Manager decision right"
-    },
-    "comment" : {
-      "en" : "The right of the board of management or individual managers to take decisions or to not take a decision in the context of a transaction. These are in the form of a board resolution."
-    },
-    "id" : "157",
-    "superClasses" : [ "94" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ManagerExitRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1508,8 +1508,8 @@
     "comment" : {
       "en" : "a shareholder resolution is a proposal submitted by shareholders for a vote at the company's shareholder meeting."
     },
-    "id" : "77",
-    "superClasses" : [ "76" ]
+    "id" : "73",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#AnnualAccount",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1860,7 +1860,7 @@
       "en" : "The exercise of employee participation through the representation of employees vis-a-vis the management of a company. The works council is a shop-floor level representation mechanism with information, consultation and veto-rights - depending on the extent of rights given in a Member State - and also at EU level through European Works Councils."
     },
     "id" : "41",
-    "superClasses" : [ "50" ]
+    "superClasses" : [ "47" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorDecisionRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1886,8 +1886,8 @@
     "comment" : {
       "en" : "The right of a creditor to influence or take a decision in the context of a transaction."
     },
-    "id" : "85",
-    "superClasses" : [ "81" ]
+    "id" : "86",
+    "superClasses" : [ "82" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMerger",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -1911,7 +1911,7 @@
     },
     "attributes" : [ "union" ],
     "id" : "134",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DivisionPlan",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2056,27 +2056,6 @@
     "id" : "68",
     "superClasses" : [ "53" ]
   }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "instances" : 0,
-    "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "OriginalCompany",
-      "en" : "Original company"
-    },
-    "comment" : {
-      "en" : "An original company, in the context of a (cross-border) division, means a company which - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies."
-    },
-    "id" : "111",
-    "superClasses" : [ "29" ]
-  }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#NationalRegistryRepository",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
     "instances" : 0,
@@ -2098,6 +2077,27 @@
     "id" : "207",
     "superClasses" : [ "80" ]
   }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#OriginalCompany",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OriginalCompany",
+      "en" : "Original company"
+    },
+    "comment" : {
+      "en" : "An original company, in the context of a (cross-border) division, means a company which - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies."
+    },
+    "id" : "111",
+    "superClasses" : [ "29" ]
+  }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#DomesticDivision",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
     "instances" : 0,
@@ -2118,33 +2118,6 @@
     },
     "id" : "92",
     "superClasses" : [ "90" ]
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ImpactOnEmployment",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "instances" : 0,
-    "annotations" : {
-      "entityPosition" : [ {
-        "identifier" : "entityPosition",
-        "language" : "undefined",
-        "value" : "_:genid2147483918",
-        "type" : "label"
-      } ],
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
-        "type" : "iri"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "ImpactOnEmployment",
-      "en" : "Impact on employment information right"
-    },
-    "comment" : {
-      "en" : "The right of employees or their representatives to be informed on the likely repercussions of the cross-border transaction on employment, which includes the dismissal as well as the hiring of employees or relocation of work. See for instance article 122 of Directive 2017/1132."
-    },
-    "id" : "43",
-    "superClasses" : [ "52" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#PreDivisionCertificate",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2173,26 +2146,32 @@
     "id" : "61",
     "superClasses" : [ "59" ]
   }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument",
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ImpactOnEmployment",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
     "instances" : 0,
     "annotations" : {
       "entityPosition" : [ {
         "identifier" : "entityPosition",
         "language" : "undefined",
-        "value" : "_:genid2147483920",
+        "value" : "_:genid2147483918",
         "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
+        "type" : "iri"
       } ]
     },
     "label" : {
-      "IRI-based" : "CompanyMobilityDocument",
-      "en" : "Company mobility document"
+      "IRI-based" : "ImpactOnEmployment",
+      "en" : "Impact on employment information right"
     },
-    "subClasses" : [ "56", "35", "45" ],
     "comment" : {
-      "en" : "A legal document which provides information related to, or influencing, a company's mobility within a specific country or across national boundaries."
+      "en" : "The right of employees or their representatives to be informed on the likely repercussions of the cross-border transaction on employment, which includes the dismissal as well as the hiring of employees or relocation of work. See for instance article 122 of Directive 2017/1132."
     },
-    "id" : "121"
+    "id" : "52",
+    "superClasses" : [ "49" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorExitRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2218,8 +2197,29 @@
     "comment" : {
       "en" : "The creditors right to be paid out and therefore to exit the company in the context of a transaction."
     },
-    "id" : "82",
-    "superClasses" : [ "81" ]
+    "id" : "83",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CompanyMobilityDocument",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "entityPosition" : [ {
+        "identifier" : "entityPosition",
+        "language" : "undefined",
+        "value" : "_:genid2147483920",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CompanyMobilityDocument",
+      "en" : "Company mobility document"
+    },
+    "subClasses" : [ "56", "35", "45" ],
+    "comment" : {
+      "en" : "A legal document which provides information related to, or influencing, a company's mobility within a specific country or across national boundaries."
+    },
+    "id" : "121"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CreditorInformationRight",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2239,8 +2239,8 @@
     "comment" : {
       "en" : "The information rights of creditors in the context of a company transaction, which includes for instance access to documents."
     },
-    "id" : "84",
-    "superClasses" : [ "81" ]
+    "id" : "85",
+    "superClasses" : [ "82" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Stakeholder",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2257,7 +2257,7 @@
       "IRI-based" : "Stakeholder",
       "en" : "Stakeholder in a company"
     },
-    "subClasses" : [ "174", "58", "50", "4", "86" ],
+    "subClasses" : [ "174", "58", "47", "4", "81" ],
     "comment" : {
       "en" : "A person, group or organization that has interest or concern in an organization or company in particular. Stakeholders can affect or be affected by the company's actions, objectives and policies."
     },
@@ -2278,7 +2278,7 @@
       "IRI-based" : "SocialRight",
       "en" : "Social right"
     },
-    "subClasses" : [ "107", "26", "52" ],
+    "subClasses" : [ "107", "26", "49" ],
     "comment" : {
       "en" : "Social rights, as opposed to rights arising from natural law, are rights for legal entities that entitle them to certain levels of societal living conditions (e.g. the right to housing, to food, to health care etc.)"
     },
@@ -2303,7 +2303,7 @@
     "comment" : {
       "en" : "A subsidiary, subsidiary company or daughter company is a company that is owned or controlled by another company, which is called the parent company, parent, or holding company."
     },
-    "id" : "75",
+    "id" : "76",
     "superClasses" : [ "29" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SupervisoryBoard",
@@ -2322,7 +2322,7 @@
       "en" : "Supervisory board"
     },
     "comment" : {
-      "en" : "A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the managgement board. It is also called non-executive board in a one-tier board system."
+      "en" : "A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the management board. It is also called non-executive board in a one-tier board system."
     },
     "id" : "32",
     "superClasses" : [ "58" ]
@@ -2369,7 +2369,7 @@
       "en" : "The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration)."
     },
     "id" : "96",
-    "superClasses" : [ "47" ]
+    "superClasses" : [ "43" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#CrossBorderCompanyConversion",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2414,10 +2414,31 @@
       "en" : "Company conversion plan"
     },
     "comment" : {
-      "en" : "A document providing details of how the conversion of a company will be implemented."
+      "en" : "A document providing details of how the conversion of a company will be implemented. Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d"
     },
     "id" : "99",
     "superClasses" : [ "45" ]
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TaxAuthority",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "instances" : 0,
+    "annotations" : {
+      "entityPosition" : [ {
+        "identifier" : "entityPosition",
+        "language" : "undefined",
+        "value" : "_:genid2147483930",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TaxAuthority",
+      "en" : "Tax authority"
+    },
+    "comment" : {
+      "en" : "Tax Authority means any governmental authority having jurisdiction over the assessment, determination, collection or imposition of any tax."
+    },
+    "id" : "54",
+    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#Shareholder",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2440,27 +2461,6 @@
     },
     "id" : "4",
     "superClasses" : [ "67" ]
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TaxAuthority",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "instances" : 0,
-    "annotations" : {
-      "entityPosition" : [ {
-        "identifier" : "entityPosition",
-        "language" : "undefined",
-        "value" : "_:genid2147483930",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "TaxAuthority",
-      "en" : "Tax authority"
-    },
-    "comment" : {
-      "en" : "Tax Authority means any governmental authority having jurisdiction over the assessment, determination, collection or imposition of any tax."
-    },
-    "id" : "54",
-    "superClasses" : [ "14" ]
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#SeatTransferPlan",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -2601,7 +2601,7 @@
     "id" : "48",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "49",
+    "id" : "50",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "51",
@@ -2613,10 +2613,10 @@
     "id" : "72",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "73",
+    "id" : "74",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "74",
+    "id" : "75",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "87",
@@ -3049,13 +3049,13 @@
     "type" : "owl:objectProperty"
   }, {
     "id" : "262",
-    "type" : "owl:someValuesFrom"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "263",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "264",
-    "type" : "owl:disjointWith"
+    "type" : "owl:someValuesFrom"
   }, {
     "id" : "265",
     "type" : "owl:someValuesFrom"
@@ -3221,7 +3221,7 @@
     },
     "superproperty" : [ "19" ],
     "domain" : "32",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "31"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf",
@@ -3233,7 +3233,7 @@
     },
     "superproperty" : [ "19" ],
     "domain" : "34",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "33"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3243,7 +3243,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "37",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "36"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#transfers",
@@ -3257,16 +3257,14 @@
     "attributes" : [ "datatype" ],
     "id" : "39"
   }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf",
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "29",
+    "range" : "26",
     "label" : {
-      "IRI-based" : "partOf",
-      "en" : "partOf"
+      "IRI-based" : "involves"
     },
-    "superproperty" : [ "19" ],
     "domain" : "41",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "40"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3276,7 +3274,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "41",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "42"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3286,28 +3284,30 @@
       "IRI-based" : "involves"
     },
     "domain" : "41",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "46"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "26",
+    "range" : "49",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "41",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "48"
   }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "50",
+    "range" : "29",
     "label" : {
-      "IRI-based" : "involves"
+      "IRI-based" : "partOf",
+      "en" : "partOf"
     },
+    "superproperty" : [ "19" ],
     "domain" : "41",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "49"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "50"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -3316,7 +3316,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "41",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "51"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3326,17 +3326,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "67",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "66"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "4",
+    "range" : "73",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "7",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "72"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3346,8 +3346,8 @@
       "IRI-based" : "involves"
     },
     "domain" : "67",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "73"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "74"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -3355,9 +3355,9 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "75",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "74"
+    "domain" : "76",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "75"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasMergingCompany",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -3375,12 +3375,12 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "47",
+    "domain" : "43",
     "attributes" : [ "object" ],
     "id" : "89"
   }, {
     "range" : "45",
-    "domain" : "76",
+    "domain" : "77",
     "attributes" : [ "object", "anonymous" ],
     "id" : "97"
   }, {
@@ -3420,17 +3420,17 @@
     "id" : "113"
   }, {
     "range" : "29",
-    "domain" : "75",
+    "domain" : "76",
     "attributes" : [ "object", "anonymous" ],
     "id" : "114"
   }, {
-    "range" : "50",
+    "range" : "47",
     "domain" : "41",
     "attributes" : [ "object", "anonymous" ],
     "id" : "115"
   }, {
     "range" : "25",
-    "domain" : "81",
+    "domain" : "82",
     "attributes" : [ "object", "anonymous" ],
     "id" : "116"
   }, {
@@ -3479,33 +3479,33 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "126"
   }, {
-    "range" : "76",
+    "range" : "77",
     "domain" : "78",
     "attributes" : [ "object", "anonymous" ],
     "id" : "127"
   }, {
-    "range" : "81",
-    "domain" : "82",
+    "range" : "82",
+    "domain" : "83",
     "attributes" : [ "object", "anonymous" ],
     "id" : "128"
   }, {
-    "range" : "81",
-    "domain" : "83",
+    "range" : "82",
+    "domain" : "84",
     "attributes" : [ "object", "anonymous" ],
     "id" : "129"
   }, {
-    "range" : "81",
-    "domain" : "84",
+    "range" : "82",
+    "domain" : "85",
     "attributes" : [ "object", "anonymous" ],
     "id" : "130"
   }, {
-    "range" : "81",
-    "domain" : "85",
+    "range" : "82",
+    "domain" : "86",
     "attributes" : [ "object", "anonymous" ],
     "id" : "131"
   }, {
-    "range" : "52",
-    "domain" : "43",
+    "range" : "49",
+    "domain" : "52",
     "attributes" : [ "object", "anonymous" ],
     "id" : "132"
   }, {
@@ -3524,8 +3524,8 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "137"
   }, {
-    "range" : "76",
-    "domain" : "77",
+    "range" : "77",
+    "domain" : "73",
     "attributes" : [ "object", "anonymous" ],
     "id" : "138"
   }, {
@@ -3602,36 +3602,36 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "99",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "152"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "63",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "158"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
     "range" : "59",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "152"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "99",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "105",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "158"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "156",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "105",
+    "attributes" : [ "object", "someValues" ],
     "id" : "159"
   }, {
     "range" : "27",
-    "domain" : "52",
+    "domain" : "49",
     "attributes" : [ "object", "anonymous" ],
     "id" : "161"
   }, {
@@ -3642,12 +3642,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "67",
+    "range" : "25",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "163"
   }, {
     "range" : "94",
@@ -3657,12 +3657,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "25",
+    "range" : "111",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "165"
   }, {
     "range" : "94",
@@ -3672,12 +3672,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "37",
+    "range" : "77",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "167"
   }, {
     "range" : "96",
@@ -3699,12 +3699,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "35",
+    "range" : "37",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "171"
   }, {
     "range" : "96",
@@ -3718,8 +3718,8 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "83",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "84",
+    "attributes" : [ "object", "someValues" ],
     "id" : "173"
   }, {
     "range" : "96",
@@ -3733,8 +3733,8 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "81",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "82",
+    "attributes" : [ "object", "someValues" ],
     "id" : "177"
   }, {
     "range" : "96",
@@ -3744,12 +3744,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "111",
+    "range" : "155",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "179"
   }, {
     "range" : "4",
@@ -3759,12 +3759,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "156",
+    "range" : "67",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "181"
   }, {
     "range" : "27",
@@ -3778,8 +3778,8 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "82",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "83",
+    "attributes" : [ "object", "someValues" ],
     "id" : "183"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3788,8 +3788,8 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "85",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "86",
+    "attributes" : [ "object", "someValues" ],
     "id" : "184"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3798,8 +3798,8 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "84",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "85",
+    "attributes" : [ "object", "someValues" ],
     "id" : "185"
   }, {
     "range" : "121",
@@ -3809,12 +3809,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "99",
+    "range" : "37",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "60",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "187"
   }, {
     "range" : "121",
@@ -3824,12 +3824,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "37",
+    "range" : "111",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "60",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "189"
   }, {
     "range" : "121",
@@ -3839,12 +3839,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "47",
+    "range" : "43",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "174",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "191"
   }, {
     "range" : "67",
@@ -3854,12 +3854,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "111",
+    "range" : "99",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "60",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "193"
   }, {
     "range" : "67",
@@ -3873,12 +3873,12 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "47",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "43",
+    "attributes" : [ "object", "someValues" ],
     "id" : "195"
   }, {
     "range" : "67",
-    "domain" : "50",
+    "domain" : "47",
     "attributes" : [ "object", "anonymous" ],
     "id" : "196"
   }, {
@@ -3894,22 +3894,22 @@
       "IRI-based" : "involves"
     },
     "domain" : "107",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "198"
   }, {
     "range" : "67",
-    "domain" : "86",
+    "domain" : "81",
     "attributes" : [ "object", "anonymous" ],
     "id" : "199"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "50",
+    "range" : "47",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "107",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "200"
   }, {
     "range" : "27",
@@ -3919,12 +3919,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "50",
+    "range" : "41",
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "43",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "52",
+    "attributes" : [ "object", "someValues" ],
     "id" : "202"
   }, {
     "range" : "134",
@@ -3944,7 +3944,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "155",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "205"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -3954,17 +3954,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "69",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "206"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "38",
+    "range" : "111",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "38",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "208"
   }, {
     "range" : "56",
@@ -3974,12 +3974,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "90",
+    "range" : "38",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "38",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "210"
   }, {
     "range" : "56",
@@ -3989,12 +3989,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "41",
+    "range" : "47",
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "43",
-    "attributes" : [ "someValues", "object" ],
+    "domain" : "52",
+    "attributes" : [ "object", "someValues" ],
     "id" : "212"
   }, {
     "range" : "80",
@@ -4004,12 +4004,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "111",
+    "range" : "90",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "38",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "214"
   }, {
     "range" : "80",
@@ -4024,7 +4024,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "170",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "216"
   }, {
     "range" : "58",
@@ -4039,7 +4039,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "170",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "218"
   }, {
     "range" : "58",
@@ -4054,7 +4054,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "169",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "221"
   }, {
     "range" : "134",
@@ -4069,7 +4069,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "169",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "223"
   }, {
     "range" : "134",
@@ -4077,27 +4077,27 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "224"
   }, {
-    "range" : "47",
+    "range" : "43",
     "domain" : "96",
     "attributes" : [ "object", "anonymous" ],
     "id" : "225"
   }, {
-    "range" : "47",
+    "range" : "43",
     "domain" : "104",
     "attributes" : [ "object", "anonymous" ],
     "id" : "226"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "38",
+    "range" : "111",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "65",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "227"
   }, {
-    "range" : "47",
+    "range" : "43",
     "domain" : "90",
     "attributes" : [ "object", "anonymous" ],
     "id" : "228"
@@ -4109,17 +4109,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "65",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "229"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "111",
+    "range" : "38",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "65",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "230"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4129,7 +4129,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "95",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "231"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4139,7 +4139,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "95",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "232"
   }, {
     "range" : "45",
@@ -4149,12 +4149,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "4",
+    "range" : "73",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "11",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "234"
   }, {
     "range" : "45",
@@ -4164,12 +4164,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "77",
+    "range" : "4",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "11",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "236"
   }, {
     "range" : "45",
@@ -4179,12 +4179,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "76",
+    "range" : "35",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "238"
   }, {
     "range" : "45",
@@ -4194,12 +4194,12 @@
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "155",
+    "range" : "63",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "105",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "240"
   }, {
     "range" : "45",
@@ -4214,7 +4214,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "133",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "242"
   }, {
     "range" : "45",
@@ -4229,22 +4229,22 @@
       "IRI-based" : "involves"
     },
     "domain" : "133",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "244"
   }, {
-    "range" : "47",
+    "range" : "43",
     "domain" : "134",
     "attributes" : [ "object", "anonymous" ],
     "id" : "245"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "79",
+    "range" : "71",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "207",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "246"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4254,7 +4254,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "207",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "247"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4264,8 +4264,18 @@
       "IRI-based" : "involves"
     },
     "domain" : "71",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "248"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "71",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "249"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4273,29 +4283,9 @@
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "71",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "249"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "involves"
-    },
     "domain" : "207",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "250"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "207",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "68",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "251"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4304,18 +4294,18 @@
       "IRI-based" : "involves"
     },
     "domain" : "68",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "253"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "251"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "38",
+    "range" : "207",
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "146",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "254"
+    "domain" : "68",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "253"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4324,18 +4314,18 @@
       "IRI-based" : "involves"
     },
     "domain" : "146",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "255"
+    "attributes" : [ "object", "someValues" ],
+    "id" : "254"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "134",
+    "range" : "38",
     "label" : {
       "IRI-based" : "involves"
     },
-    "domain" : "110",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "256"
+    "domain" : "146",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "255"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4344,7 +4334,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "110",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "256"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "110",
+    "attributes" : [ "object", "someValues" ],
     "id" : "257"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4354,7 +4354,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "62",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "258"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4364,18 +4364,8 @@
       "IRI-based" : "involves"
     },
     "domain" : "153",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "259"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "134",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "62",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "260"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4384,7 +4374,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "62",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "260"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "134",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "62",
+    "attributes" : [ "object", "someValues" ],
     "id" : "261"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#mergesWith",
@@ -4398,14 +4398,9 @@
     "attributes" : [ "object" ],
     "id" : "21"
   }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "110",
-    "label" : {
-      "IRI-based" : "involves"
-    },
+    "range" : "146",
     "domain" : "153",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "anonymous" ],
     "id" : "262"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4415,12 +4410,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "93",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "263"
   }, {
-    "range" : "146",
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "110",
+    "label" : {
+      "IRI-based" : "involves"
+    },
     "domain" : "153",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "264"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4430,7 +4430,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "157",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "265"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf",
@@ -4442,7 +4442,7 @@
     },
     "superproperty" : [ "19" ],
     "domain" : "57",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "266"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4452,7 +4452,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "160",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "267"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4462,8 +4462,18 @@
       "IRI-based" : "involves"
     },
     "domain" : "157",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "268"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "269"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4472,27 +4482,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "9",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "269"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "77",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "9",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "270"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "77",
+    "range" : "4",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "7",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "271"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4502,17 +4502,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "6",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "272"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "219",
+    "range" : "88",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "64",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "273"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#partOf",
@@ -4524,17 +4524,17 @@
     },
     "superproperty" : [ "19" ],
     "domain" : "4",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "274"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "88",
+    "range" : "219",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "64",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "275"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#hasParentCompany",
@@ -4546,7 +4546,7 @@
     },
     "superproperty" : [ "19" ],
     "domain" : "29",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "276"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4556,7 +4556,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "277"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4566,7 +4566,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "278"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4576,17 +4576,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "279"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "76",
+    "range" : "77",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "280"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4596,18 +4596,8 @@
       "IRI-based" : "involves"
     },
     "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "281"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "154",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "282"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4616,17 +4606,27 @@
       "IRI-based" : "involves"
     },
     "domain" : "104",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "282"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "154",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "104",
+    "attributes" : [ "object", "someValues" ],
     "id" : "283"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "50",
+    "range" : "47",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "26",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "284"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4636,7 +4636,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "26",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "285"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4646,7 +4646,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "61",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "286"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4656,7 +4656,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "61",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "287"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4666,7 +4666,7 @@
       "IRI-based" : "involves"
     },
     "domain" : "64",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "288"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4676,28 +4676,8 @@
       "IRI-based" : "involves"
     },
     "domain" : "61",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "289"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "111",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "63",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "290"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "75",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "28",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "291"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4706,7 +4686,27 @@
       "IRI-based" : "involves"
     },
     "domain" : "63",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "290"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "28",
+    "attributes" : [ "object", "someValues" ],
+    "id" : "291"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "63",
+    "attributes" : [ "object", "someValues" ],
     "id" : "292"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4716,28 +4716,18 @@
       "IRI-based" : "involves"
     },
     "domain" : "63",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "293"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "2",
+    "range" : "76",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "28",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "294"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "38",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "111",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "295"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4746,7 +4736,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "111",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "295"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "111",
+    "attributes" : [ "object", "someValues" ],
     "id" : "296"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
@@ -4756,28 +4756,18 @@
       "IRI-based" : "involves"
     },
     "domain" : "79",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "297"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "34",
+    "range" : "79",
     "label" : {
       "IRI-based" : "involves"
     },
     "domain" : "71",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
     "id" : "298"
-  }, {
-    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
-    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
-    "range" : "207",
-    "label" : {
-      "IRI-based" : "involves"
-    },
-    "domain" : "79",
-    "attributes" : [ "someValues", "object" ],
-    "id" : "299"
   }, {
     "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
     "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
@@ -4786,7 +4776,17 @@
       "IRI-based" : "involves"
     },
     "domain" : "79",
-    "attributes" : [ "someValues", "object" ],
+    "attributes" : [ "object", "someValues" ],
+    "id" : "299"
+  }, {
+    "iri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#involves",
+    "baseIri" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
+    "range" : "207",
+    "label" : {
+      "IRI-based" : "involves"
+    },
+    "domain" : "79",
+    "attributes" : [ "object", "someValues" ],
     "id" : "300"
   } ]
 }

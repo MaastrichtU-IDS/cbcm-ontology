@@ -11,7 +11,7 @@
      xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
     <owl:Ontology rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology">
         <owl:versionIRI rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/1.0.0"/>
-        <dc:description>This ontology describes terms concerning company mobility and their cross-border transactions within the European Union.</dc:description>
+        <dc:description>This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.</dc:description>
         <dc:title>The European Union Company Mobility Ontology (EU-CMO)</dc:title>
         <terms:contributor>Kody Moodley</terms:contributor>
         <terms:contributor>Marcus Meyer</terms:contributor>
@@ -256,7 +256,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <opla-sd:entityPosition rdf:nodeID="genid5"/>
-        <rdfs:comment xml:lang="en">Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-rinciple.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-principle.</rdfs:comment>
         <rdfs:label xml:lang="en">Board-level employee representation right</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
     </owl:Class>
@@ -568,8 +568,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
     <owl:Class rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#ConversionPlan">
         <rdfs:subClassOf rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#TransactionDocument"/>
         <opla-sd:entityPosition rdf:nodeID="genid34"/>
-        <rdfs:comment xml:lang="en">A document providing details of how the conversion of a company will be implemented.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d</rdfs:comment>
+        <rdfs:comment xml:lang="en">A document providing details of how the conversion of a company will be implemented. Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d</rdfs:comment>
         <rdfs:label xml:lang="en">Company conversion plan</rdfs:label>
         <rdfs:seeAlso rdf:resource="https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html"/>
     </owl:Class>
@@ -2241,7 +2240,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
             </owl:Restriction>
         </rdfs:subClassOf>
         <opla-sd:entityPosition rdf:nodeID="genid184"/>
-        <rdfs:comment xml:lang="en">A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the managgement board. It is also called non-executive board in a one-tier board system.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the management board. It is also called non-executive board in a one-tier board system.</rdfs:comment>
         <rdfs:label xml:lang="en">Supervisory board</rdfs:label>
     </owl:Class>
     <rdf:Description rdf:nodeID="genid184">

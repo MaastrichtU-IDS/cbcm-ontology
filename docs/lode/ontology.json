@@ -2251,7 +2251,7 @@
   "@id" : "http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/description" : [ {
-    "@value" : "This ontology describes terms concerning company mobility and their cross-border transactions within the European Union."
+    "@value" : "This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation."
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@value" : "The European Union Company Mobility Ontology (EU-CMO)"
@@ -2328,7 +2328,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-rinciple."
+    "@value" : "Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). If such a system of BLER exists prior to a cross-border company transaction, such right must be upheld in the acquiring/recipient company under the before-and-after-principle."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2576,10 +2576,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A document providing details of how the conversion of a company will be implemented."
-  }, {
-    "@language" : "en",
-    "@value" : "Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d"
+    "@value" : "A document providing details of how the conversion of a company will be implemented. Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -3976,7 +3973,7 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the managgement board. It is also called non-executive board in a one-tier board system."
+    "@value" : "A supervisory board must approve of major business decisions. It is a group of individuals chosen by the shareholders - and employee representatives in board-level employee representation systems - of a company to promote their interests through the governance of the company and to hire and supervise the management board. It is also called non-executive board in a one-tier board system."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
