@@ -11,7 +11,7 @@
      xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
     <owl:Ontology rdf:about="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology">
         <owl:versionIRI rdf:resource="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology/1.0.0"/>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology describes terms concerning company mobility and their cross-border transactions within the European Union.</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.</dc:description>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The European Union Company Mobility Ontology (EU-CMO)</dc:title>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kody Moodley</terms:contributor>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marcus Meyer</terms:contributor>
