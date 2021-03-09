@@ -1,0 +1,26 @@
+CBCM-ontology change log:
+-------------------------
+
+9/3/2021 (v1.1.0):
+------------------
+
+- Updated ontology IRI to persistent identifier from w3id.org
+- Added contributors Walter, Tobias, Ruta
+- Corrected ontology version field
+- Added affiliation institution(s) responsible for ontology (UM, IDS, Tech Lab)
+- Deleted duplicate classes: AnnualAccount, InterimAccount
+- Updated BLERRight definition slightly to be clear that it refers to the RIGHT and not the process or phenomemon of BLER itself
+- Corrected WorksCouncil definition - it is not a subclass of Employee. A WorksCouncil can have one or more employees
+- Many new object properties (cbcmDocumentRelations, cbcmTransactionRelations, cbcmOrganisationRelations)
+- updated domains and ranges for object properties
+- Added GeoPoliticalRegion, Country and EUCountry classes
+- OWL axioms for CBM, CBD, ST and CBC
+- involves relation removed usage
+- Added upper-level ontology classes: Agent, Object, Process, Entity, SpatialRegion, Attribute
+- removed transfers data property
+- Corrected typos in some human-readable labels
+- Added EU member state countries as instances
+- Added list of company forms as instances
+
+
+

@@ -1,0 +1,60 @@
+{
+	"http://w3id.org/um/cbcm/eu-cm-ontology#Company" : 
+	[	{
+			"ontology" : "Wikidata",
+			"type" : "EquivalentTo",
+			"IRI" : "http://www.wikidata.org/wiki/Q783794"
+		},
+		{
+			"ontology" : "Schema.org",
+			"type" : "EquivalentTo",
+			"IRI" : "https://schema.org/Corporation"
+		},
+		{
+			"ontology" : "DBpedia",
+			"type" : "EquivalentTo",
+			"IRI" : "https://dbpedia.org/ontology/Company"
+		}
+	],
+	"http://w3id.org/um/cbcm/eu-cm-ontology#Person" : 	
+	[	{
+			"ontology" : "Wikidata",
+			"type" : "EquivalentTo",
+			"IRI" : "https://www.wikidata.org/wiki/Q5"
+		},
+		{
+			"ontology" : "Schema.org",
+			"type" : "EquivalentTo",
+			"IRI" : "https://schema.org/Person"
+		},
+		{
+			"ontology" : "DBpedia",
+			"type" : "EquivalentTo",
+			"IRI" : "https://dbpedia.org/ontology/Person"
+		}
+	],
+	"http://w3id.org/um/cbcm/eu-cm-ontology#CrossBorderMerger" : 	
+	[	{
+			"ontology" : "Wikidata",
+			"type" : "SubClassOf",
+			"IRI" : "https://www.wikidata.org/wiki/Q1363768"
+		}
+	],
+	"http://w3id.org/um/cbcm/eu-cm-ontology#Country" : 	
+	[	{
+			"ontology" : "Wikidata",
+			"type" : "EquivalentTo",
+			"IRI" : "https://www.wikidata.org/wiki/Q6256"
+		},
+		{
+			"ontology" : "DBpedia",
+			"type" : "EquivalentTo",
+			"IRI" : "https://dbpedia.org/ontology/Country"
+		},
+		{
+			"ontology" : "Schema.org",
+			"type" : "EquivalentTo",
+			"IRI" : "https://schema.org/Country"			
+		}
+	]
+}
