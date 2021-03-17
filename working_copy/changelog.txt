@@ -1,6 +1,24 @@
 CBCM-ontology change log:
 -------------------------
 
+15/3/2021 (v1.2.0):
+-------------------n
+- Updated Stakeholder definition
+- Disjointess of Processes, Objects and Persons / Organisations
+- Removed CoModIDE "entity" annotations
+- Corrected TransferringCompany definition
+- added labels and comments to classes and object properties where missing
+- Updated IndependentExpert definition (either a Person or Organisation but not both)
+- Added hasSubProcedure for change of address and central administration for seat transfers
+- created CompanyRegisteredOffice, CompanyCentralAdministration
+- Company attributes -> has a central administration and / or registered office
+- created EEACountry, NonEEACountry, NonEUCountry
+- created City class
+- corrected some class definitions to make clear the distinction between domestic and cross-border transactions for some human-readable definitions e.g. cross-border division
+- SeatTransfer definition corrected logically (distinction between cross-border and domestic as well)
+- created SpecialNegotationBody class
+- added human-readable labels for object properties and individuals (member states and company forms)
+
 9/3/2021 (v1.1.0):
 ------------------
 
