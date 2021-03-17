@@ -2,7 +2,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://w3id.org/um/cbcm/eu-cm-ontology/1.1.0> a prov:Entity;
+<http://w3id.org/um/cbcm/eu-cm-ontology/1.2.0> a prov:Entity;
 	 dc:title "The European Union Company Mobility Ontology (EU-CMO)";
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;

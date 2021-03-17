@@ -4152,7 +4152,7 @@
     "@value" : "https://maastrichtu-ids.github.io/cbcm-ontology"
   } ],
   "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology/1.1.0"
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology/1.2.0"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "1.2.0"
@@ -4621,6 +4621,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://ontologydesignpatterns.org/opla-sd#entityPosition" : [ {
     "@id" : "_:genid92"
+  } ],
+  "http://w3id.org/um/cbcm/eu-cm-ontology#rutaslabel" : [ {
+    "@language" : "en",
+    "@value" : "competent-authority"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -7448,6 +7452,12 @@
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDocumentRelation"
   } ]
 }, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#requirement-level",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+  } ]
+}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://w3id.org/um/cbcm/eu-cm-ontology#example" : [ {
@@ -7474,6 +7484,12 @@
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#romania",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry" ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#rutaslabel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+  } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#sa",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyLegalForm" ],

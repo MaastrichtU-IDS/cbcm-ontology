@@ -12,7 +12,7 @@
      xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
      xmlns:eu-cm-ontology="http://w3id.org/um/cbcm/eu-cm-ontology#">
     <owl:Ontology rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology">
-        <owl:versionIRI rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology/1.1.0"/>
+        <owl:versionIRI rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology/1.2.0"/>
         <dc:description>This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.</dc:description>
         <dc:title>The European Union Company Mobility Ontology (EU-CMO)</dc:title>
         <terms:contributor>Kody Moodley</terms:contributor>
@@ -105,6 +105,24 @@
 
     <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#example">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#requirement-level -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#requirement-level">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#rutaslabel -->
+
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#rutaslabel">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
 
@@ -1343,6 +1361,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
     <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#CompetentAuthority">
         <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Organisation"/>
         <opla-sd:entityPosition rdf:nodeID="genid92"/>
+        <rutaslabel xml:lang="en">competent-authority</rutaslabel>
         <rdfs:comment xml:lang="en">The monitoring of the completion and legality of the decision-making process in each company involved in a transaction is carried out by a national authority having jurisdiction over each of those companies. The national authority could be a court, a notary or any other competent authority appointed by the Member State concerned.</rdfs:comment>
         <rdfs:label xml:lang="en">Competent authority</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
