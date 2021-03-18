@@ -94,7 +94,17 @@
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#example -->
 
     <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#example">
+        <rdfs:comment xml:lang="en">Provides a human-readable written example of the entity in question.</rdfs:comment>
+        <rdfs:label xml:lang="en">Example</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#iso2code -->
+
+    <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#iso2code">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
 
@@ -102,15 +112,10 @@
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#requirement-level -->
 
     <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#requirement-level">
+        <cbcm:example xml:lang="en">Examples include: MUST, SHOULD, RECOMMENDED and OPTIONAL</cbcm:example>
+        <rdfs:comment xml:lang="en">Specifies a phrase to indicate the degree to which the providing of a value for the entity (e.g. a data or object property) in question is compulsory, recommended or optional.</rdfs:comment>
+        <rdfs:label xml:lang="en">Requirement level</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#rutaslabel -->
-
-    <owl:AnnotationProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#rutaslabel">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#label"/>
     </owl:AnnotationProperty>
     
 
@@ -280,7 +285,14 @@
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
-        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Organisation"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Organisation"/>
+                    <rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Person"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
         <cbcm:example xml:lang="en">(employedBy person1 company1)</cbcm:example>
         <rdfs:comment xml:lang="en">(employedBy ?ENTITY1 ?ENTITY2) means that some agent (person or organisation) ?ENTITY1 is promised and delivered an incentive (usually financial) to perform some work for ?ENTITY2 where ?ENTITY2 is an organisation. This exchange is usually governed by law and formal regulations in the particular country or social context in which the work is being performed.</rdfs:comment>
         <rdfs:label xml:lang="en">employed by</rdfs:label>
@@ -305,6 +317,12 @@
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+        <cbcm:example>(hasAcquiringCompany crossBorderMerger1 company1)</cbcm:example>
+        <rdfs:comment xml:lang="en">(hasAcquiringCompany ?ENTITY1 ?ENTITY2) means that some company merger transaction ?ENTITY1 produces a new company or alters an existing one (?ENTITY2) such that ?ENTITY2 will acquire (via a universal transfer of assets and liabilities) one or more other companies involved in the process ?ENTITY1.</rdfs:comment>
+        <rdfs:label xml:lang="en">has acquiring company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#MergingCompany"/>
     </owl:ObjectProperty>
     
 
@@ -316,15 +334,14 @@
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Organisation"/>
-                    <rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#OrganisationalUnit"/>
+                    <rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Agent"/>
                     <rdf:Description rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Agent"/>
         <cbcm:example xml:lang="en">(hasCompanyStakeholder company1 person1)</cbcm:example>
-        <rdfs:comment xml:lang="en">(hasCompanyStakeholder ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1, which is either a significant event, process or organisation, has an agent ?ENTITY2 with personal interests in benefiting either financially or otherwise from the outcomes of ?ENTITY1 (if it is an event or process), or in its byproducts and profits (if it is an organisation).</rdfs:comment>
+        <rdfs:comment xml:lang="en">(hasCompanyStakeholder ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1, which is either a significant process or agent has another agent ?ENTITY2 with personal interests in benefiting either financially or otherwise from the outcomes of ?ENTITY1 (if it is an event or process), or in its byproducts and profits (if it is an agent).</rdfs:comment>
         <rdfs:label xml:lang="en">has company stakeholder</rdfs:label>
     </owl:ObjectProperty>
     
@@ -350,6 +367,12 @@
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+        <cbcm:example>(hasMergingCompany crossBorderMerger1 company1)</cbcm:example>
+        <rdfs:comment xml:lang="en">(hasMergingCompany ?ENTITY1 ?ENTITY2) means that some company merger transaction ?ENTITY1 involves a company ?ENTITY2 which will be dissolved during the process of ?ENTITY1 and will be acquired (via a universal transfer of assets and liabilities) by another distinct company involved in ?ENTITY1.</rdfs:comment>
+        <rdfs:label xml:lang="en">has merging company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#MergingCompany"/>
     </owl:ObjectProperty>
     
 
@@ -360,6 +383,13 @@
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyDivision"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+        <cbcm:example>(hasOriginalCompany crossBorderDivision1 company1)</cbcm:example>
+        <rdfs:comment xml:lang="en">(hasOriginalCompany ?ENTITY1 ?ENTITY2) means that some company division transaction ?ENTITY1 involves a company ?ENTITY2 which will be divided (or &quot;split&quot;) into multiple recipient or emerging companies.</rdfs:comment>
+        <rdfs:label xml:lang="en">has original company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyDivision"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EmergingCompany"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#OriginalCompany"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#RecipientCompany"/>
     </owl:ObjectProperty>
     
 
@@ -397,6 +427,12 @@
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyDivision"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+        <cbcm:example>(hasMergingCompany crossBorderMerger1 company1)</cbcm:example>
+        <rdfs:comment xml:lang="en">(hasRecipientCompany ?ENTITY1 ?ENTITY2) means that some company division transaction ?ENTITY1 produces two or more distinct companies, one of which is ?ENTITY2 (a so-called &quot;recipient company&quot;).</rdfs:comment>
+        <rdfs:label xml:lang="en">has recipient company</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#MergingCompany"/>
     </owl:ObjectProperty>
     
 
@@ -431,6 +467,8 @@
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmTransactionRelation"/>
         <owl:inverseOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionInputOf"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
         <cbcm:example>(hasTransactionInput crossBorderMerger1 company1)</cbcm:example>
         <rdfs:comment xml:lang="en">(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1.</rdfs:comment>
         <rdfs:label xml:lang="en">has transaction input</rdfs:label>
@@ -446,6 +484,11 @@
         <owl:inverseOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionResultOf"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+        <cbcm:example>(hasTransactionResult crossBorderMerger1 acquiringCompany1)</cbcm:example>
+        <cbcm:example>(hasTransactionResult crossBorderMerger1 mergerCertificate1)</cbcm:example>
+        <rdfs:comment xml:lang="en">(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process.</rdfs:comment>
+        <rdfs:label xml:lang="en">has transaction result</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
     </owl:ObjectProperty>
     
 
@@ -467,6 +510,13 @@
 
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmTransactionRelation"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
+        <cbcm:example>(involvesCountry crossBorderMerger1 france)</cbcm:example>
+        <rdfs:comment xml:lang="en">(involvesCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 includes the modification of a company whose place of business is located in the country referred to by ?ENTITY2</rdfs:comment>
+        <rdfs:label xml:lang="en">involves country</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
     </owl:ObjectProperty>
     
 
@@ -486,6 +536,9 @@
 
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionResultOf">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmTransactionRelation"/>
+        <cbcm:example rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult"/>
+        <rdfs:comment xml:lang="en">(isTransactionResultOf ?ENTITY1 ?ENTITY2) means (hasTransactionResult ?ENTITY2 ?ENTITY1)</rdfs:comment>
+        <rdfs:label xml:lang="en">is transaction result of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -612,6 +665,11 @@
 
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry"/>
+        <cbcm:example>(sourceCountry crossBorderMerger1 france)</cbcm:example>
+        <rdfs:comment xml:lang="en">(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2.</rdfs:comment>
+        <rdfs:label xml:lang="en">source country</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput"/>
     </owl:ObjectProperty>
     
 
@@ -620,6 +678,11 @@
 
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry"/>
+        <cbcm:example>(targetCountry crossBorderMerger1 belgium)</cbcm:example>
+        <rdfs:comment xml:lang="en">(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2.</rdfs:comment>
+        <rdfs:label xml:lang="en">target country</rdfs:label>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
+        <rdfs:seeAlso rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult"/>
     </owl:ObjectProperty>
     
 
@@ -1237,6 +1300,25 @@ a) company being divided, on being dissolved without going into liquidation, tra
     
 
 
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder -->
+
+    <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyStakeholder"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#partOf"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <opla-sd:entityPosition>
+            <rdf:Description/>
+        </opla-sd:entityPosition>
+        <rdfs:comment xml:lang="en">An individual, group, or organization that owns one or more shares in a company, and in whose name the share certificate is issued.</rdfs:comment>
+        <rdfs:label xml:lang="en">Company shareholder</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#CompanyStakeholder -->
 
     <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyStakeholder">
@@ -1308,7 +1390,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
                 <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
             </rdf:Description>
         </opla-sd:entityPosition>
-        <cbcm:rutaslabel xml:lang="en">competent-authority</cbcm:rutaslabel>
         <rdfs:comment xml:lang="en">The monitoring of the completion and legality of the decision-making process in each company involved in a transaction is carried out by a national authority having jurisdiction over each of those companies. The national authority could be a court, a notary or any other competent authority appointed by the Member State concerned.</rdfs:comment>
         <rdfs:label xml:lang="en">Competent authority</rdfs:label>
         <rdfs:seeAlso rdf:resource="http://data.europa.eu/eli/dir/2017/1132/oj"/>
@@ -2310,13 +2391,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Manager">
         <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyStakeholder"/>
-        <opla-sd:entityPosition>
-            <rdf:Description>
-                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">179.99500355435825</opla-sd:entityPositionX>
-                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5621061400510543</opla-sd:entityPositionY>
-                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-            </rdf:Description>
-        </opla-sd:entityPosition>
         <rdfs:comment xml:lang="en">A person or group of persons that are responsible for overseeing the operations of a company.</rdfs:comment>
         <rdfs:label xml:lang="en">Manager</rdfs:label>
     </owl:Class>
@@ -2889,29 +2963,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
     
 
 
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder -->
-
-    <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyStakeholder"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#partOf"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Company"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <opla-sd:entityPosition>
-            <rdf:Description>
-                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.53115916189458</opla-sd:entityPositionX>
-                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.20143563808284</opla-sd:entityPositionY>
-                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-            </rdf:Description>
-        </opla-sd:entityPosition>
-        <rdfs:comment xml:lang="en">An individual, group, or organization that owns one or more shares in a company, and in whose name the share certificate is issued.</rdfs:comment>
-        <rdfs:label xml:lang="en">Company shareholder</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#ShareholderExitRight -->
 
     <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#ShareholderExitRight">
@@ -2972,7 +3023,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo"/>
-                <owl:someValuesFrom rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <opla-sd:entityPosition>
@@ -3294,8 +3345,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#UltimateBeneficialOwner -->
 
     <owl:Class rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#UltimateBeneficialOwner">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder"/>
         <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Person"/>
-        <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#owns"/>
@@ -3480,6 +3531,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#austria">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>AT</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Austria</rdfs:label>
+        <rdfs:label xml:lang="de">Österreich</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3488,6 +3542,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#belgium">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>BE</cbcm:iso2code>
+        <rdfs:label xml:lang="fr">Belgique</rdfs:label>
+        <rdfs:label xml:lang="en">Belgium</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3496,6 +3553,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>BG</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Bulgaria</rdfs:label>
+        <rdfs:label xml:lang="bg">Bǎlgariya</rdfs:label>
+        <rdfs:label xml:lang="bg">България</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3522,6 +3583,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#croatia">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>HR</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Croatia</rdfs:label>
+        <rdfs:label xml:lang="hr">Hrvatska</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3538,6 +3602,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#cyprus">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>CY</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Cyprus</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3546,6 +3612,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#czechia">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>CZ</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Czech Republic</rdfs:label>
+        <rdfs:label xml:lang="en">Czechia</rdfs:label>
+        <rdfs:label xml:lang="cz">Česká republika</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3563,6 +3633,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#denmark">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>DK</cbcm:iso2code>
+        <rdfs:label xml:lang="dk">Danmark</rdfs:label>
+        <rdfs:label xml:lang="en">Denmark</rdfs:label>
+        <rdfs:label xml:lang="en">Kingdom of Denmark</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3598,6 +3672,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#estonia">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>EE</cbcm:iso2code>
+        <rdfs:label xml:lang="ee">Eesti</rdfs:label>
+        <rdfs:label xml:lang="en">Estonia</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3614,6 +3691,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#finland">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>FI</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Finland</rdfs:label>
+        <rdfs:label xml:lang="fi">Suomi</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3622,6 +3702,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#france">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>FR</cbcm:iso2code>
+        <rdfs:label xml:lang="en">France</rdfs:label>
+        <rdfs:label xml:lang="en">French Republic</rdfs:label>
+        <rdfs:label xml:lang="fr">République française</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3630,6 +3714,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#germany">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>DE</cbcm:iso2code>
+        <rdfs:label xml:lang="de">Deutschland</rdfs:label>
+        <rdfs:label xml:lang="en">Germany</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3655,6 +3742,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#greece">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>EL</cbcm:iso2code>
+        <cbcm:iso2code>GR</cbcm:iso2code>
+        <rdfs:label xml:lang="gr">Ellada</rdfs:label>
+        <rdfs:label xml:lang="en">Greece</rdfs:label>
+        <rdfs:label xml:lang="gr">Ελλάδα</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3671,6 +3763,20 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#hungary">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>HU</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Hungary</rdfs:label>
+        <rdfs:label xml:lang="hu">Magyarország</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#iceland -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#iceland">
+        <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EEACountry"/>
+        <cbcm:iso2code>IS</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Iceland</rdfs:label>
+        <rdfs:label xml:lang="is">Ísland</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3679,6 +3785,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#ireland">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>IE</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Ireland</rdfs:label>
+        <rdfs:label xml:lang="ga">Éire</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3687,6 +3796,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#italy">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>IT</cbcm:iso2code>
+        <rdfs:label xml:lang="it">Italia</rdfs:label>
+        <rdfs:label xml:lang="en">Italian Republic</rdfs:label>
+        <rdfs:label xml:lang="en">Italy</rdfs:label>
+        <rdfs:label xml:lang="it">Repubblica Italiana</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3704,6 +3818,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#latvia">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>LV</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Latvia</rdfs:label>
+        <rdfs:label xml:lang="lv">Latvija</rdfs:label>
+        <rdfs:label xml:lang="lv">Latvijas Republika</rdfs:label>
+        <rdfs:label xml:lang="en">Republic of Latvia</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3717,10 +3836,27 @@ a) company being divided, on being dissolved without going into liquidation, tra
     
 
 
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#liechtenstein -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#liechtenstein">
+        <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EEACountry"/>
+        <cbcm:iso2code>LI</cbcm:iso2code>
+        <rdfs:label xml:lang="de">Fürstentum Liechtenstein</rdfs:label>
+        <rdfs:label xml:lang="en">Liechtenstein</rdfs:label>
+        <rdfs:label xml:lang="en">Principality of Liechtenstein</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#lithuania -->
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#lithuania">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>LT</cbcm:iso2code>
+        <rdfs:label xml:lang="lt">Lietuva</rdfs:label>
+        <rdfs:label xml:lang="lt">Lietuvos Respublika</rdfs:label>
+        <rdfs:label xml:lang="en">Lithuania</rdfs:label>
+        <rdfs:label xml:lang="en">Republic of Lithuania</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3738,6 +3874,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>LU</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Grand Duchy of Luxembourg</rdfs:label>
+        <rdfs:label xml:lang="fr">Grand-Duché de Luxembourg</rdfs:label>
+        <rdfs:label xml:lang="lb">Groussherzogtum Lëtzebuerg</rdfs:label>
+        <rdfs:label xml:lang="de">Großherzogtum Luxemburg​</rdfs:label>
+        <rdfs:label xml:lang="en">Luxembourg</rdfs:label>
+        <rdfs:label xml:lang="lb">Lëtzebuerg</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3746,6 +3889,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#malta">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>MT</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Malta</rdfs:label>
+        <rdfs:label xml:lang="en">Melita</rdfs:label>
+        <rdfs:label xml:lang="mt">Repubblika ta&apos; Malta</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3754,6 +3901,30 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#netherlands">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>NL</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Holland</rdfs:label>
+        <rdfs:label xml:lang="nl">Nederland</rdfs:label>
+        <rdfs:label xml:lang="en">Netherlands</rdfs:label>
+        <rdfs:label xml:lang="en">The Netherlands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#norway -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#norway">
+        <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EEACountry"/>
+        <cbcm:iso2code>NO</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Kingdom of Norway</rdfs:label>
+        <rdfs:label xml:lang="no">Kongeriket Noreg</rdfs:label>
+        <rdfs:label xml:lang="no">Kongeriket Norge</rdfs:label>
+        <rdfs:label xml:lang="no">Noreg</rdfs:label>
+        <rdfs:label xml:lang="no">Norge</rdfs:label>
+        <rdfs:label xml:lang="no">Norgga</rdfs:label>
+        <rdfs:label xml:lang="no">Norgga gonagasriika</rdfs:label>
+        <rdfs:label xml:lang="en">Norway</rdfs:label>
+        <rdfs:label xml:lang="no">Nöörjen</rdfs:label>
+        <rdfs:label xml:lang="no">Vuona</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3833,6 +4004,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#poland">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>PL</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Poland</rdfs:label>
+        <rdfs:label xml:lang="pl">Polska</rdfs:label>
+        <rdfs:label xml:lang="en">Republic of Poland</rdfs:label>
+        <rdfs:label xml:lang="pl">Rzeczpospolita Polska</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3841,6 +4017,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#portugal">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>PT</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Portugal</rdfs:label>
+        <rdfs:label xml:lang="en">Portuguese Republic</rdfs:label>
+        <rdfs:label xml:lang="pt">República Portuguesa</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3849,6 +4029,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#romania">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>RO</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Romania</rdfs:label>
+        <rdfs:label xml:lang="ro">România</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -3933,6 +4116,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#slovakia">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+        <cbcm:iso2code>SK</cbcm:iso2code>
+        <rdfs:label xml:lang="en">Slovak Republic</rdfs:label>
+        <rdfs:label xml:lang="en">Slovakia</rdfs:label>
+        <rdfs:label xml:lang="sk">Slovensko</rdfs:label>
+        <rdfs:label xml:lang="sk">Slovenská republika</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -4019,6 +4207,16 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyLegalForm"/>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uab</rdfs:label>
     </owl:NamedIndividual>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.53115916189458</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.20143563808284</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">179.99500355435825</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5621061400510543</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
     <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.38141223492617</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.3640814981097</opla-sd:entityPositionY>
