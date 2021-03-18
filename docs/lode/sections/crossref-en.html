@@ -128,8 +128,8 @@ This section provides details for each class and property defined by The Europea
             title="http://w3id.org/um/cbcm/eu-cm-ontology#SeatTransferPlan">Company seat transfer plan</a>
       </li>
       <li>
-         <a href="#Shareholder"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder">Company shareholder</a>
+         <a href="#CompanyShareholder"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder">Company shareholder</a>
       </li>
       <li>
          <a href="#CompanyTransaction"
@@ -769,6 +769,8 @@ This section provides details for each class and property defined by The Europea
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasParentCompany">has parent company</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasRecipientCompany"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasRecipientCompany">has recipient company</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTransactionInput"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput">has transaction input</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTransactionResult"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult">has transaction result</a>
             <sup class="type-op" title="object property">op</sup>
@@ -1430,13 +1432,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Shareholder">
+   <div class="entity" id="CompanyShareholder">
       <h3>Company shareholder<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder</p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder</p>
       <div class="comment">
          <span class="markdown">An individual, group, or organization that owns one or more shares in a company, and in whose name the share certificate is issued.</span>
       </div>
@@ -1488,8 +1490,12 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <dd>
             <a href="#hasSubProcedure"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasSubProcedure">has sub procedure</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#hasTransactionInput"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput">has transaction input</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasTransactionResult"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult">has transaction result</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#involvesCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry">involves country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#reportedIn"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#reportedIn">reported in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#requiresDocument"
@@ -1629,6 +1635,12 @@ a) company being divided, on being dissolved without going into liquidation, tra
             <sup class="type-c" title="class">c</sup>, <a href="#NonEUCountry"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#NonEUCountry">Non-EU country</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#involvesCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry">involves country</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -2176,33 +2188,33 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
          <dt>has members</dt>
          <dd>
-            <a href="#austria" title="http://w3id.org/um/cbcm/eu-cm-ontology#austria">austria</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#belgium" title="http://w3id.org/um/cbcm/eu-cm-ontology#belgium">belgium</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#bulgaria" title="http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria">bulgaria</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#croatia" title="http://w3id.org/um/cbcm/eu-cm-ontology#croatia">croatia</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#cyprus" title="http://w3id.org/um/cbcm/eu-cm-ontology#cyprus">cyprus</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#czechia" title="http://w3id.org/um/cbcm/eu-cm-ontology#czechia">czechia</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#denmark" title="http://w3id.org/um/cbcm/eu-cm-ontology#denmark">denmark</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#estonia" title="http://w3id.org/um/cbcm/eu-cm-ontology#estonia">estonia</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#finland" title="http://w3id.org/um/cbcm/eu-cm-ontology#finland">finland</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#france" title="http://w3id.org/um/cbcm/eu-cm-ontology#france">france</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#germany" title="http://w3id.org/um/cbcm/eu-cm-ontology#germany">germany</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#greece" title="http://w3id.org/um/cbcm/eu-cm-ontology#greece">greece</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#hungary" title="http://w3id.org/um/cbcm/eu-cm-ontology#hungary">hungary</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ireland" title="http://w3id.org/um/cbcm/eu-cm-ontology#ireland">ireland</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#italy" title="http://w3id.org/um/cbcm/eu-cm-ontology#italy">italy</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#latvia" title="http://w3id.org/um/cbcm/eu-cm-ontology#latvia">latvia</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#lithuania"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#lithuania">lithuania</a>
+            <a href="#austria" title="http://w3id.org/um/cbcm/eu-cm-ontology#austria">Austria</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#belgium" title="http://w3id.org/um/cbcm/eu-cm-ontology#belgium">Belgium</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#bulgaria" title="http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria">Bulgaria</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#croatia" title="http://w3id.org/um/cbcm/eu-cm-ontology#croatia">Croatia</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#cyprus" title="http://w3id.org/um/cbcm/eu-cm-ontology#cyprus">Cyprus</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#czechia" title="http://w3id.org/um/cbcm/eu-cm-ontology#czechia">Czech Republic</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#denmark" title="http://w3id.org/um/cbcm/eu-cm-ontology#denmark">Denmark</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#estonia" title="http://w3id.org/um/cbcm/eu-cm-ontology#estonia">Estonia</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#finland" title="http://w3id.org/um/cbcm/eu-cm-ontology#finland">Finland</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#france" title="http://w3id.org/um/cbcm/eu-cm-ontology#france">France</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#germany" title="http://w3id.org/um/cbcm/eu-cm-ontology#germany">Germany</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#luxembourg"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg">luxembourg</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#malta" title="http://w3id.org/um/cbcm/eu-cm-ontology#malta">malta</a>
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg">Grand Duchy of Luxembourg</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#greece" title="http://w3id.org/um/cbcm/eu-cm-ontology#greece">Greece</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#netherlands"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#netherlands">netherlands</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#poland" title="http://w3id.org/um/cbcm/eu-cm-ontology#poland">poland</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#portugal" title="http://w3id.org/um/cbcm/eu-cm-ontology#portugal">portugal</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#romania" title="http://w3id.org/um/cbcm/eu-cm-ontology#romania">romania</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#slovakia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovakia">slovakia</a>
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#netherlands">Holland</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#hungary" title="http://w3id.org/um/cbcm/eu-cm-ontology#hungary">Hungary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ireland" title="http://w3id.org/um/cbcm/eu-cm-ontology#ireland">Ireland</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#italy" title="http://w3id.org/um/cbcm/eu-cm-ontology#italy">Italian Republic</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#latvia" title="http://w3id.org/um/cbcm/eu-cm-ontology#latvia">Latvia</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#lithuania"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#lithuania">Lithuania</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#malta" title="http://w3id.org/um/cbcm/eu-cm-ontology#malta">Malta</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#poland" title="http://w3id.org/um/cbcm/eu-cm-ontology#poland">Poland</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#portugal" title="http://w3id.org/um/cbcm/eu-cm-ontology#portugal">Portugal</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#romania" title="http://w3id.org/um/cbcm/eu-cm-ontology#romania">Romania</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#slovakia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovakia">Slovak Republic</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#slovenia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovenia">slovenia</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#spain" title="http://w3id.org/um/cbcm/eu-cm-ontology#spain">spain</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#sweden" title="http://w3id.org/um/cbcm/eu-cm-ontology#sweden">sweden</a>
@@ -2237,6 +2249,14 @@ a) company being divided, on being dissolved without going into liquidation, tra
             <a href="#EUCountry"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">EU country</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#iceland" title="http://w3id.org/um/cbcm/eu-cm-ontology#iceland">Iceland</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#norway" title="http://w3id.org/um/cbcm/eu-cm-ontology#norway">Kingdom of Norway</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#liechtenstein"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#liechtenstein">Liechtenstein</a>
+            <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is disjoint with</dt>
          <dd>
@@ -2833,9 +2853,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#employedBy"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#employedBy">employed by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#issuedByOrganisation"
+            <a href="#issuedByOrganisation"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#issuedByOrganisation">issued by organisation</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#owns" title="http://w3id.org/um/cbcm/eu-cm-ontology#owns">owns</a>
             <sup class="type-op" title="object property">op</sup>
@@ -3368,8 +3386,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <dt>has sub-classes</dt>
          <dd>
             <a href="#Employee" title="http://w3id.org/um/cbcm/eu-cm-ontology#Employee">Company employee</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#Shareholder"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder">Company shareholder</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#CompanyShareholder"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder">Company shareholder</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Creditor" title="http://w3id.org/um/cbcm/eu-cm-ontology#Creditor">Creditor</a>
             <sup class="type-c" title="class">c</sup>, <a href="#WorksCouncil"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#WorksCouncil">Employee works council</a>
@@ -3618,8 +3636,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Shareholder"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#Shareholder">Company shareholder</a>
+            <a href="#CompanyShareholder"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyShareholder">Company shareholder</a>
             <sup class="type-c" title="class">c</sup>, <a href="#Person" title="http://w3id.org/um/cbcm/eu-cm-ontology#Person">Person</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
@@ -3680,9 +3698,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#hasAcquiringCompany"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasAcquiringCompany">
-            <span>has acquiring company</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasAcquiringCompany">has acquiring company</a>
       </li>
       <li>
          <a href="#hasCompanyStakeholder"
@@ -3693,15 +3709,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#hasMergingCompany"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasMergingCompany">
-            <span>has merging company</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasMergingCompany">has merging company</a>
       </li>
       <li>
          <a href="#hasOriginalCompany"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasOriginalCompany">
-            <span>has original company</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasOriginalCompany">has original company</a>
       </li>
       <li>
          <a href="#hasParentCompany"
@@ -3712,9 +3724,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#hasRecipientCompany"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasRecipientCompany">
-            <span>has recipient company</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasRecipientCompany">has recipient company</a>
       </li>
       <li>
          <a href="#hasSubProcedure"
@@ -3730,15 +3740,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#hasTransactionResult"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult">
-            <span>has transaction result</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult">has transaction result</a>
       </li>
       <li>
          <a href="#involvesCountry"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry">
-            <span>involves country</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry">involves country</a>
       </li>
       <li>
          <a href="#involvesChangeOf"
@@ -3750,9 +3756,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#isTransactionResultOf"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionResultOf">
-            <span>is transaction result of</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionResultOf">is transaction result of</a>
       </li>
       <li>
          <a href="#issuedByOrganisation"
@@ -3787,15 +3791,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#sourceCountry"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry">
-            <span>source country</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry">source country</a>
       </li>
       <li>
          <a href="#targetCountry"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry">
-            <span>target country</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry">target country</a>
       </li>
       <li>
          <a href="#transactionValidatedByDocument"
@@ -4192,6 +4192,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
             <dd>
                <a href="#Organisation"
                   title="http://w3id.org/um/cbcm/eu-cm-ontology#Organisation">Organisation</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Person" title="http://w3id.org/um/cbcm/eu-cm-ontology#Person">Person</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>is inverse of</dt>
@@ -4236,6 +4239,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasAcquiringCompany</p>
+      <div class="comment">
+         <span class="markdown">(hasAcquiringCompany ?ENTITY1 ?ENTITY2) means that some company merger transaction ?ENTITY1 produces a new company or alters an existing one (?ENTITY2) such that ?ENTITY2 will acquire (via a universal transfer of assets and liabilities) one or more other companies involved in the process ?ENTITY1.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4266,7 +4272,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasCompanyStakeholder</p>
       <div class="comment">
-         <span class="markdown">(hasCompanyStakeholder ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1, which is either a significant event, process or organisation, has an agent ?ENTITY2 with personal interests in benefiting either financially or otherwise from the outcomes of ?ENTITY1 (if it is an event or process), or in its byproducts and profits (if it is an organisation).</span>
+         <span class="markdown">(hasCompanyStakeholder ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1, which is either a significant process or agent has another agent ?ENTITY2 with personal interests in benefiting either financially or otherwise from the outcomes of ?ENTITY1 (if it is an event or process), or in its byproducts and profits (if it is an agent).</span>
       </div>
       <div class="description">
          <dl>
@@ -4288,12 +4294,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
             </dd>
             <dt>has domain</dt>
             <dd>
-               <a href="#Organisation"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#Organisation">Organisation</a>
-               <sup class="type-c" title="class">c</sup> 
-               <span class="logic">or</span> 
-               <a href="#OrganisationalUnit"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#OrganisationalUnit">Organisational unit</a>
+               <a href="#Agent" title="http://w3id.org/um/cbcm/eu-cm-ontology#Agent">Agent</a>
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#Process" title="http://w3id.org/um/cbcm/eu-cm-ontology#Process">Process</a>
@@ -4346,6 +4347,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasMergingCompany</p>
+      <div class="comment">
+         <span class="markdown">(hasMergingCompany ?ENTITY1 ?ENTITY2) means that some company merger transaction ?ENTITY1 involves a company ?ENTITY2 which will be dissolved during the process of ?ENTITY1 and will be acquired (via a universal transfer of assets and liabilities) by another distinct company involved in ?ENTITY1.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4375,6 +4379,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasOriginalCompany</p>
+      <div class="comment">
+         <span class="markdown">(hasOriginalCompany ?ENTITY1 ?ENTITY2) means that some company division transaction ?ENTITY1 involves a company ?ENTITY2 which will be divided (or "split") into multiple recipient or emerging companies.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4467,6 +4474,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasRecipientCompany</p>
+      <div class="comment">
+         <span class="markdown">(hasRecipientCompany ?ENTITY1 ?ENTITY2) means that some company division transaction ?ENTITY1 produces two or more distinct companies, one of which is ?ENTITY2 (a so-called "recipient company").</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4574,6 +4584,17 @@ a) company being divided, on being dissolved without going into liquidation, tra
                   title="http://w3id.org/um/cbcm/eu-cm-ontology#hasOriginalCompany">has original company</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompanyTransaction"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction">Company transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Company" title="http://w3id.org/um/cbcm/eu-cm-ontology#Company">Company</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>is inverse of</dt>
             <dd>
                <a href="#isTransactionInputOf"
@@ -4590,6 +4611,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult</p>
+      <div class="comment">
+         <span class="markdown">(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4633,6 +4657,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry</p>
+      <div class="comment">
+         <span class="markdown">(involvesCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 includes the modification of a company whose place of business is located in the country referred to by ?ENTITY2</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -4648,6 +4675,17 @@ a) company being divided, on being dissolved without going into liquidation, tra
                <sup class="type-op" title="object property">op</sup>, <a href="#targetCountry"
                   title="http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry">target country</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompanyTransaction"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction">Company transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Country" title="http://w3id.org/um/cbcm/eu-cm-ontology#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -4717,6 +4755,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionResultOf</p>
+      <div class="comment">
+         <span class="markdown">(isTransactionResultOf ?ENTITY1 ?ENTITY2) means (hasTransactionResult ?ENTITY2 ?ENTITY1)</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -5013,6 +5054,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry</p>
+      <div class="comment">
+         <span class="markdown">(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -5031,6 +5075,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry</p>
+      <div class="comment">
+         <span class="markdown">(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -5123,19 +5170,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <a href="#asa" title="http://w3id.org/um/cbcm/eu-cm-ontology#asa">asa</a>
       </li>
       <li>
-         <a href="#austria" title="http://w3id.org/um/cbcm/eu-cm-ontology#austria">
-            <span>austria</span>
-         </a>
+         <a href="#austria" title="http://w3id.org/um/cbcm/eu-cm-ontology#austria">Austria</a>
       </li>
       <li>
-         <a href="#belgium" title="http://w3id.org/um/cbcm/eu-cm-ontology#belgium">
-            <span>belgium</span>
-         </a>
+         <a href="#belgium" title="http://w3id.org/um/cbcm/eu-cm-ontology#belgium">Belgium</a>
       </li>
       <li>
-         <a href="#bulgaria" title="http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria">
-            <span>bulgaria</span>
-         </a>
+         <a href="#bulgaria" title="http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria">Bulgaria</a>
       </li>
       <li>
          <a href="#bv" title="http://w3id.org/um/cbcm/eu-cm-ontology#bv">bv</a>
@@ -5144,30 +5185,22 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <a href="#bvba" title="http://w3id.org/um/cbcm/eu-cm-ontology#bvba">bvba</a>
       </li>
       <li>
-         <a href="#croatia" title="http://w3id.org/um/cbcm/eu-cm-ontology#croatia">
-            <span>croatia</span>
-         </a>
+         <a href="#croatia" title="http://w3id.org/um/cbcm/eu-cm-ontology#croatia">Croatia</a>
       </li>
       <li>
          <a href="#cvba" title="http://w3id.org/um/cbcm/eu-cm-ontology#cvba">cvba</a>
       </li>
       <li>
-         <a href="#cyprus" title="http://w3id.org/um/cbcm/eu-cm-ontology#cyprus">
-            <span>cyprus</span>
-         </a>
+         <a href="#cyprus" title="http://w3id.org/um/cbcm/eu-cm-ontology#cyprus">Cyprus</a>
       </li>
       <li>
-         <a href="#czechia" title="http://w3id.org/um/cbcm/eu-cm-ontology#czechia">
-            <span>czechia</span>
-         </a>
+         <a href="#czechia" title="http://w3id.org/um/cbcm/eu-cm-ontology#czechia">Czech Republic</a>
       </li>
       <li>
          <a href="#dd" title="http://w3id.org/um/cbcm/eu-cm-ontology#dd">dd</a>
       </li>
       <li>
-         <a href="#denmark" title="http://w3id.org/um/cbcm/eu-cm-ontology#denmark">
-            <span>denmark</span>
-         </a>
+         <a href="#denmark" title="http://w3id.org/um/cbcm/eu-cm-ontology#denmark">Denmark</a>
       </li>
       <li>
          <a href="#doo" title="http://w3id.org/um/cbcm/eu-cm-ontology#doo">doo</a>
@@ -5179,9 +5212,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <a href="#epe" title="http://w3id.org/um/cbcm/eu-cm-ontology#epe">epe</a>
       </li>
       <li>
-         <a href="#estonia" title="http://w3id.org/um/cbcm/eu-cm-ontology#estonia">
-            <span>estonia</span>
-         </a>
+         <a href="#estonia" title="http://w3id.org/um/cbcm/eu-cm-ontology#estonia">Estonia</a>
       </li>
       <li>
          <a href="#euOfficialJournal"
@@ -5190,19 +5221,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </a>
       </li>
       <li>
-         <a href="#finland" title="http://w3id.org/um/cbcm/eu-cm-ontology#finland">
-            <span>finland</span>
-         </a>
+         <a href="#finland" title="http://w3id.org/um/cbcm/eu-cm-ontology#finland">Finland</a>
       </li>
       <li>
-         <a href="#france" title="http://w3id.org/um/cbcm/eu-cm-ontology#france">
-            <span>france</span>
-         </a>
+         <a href="#france" title="http://w3id.org/um/cbcm/eu-cm-ontology#france">France</a>
       </li>
       <li>
-         <a href="#germany" title="http://w3id.org/um/cbcm/eu-cm-ontology#germany">
-            <span>germany</span>
-         </a>
+         <a href="#germany" title="http://w3id.org/um/cbcm/eu-cm-ontology#germany">Germany</a>
       </li>
       <li>
          <a href="#gmbh" title="http://w3id.org/um/cbcm/eu-cm-ontology#gmbh">gmbh</a>
@@ -5214,64 +5239,56 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </a>
       </li>
       <li>
-         <a href="#greece" title="http://w3id.org/um/cbcm/eu-cm-ontology#greece">
-            <span>greece</span>
-         </a>
+         <a href="#luxembourg"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg">Grand Duchy of Luxembourg</a>
+      </li>
+      <li>
+         <a href="#greece" title="http://w3id.org/um/cbcm/eu-cm-ontology#greece">Greece</a>
       </li>
       <li>
          <a href="#hf" title="http://w3id.org/um/cbcm/eu-cm-ontology#hf">hf</a>
       </li>
       <li>
-         <a href="#hungary" title="http://w3id.org/um/cbcm/eu-cm-ontology#hungary">
-            <span>hungary</span>
-         </a>
+         <a href="#netherlands"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#netherlands">Holland</a>
       </li>
       <li>
-         <a href="#ireland" title="http://w3id.org/um/cbcm/eu-cm-ontology#ireland">
-            <span>ireland</span>
-         </a>
+         <a href="#hungary" title="http://w3id.org/um/cbcm/eu-cm-ontology#hungary">Hungary</a>
       </li>
       <li>
-         <a href="#italy" title="http://w3id.org/um/cbcm/eu-cm-ontology#italy">
-            <span>italy</span>
-         </a>
+         <a href="#iceland" title="http://w3id.org/um/cbcm/eu-cm-ontology#iceland">Iceland</a>
+      </li>
+      <li>
+         <a href="#ireland" title="http://w3id.org/um/cbcm/eu-cm-ontology#ireland">Ireland</a>
+      </li>
+      <li>
+         <a href="#italy" title="http://w3id.org/um/cbcm/eu-cm-ontology#italy">Italian Republic</a>
       </li>
       <li>
          <a href="#kft" title="http://w3id.org/um/cbcm/eu-cm-ontology#kft">kft</a>
       </li>
       <li>
-         <a href="#latvia" title="http://w3id.org/um/cbcm/eu-cm-ontology#latvia">
-            <span>latvia</span>
-         </a>
+         <a href="#norway" title="http://w3id.org/um/cbcm/eu-cm-ontology#norway">Kingdom of Norway</a>
+      </li>
+      <li>
+         <a href="#latvia" title="http://w3id.org/um/cbcm/eu-cm-ontology#latvia">Latvia</a>
       </li>
       <li>
          <a href="#lda" title="http://w3id.org/um/cbcm/eu-cm-ontology#lda">lda</a>
       </li>
       <li>
+         <a href="#liechtenstein"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#liechtenstein">Liechtenstein</a>
+      </li>
+      <li>
          <a href="#lithuania"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#lithuania">
-            <span>lithuania</span>
-         </a>
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#lithuania">Lithuania</a>
       </li>
       <li>
          <a href="#ltd" title="http://w3id.org/um/cbcm/eu-cm-ontology#ltd">ltd</a>
       </li>
       <li>
-         <a href="#luxembourg"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg">
-            <span>luxembourg</span>
-         </a>
-      </li>
-      <li>
-         <a href="#malta" title="http://w3id.org/um/cbcm/eu-cm-ontology#malta">
-            <span>malta</span>
-         </a>
-      </li>
-      <li>
-         <a href="#netherlands"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#netherlands">
-            <span>netherlands</span>
-         </a>
+         <a href="#malta" title="http://w3id.org/um/cbcm/eu-cm-ontology#malta">Malta</a>
       </li>
       <li>
          <a href="#nv" title="http://w3id.org/um/cbcm/eu-cm-ontology#nv">nv</a>
@@ -5298,19 +5315,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <a href="#plc" title="http://w3id.org/um/cbcm/eu-cm-ontology#plc">plc</a>
       </li>
       <li>
-         <a href="#poland" title="http://w3id.org/um/cbcm/eu-cm-ontology#poland">
-            <span>poland</span>
-         </a>
+         <a href="#poland" title="http://w3id.org/um/cbcm/eu-cm-ontology#poland">Poland</a>
       </li>
       <li>
-         <a href="#portugal" title="http://w3id.org/um/cbcm/eu-cm-ontology#portugal">
-            <span>portugal</span>
-         </a>
+         <a href="#portugal" title="http://w3id.org/um/cbcm/eu-cm-ontology#portugal">Portugal</a>
       </li>
       <li>
-         <a href="#romania" title="http://w3id.org/um/cbcm/eu-cm-ontology#romania">
-            <span>romania</span>
-         </a>
+         <a href="#romania" title="http://w3id.org/um/cbcm/eu-cm-ontology#romania">Romania</a>
       </li>
       <li>
          <a href="#sa" title="http://w3id.org/um/cbcm/eu-cm-ontology#sa">sa</a>
@@ -5340,9 +5351,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <a href="#sicav" title="http://w3id.org/um/cbcm/eu-cm-ontology#sicav">sicav</a>
       </li>
       <li>
-         <a href="#slovakia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovakia">
-            <span>slovakia</span>
-         </a>
+         <a href="#slovakia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovakia">Slovak Republic</a>
       </li>
       <li>
          <a href="#slovenia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovenia">
@@ -5558,7 +5567,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#asa</p>
    </div>
    <div class="entity" id="austria">
-      <h3>austria<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Austria<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5574,7 +5583,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="belgium">
-      <h3>belgium<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Belgium<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5590,7 +5599,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="bulgaria">
-      <h3>bulgaria<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Bulgaria<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5638,7 +5647,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="croatia">
-      <h3>croatia<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Croatia<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5662,7 +5671,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#cvba</p>
    </div>
    <div class="entity" id="cyprus">
-      <h3>cyprus<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Cyprus<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5678,7 +5687,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="czechia">
-      <h3>czechia<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Czech Republic<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5710,7 +5719,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="denmark">
-      <h3>denmark<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Denmark<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5774,7 +5783,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="estonia">
-      <h3>estonia<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Estonia<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5806,7 +5815,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="finland">
-      <h3>finland<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Finland<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5822,7 +5831,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="france">
-      <h3>france<sup class="type-ni" title="named individual">ni</sup>
+      <h3>France<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5838,7 +5847,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="germany">
-      <h3>germany<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Germany<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5885,8 +5894,24 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
       </dl>
    </div>
+   <div class="entity" id="luxembourg">
+      <h3>Grand Duchy of Luxembourg<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#EUCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">EU country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="greece">
-      <h3>greece<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Greece<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5909,8 +5934,24 @@ a) company being divided, on being dissolved without going into liquidation, tra
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hf</p>
    </div>
+   <div class="entity" id="netherlands">
+      <h3>Holland<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#netherlands</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#EUCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">EU country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="hungary">
-      <h3>hungary<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Hungary<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5925,8 +5966,24 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
       </dl>
    </div>
+   <div class="entity" id="iceland">
+      <h3>Iceland<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#iceland</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#EEACountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#EEACountry">European Economic Area country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="ireland">
-      <h3>ireland<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Ireland<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5942,7 +5999,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="italy">
-      <h3>italy<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Italian Republic<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -5973,8 +6030,24 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
       </dl>
    </div>
+   <div class="entity" id="norway">
+      <h3>Kingdom of Norway<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#norway</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#EEACountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#EEACountry">European Economic Area country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="latvia">
-      <h3>latvia<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Latvia<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -6005,8 +6078,24 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
       </dl>
    </div>
+   <div class="entity" id="liechtenstein">
+      <h3>Liechtenstein<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#liechtenstein</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#EEACountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#EEACountry">European Economic Area country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="lithuania">
-      <h3>lithuania<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Lithuania<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -6037,45 +6126,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
       </dl>
    </div>
-   <div class="entity" id="luxembourg">
-      <h3>luxembourg<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#EUCountry"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">EU country</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="malta">
-      <h3>malta<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Malta<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#malta</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#EUCountry"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">EU country</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="netherlands">
-      <h3>netherlands<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#netherlands</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
@@ -6206,7 +6263,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="poland">
-      <h3>poland<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Poland<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -6222,7 +6279,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="portugal">
-      <h3>portugal<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Portugal<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -6238,7 +6295,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </dl>
    </div>
    <div class="entity" id="romania">
-      <h3>romania<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Romania<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
@@ -6358,7 +6415,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#sicav</p>
    </div>
    <div class="entity" id="slovakia">
-      <h3>slovakia<sup class="type-ni" title="named individual">ni</sup>
+      <h3>Slovak Republic<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
