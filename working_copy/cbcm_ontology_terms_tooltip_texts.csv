@@ -1,12 +1,16 @@
 "ontology_term","ontology_term_label","ontology_term_definition"
 "cbcm:TransactionRight","Transaction right","A legal right of a legal entity involved in the process of a company transaction. A legal right here refers to the entitlement of a person to be allowed to perform an activity, or to possess or obtain access to an object."
 "cbcm:Agent","Agent","None"
+"cbcm:Process","Process","None"
+"cbcm:Entity","Entity","None"
 "cbcm:CompanyMobilityDocument","Company mobility document","A legal document which provides information related to, or influencing, a company's mobility within a specific country or across national boundaries."
 "cbcm:Organisation","Organisation","Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."
 "cbcm:Person","Person","None"
 "cbcm:Object","Object","None"
 "cbcm:CompanyTransaction","Company transaction","An action taken by a company that modifies its corporate structure with a change of control (for e.g. through either a merger, division, conversion or seat transfer in a domestic or cross-border setting). It involves one or more companies, each of which have a company legal form valid in a Member State of the European Union."
 "cbcm:DocumentRepository","Company mobility document repository","A digital document repository containing documents related to company mobility."
+"cbcm:Country","Country","None"
+"cbcm:CompanyLegalForm","Company form","Name given to describe the structure of a corporation or business in the different legal orders. For example Limited (Ltd.), Public Limited Company (PLC), Gesellschaft mit beschränkter Haftung (GmbH), Aktiengesellschaft (AG). The company legal form is regulated under national law and grants specific rights and obligations to the company stakeholders (such as shareholders, management & employees)."
 "cbcm:CompanyMerger","Company merger","‘merger’ in Directive (EU) 2017/1132 means an operation whereby:
 
 (a) one or more companies, on being dissolved without going into liquidation, transfer all their assets and liabilities to another existing company, the acquiring company, in exchange for the issue to their members of securities or shares representing the capital of that other company and, if applicable, a cash payment not exceeding 10 % of the nominal value, or, in the absence of a nominal value, of the accounting par value of those securities or shares; or
@@ -19,7 +23,6 @@
 "cbcm:Company","Company","A company is a legal entity formed by a group of individuals to engage in and operate a business—commercial or industrial—enterprise. A company may be organized in various ways for tax and financial liability purposes depending on the corporate law of its jurisdiction."
 "cbcm:AcquiringCompany","Acquiring company","Acquiring Company means the resulting or surviving company in a transaction that takes over another, merging company."
 "cbcm:MergingCompany","Merging company","Merging Company means the dissolving company that is being acquired by another (acquiring) company in the process of a transaction. In the context of company mobility, this means a universal transfer of assets and liabilities from the merging to the acquiring company (see article 131 of Directive 2017/1132)."
-"cbcm:Process","Process","None"
 "cbcm:CompanyDivision","Company division","Article 160b - Division means:
 a) company being divided, on being dissolved without going into liquidation, transfers all its assets and liabilities to two or more newly formed companies (‘the recipient companies’), in exchange for the issue to the members of the company being divided of securities or shares in the recipient companies and, if any, a cash payment not exceeding 10 % of the nominal value of those securities or shares or, where they have no nominal value, a cash payment not exceeding 10% of the accounting par value of their securities or shares ('full division');
 
@@ -29,16 +32,15 @@ a) company being divided, on being dissolved without going into liquidation, tra
 "cbcm:EmergingCompany","Emerging company","A company being divided transfers part of its assets and liabilities to one or more newly formed companies, which are the recipient companies in a (cross-border) division."
 "cbcm:OriginalCompany","Original company","An original company, in the context of a (cross-border) division, means a company which - in case of a full division - transfers all its assets and liabilities to two or more companies, or - in case of a partial division or division by separation - transfers part of its assets and liabilities to one or more companies."
 "cbcm:RecipientCompany","Recipient company","A company being divided transfers part of its assets and liabilities to one or more newly formed companies, which are the recipient companies in a (cross-border) division."
-"cbcm:Entity","Entity","None"
-"cbcm:Country","Country","None"
 "cbcm:SpatialRegion","Spatial region","None"
 "cbcm:TransactionNotice","Company transaction notice","A written notice, published in an official journal of a Member State of the EU and/or the European Official Journal indicating the intention to engage in a transaction and which informs  the members, creditors and representatives of the employees of the company, or, where there are no such representatives, the employees themselves of said transaction."
+"cbcm:SEType","Societas Europaea (SE) type","Variable indicating the SE-establishment mode: by merger, conversion, holding-SE, subsidiary-SE or unsure (cases)"
+"cbcm:BoardLevelEmployeeRepresentationRight","Board-level employee representation right","Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). The BLER right requires that if such a system of BLER exists prior to a cross-border company transaction, such a right must be upheld in the acquiring/recipient company under the ""before-and-after-principle""."
 "cbcm:AnnualAccount","Annual account","Annual reports measure a company's financial health. They focus on past and present financial performance, and make predictions about future prospects. The revenue and financial performance of a company."
 "cbcm:AnnualReport","Annual report","Annual reports measure a company's financial health. They focus on past and present financial performance, and make predictions about future prospects. The revenue and financial performance of a company."
 "cbcm:Attribute","Attribute","None"
 "cbcm:Behaviour","Behaviour","None"
 "cbcm:Procedure","Procedure","None"
-"cbcm:BoardLevelEmployeeRepresentationRight","Board-level employee representation right","Board-level representation of employees (BLER) refers to the phenomenon where employees or their representatives elect or appoint representatives to the strategic decision-making body of a company (i.e. the supervisory board or non-executive board in a one-tier system). The BLER right requires that if such a system of BLER exists prior to a cross-border company transaction, such a right must be upheld in the acquiring/recipient company under the ""before-and-after-principle""."
 "cbcm:SocialRight","Social right","Social rights, as opposed to rights arising from natural law, are rights for legal entities that entitle them to certain levels of societal living conditions (e.g. the right to housing, to food, to health care etc.)"
 "cbcm:BoardResolution","Board resolution","A Board Resolution, or Company Resolution, is a way of documenting a decision made by a Company's Board of Directors on behalf of the company. After the resolution is made during a meeting, a Board Resolution document is typically used to get the specifics of the resolution in writing."
 "cbcm:Resolution","Resolution","A document detailing a decision made by an individual or group of natural or legal persons. This can be a decision concerning the restructuring of a company by its shareholders."
@@ -51,7 +53,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
 "cbcm:CompanyHeadQuarter","Company headquarter","None"
 "cbcm:OrganisationalUnit","Organisational unit","A division of a large organization such as a government, university, or business, dealing with a specific area of activity."
 "cbcm:CompanyConversion","Company conversion","The process of changing or converting the corporate structure of a company. For example, a limited liability company of one country to one of another country, or from a private to a public limited liability company, or vice-versa by means of the continuance of an entity into another entity."
-"cbcm:CompanyLegalForm","Company form","Name given to describe the structure of a corporation or business in the different legal orders. For example Limited (Ltd.), Public Limited Company (PLC), Gesellschaft mit beschränkter Haftung (GmbH), Aktiengesellschaft (AG). The company legal form is regulated under national law and grants specific rights and obligations to the company stakeholders (such as shareholders, management & employees)."
 "cbcm:ConversionPlan","Company conversion plan","A document providing details of how the conversion of a company will be implemented. Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d"
 "cbcm:DivisionPlan","Company division plan","The management or administrative organ of the company shall draw up the draft terms of a division. The draft terms of a division shall include at least the particulars listed in article 160d."
 "cbcm:MergerPlan","Company merger plan","Article 91: The administrative or management bodies of the merging companies shall draw up draft terms of merger in writing by specifying at least the elements mentioned in article 91."
@@ -80,6 +81,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
 "cbcm:CrossBorderMergerByAcquisition","Cross-border company merger by acquisition","Article 89: The operation whereby one or more companies are wound up without going into liquidation and transfer to another all their assets and liabilities in exchange for the issue to the shareholders of the company or companies being acquired of shares in the acquiring company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value. Companies involved come from two or more distinct countries."
 "cbcm:CrossBorderMergerIntoNewCompany","Cross-border merger into a new company","Article 90: the operation whereby several companies are wound up without going into liquidation and transfer to a company that they set up all their assets and liabilities in exchange for the issue to their shareholders of shares in the new company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value. Companies involved come from two or more distinct countries."
 "cbcm:CrossBorderSeatTransfer","Cross-border company seat transfer","The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), across national boundaries."
+"cbcm:DataCurationActivity","Data curation activity","A data curation activity represents a researcher's involvement in annotating cross border transactions"
 "cbcm:DecisionRight","Shareholder decision right","The shareholders can take a number of decisions affecting the company, such as amending the company's articles of association, appointing or dismissing board members and to approve important transactions (e.g. mergers, divisions and conversions/seat transfers). These are taken through a shareholder resolution."
 "cbcm:ShareholderRight","Shareholder right","The rights of shareholders of a company in the context of a transaction. Often, shreholder resolutions are used to effectuate shareholder rights. Many rights are laid down in the so-called Shareholder Rights Directive."
 "cbcm:DivisionCertificate","Company division certificate","A document issued by a Competent Authority declaring that the legally required steps of a division are completed. The certificate needs to be presented by a company to either be registered (or register a newly established emerging/recipient company) in another company registry or to be removed from a company register."
@@ -133,20 +135,35 @@ a) company being divided, on being dissolved without going into liquidation, tra
 "cbcm:WorksCouncil","Employee works council","The exercise of employee participation through the representation of employees vis-a-vis the management of a company. The works council is a shop-floor level representation mechanism with information, consultation and veto-rights - depending on the extent of rights given in a Member State - and also at EU level through European Works Councils."
 "cbcm:applicableTo","applicable to","(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
 "cbcm:cbcmObjectRelation","Cross-border company mobility object relation","(cbcmObjectRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to an object."
+"cbcm:associatedWith","Associated with","An activity association is an assignment of responsibility to an agent for a process, indicating that the agent had a role in the activity.
+
+Based on: https://www.w3.org/TR/prov-o/#wasAssociatedWith"
+"cbcm:cbcmDataProvenanceRelation","Cross-border company mobility data provenance relation","(cbcmDataProvenanceRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures provenance information for company transaction data."
+"cbcm:attributedTo","Attributed to","Attribution is the ascribing of an entity to an agent.
+
+Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo"
 "cbcm:authoredBy","authored by","(authoredBy ?ENTITY1 ?ENTITY2) means that ?ENTITY1 is an instance of a publication that is created primarily by the entity referred to by ?ENTITY2."
 "cbcm:cbcmDocumentRelation","Cross-border company mobility document relation","(cbcmDocumentRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to a company mobility document or similar information source relevant to corporate mobility."
 "cbcm:authors","authors","(authors ?ENTITY1 ?ENTITY2) means that (authoredBy ?ENTITY2 ?ENTITY1)"
-"cbcm:cbcmDataProvenanceRelation","Cross-border company mobility data provenance relation","(cbcmDataProvenanceRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures provenance information for company transaction data."
 "cbcm:cbcmEntityRelation","Cross-border company mobility entity relation","(cbcmEntityRelation ?ENTITY1 ?ENTITY2) means that ?ENTITY1 is related to ?ENTITY2."
 "cbcm:cbcmOrganisationRelation","Cross-border company mobility organisation relation","(cbcmOrganisationRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to an organisation."
 "cbcm:cbcmTransactionRelation","Cross-border company mobility transaction relation","(cbcmTransactionRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to a company mobility transaction."
 "cbcm:containedIn","contained in","(containedIn ?ENTITY1 ?ENTITY2) means that some document or publication ?ENTITY1 is archived or stored in some other document collection, database or data repository referred to by ?ENTITY2."
+"cbcm:countryHasCompanyForm","country has company form","(countryHasCompanyForm ?ENTITY1 ?ENTITY2) means that ?ENTITY1 refers to a country the corporate law in that country permits and / or has occurrences of companies in that country which have the corporate legal structure (company legal form) referred to by ?ENTITY2."
+"cbcm:isCompanyFormOfCountry","None","None"
 "cbcm:documentValidatedByDocument","document validated by document","(documentValidatedByDocument ?ENTITY1 ?ENTITY2) means that some document or publication, ?ENTITY1, went through a process of approval and assessment through various criteria such as veracity, eligibility, legal relevance etc. and another document ?ENTITY2 was produced to prove the satisfaction of the critieria by ?ENTITY1."
 "cbcm:employedBy","employed by","(employedBy ?ENTITY1 ?ENTITY2) means that some agent (person or organisation) ?ENTITY1 is promised and delivered an incentive (usually financial) to perform some work for ?ENTITY2 where ?ENTITY2 is an organisation. This exchange is usually governed by law and formal regulations in the particular country or social context in which the work is being performed."
 "cbcm:hasCompanyStakeholder","has company stakeholder","(hasCompanyStakeholder ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1, which is either a significant process or agent has another agent ?ENTITY2 with personal interests in benefiting either financially or otherwise from the outcomes of ?ENTITY1 (if it is an event or process), or in its byproducts and profits (if it is an agent)."
 "cbcm:employs","employs","(employs ?ENTITY1 ?ENTITY2) means (employedBy ?ENTITY2 ?ENTITY1)"
+"cbcm:generatedBy","Generated by","Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.
+
+Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy"
 "cbcm:hasAcquiringCompany","has acquiring company","(hasAcquiringCompany ?ENTITY1 ?ENTITY2) means that some company merger transaction ?ENTITY1 produces a new company or alters an existing one (?ENTITY2) such that ?ENTITY2 will acquire (via a universal transfer of assets and liabilities) one or more other companies involved in the process ?ENTITY1."
 "cbcm:hasTransactionResult","has transaction result","(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
+"cbcm:hasCompanyForm","Company Form","Company legal form. Name given to describe the structure of a corporation or buiness in the different legal orders. For example Limited (Ltd.), Public Limited Company (PLC), Gesellschaft mit beschränkter Haftung (GmbH), Aktiengesellschaft (AG). The company legal form is regulated under national law and grants specific rights and obligations to the company stakeholders (such as shareholders, management & employees)."
+"cbcm:hasDataProvenanceDocumentSource","has document source","In which countries' registry did the researcher find information about the transaction?"
+"cbcm:hasPrimarySource","Primary source","Primary data source which indicates where the data was collected. A primary source could for instance be a national registry or a competent authority."
+"cbcm:hasDataProvenanceRegistryCountry","data found in registry from country","In which countries' registry did the researcher find information about the transaction?"
 "cbcm:hasMember","has member","(hasMember ?ENTITY1 ?ENTITY2) means that some agent ?ENTITY1 (usually an organisation) has a person ?ENTITY2 that participates in its activities. This need not represent an employment role nor imply financial incentives between the organisation and person."
 "cbcm:hasMergingCompany","has merging company","(hasMergingCompany ?ENTITY1 ?ENTITY2) means that some company merger transaction ?ENTITY1 involves a company ?ENTITY2 which will be dissolved during the process of ?ENTITY1 and will be acquired (via a universal transfer of assets and liabilities) by another distinct company involved in ?ENTITY1."
 "cbcm:hasTransactionInput","has transaction input","(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
@@ -155,14 +172,16 @@ a) company being divided, on being dissolved without going into liquidation, tra
 "cbcm:hasSubsidiaryCompany","has subsidiary company","(hasSubsidiaryCompany ?ENTITY1 ?ENTITY2) means (hasParentCompany ?ENTITY2 ?ENTITY1)"
 "cbcm:hasPart","has part","(hasPart ?ENTITY1 ?ENTITY2) means that the entity referred to by ?ENTITY1 has a constituent entity referred to by ?ENTITY2."
 "cbcm:partOf","part of","(partOf ?ENTITY1 ?ENTITY2) means (hasPart ?ENTITY2 ?ENTITY1)"
+"cbcm:hasPrimaryRegistrationLocation","Company primary registration location","Primary country of registration (location) of a company as a full country name"
+"cbcm:locatedIn","located in","(locatedIn ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1 occupies the spatial region referred to by ?ENTITY2."
 "cbcm:hasRecipientCompany","has recipient company","(hasRecipientCompany ?ENTITY1 ?ENTITY2) means that some company division transaction ?ENTITY1 produces two or more distinct companies, one of which is ?ENTITY2 (a so-called ""recipient company"")."
+"cbcm:hasSecondaryRegistrationLocation","Company secondary registration location","Country of secondary registration (location) of a company"
 "cbcm:hasSubProcedure","has sub procedure","(hasSubProcedure ?ENTITY1 ?ENTITY2) means that some process ?ENTITY1 contains another (shorter) process ?ENTITY2 that should be completed before ?ENTITY1 can complete."
 "cbcm:isTransactionInputOf","is transaction input of","(isTransactionInputOf ?ENTITY1 ?ENTITY2) means (hasTransactionInput ?ENTITY2 ?ENTITY1)"
 "cbcm:isTransactionResultOf","is transaction result of","(isTransactionResultOf ?ENTITY1 ?ENTITY2) means (hasTransactionResult ?ENTITY2 ?ENTITY1)"
 "cbcm:involvesChangeOf","involves the change of","(involvesChangeOf ?ENTITY1 ?ENTITY2) means that the process ?ENTITY1 requires the modification or alteration of the entity or object ?ENTITY2."
 "cbcm:involvesCountry","involves country","(involvesCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 includes the modification of a company whose place of business is located in the country referred to by ?ENTITY2"
 "cbcm:issuedByOrganisation","issued by organisation","(issuedByOrganisation ?ENTITY1 ?ENTITY2) means that some document or publication, ?ENTITY1, was created (and possibly delivered or administered to another entity) by some entity ?ENTITY2."
-"cbcm:locatedIn","located in","(locatedIn ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1 occupies the spatial region referred to by ?ENTITY2."
 "cbcm:maintainedBy","maintained by","(maintainedBy ?ENTITY1 ?ENTITY2) means that some digital resource ?ENTITY1 (e.g. database, website, document repository etc.) has stewardship by some agent or organisation ?ENTITY2 who is responsible for the upkeep of ?ENTITY1."
 "cbcm:maintains","maintains","(maintains ?ENTITY1 ?ENTITY2) means (maintainedBy ?ENTITY2 ?ENTITY1)"
 "cbcm:ownedBy","owned by","(ownedBy ?ENTITY1 ?ENTITY2) means that some agent ?ENTITY2 has proprietorship over another object or organisational agent ?ENTITY1."
@@ -172,4 +191,98 @@ a) company being divided, on being dissolved without going into liquidation, tra
 "cbcm:sourceCountry","source country","(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2."
 "cbcm:targetCountry","target country","(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2."
 "cbcm:transactionValidatedByDocument","transaction validated by document","(transactionValidatedByDocument ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 went through a process of approval and assessment through various criteria such as veracity, eligibility, legal relevance etc. and a document ?ENTITY2 was produced to prove the satisfaction of the critieria by ?ENTITY1."
+"cbcm:typeOfSE","Type of SE","Variable indicating the SE-establishment mode: by merger, conversion, holding-SE, subsidiary-SE or unsure"
+"cbcm:ACEmploymentFigureAtTransaction","AC Employees count at transaction","number of employees of the acquiring company - at the moment of the transaction"
+"cbcm:ACLastEmploymentFigure","Last employment figure for the acquiring company","The last available annual employment figure for the acquiring company"
+"cbcm:ACTotalEUEmploymentFigure","Total EU employees","total number of employees of the acquiring company in the EU at the moment of the transaction"
+"cbcm:ACYearEmploymentFigure","AC Last employment figure year","The year the last annual employment figure was obtained for acquiring companies"
+"cbcm:BLER","is BLER existing prior","Is an employee board level representation/participation (BLER) mechanism applicable prior to the cross-border transaction?
+
+0 = no BLER prior to cross-border transaction
+1 = BLER existing prior to cross-border transaction"
+"cbcm:BLERComposition","BLER composition","What is the employee board level representation (BLER) ratio going to be after the completion of the transaction?
+
+The ratio is ranging from 0.00 (no BLER) to 0.33 (1/3 BLER) to 0.5 (50-50 Mitbestimmung) to (theoretically) 1.00, which would be 100% employee representatives on the board and no shareholder representatives."
+"cbcm:EWC","Has EWC","Is the company having a European Works Council (EWC)?"
+"cbcm:MCEmploymentFigureAtTransaction","MC Employees count at transaction","Number of employees of the acquiring company - at the moment of the transaction"
+"cbcm:MCLastEmploymentFigure","Last employment figure for the merging company","The last available annual employment figure for the merging company"
+"cbcm:MCYearEmploymentFigure","MC Last employment figure year","The year the last annual employment figure was obtained for merging companies"
+"cbcm:NACECode","NACE code","NACE Classification Code for companies. NACE (Nomenclature des Activités Économiques dans la Communauté Européenne) is a European industry standard classification system similar in function to Standard Industry Classification (SIC) and North American Industry Classification System (NAICS) for classifying business activities. From EUROSTAT"
+"cbcm:NACESector","NACE sector","Company NACE sector. NACE (Nomenclature of Economic Activities) is the European statistical classification of economic activities. Classification of a company according to which kinds of sector (i.e. industry / market / product type) they deal in. From EUROSTAT"
+"cbcm:SNBVoluntaryApplication","SNB voluntary application","Is a Special Negotiating Body (SNB) set up voluntary?
+
+Whether or not a SNB is created/will be created voluntarily.
+
+- Yes: an SNB is created voluntarily;
+- No: no voluntary SNB set up;
+- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
+- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
+- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+"cbcm:TNIC","Has TNIC","Is the company having a transnational information and consultation agreement in place? Does the company have an internal body which discusses employee rights and welfare?
+
+Different from works council. TNIC is global."
+"cbcm:WWEmploymentFigureAtTransaction","Total WW employees at transaction","number of employees of company group worldwide at the moment of the transaction"
+"cbcm:companiesHaveEconomicCommittee","Companies have Economic Committee","Are the companies involved in the transaction having an economic committee?
+
+An economic committee advises the work council about the financial parts of the transaction."
+"cbcm:companiesHaveEmployees","Companies have employees","Are the companies involved in the transaction having employees? Only one company needs to have employees for this property to be true"
+"cbcm:companiesHaveWorksCouncil","Companies have Works Council","Are the companies involved in the transaction having a works council? Works councils safeguard employees' welfare"
+"cbcm:divergingEmploymentFigure","Diverging employment figure","If a different employee number for the acquiring company is found, it is recorded in this field"
+"cbcm:generatedAtTime","Generated at time","The date and time at which an entity was generated by a process"
+"cbcm:impactOnEmployees","Impact on employees","Is the impact on employees of the envisaged transaction specified in the transaction document (e.g. the merger plan)?
+
+Part of merger plan that specifies how the transaction will affect employees.
+
+- Yes: there is an impact on employees (positive or negative);
+- No: no impact on employees;
+- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
+- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
+- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+"cbcm:isListed","Is listed","Whether the company is publicly listed. A company whose shares are bought and sold on a particular stock market."
+"cbcm:isSECreation","Is SE creation","Variable indicating whether this case concerns an SE-creation (yes/no) to distinguish creations of SEs from other transactions"
+"cbcm:lastWWEmploymentFigure","Last WW employment figure","Last available employment figure for the total worldwide employees"
+"cbcm:lawfirm","Law Firm","Name of the lawfirm involved in the transaction, if available (for internal use; cross-border divisions and seat transfers are currently not possible within an EU legal framework.)"
+"cbcm:multiCBM","Multi-transaction","A transaction whereby more than two companies (i.e. multiple merging companies) are involved and merged into one acquiring company"
+"cbcm:name","Organization name","The name of the organization"
+"cbcm:natRegistrationNumber","NAT registration number","The national registration number of an acquiring/receiving/entry company. A company registration number is a unique combination of numbers and/or letters. It is used to identify a company and verify its legal existence as an incorporated entity."
+"cbcm:negotiatedAgreement","Has negotiated agreement","Is the management of the companies involved starting the process of setting up a Special Negotiating Body (SNB) in order to reach a negotiated agreement on the future employee participation mechanism (BLER) after the transaction?
+
+BLER (Board-Level Employee Represenation): highest level of employee involvement in a company in the supervisory board. They can take co-determine decisions of the company's management and where the company is heading.
+
+- Yes: there is a negotiated agreement to be negotiated with the SNB;
+- No: no negotiated agreement;
+- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
+- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
+- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+"cbcm:rawTransactionID","Raw transaction ID","unique identifier before database entry.
+
+This id is the old ID-structure used before entry into the CbCMdb"
 "cbcm:registeredOffice","None","None"
+"cbcm:standardRulesApplication","Standard rules application","Are the standard rules applied directly without and instead of the start of negotiations with a Special Negotiating Body (SNB)?
+
+Instead of an SNB being set up, the standard rules are applied instead.
+
+- Yes: the standard rules are applied;
+- No: standard rules ar enot applied;
+- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
+- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
+- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+"cbcm:toBeNegotiatedBLER","BLER to be negotiated","Is an employee board level representation/participation (BLER) mechanism going to be re-negotiated in the process of the cross-border transaction?
+
+- Yes: BLER be (re-)negotiated with the SNB;
+- No: no BLER-(re-)negotiation;
+- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
+- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
+- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+"cbcm:transactionComment","Transaction comment","Notes from researcher about the transaction"
+"cbcm:transactionCompletionDate","Transaction completion date","Date on which the transaction was effectuated (the date that the competent authority e.g., business registry of that country, says that the criteria have been met by merging and acquiring companies and the merging/transferring company is dissolved).
+
+This is the final step of a transaction process"
+"cbcm:transactionID","Transaction ID","unique identifier for a transaction"
+"cbcm:transactionPlan","Transaction plan available","Is the transaction plan available for analysis?
+
+Merger plan, Seat transfer plan or Division plan. Transaction notice is where the transaction is announced. The other documents are where the nature and details of the transaction are specified."
+"cbcm:transactionStartDate","Transaction notice date","Date of the transaction notice (document announcing the transaction) constituting the start of the transaction process. Date that the document was published (which is the important date because this is when it becomes legally binding)"
+"cbcm:website","Website","Homepage of a company/organization website"
+"cbcm:yearDivergingEmploymentFigure","Diverging employment figure year","The year for which a diverging employee number is recorded"
+"cbcm:yearWWEmploymentFigure","Last WW employment figure year","Year in which the last worldwide employment figure was recorded"
