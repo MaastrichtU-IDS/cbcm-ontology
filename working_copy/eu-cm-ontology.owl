@@ -19,7 +19,7 @@
         <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons Attribution 3.0 (CC BY 3.0)</terms:license>
         <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute of Data Science at Maastricht University</prov:wasAttributedTo>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobias Breuer</terms:contributor>
-        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.</dc:description>
+        <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.Société agricole</dc:description>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.1</owl:versionInfo>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruta Liepina</terms:contributor>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walter Simoncini</terms:contributor>
