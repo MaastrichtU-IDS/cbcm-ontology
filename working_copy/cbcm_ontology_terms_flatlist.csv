@@ -132,7 +132,6 @@ cbcm:cbcmOrganisationRelation
 cbcm:cbcmTransactionRelation
 cbcm:containedIn
 cbcm:countryHasCompanyForm
-cbcm:isCompanyFormOfCountry
 cbcm:documentValidatedByDocument
 cbcm:employedBy
 cbcm:hasCompanyStakeholder
