@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#"
-     xml:base="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology"
+<rdf:RDF xmlns="http://w3id.org/um/cbcm/eu-cm-ontology#"
+     xml:base="http://w3id.org/um/cbcm/eu-cm-ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
