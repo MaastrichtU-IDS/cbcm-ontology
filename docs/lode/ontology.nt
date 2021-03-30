@@ -1,6 +1,6 @@
 <http://w3id.org/um/cbcm/eu-cm-ontology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <http://w3id.org/um/cbcm/eu-cm-ontology> <http://www.w3.org/2002/07/owl#versionIRI> <http://w3id.org/um/cbcm/eu-cm-ontology/1.2.1> .
-<http://w3id.org/um/cbcm/eu-cm-ontology> <http://purl.org/dc/elements/1.1/description> "This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation." .
+<http://w3id.org/um/cbcm/eu-cm-ontology> <http://purl.org/dc/elements/1.1/description> "This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.Société agricole" .
 <http://w3id.org/um/cbcm/eu-cm-ontology> <http://purl.org/dc/elements/1.1/title> "The European Union Company Mobility Ontology (EU-CMO)" .
 <http://w3id.org/um/cbcm/eu-cm-ontology> <http://purl.org/dc/terms/contributor> "Kody Moodley" .
 <http://w3id.org/um/cbcm/eu-cm-ontology> <http://purl.org/dc/terms/contributor> "Marcus Meyer" .

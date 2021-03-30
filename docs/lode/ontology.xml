@@ -13,7 +13,7 @@
      xmlns:eu-cm-ontology="http://w3id.org/um/cbcm/eu-cm-ontology#">
     <owl:Ontology rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology">
         <owl:versionIRI rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology/1.2.1"/>
-        <dc:description>This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.</dc:description>
+        <dc:description>This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.Société agricole</dc:description>
         <dc:title>The European Union Company Mobility Ontology (EU-CMO)</dc:title>
         <terms:contributor>Kody Moodley</terms:contributor>
         <terms:contributor>Marcus Meyer</terms:contributor>
