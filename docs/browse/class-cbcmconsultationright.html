@@ -1,0 +1,1989 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/libs/img/favicon.ico">
+
+	
+		<title>Ontospy > http://w3id.org/um/cbcm/eu-cm-ontology</title>
+	
+
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="static/libs/bootstrap-3_3_7-dist/css/bootstrap.min.css" rel="stylesheet">  -->
+    <!-- Bootswatch:  -->
+    <!-- cerulean  | cyborg |  flatly |  lumen |  sandstone |   spacelab  |  yeti | cosmo |  darkly |  paper | simplex | superhero |  journal | readable  |   slate |  united -->
+    <link href="static/libs/bootswatch3_2/simplex/bootstrap.min.css" rel="stylesheet">
+    <link href="static/custom/css/simple-sidebar.css" rel="stylesheet">
+    <link href="static/custom/css/familytree.css" rel="stylesheet">
+    <link href="static/custom/css/tabletree.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="static/libs/bootstrap-3_3_7-dist/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="static/custom/css/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style type="text/css">
+
+  .lead-plus {font-size: 26.5px;}
+  .label-xs {font-size: 10px;}
+  .label-dark {background: #2c3e50; color: white; padding: 1px;}
+  .margin50 {margin-top: 50px; margin-bottom: 50px;}
+
+  .namespaces {background: #ced2d6; width: 100%;}
+
+
+  /*so that the d3plus tooltip panel doesnt cover the top banner*/
+  .navbar {z-index: 3000;}
+
+
+  .panel-body dt {margin-top: 5px;}
+  .page-header  {margin-top: 30px;}
+  #wrapper {margin-top: 50px;}
+
+  .implementation-panel {
+    overflow: auto;
+    /*max-height: 500px;*/
+  }
+
+  tr.table-classproperties {
+      /*background: #f5f5f5;*/
+  }
+  tr.table-classproperties th {
+      font-size: 80%;
+      font-weight: normal;
+  }
+
+
+  tr.table-inheritanceinfo {
+      /*background: #f5f5f5;*/
+      text-align: left;
+  }
+
+  tr.table-inheritanceinfo th {
+      font-size: 90%;
+      font-weight: normal;
+  }
+
+
+  .breadcrumb {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+  .breadcrumb a {
+      text-transform: capitalize;
+  }
+  .breadcrumb li {
+      text-transform: none;
+      /*so to catch the uri @todo improve*/
+  }
+
+
+  .fromclass_link {
+    /*color: white;
+    text-decoration: underline;*/
+    /*background: #1c1e52;*/
+    color: inherit;
+    /*padding: 1px;*/
+  }
+
+		.mythumbnail {
+			display: block;
+			padding: 13px;
+			margin-bottom: 30px;
+			line-height: 13.428571;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 30px;
+		}
+
+		.mythumbnail:hover {
+			background: lightyellow;
+			text-decoration: none;
+		}
+
+
+		.img-container{
+		    height:100%;
+			overflow: hidden;
+		    max-height:200px;
+			padding: 10px;
+/*			margin: 20px 0px 20px 0px;*/
+			border: 1em #EAE5E5 solid;
+		}
+
+		.img-container:hover {
+			border: 1px grey solid;
+		}
+
+		img{
+/*		    height:100% !important;*/
+		}
+
+
+		.icon-xxs {
+			font-size: 15px;
+		}
+
+
+    /* dropdown open on hover */
+
+    @media (min-width: 979px) {
+      ul.nav li.dropdown:hover > ul.dropdown-menu {
+        display: block;
+      }
+    }
+
+
+
+/*pygments css*/
+.highlight .hll { background-color: #ffffcc }
+.highlight  { background: #f8f8f8; }
+.highlight .c { color: #408080; font-style: italic } /* Comment */
+.highlight .err { border: 1px solid #FF0000 } /* Error */
+.highlight .k { color: #008000; font-weight: bold } /* Keyword */
+.highlight .o { color: #666666 } /* Operator */
+.highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+.highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+.highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+.highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #008000 } /* Keyword.Pseudo */
+.highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #B00040 } /* Keyword.Type */
+.highlight .m { color: #666666 } /* Literal.Number */
+.highlight .s { color: #BA2121 } /* Literal.String */
+.highlight .na { color: #7D9029 } /* Name.Attribute */
+.highlight .nb { color: #008000 } /* Name.Builtin */
+.highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+.highlight .no { color: #880000 } /* Name.Constant */
+.highlight .nd { color: #AA22FF } /* Name.Decorator */
+.highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0000FF } /* Name.Function */
+.highlight .nl { color: #A0A000 } /* Name.Label */
+.highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+.highlight .nv { color: #19177C } /* Name.Variable */
+.highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #666666 } /* Literal.Number.Bin */
+.highlight .mf { color: #666666 } /* Literal.Number.Float */
+.highlight .mh { color: #666666 } /* Literal.Number.Hex */
+.highlight .mi { color: #666666 } /* Literal.Number.Integer */
+.highlight .mo { color: #666666 } /* Literal.Number.Oct */
+.highlight .sb { color: #BA2121 } /* Literal.String.Backtick */
+.highlight .sc { color: #BA2121 } /* Literal.String.Char */
+.highlight .sd { color: #BA2121; font-style: italic } /* Literal.String.Doc */
+.highlight .s2 { color: #BA2121 } /* Literal.String.Double */
+.highlight .se { color: #BB6622; font-weight: bold } /* Literal.String.Escape */
+.highlight .sh { color: #BA2121 } /* Literal.String.Heredoc */
+.highlight .si { color: #BB6688; font-weight: bold } /* Literal.String.Interpol */
+.highlight .sx { color: #008000 } /* Literal.String.Other */
+.highlight .sr { color: #BB6688 } /* Literal.String.Regex */
+.highlight .s1 { color: #BA2121 } /* Literal.String.Single */
+.highlight .ss { color: #19177C } /* Literal.String.Symbol */
+.highlight .bp { color: #008000 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #19177C } /* Name.Variable.Class */
+.highlight .vg { color: #19177C } /* Name.Variable.Global */
+.highlight .vi { color: #19177C } /* Name.Variable.Instance */
+.highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
+
+/*overloading this class from pygments*/
+.highlight {
+  overflow: auto;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+
+
+
+  </head>
+
+  <body>
+
+
+
+    
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class="navbar-brand" id="menu-toggle" title="Toggle sidebar">
+        
+        <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li ><a href="index.html"><code style="font-size: 115%;">http://w3id.org/um/cbcm/eu-cm-ontology</code></a></li>
+        
+
+       
+
+
+        <li  ><a href="entities-az.html">Entities A-Z</a></li>
+        
+        <li ><a href="entities-tree-classes.html">Classes</a></li>
+        
+        
+        <li ><a href="entities-tree-properties.html">Properties</a></li>
+        
+        
+        
+        <li  ><a href="statistics.html">Statistics</a></li>
+
+
+
+
+
+      </ul>
+      
+    </div><!--/.nav-collapse -->
+
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<div id="wrapper" class="toggled">
+
+
+    
+
+    
+        
+<!-- Sidebar -->
+<div id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+
+
+        <li>
+          <input style="margin-top: 30px;  margin-bottom: 20px;" type="text" id="search-input-sidebar" name="" value="" placeholder="Type to search">
+        </li>
+
+        
+          <li class="-second-level" id="sd_classes"><a href="entities-tree-classes.html">Classes (121)</a>
+          </li>
+
+            
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_2"><a  href="class-cbcmacquiringcompany.html">cbcm:AcquiringCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_3"><a  href="class-cbcmagent.html">cbcm:Agent</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_4"><a  href="class-cbcmannualaccount.html">cbcm:AnnualAccount</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_5"><a  href="class-cbcmannualreport.html">cbcm:AnnualReport</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_6"><a  href="class-cbcmattribute.html">cbcm:Attribute</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_7"><a  href="class-cbcmbehaviour.html">cbcm:Behaviour</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_8"><a  href="class-cbcmboardlevelemployeerepresentationright.html">cbcm:BoardLevelEmployeeRepresentationRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_9"><a  href="class-cbcmboardresolution.html">cbcm:BoardResolution</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_10"><a  href="class-cbcmcbcmresearcher.html">cbcm:CBCMResearcher</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_11"><a  href="class-cbcmcity.html">cbcm:City</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_12"><a  href="class-cbcmcompany.html">cbcm:Company</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_13"><a  href="class-cbcmcompanycentraladministration.html">cbcm:CompanyCentralAdministration</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_14"><a  href="class-cbcmcompanyconversion.html">cbcm:CompanyConversion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_15"><a  href="class-cbcmcompanydivision.html">cbcm:CompanyDivision</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_16"><a  href="class-cbcmcompanyheadquarter.html">cbcm:CompanyHeadQuarter</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_17"><a  href="class-cbcmcompanylegalform.html">cbcm:CompanyLegalForm</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_18"><a  href="class-cbcmcompanymerger.html">cbcm:CompanyMerger</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_19"><a  href="class-cbcmcompanymobilitydocument.html">cbcm:CompanyMobilityDocument</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_20"><a  href="class-cbcmcompanyregisteredoffice.html">cbcm:CompanyRegisteredOffice</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_21"><a  href="class-cbcmcompanyseattransfer.html">cbcm:CompanySeatTransfer</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_22"><a  href="class-cbcmcompanyshareholder.html">cbcm:CompanyShareholder</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_23"><a  href="class-cbcmcompanystakeholder.html">cbcm:CompanyStakeholder</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_24"><a  href="class-cbcmcompanytransaction.html">cbcm:CompanyTransaction</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_25"><a  href="class-cbcmcompetentauthority.html">cbcm:CompetentAuthority</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_26"><a class="active" href="class-cbcmconsultationright.html">cbcm:ConsultationRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_27"><a  href="class-cbcmconversioncertificate.html">cbcm:ConversionCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_28"><a  href="class-cbcmconversionplan.html">cbcm:ConversionPlan</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_29"><a  href="class-cbcmcountry.html">cbcm:Country</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_30"><a  href="class-cbcmcourt.html">cbcm:Court</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_31"><a  href="class-cbcmcreditor.html">cbcm:Creditor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_32"><a  href="class-cbcmcreditordecisionright.html">cbcm:CreditorDecisionRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_33"><a  href="class-cbcmcreditorexitright.html">cbcm:CreditorExitRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_34"><a  href="class-cbcmcreditorinformationright.html">cbcm:CreditorInformationRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_35"><a  href="class-cbcmcreditorright.html">cbcm:CreditorRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_36"><a  href="class-cbcmcreditorsecurityright.html">cbcm:CreditorSecurityRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_37"><a  href="class-cbcmcrossborderconversion.html">cbcm:CrossBorderConversion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_38"><a  href="class-cbcmcrossborderdivision.html">cbcm:CrossBorderDivision</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_39"><a  href="class-cbcmcrossbordermerger.html">cbcm:CrossBorderMerger</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_40"><a  href="class-cbcmcrossbordermergerbyacquisition.html">cbcm:CrossBorderMergerByAcquisition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_41"><a  href="class-cbcmcrossbordermergerintonewcompany.html">cbcm:CrossBorderMergerIntoNewCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_42"><a  href="class-cbcmcrossborderseattransfer.html">cbcm:CrossBorderSeatTransfer</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_43"><a  href="class-cbcmdatacurationactivity.html">cbcm:DataCurationActivity</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_44"><a  href="class-cbcmdecisionright.html">cbcm:DecisionRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_45"><a  href="class-cbcmdivisioncertificate.html">cbcm:DivisionCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_46"><a  href="class-cbcmdivisionplan.html">cbcm:DivisionPlan</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_47"><a  href="class-cbcmdocumentrepository.html">cbcm:DocumentRepository</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_48"><a  href="class-cbcmdomesticconversion.html">cbcm:DomesticConversion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_49"><a  href="class-cbcmdomesticdivision.html">cbcm:DomesticDivision</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_50"><a  href="class-cbcmdomesticmerger.html">cbcm:DomesticMerger</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_51"><a  href="class-cbcmdomesticmergerbyacquisition.html">cbcm:DomesticMergerByAcquisition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_52"><a  href="class-cbcmdomesticmergerintonewcompany.html">cbcm:DomesticMergerIntoNewCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_53"><a  href="class-cbcmdomesticseattransfer.html">cbcm:DomesticSeatTransfer</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_54"><a  href="class-cbcmeeacountry.html">cbcm:EEACountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_55"><a  href="class-cbcmeucountry.html">cbcm:EUCountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_56"><a  href="class-cbcmemergingcompany.html">cbcm:EmergingCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_57"><a  href="class-cbcmemployee.html">cbcm:Employee</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_58"><a  href="class-cbcmentity.html">cbcm:Entity</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_59"><a  href="class-cbcmfinancialserviceauthority.html">cbcm:FinancialServiceAuthority</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_60"><a  href="class-cbcmgeopoliticalregion.html">cbcm:GeoPoliticalRegion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_61"><a  href="class-cbcmglobalultimateowner.html">cbcm:GlobalUltimateOwner</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_62"><a  href="class-cbcmimpactonemploymentright.html">cbcm:ImpactOnEmploymentRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_63"><a  href="class-cbcmindependentexpert.html">cbcm:IndependentExpert</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_64"><a  href="class-cbcmindependentexpertreport.html">cbcm:IndependentExpertReport</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_65"><a  href="class-cbcminformationright.html">cbcm:InformationRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_66"><a  href="class-cbcminterimaccount.html">cbcm:InterimAccount</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_67"><a  href="class-cbcmmanagementboard.html">cbcm:ManagementBoard</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_68"><a  href="class-cbcmmanagementreport.html">cbcm:ManagementReport</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_69"><a  href="class-cbcmmanager.html">cbcm:Manager</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_70"><a  href="class-cbcmmanagerdecisionright.html">cbcm:ManagerDecisionRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_71"><a  href="class-cbcmmanagerexitright.html">cbcm:ManagerExitRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_72"><a  href="class-cbcmmanagerinformationright.html">cbcm:ManagerInformationRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_73"><a  href="class-cbcmmanagerright.html">cbcm:ManagerRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_74"><a  href="class-cbcmmemberstateofficialjournal.html">cbcm:MemberStateOfficialJournal</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_75"><a  href="class-cbcmmergercertificate.html">cbcm:MergerCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_76"><a  href="class-cbcmmergerplan.html">cbcm:MergerPlan</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_77"><a  href="class-cbcmmergingcompany.html">cbcm:MergingCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_78"><a  href="class-cbcmnationalregistry.html">cbcm:NationalRegistry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_79"><a  href="class-cbcmnationalregistryrepository.html">cbcm:NationalRegistryRepository</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_80"><a  href="class-cbcmnoneeacountry.html">cbcm:NonEEACountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_81"><a  href="class-cbcmnoneucountry.html">cbcm:NonEUCountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_82"><a  href="class-cbcmnotary.html">cbcm:Notary</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_83"><a  href="class-cbcmobject.html">cbcm:Object</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_84"><a  href="class-cbcmofficialjournal.html">cbcm:OfficialJournal</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_85"><a  href="class-cbcmofficialjournalpublication.html">cbcm:OfficialJournalPublication</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_86"><a  href="class-cbcmofficialjournalrepository.html">cbcm:OfficialJournalRepository</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_87"><a  href="class-cbcmorganisation.html">cbcm:Organisation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_88"><a  href="class-cbcmorganisationalunit.html">cbcm:OrganisationalUnit</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_89"><a  href="class-cbcmoriginalcompany.html">cbcm:OriginalCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_90"><a  href="class-cbcmparentcompany.html">cbcm:ParentCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_91"><a  href="class-cbcmperson.html">cbcm:Person</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_92"><a  href="class-cbcmpreconversioncertificate.html">cbcm:PreConversionCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_93"><a  href="class-cbcmpredivisioncertificate.html">cbcm:PreDivisionCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_94"><a  href="class-cbcmpremergercertificate.html">cbcm:PreMergerCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_95"><a  href="class-cbcmprocedure.html">cbcm:Procedure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_96"><a  href="class-cbcmprocess.html">cbcm:Process</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_97"><a  href="class-cbcmrecipientcompany.html">cbcm:RecipientCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_98"><a  href="class-cbcmresolution.html">cbcm:Resolution</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_99"><a  href="class-cbcmsetype.html">cbcm:SEType</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_100"><a  href="class-cbcmseattransferplan.html">cbcm:SeatTransferPlan</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_101"><a  href="class-cbcmshareholderexitright.html">cbcm:ShareholderExitRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_102"><a  href="class-cbcmshareholderinformationright.html">cbcm:ShareholderInformationRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_103"><a  href="class-cbcmshareholderresolution.html">cbcm:ShareholderResolution</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_104"><a  href="class-cbcmshareholderright.html">cbcm:ShareholderRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_105"><a  href="class-cbcmsocialright.html">cbcm:SocialRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_106"><a  href="class-cbcmsociety.html">cbcm:Society</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_107"><a  href="class-cbcmspatialregion.html">cbcm:SpatialRegion</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_108"><a  href="class-cbcmspecialnegotiationbody.html">cbcm:SpecialNegotiationBody</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_109"><a  href="class-cbcmspecialnegotiationbodyagreement.html">cbcm:SpecialNegotiationBodyAgreement</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_110"><a  href="class-cbcmsubsidiarycompany.html">cbcm:SubsidiaryCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_111"><a  href="class-cbcmsupervisoryauthority.html">cbcm:SupervisoryAuthority</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_112"><a  href="class-cbcmsupervisoryboard.html">cbcm:SupervisoryBoard</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_113"><a  href="class-cbcmtaxauthority.html">cbcm:TaxAuthority</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_114"><a  href="class-cbcmtransactioncertificate.html">cbcm:TransactionCertificate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_115"><a  href="class-cbcmtransactiondocument.html">cbcm:TransactionDocument</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_116"><a  href="class-cbcmtransactionnotice.html">cbcm:TransactionNotice</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_117"><a  href="class-cbcmtransactionright.html">cbcm:TransactionRight</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_118"><a  href="class-cbcmtransferofcentraladministration.html">cbcm:TransferOfCentralAdministration</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_119"><a  href="class-cbcmtransferofregisteredoffice.html">cbcm:TransferOfRegisteredOffice</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_120"><a  href="class-cbcmtransferringcompany.html">cbcm:TransferringCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_121"><a  href="class-cbcmultimatebeneficialowner.html">cbcm:UltimateBeneficialOwner</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_122"><a  href="class-cbcmworkscouncil.html">cbcm:WorksCouncil</a></li>
+          
+        
+
+        
+            <li class="-second-level" id="sd_properties"><a  href="entities-tree-properties.html">Properties (105)</a>
+            </li>
+
+            
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_135"><a   href="prop-cbcmacemploymentfigureattransaction.html">cbcm:ACEmploymentFigureAtTransaction</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_136"><a   href="prop-cbcmaclastemploymentfigure.html">cbcm:ACLastEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_137"><a   href="prop-cbcmactotaleuemploymentfigure.html">cbcm:ACTotalEUEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_138"><a   href="prop-cbcmacyearemploymentfigure.html">cbcm:ACYearEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_139"><a   href="prop-cbcmbler.html">cbcm:BLER</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_140"><a   href="prop-cbcmblercomposition.html">cbcm:BLERComposition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_141"><a   href="prop-cbcmewc.html">cbcm:EWC</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_142"><a   href="prop-cbcmmcemploymentfigureattransaction.html">cbcm:MCEmploymentFigureAtTransaction</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_143"><a   href="prop-cbcmmclastemploymentfigure.html">cbcm:MCLastEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_144"><a   href="prop-cbcmmcyearemploymentfigure.html">cbcm:MCYearEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_145"><a   href="prop-cbcmnacecode.html">cbcm:NACECode</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_146"><a   href="prop-cbcmnacesector.html">cbcm:NACESector</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_147"><a   href="prop-cbcmsnbvoluntaryapplication.html">cbcm:SNBVoluntaryApplication</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_148"><a   href="prop-cbcmtnic.html">cbcm:TNIC</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_149"><a   href="prop-cbcmwwemploymentfigureattransaction.html">cbcm:WWEmploymentFigureAtTransaction</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_176"><a   href="prop-cbcmapplicableto.html">cbcm:applicableTo</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_177"><a   href="prop-cbcmassociatedwith.html">cbcm:associatedWith</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_178"><a   href="prop-cbcmattributedto.html">cbcm:attributedTo</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_179"><a   href="prop-cbcmauthoredby.html">cbcm:authoredBy</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_180"><a   href="prop-cbcmauthors.html">cbcm:authors</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_181"><a   href="prop-cbcmcbcmdataprovenancerelation.html">cbcm:cbcmDataProvenanceRelation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_182"><a   href="prop-cbcmcbcmdocumentrelation.html">cbcm:cbcmDocumentRelation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_183"><a   href="prop-cbcmcbcmentityrelation.html">cbcm:cbcmEntityRelation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_184"><a   href="prop-cbcmcbcmobjectrelation.html">cbcm:cbcmObjectRelation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_185"><a   href="prop-cbcmcbcmorganisationrelation.html">cbcm:cbcmOrganisationRelation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_186"><a   href="prop-cbcmcbcmtransactionrelation.html">cbcm:cbcmTransactionRelation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_150"><a   href="prop-cbcmcompanieshaveeconomiccommittee.html">cbcm:companiesHaveEconomicCommittee</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_151"><a   href="prop-cbcmcompanieshaveemployees.html">cbcm:companiesHaveEmployees</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_152"><a   href="prop-cbcmcompanieshaveworkscouncil.html">cbcm:companiesHaveWorksCouncil</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_187"><a   href="prop-cbcmcontainedin.html">cbcm:containedIn</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_188"><a   href="prop-cbcmcountryhascompanyform.html">cbcm:countryHasCompanyForm</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_153"><a   href="prop-cbcmdivergingemploymentfigure.html">cbcm:divergingEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_189"><a   href="prop-cbcmdocumentvalidatedbydocument.html">cbcm:documentValidatedByDocument</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_190"><a   href="prop-cbcmemployedby.html">cbcm:employedBy</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_191"><a   href="prop-cbcmemploys.html">cbcm:employs</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_131"><a   href="prop-cbcmexample.html">cbcm:example</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_154"><a   href="prop-cbcmgeneratedattime.html">cbcm:generatedAtTime</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_192"><a   href="prop-cbcmgeneratedby.html">cbcm:generatedBy</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_193"><a   href="prop-cbcmhasacquiringcompany.html">cbcm:hasAcquiringCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_194"><a   href="prop-cbcmhascompanyform.html">cbcm:hasCompanyForm</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_195"><a   href="prop-cbcmhascompanystakeholder.html">cbcm:hasCompanyStakeholder</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_196"><a   href="prop-cbcmhasdataprovenancedocumentsource.html">cbcm:hasDataProvenanceDocumentSource</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_197"><a   href="prop-cbcmhasdataprovenanceregistrycountry.html">cbcm:hasDataProvenanceRegistryCountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_198"><a   href="prop-cbcmhasmember.html">cbcm:hasMember</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_199"><a   href="prop-cbcmhasmergingcompany.html">cbcm:hasMergingCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_200"><a   href="prop-cbcmhasoriginalcompany.html">cbcm:hasOriginalCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_201"><a   href="prop-cbcmhasparentcompany.html">cbcm:hasParentCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-cbcmhaspart.html">cbcm:hasPart</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_203"><a   href="prop-cbcmhasprimaryregistrationlocation.html">cbcm:hasPrimaryRegistrationLocation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_204"><a   href="prop-cbcmhasprimarysource.html">cbcm:hasPrimarySource</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_205"><a   href="prop-cbcmhasrecipientcompany.html">cbcm:hasRecipientCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-cbcmhassecondaryregistrationlocation.html">cbcm:hasSecondaryRegistrationLocation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_207"><a   href="prop-cbcmhassubprocedure.html">cbcm:hasSubProcedure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_208"><a   href="prop-cbcmhassubsidiarycompany.html">cbcm:hasSubsidiaryCompany</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_209"><a   href="prop-cbcmhastransactioninput.html">cbcm:hasTransactionInput</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_210"><a   href="prop-cbcmhastransactionresult.html">cbcm:hasTransactionResult</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_155"><a   href="prop-cbcmimpactonemployees.html">cbcm:impactOnEmployees</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_211"><a   href="prop-cbcminvolveschangeof.html">cbcm:involvesChangeOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_212"><a   href="prop-cbcminvolvescountry.html">cbcm:involvesCountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_156"><a   href="prop-cbcmislisted.html">cbcm:isListed</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_157"><a   href="prop-cbcmissecreation.html">cbcm:isSECreation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_213"><a   href="prop-cbcmistransactioninputof.html">cbcm:isTransactionInputOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_214"><a   href="prop-cbcmistransactionresultof.html">cbcm:isTransactionResultOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_132"><a   href="prop-cbcmiso2code.html">cbcm:iso2code</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_215"><a   href="prop-cbcmissuedbyorganisation.html">cbcm:issuedByOrganisation</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_158"><a   href="prop-cbcmlastwwemploymentfigure.html">cbcm:lastWWEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_159"><a   href="prop-cbcmlawfirm.html">cbcm:lawfirm</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_216"><a   href="prop-cbcmlocatedin.html">cbcm:locatedIn</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_217"><a   href="prop-cbcmmaintainedby.html">cbcm:maintainedBy</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_218"><a   href="prop-cbcmmaintains.html">cbcm:maintains</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_160"><a   href="prop-cbcmmulticbm.html">cbcm:multiCBM</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_161"><a   href="prop-cbcmname.html">cbcm:name</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_162"><a   href="prop-cbcmnatregistrationnumber.html">cbcm:natRegistrationNumber</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_163"><a   href="prop-cbcmnegotiatedagreement.html">cbcm:negotiatedAgreement</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_219"><a   href="prop-cbcmownedby.html">cbcm:ownedBy</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_220"><a   href="prop-cbcmowns.html">cbcm:owns</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_221"><a   href="prop-cbcmpartof.html">cbcm:partOf</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_164"><a   href="prop-cbcmrawtransactionid.html">cbcm:rawTransactionID</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_165"><a   href="prop-cbcmregisteredoffice.html">cbcm:registeredOffice</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_222"><a   href="prop-cbcmreportedin.html">cbcm:reportedIn</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_133"><a   href="prop-cbcmrequirement-level.html">cbcm:requirement-level</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_223"><a   href="prop-cbcmrequiresdocument.html">cbcm:requiresDocument</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_224"><a   href="prop-cbcmsourcecountry.html">cbcm:sourceCountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_166"><a   href="prop-cbcmstandardrulesapplication.html">cbcm:standardRulesApplication</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_225"><a   href="prop-cbcmtargetcountry.html">cbcm:targetCountry</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_167"><a   href="prop-cbcmtobenegotiatedbler.html">cbcm:toBeNegotiatedBLER</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_168"><a   href="prop-cbcmtransactioncomment.html">cbcm:transactionComment</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-cbcmtransactioncompletiondate.html">cbcm:transactionCompletionDate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_170"><a   href="prop-cbcmtransactionid.html">cbcm:transactionID</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_171"><a   href="prop-cbcmtransactionplan.html">cbcm:transactionPlan</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_172"><a   href="prop-cbcmtransactionstartdate.html">cbcm:transactionStartDate</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_226"><a   href="prop-cbcmtransactionvalidatedbydocument.html">cbcm:transactionValidatedByDocument</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_227"><a   href="prop-cbcmtypeofse.html">cbcm:typeOfSE</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_173"><a   href="prop-cbcmwebsite.html">cbcm:website</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_174"><a   href="prop-cbcmyeardivergingemploymentfigure.html">cbcm:yearDivergingEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_175"><a   href="prop-cbcmyearwwemploymentfigure.html">cbcm:yearWWEmploymentFigure</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_126"><a   href="prop-dcdescription.html">dc:description</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_127"><a   href="prop-dctitle.html">dc:title</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_123"><a   href="prop-opla-sdentityposition.html">opla-sd:entityPosition</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_124"><a   href="prop-opla-sdentitypositionx.html">opla-sd:entityPositionX</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_125"><a   href="prop-opla-sdentitypositiony.html">opla-sd:entityPositionY</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_134"><a   href="prop-provwasattributedto.html">prov:wasAttributedTo</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_128"><a   href="prop-termscontributor.html">terms:contributor</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_129"><a   href="prop-termsdescription.html">terms:description</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_130"><a   href="prop-termslicense.html">terms:license</a></li>
+          
+
+        
+
+        
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+    </ul>
+
+</div>
+
+
+<!-- /#sidebar-wrapper -->
+
+    
+
+
+
+
+    <!-- Begin page content -->
+    <div class="container" id="page-content-wrapper">
+
+      
+
+	
+
+
+
+
+
+
+        
+
+
+
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <ol class="breadcrumb">
+    <li>
+      <a href="index.html">Home</a>
+    </li>
+    <li>
+          <a href="entities-az.html">Entities</a>
+    </li>
+    <li>
+          <a href="entities-tree-classes.html">Classes</a>
+    </li>
+      <li class="active">
+            http://w3id.org/um/cbcm/eu-cm-ontology#ConsultationRight
+        </li>
+  </ol>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+            <h1>
+
+                Consultation right
+                
+                    <small class="label label-info label-xs">leaf node</small>
+                  
+
+            </h1>
+            <hr>
+
+
+
+            <div class="tree-container">
+            <div class="tree">
+                <ul>
+                    
+
+                        
+
+                        <li>
+
+                          <a href="class-cbcmsocialright.html" title="'Social right' - This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram ...">Social right</a>
+
+                          <ul>
+
+                            <li><a style="font-weight: bold;" title="'Consultation right' - The right of employees or their representatives to be consulted and to give advice on a business decision, such as ...">Consultation right</a>
+                            
+                              </li>
+
+                          </ul>
+
+                          </li>
+                        
+
+                    
+
+                </ul>
+            </div>
+            </div>
+
+
+
+
+           <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">URI</h3>
+            </div>
+            <div class="panel-body">
+
+                <code>http://w3id.org/um/cbcm/eu-cm-ontology#ConsultationRight</code>
+            </div>
+          </div>
+           </div></div>
+
+           
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Label</h3>
+            </div>
+            <div class="panel-body">
+
+                Consultation right
+            </div>
+          </div>
+           </div></div>
+           
+
+
+
+           
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Description</h3>
+            </div>
+            <div class="panel-body">
+
+                The right of employees or their representatives to be consulted and to give advice on a business decision, such as an intended merger/division/conversion/seat transfer. - This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.
+            </div>
+          </div>
+           </div></div>
+           
+
+
+
+
+           
+            <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Superclasses (4)</h3>
+            </div>
+            <div class="panel-body">
+
+            
+                    <li><a href="class-cbcmsocialright.html" title="http://w3id.org/um/cbcm/eu-cm-ontology#SocialRight">Social right</a></li><li><a href="class-cbcmtransactionright.html" title="http://w3id.org/um/cbcm/eu-cm-ontology#TransactionRight">Transaction right</a></li><li><a href="class-cbcmobject.html" title="http://w3id.org/um/cbcm/eu-cm-ontology#Object">Object</a></li><li><a href="class-cbcmentity.html" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a></li>
+            
+
+            </div>
+          </div>
+           </div></div>
+           
+
+
+
+          
+
+
+
+         
+           <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Usage</h3>
+            </div>
+            <div class="panel-body" style="overflow: auto;">
+
+                <p>Instances of Consultation right can have the following properties:</p>
+            </div>
+             <table class="table table-bordered" style="overflow: auto;">
+
+                <tr class="table-classproperties">
+                    <th>PROPERTY</th><th>TYPE</th><th>DESCRIPTION</th><th>RANGE</th>
+                </tr>
+
+                
+
+                    
+
+                    
+
+                    
+
+                
+
+                    
+
+                    
+
+                        <tr class="table-inheritanceinfo">
+                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="cbcm:TransactionRight" href="class-cbcmtransactionright.html" class="fromclass_link">Transaction right</a></span>
+                            </th>
+                        </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:applicableTo" href="prop-cbcmapplicableto.html">applicable to</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <a title="cbcm:Agent" href="class-cbcmagent.html" class="rdfclass">Agent</a>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+
+                    
+
+                    
+
+                
+
+                    
+
+                    
+
+                        <tr class="table-inheritanceinfo">
+                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="cbcm:Entity" href="class-cbcmentity.html" class="fromclass_link">Entity</a></span>
+                            </th>
+                        </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:generatedAtTime" href="prop-cbcmgeneratedattime.html">Generated at time</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:DatatypeProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>The date and time at which an entity was generated by a process</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <i>dateTime</i>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:attributedTo" href="prop-cbcmattributedto.html">Attributed to</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Attribution is the ascribing of an entity to an agent.
+
+Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <a title="cbcm:Agent" href="class-cbcmagent.html" class="rdfclass">Agent</a>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:generatedBy" href="prop-cbcmgeneratedby.html">Generated by</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.
+
+Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <a title="cbcm:Process" href="class-cbcmprocess.html" class="rdfclass">Process</a>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:hasPrimarySource" href="prop-cbcmhasprimarysource.html">Primary source</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Primary data source which indicates where the data was collected. A primary source could for instance be a national registry or a competent authority.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <a title="cbcm:Entity" href="class-cbcmentity.html" class="rdfclass">Entity</a>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+
+                    
+
+                    
+
+                
+
+                    
+
+                    
+
+                        <tr class="table-inheritanceinfo">
+                            <th colspan="4" class="treeinfo"><span class="label label-default">From class <a title="owl:Thing" href="class-owlthing.html" class="fromclass_link">Thing</a></span>
+                            </th>
+                        </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:authors" href="prop-cbcmauthors.html">authors</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(authors ?ENTITY1 ?ENTITY2) means that (authoredBy ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:cbcmDataProvenanceRelation" href="prop-cbcmcbcmdataprovenancerelation.html">Cross-border company mobility data provenance relation</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(cbcmDataProvenanceRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures provenance information for company transaction data.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:cbcmDocumentRelation" href="prop-cbcmcbcmdocumentrelation.html">Cross-border company mobility document relation</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(cbcmDocumentRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to a company mobility document or similar information source relevant to corporate mobility.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:cbcmEntityRelation" href="prop-cbcmcbcmentityrelation.html">Cross-border company mobility entity relation</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(cbcmEntityRelation ?ENTITY1 ?ENTITY2) means that ?ENTITY1 is related to ?ENTITY2.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:cbcmObjectRelation" href="prop-cbcmcbcmobjectrelation.html">Cross-border company mobility object relation</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(cbcmObjectRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to an object.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:cbcmOrganisationRelation" href="prop-cbcmcbcmorganisationrelation.html">Cross-border company mobility organisation relation</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(cbcmOrganisationRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to an organisation.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:cbcmTransactionRelation" href="prop-cbcmcbcmtransactionrelation.html">Cross-border company mobility transaction relation</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(cbcmTransactionRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to a company mobility transaction.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:employs" href="prop-cbcmemploys.html">employs</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(employs ?ENTITY1 ?ENTITY2) means (employedBy ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:example" href="prop-cbcmexample.html">Example</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Provides a human-readable written example of the entity in question.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:hasPart" href="prop-cbcmhaspart.html">has part</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(hasPart ?ENTITY1 ?ENTITY2) means that the entity referred to by ?ENTITY1 has a constituent entity referred to by ?ENTITY2.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:hasSubsidiaryCompany" href="prop-cbcmhassubsidiarycompany.html">has subsidiary company</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(hasSubsidiaryCompany ?ENTITY1 ?ENTITY2) means (hasParentCompany ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:isTransactionInputOf" href="prop-cbcmistransactioninputof.html">is transaction input of</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(isTransactionInputOf ?ENTITY1 ?ENTITY2) means (hasTransactionInput ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:isTransactionResultOf" href="prop-cbcmistransactionresultof.html">is transaction result of</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(isTransactionResultOf ?ENTITY1 ?ENTITY2) means (hasTransactionResult ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:iso2code" href="prop-cbcmiso2code.html">iso2code</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:locatedIn" href="prop-cbcmlocatedin.html">located in</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(locatedIn ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1 occupies the spatial region referred to by ?ENTITY2.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <a title="cbcm:SpatialRegion" href="class-cbcmspatialregion.html" class="rdfclass">Spatial region</a>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:maintainedBy" href="prop-cbcmmaintainedby.html">maintained by</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(maintainedBy ?ENTITY1 ?ENTITY2) means that some digital resource ?ENTITY1 (e.g. database, website, document repository etc.) has stewardship by some agent or organisation ?ENTITY2 who is responsible for the upkeep of ?ENTITY1.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:maintains" href="prop-cbcmmaintains.html">maintains</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(maintains ?ENTITY1 ?ENTITY2) means (maintainedBy ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:name" href="prop-cbcmname.html">Organization name</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:DatatypeProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>The name of the organization</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                    
+
+                                        
+                                          <i>string</i>
+                                        
+
+
+                                    
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:ownedBy" href="prop-cbcmownedby.html">owned by</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(ownedBy ?ENTITY1 ?ENTITY2) means that some agent ?ENTITY2 has proprietorship over another object or organisational agent ?ENTITY1.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:partOf" href="prop-cbcmpartof.html">part of</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(partOf ?ENTITY1 ?ENTITY2) means (hasPart ?ENTITY2 ?ENTITY1)</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:registeredOffice" href="prop-cbcmregisteredoffice.html">registeredOffice</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:DatatypeProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:requirement-level" href="prop-cbcmrequirement-level.html">Requirement level</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>Specifies a phrase to indicate the degree to which the providing of a value for the entity (e.g. a data or object property) in question is compulsory, recommended or optional.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:sourceCountry" href="prop-cbcmsourcecountry.html">source country</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="cbcm:targetCountry" href="prop-cbcmtargetcountry.html">target country</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:ObjectProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2.</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="dc:description" href="prop-dcdescription.html">description</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="dc:title" href="prop-dctitle.html">title</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="opla-sd:entityPosition" href="prop-opla-sdentityposition.html">entityPosition</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="opla-sd:entityPositionX" href="prop-opla-sdentitypositionx.html">entityPositionX</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="opla-sd:entityPositionY" href="prop-opla-sdentitypositiony.html">entityPositionY</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="prov:wasAttributedTo" href="prop-provwasattributedto.html">wasAttributedTo</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="terms:contributor" href="prop-termscontributor.html">contributor</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="terms:description" href="prop-termsdescription.html">description</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="firsttd">
+                                    <a class="propcolor" title="terms:license" href="prop-termslicense.html">license</a>
+                                </td>
+                                <td class="secondtd">
+                                    <i>owl:AnnotationProperty<i>
+                                </td>
+                                <td class="thirdtd">
+                                    <span>--</span>
+                                </td>
+                                <td class="fourthtd">
+                                    
+                                        <i>owl:Thing</i>
+                                    
+                                </td>
+                            </tr>
+
+                            
+
+                    
+
+                    
+
+                
+
+            </table>
+
+
+          </div>
+           </div></div>
+
+        
+
+
+
+
+
+
+           <div class="row"><div class="col-md-12">
+              <div class="panel panel-default">
+            <div class="panel-heading">
+              <h3 class="panel-title">Implementation</h3>
+            </div>
+            <div class="panel-body implementation-panel">
+
+                
+
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">cbcm:</span><span class="w"> </span><span class="nv">&lt;http://w3id.org/um/cbcm/eu-cm-ontology#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">opla-sd:</span><span class="w"> </span><span class="nv">&lt;http://ontologydesignpatterns.org/opla-sd#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
+<span class="nn">cbcm:</span><span class="nt">ConsultationRight</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Class</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">label</span><span class="w"> </span><span class="s">&quot;Consultation right&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">opla-sd:</span><span class="nt">entityPosition</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="nn">opla-sd:</span><span class="nt">entityPositionX</span><span class="w"> </span><span class="mf">6.072612e+01</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">opla-sd:</span><span class="nt">entityPositionY</span><span class="w"> </span><span class="mf">2.165369e+02</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">]</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;The right of employees or their representatives to be consulted and to give advice on a business decision, such as an intended merger/division/conversion/seat transfer.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">seeAlso</span><span class="w"> </span><span class="nv">&lt;http://data.europa.eu/eli/dir/2002/14/oj&gt;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nv">&lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">rdfs:</span><span class="nt">subClassOf</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">SocialRight</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+</pre></div>
+
+
+                
+            </div>
+          </div>
+           </div></div>
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+	</div><!-- /#page-content-wrapper -->
+
+
+  
+
+
+
+  
+
+
+
+
+  <footer class="footer">
+    <div class="container">
+    
+      <p class="text-muted">Documentation automatically generated on 30th March 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
+
+    
+    </div>
+  </footer>
+
+
+</div><!-- /#wrapper -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="static/libs/jquery/1_12_4/jquery.min.js"></script>
+<script src="static/libs/bootstrap-3_3_7-dist/js/bootstrap.min.js"></script>
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="static/libs/bootstrap-3_3_7-dist/js/ie10-viewport-bug-workaround.js"></script>
+
+<script src="static/libs/chartjs-2_4_0/chart.bundle.js"></script>
+
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+</script>
+
+
+
+
+<script type="text/javascript">
+
+$('#search-input-sidebar').keyup(function() {
+
+  var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+  // var $rows = $(this).next(".entities-list").find("div");
+  var $rows = $(this).parent().parent().find("li.second-level");
+
+  $rows.show().filter(function() {
+      var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+      return !~text.indexOf(val);
+  }).hide();
+});
+
+</script>
+
+
+
+
+  <!-- Scroll Sidebar Script -->
+
+  
+  
+
+  <script type="text/javascript">
+
+    $(document).ready(function (){
+      $('#sidebar-wrapper').animate({
+          scrollTop: $("#sd_26").offset().top - 100
+      }, 100);
+    });
+
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
