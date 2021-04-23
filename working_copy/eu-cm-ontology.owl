@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology#"
      xml:base="http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:cbcm="http://w3id.org/um/cbcm/eu-cm-ontology#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cbcm="http://w3id.org/um/cbcm/eu-cm-ontology#"
      xmlns:prov="http://www.w3.org/ns/prov#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
     <owl:Ontology rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology">
         <owl:versionIRI rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology/1.2.1"/>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stephan Rammeloo</terms:contributor>
-        <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Maastricht Law &amp; Techlab</prov:wasAttributedTo>
-        <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maastricht University</prov:wasAttributedTo>
-        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons Attribution 3.0 (CC BY 3.0)</terms:license>
-        <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute of Data Science at Maastricht University</prov:wasAttributedTo>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobias Breuer</terms:contributor>
         <dc:description rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This ontology describes terms concerning companies, their cross-border movements within the European Union (EU), and associated EU company legislation.</dc:description>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.1</owl:versionInfo>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruta Liepina</terms:contributor>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walter Simoncini</terms:contributor>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marcus Meyer</terms:contributor>
         <dc:title rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The European Union Company Mobility Ontology (EU-CMO)</dc:title>
-        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://maastrichtu-ids.github.io/cbcm-ontology</rdfs:seeAlso>
-        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas Biermeyer</terms:contributor>
         <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kody Moodley</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marcus Meyer</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ruta Liepina</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stephan Rammeloo</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thomas Biermeyer</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tobias Breuer</terms:contributor>
+        <terms:contributor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Walter Simoncini</terms:contributor>
+        <terms:license rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Creative Commons Attribution 3.0 (CC BY 3.0)</terms:license>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://maastrichtu-ids.github.io/cbcm-ontology</rdfs:seeAlso>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1.2.1</owl:versionInfo>
+        <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Institute of Data Science at Maastricht University</prov:wasAttributedTo>
+        <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maastricht University</prov:wasAttributedTo>
+        <prov:wasAttributedTo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Maastricht Law &amp; Techlab</prov:wasAttributedTo>
     </owl:Ontology>
     
 
@@ -146,34 +146,6 @@
         <cbcm:example xml:lang="en">(applicableTo creditorRight1 person1)</cbcm:example>
         <rdfs:comment xml:lang="en">(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2.</rdfs:comment>
         <rdfs:label xml:lang="en">applicable to</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
-        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
-        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Agent"/>
-        <rdfs:comment xml:lang="en">An activity association is an assignment of responsibility to an agent for a process, indicating that the agent had a role in the activity.
-
-Based on: https://www.w3.org/TR/prov-o/#wasAssociatedWith</rdfs:comment>
-        <rdfs:label xml:lang="en">Associated with</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
-        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
-        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Agent"/>
-        <rdfs:comment xml:lang="en">Attribution is the ascribing of an entity to an agent.
-
-Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</rdfs:comment>
-        <rdfs:label xml:lang="en">Attributed to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -351,16 +323,17 @@ Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</rdfs:comment>
     
 
 
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy -->
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#generated -->
 
-    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy">
+    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#generated">
         <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
-        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
-        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
+        <owl:inverseOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
         <rdfs:comment xml:lang="en">Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.
 
-Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
-        <rdfs:label xml:lang="en">Generated by</rdfs:label>
+Based (inverse of) on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
+        <rdfs:label xml:lang="en">Generated</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -416,10 +389,9 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceDocumentSource -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceDocumentSource">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMobilityDocument"/>
-        <rdfs:comment xml:lang="en">In which countries&apos; registry did the researcher find information about the transaction?</rdfs:comment>
+        <rdfs:comment xml:lang="en">In which document did the researcher find information about the transaction?</rdfs:comment>
         <rdfs:label xml:lang="en">has document source</rdfs:label>
     </owl:ObjectProperty>
     
@@ -428,7 +400,6 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
     <!-- http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceRegistryCountry -->
 
     <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceRegistryCountry">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource"/>
         <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
         <rdfs:comment xml:lang="en">In which countries&apos; registry did the researcher find information about the transaction?</rdfs:comment>
@@ -519,18 +490,6 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
         <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
         <rdfs:comment xml:lang="en">Primary country of registration (location) of a company as a full country name</rdfs:comment>
         <rdfs:label xml:lang="en">Company primary registration location</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource -->
-
-    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">
-        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
-        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
-        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
-        <rdfs:comment xml:lang="en">Primary data source which indicates where the data was collected. A primary source could for instance be a national registry or a competent authority.</rdfs:comment>
-        <rdfs:label xml:lang="en">Primary source</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -840,6 +799,72 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
     
 
 
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#used -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#used">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
+        <rdfs:comment xml:lang="en">Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.
+
+Based on: https://www.w3.org/TR/prov-o/#used</rdfs:comment>
+        <rdfs:label xml:lang="en">Used</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#used"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMobilityDocument"/>
+        <rdfs:comment xml:lang="en">In which document did the researcher find information about the transaction?</rdfs:comment>
+        <rdfs:label xml:lang="en">Has document source</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#used"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Country"/>
+        <rdfs:comment xml:lang="en">In which countries&apos; registry did the researcher find information about the transaction?</rdfs:comment>
+        <rdfs:label xml:lang="en">Data found in registry from country</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Agent"/>
+        <rdfs:comment xml:lang="en">An activity association is an assignment of responsibility to an agent for a process, indicating that the agent had a role in the activity.
+
+Based on: https://www.w3.org/TR/prov-o/#wasAssociatedWith</rdfs:comment>
+        <rdfs:label xml:lang="en">Associated with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy -->
+
+    <owl:ObjectProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy">
+        <rdfs:subPropertyOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation"/>
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
+        <rdfs:range rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
+        <rdfs:comment xml:lang="en">Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.
+
+Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</rdfs:comment>
+        <rdfs:label xml:lang="en">Generated by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -1111,13 +1136,13 @@ An economic committee advises the work council about the financial parts of the 
     
 
 
-    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#generatedAtTime -->
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime -->
 
-    <owl:DatatypeProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#generatedAtTime">
-        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
+    <owl:DatatypeProperty rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime">
+        <rdfs:domain rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
-        <rdfs:comment xml:lang="en">The date and time at which an entity was generated by a process</rdfs:comment>
-        <rdfs:label xml:lang="en">Generated at time</rdfs:label>
+        <rdfs:comment xml:lang="en">The date and time a process ended</rdfs:comment>
+        <rdfs:label xml:lang="en">Ended at</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -2509,7 +2534,20 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:subClassOf rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Process"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith"/>
+                <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#used"/>
+                <owl:someValuesFrom rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#DocumentRepository"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#generated"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Entity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith"/>
                 <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onClass rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#Agent"/>
             </owl:Restriction>
@@ -4513,111 +4551,14 @@ a) company being divided, on being dissolved without going into liquidation, tra
     <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#sweden">
         <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
     </owl:NamedIndividual>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">179.99500355435825</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5621061400510543</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">145.31812860041032</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.472621286432489</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.06439273412745</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.5983054032879</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.83544115187456</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">154.98450044856756</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.45599283527315</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.18810313160142</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">187.77010907114797</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.845654119928787</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.28213929989567</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.86427483194888</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.764216387775047</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.23796989617148</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.28265001612223</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.779310164409353</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.38141223492617</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.3640814981097</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.24400809699391</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.84827715993404</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.645511128654</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.17768712299383</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.82910021828245</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.307924969462757</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">54.567750498984374</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.3528805993735</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.70103706546807</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.95180979707261</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.56315097749217</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">239.14678840881578</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.67731560974352</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">281.3627119441426</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">143.47748596911322</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">219.3996038495368</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">261.3991187414414</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">216.3773275625499</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.979425487423738</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">212.70736804000302</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.47238212220519</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">214.27123601513512</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
+    
+
+
+    <!-- http://w3id.org/um/cbcm/eu-cm-ontology#unitedkingdom -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/um/cbcm/eu-cm-ontology#unitedkingdom">
+        <rdf:type rdf:resource="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry"/>
+    </owl:NamedIndividual>
     <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">60.104481168433864</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">57.8326666648158</opla-sd:entityPositionY>
@@ -4626,6 +4567,61 @@ a) company being divided, on being dissolved without going into liquidation, tra
     <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">131.54816779005884</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.817742238887039</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.60865771127436</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">284.67062326777886</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.8726186678454</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.42486588976413</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.62888044594364</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.84200669650346</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.86760350018855</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">168.21082276004154</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">176.55479364610375</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">193.0503398741002</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.13541617905973</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.028683306666812</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.12446089724935</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.267912068108608</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">144.54909990026624</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.502018924869994</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">55.28213929989567</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">196.86427483194888</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">199.91687244031976</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">291.65970907681094</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.42172416207433</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.50172216822966</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4639,23 +4635,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.945899686803486</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.564885717520582</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.28614759312607</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.62242605720274</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.12446089724935</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.267912068108608</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.86760350018855</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">168.21082276004154</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.429893106041735</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.17776704067705</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4664,13 +4645,28 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.42172416207433</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.50172216822966</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.945899686803486</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.564885717520582</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.2005530811132</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">268.9536177481755</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">187.77010907114797</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">14.845654119928787</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">87.28614759312607</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.62242605720274</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">108.47238212220519</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">214.27123601513512</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.85517389976832</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">271.5994274615904</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4679,8 +4675,108 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.82391948733857</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">212.27581118427403</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">71.03680677110084</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">52.05298320883994</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">236.74617899157928</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">273.1051930252097</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">250.28265001612223</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">17.779310164409353</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">202.01210091125137</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">299.5595446738471</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">28.764216387775047</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.23796989617148</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">234.2005530811132</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">268.9536177481755</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.11205052540654</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">260.3454725364793</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.45599283527315</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">140.18810313160142</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">165.83544115187456</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">154.98450044856756</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">74.06439273412745</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">141.5983054032879</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">145.31812860041032</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.472621286432489</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">67.26592136482995</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">195.39358378832364</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.645511128654</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.17768712299383</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.39903443255537</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">142.64906693661192</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">298.5674566125939</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.52226590467312</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.28713943923407</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">277.7860413201921</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">181.53183624074484</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">279.75477353816734</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">179.99500355435825</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">2.5621061400510543</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.41529346648915</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">151.00297655613727</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.621950598679454</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">294.2270568539971</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4699,13 +4795,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.41568814879539</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.482295217479006</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.011423587201364</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">77.61589925340833</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">42.011423587201364</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">77.61589925340833</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.78934613918614</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">285.13237477555566</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4714,8 +4810,48 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">134.2048824296458</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.74535550131444</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">232.7136997444631</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.88266359209778</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">131.11688892684865</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.35251365961733</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.45559196571034</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">69.94751308456023</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">143.0121185287264</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">175.37034131435243</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">191.67731560974352</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">281.3627119441426</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.3474594368345</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">123.46221383706843</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.11706116658252</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">293.43814503150423</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.41568814879539</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.482295217479006</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4724,18 +4860,28 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">226.41529346648915</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">151.00297655613727</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">261.3991187414414</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">216.3773275625499</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">62.432611420326666</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.099202273356305</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">262.7768499425678</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">245.55110052442663</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.72631246318619</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.32884440106744</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">143.47748596911322</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">219.3996038495368</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">295.9330197078383</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">66.09191894254323</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.4737250571208</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.89354059165436</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4759,8 +4905,33 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">62.432611420326666</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">51.099202273356305</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">54.567750498984374</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.3528805993735</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">64.72631246318619</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.32884440106744</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">65.82910021828245</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.307924969462757</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">182.4609448874594</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">175.2035610509981</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">13.979425487423738</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">212.70736804000302</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4769,8 +4940,28 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">112.18668389761085</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.7975537218199</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.33872816165007</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">101.74018980534287</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">27.24400809699391</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.84827715993404</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.38141223492617</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">292.3640814981097</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">149.56315097749217</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">239.14678840881578</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.70103706546807</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">82.95180979707261</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4779,23 +4970,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">295.9330197078383</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">66.09191894254323</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.29243344570858</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.34073360301582</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">200.4737250571208</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">61.89354059165436</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.37433370834429</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">103.69004799077238</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">244.43186342713443</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">242.42091488245512</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.53115916189458</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.20143563808284</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
@@ -4814,158 +4995,23 @@ a) company being divided, on being dissolved without going into liquidation, tra
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">44.37433370834429</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">103.69004799077238</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">112.18668389761085</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.7975537218199</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description>
         <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">56.28944966538015</opla-sd:entityPositionX>
         <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">280.96796660163295</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">298.5674566125939</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">90.52226590467312</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">181.53183624074484</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">279.75477353816734</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">35.11706116658252</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">293.43814503150423</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">290.78934613918614</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">285.13237477555566</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">134.2048824296458</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.74535550131444</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">131.11688892684865</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.35251365961733</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.33872816165007</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">101.74018980534287</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">262.7768499425678</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">245.55110052442663</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">143.0121185287264</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">175.37034131435243</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">238.3474594368345</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">123.46221383706843</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">83.62888044594364</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">188.84200669650346</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">198.29243344570858</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">243.34073360301582</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.53115916189458</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.20143563808284</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">41.13541617905973</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.028683306666812</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">176.55479364610375</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">193.0503398741002</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">137.8726186678454</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.42486588976413</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">257.60865771127436</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">284.67062326777886</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">199.91687244031976</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">291.65970907681094</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">8.429893106041735</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">161.17776704067705</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">144.54909990026624</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">46.502018924869994</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">266.82391948733857</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">212.27581118427403</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">249.11205052540654</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">260.3454725364793</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">202.01210091125137</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">299.5595446738471</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">110.85517389976832</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">271.5994274615904</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">255.28713943923407</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">277.7860413201921</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">139.39903443255537</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">142.64906693661192</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">67.26592136482995</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">195.39358378832364</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">236.74617899157928</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">273.1051930252097</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">30.621950598679454</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">294.2270568539971</opla-sd:entityPositionY>
-        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
-    </rdf:Description>
-    <rdf:Description>
-        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">232.7136997444631</opla-sd:entityPositionX>
-        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">106.88266359209778</opla-sd:entityPositionY>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">244.43186342713443</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">242.42091488245512</opla-sd:entityPositionY>
         <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
     </rdf:Description>
     
@@ -5009,5 +5055,5 @@ a) company being divided, on being dissolved without going into liquidation, tra
 
 
 
-<!-- Generated by the OWL API (version 4.1.3) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 
