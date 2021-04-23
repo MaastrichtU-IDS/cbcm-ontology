@@ -517,10 +517,8 @@ This section provides details for each class and property defined by The Europea
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#associatedWith"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith">Associated with</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#attributedTo"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo">Attributed to</a>
+            <a href="#wasAssociatedWith"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith">Associated with</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#applicableTo"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo">applicable to</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasCompanyStakeholder"
@@ -1239,7 +1237,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#documentValidatedByDocument"
+            <a href="#usedDataProvenanceDocumentSource"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource">Has document source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#documentValidatedByDocument"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#documentValidatedByDocument">document validated by document</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDataProvenanceDocumentSource"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceDocumentSource">has document source</a>
@@ -1496,11 +1496,15 @@ a) company being divided, on being dissolved without going into liquidation, tra
                title="http://w3id.org/um/cbcm/eu-cm-ontology#companiesHaveWorksCouncil">Companies have Works Council</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#companiesHaveEmployees"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#companiesHaveEmployees">Companies have employees</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#divergingEmploymentFigure"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedDataProvenanceRegistryCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry">Data found in registry from country</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#divergingEmploymentFigure"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#divergingEmploymentFigure">Diverging employment figure</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#yearDivergingEmploymentFigure"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#yearDivergingEmploymentFigure">Diverging employment figure year</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#negotiatedAgreement"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#usedDataProvenanceDocumentSource"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource">Has document source</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#negotiatedAgreement"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#negotiatedAgreement">Has negotiated agreement</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#impactOnEmployees"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#impactOnEmployees">Impact on employees</a>
@@ -1704,6 +1708,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimaryRegistrationLocation">Company primary registration location</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSecondaryRegistrationLocation"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasSecondaryRegistrationLocation">Company secondary registration location</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#usedDataProvenanceRegistryCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry">Data found in registry from country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasDataProvenanceRegistryCountry"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceRegistryCountry">data found in registry from country</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#involvesCountry"
@@ -2252,20 +2258,14 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#attributedTo"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo">Attributed to</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#generatedAtTime"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#generatedAtTime">Generated at time</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#generatedBy"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy">Generated by</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasPrimarySource"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">Primary source</a>
+            <a href="#wasGeneratedBy"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy">Generated by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#hasPrimarySource"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">Primary source</a>
+            <a href="#generated" title="http://w3id.org/um/cbcm/eu-cm-ontology#generated">Generated</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#used" title="http://w3id.org/um/cbcm/eu-cm-ontology#used">Used</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#involvesChangeOf"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#involvesChangeOf">involves the change of</a>
             <sup class="type-op" title="object property">op</sup>
@@ -2318,6 +2318,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#slovenia" title="http://w3id.org/um/cbcm/eu-cm-ontology#slovenia">slovenia</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#spain" title="http://w3id.org/um/cbcm/eu-cm-ontology#spain">spain</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#sweden" title="http://w3id.org/um/cbcm/eu-cm-ontology#sweden">sweden</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#unitedkingdom"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#unitedkingdom">unitedkingdom</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
          <dt>is disjoint with</dt>
@@ -3133,16 +3135,20 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#associatedWith"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith">Associated with</a>
+            <a href="#wasAssociatedWith"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith">Associated with</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#endedAtTime"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime">Ended at</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#generated" title="http://w3id.org/um/cbcm/eu-cm-ontology#generated">Generated</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#used" title="http://w3id.org/um/cbcm/eu-cm-ontology#used">Used</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#involvesChangeOf"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#involvesChangeOf">involves the change of</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#generatedBy"
-               title="http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy">Generated by</a>
+            <a href="#wasGeneratedBy"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy">Generated by</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#hasSubProcedure"
                title="http://w3id.org/um/cbcm/eu-cm-ontology#hasSubProcedure">has sub procedure</a>
             <sup class="type-op" title="object property">op</sup>
@@ -3796,12 +3802,8 @@ a) company being divided, on being dissolved without going into liquidation, tra
             title="http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo">applicable to</a>
       </li>
       <li>
-         <a href="#associatedWith"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith">Associated with</a>
-      </li>
-      <li>
-         <a href="#attributedTo"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo">Attributed to</a>
+         <a href="#wasAssociatedWith"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith">Associated with</a>
       </li>
       <li>
          <a href="#authoredBy"
@@ -3859,6 +3861,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
             title="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceRegistryCountry">data found in registry from country</a>
       </li>
       <li>
+         <a href="#usedDataProvenanceRegistryCountry"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry">Data found in registry from country</a>
+      </li>
+      <li>
          <a href="#documentValidatedByDocument"
             title="http://w3id.org/um/cbcm/eu-cm-ontology#documentValidatedByDocument">document validated by document</a>
       </li>
@@ -3870,8 +3876,11 @@ a) company being divided, on being dissolved without going into liquidation, tra
          <a href="#employs" title="http://w3id.org/um/cbcm/eu-cm-ontology#employs">employs</a>
       </li>
       <li>
-         <a href="#generatedBy"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy">Generated by</a>
+         <a href="#generated" title="http://w3id.org/um/cbcm/eu-cm-ontology#generated">Generated</a>
+      </li>
+      <li>
+         <a href="#wasGeneratedBy"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy">Generated by</a>
       </li>
       <li>
          <a href="#hasAcquiringCompany"
@@ -3884,6 +3893,10 @@ a) company being divided, on being dissolved without going into liquidation, tra
       <li>
          <a href="#hasDataProvenanceDocumentSource"
             title="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceDocumentSource">has document source</a>
+      </li>
+      <li>
+         <a href="#usedDataProvenanceDocumentSource"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource">Has document source</a>
       </li>
       <li>
          <a href="#hasMember" title="http://w3id.org/um/cbcm/eu-cm-ontology#hasMember">has member</a>
@@ -3951,8 +3964,7 @@ a) company being divided, on being dissolved without going into liquidation, tra
             title="http://w3id.org/um/cbcm/eu-cm-ontology#maintainedBy">maintained by</a>
       </li>
       <li>
-         <a href="#maintains"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#maintains">maintains</a>
+         <a href="#maintains" title="http://w3id.org/um/cbcm/eu-cm-ontology#maintains">maintains</a>
       </li>
       <li>
          <a href="#ownedBy" title="http://w3id.org/um/cbcm/eu-cm-ontology#ownedBy">owned by</a>
@@ -3962,10 +3974,6 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#partOf" title="http://w3id.org/um/cbcm/eu-cm-ontology#partOf">part of</a>
-      </li>
-      <li>
-         <a href="#hasPrimarySource"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">Primary source</a>
       </li>
       <li>
          <a href="#reportedIn"
@@ -3989,6 +3997,9 @@ a) company being divided, on being dissolved without going into liquidation, tra
       </li>
       <li>
          <a href="#typeOfSE" title="http://w3id.org/um/cbcm/eu-cm-ontology#typeOfSE">Type of SE</a>
+      </li>
+      <li>
+         <a href="#used" title="http://w3id.org/um/cbcm/eu-cm-ontology#used">Used</a>
       </li>
    </ul>
    <div class="entity" id="applicableTo">
@@ -4023,13 +4034,13 @@ a) company being divided, on being dissolved without going into liquidation, tra
          </dl>
       </div>
    </div>
-   <div class="entity" id="associatedWith">
+   <div class="entity" id="wasAssociatedWith">
       <h3>Associated with<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith</p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith</p>
       <div class="comment">
          <span class="markdown">An activity association is an assignment of responsibility to an agent for a process, indicating that the agent had a role in the activity.
 
@@ -4046,39 +4057,6 @@ Based on: https://www.w3.org/TR/prov-o/#wasAssociatedWith</span>
             <dt>has domain</dt>
             <dd>
                <a href="#Process" title="http://w3id.org/um/cbcm/eu-cm-ontology#Process">Process</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Agent" title="http://w3id.org/um/cbcm/eu-cm-ontology#Agent">Agent</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="attributedTo">
-      <h3>Attributed to<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo</p>
-      <div class="comment">
-         <span class="markdown">Attribution is the ascribing of an entity to an agent.
-
-Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#cbcmDataProvenanceRelation"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation">Cross-border company mobility data provenance relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Entity" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -4334,14 +4312,12 @@ Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</span>
             </dd>
             <dt>has sub-properties</dt>
             <dd>
-               <a href="#associatedWith"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#associatedWith">Associated with</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#attributedTo"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#attributedTo">Attributed to</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#generatedBy"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy">Generated by</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasPrimarySource"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">Primary source</a>
+               <a href="#wasAssociatedWith"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#wasAssociatedWith">Associated with</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#generated" title="http://w3id.org/um/cbcm/eu-cm-ontology#generated">Generated</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#wasGeneratedBy"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy">Generated by</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#used" title="http://w3id.org/um/cbcm/eu-cm-ontology#used">Used</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -4378,8 +4354,7 @@ Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</span>
                   title="http://w3id.org/um/cbcm/eu-cm-ontology#issuedByOrganisation">issued by organisation</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#maintainedBy"
                   title="http://w3id.org/um/cbcm/eu-cm-ontology#maintainedBy">maintained by</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#maintains"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#maintains">maintains</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#maintains" title="http://w3id.org/um/cbcm/eu-cm-ontology#maintains">maintains</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#reportedIn"
                   title="http://w3id.org/um/cbcm/eu-cm-ontology#reportedIn">reported in</a>
                <sup class="type-op" title="object property">op</sup>, <a href="#requiresDocument"
@@ -4537,10 +4512,35 @@ Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</span>
       </div>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompanyTransaction"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction">Company transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Country" title="http://w3id.org/um/cbcm/eu-cm-ontology#Country">Country</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedDataProvenanceRegistryCountry">
+      <h3>Data found in registry from country<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry</p>
+      <div class="comment">
+         <span class="markdown">In which countries' registry did the researcher find information about the transaction?</span>
+      </div>
+      <div class="description">
+         <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#hasPrimarySource"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">Primary source</a>
+               <a href="#used" title="http://w3id.org/um/cbcm/eu-cm-ontology#used">Used</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -4661,13 +4661,52 @@ Based on: https://www.w3.org/TR/prov-o/#wasAttributedTo</span>
          </dl>
       </div>
    </div>
-   <div class="entity" id="generatedBy">
+   <div class="entity" id="generated">
+      <h3>Generated<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#generated</p>
+      <div class="comment">
+         <span class="markdown">Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.
+
+Based (inverse of) on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#cbcmDataProvenanceRelation"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation">Cross-border company mobility data provenance relation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/um/cbcm/eu-cm-ontology#Process">Process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Entity" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#wasGeneratedBy"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy">Generated by</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasGeneratedBy">
       <h3>Generated by<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#generatedBy</p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy</p>
       <div class="comment">
          <span class="markdown">Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.
 
@@ -4690,6 +4729,11 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
             <dd>
                <a href="#Process" title="http://w3id.org/um/cbcm/eu-cm-ontology#Process">Process</a>
                <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>is inverse of</dt>
+            <dd>
+               <a href="#generated" title="http://w3id.org/um/cbcm/eu-cm-ontology#generated">Generated</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
       </div>
@@ -4778,14 +4822,40 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceDocumentSource</p>
       <div class="comment">
-         <span class="markdown">In which countries' registry did the researcher find information about the transaction?</span>
+         <span class="markdown">In which document did the researcher find information about the transaction?</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#CompanyTransaction"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction">Company transaction</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CompanyMobilityDocument"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMobilityDocument">Company mobility document</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="usedDataProvenanceDocumentSource">
+      <h3>Has document source<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource</p>
+      <div class="comment">
+         <span class="markdown">In which document did the researcher find information about the transaction?</span>
       </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <a href="#hasPrimarySource"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource">Primary source</a>
+               <a href="#used" title="http://w3id.org/um/cbcm/eu-cm-ontology#used">Used</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -5358,8 +5428,7 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
             </dd>
             <dt>is inverse of</dt>
             <dd>
-               <a href="#maintains"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#maintains">maintains</a>
+               <a href="#maintains" title="http://w3id.org/um/cbcm/eu-cm-ontology#maintains">maintains</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
          </dl>
@@ -5481,45 +5550,6 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
             <dd>
                <a href="#hasPart" title="http://w3id.org/um/cbcm/eu-cm-ontology#hasPart">has part</a>
                <sup class="type-op" title="object property">op</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasPrimarySource">
-      <h3>Primary source<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#hasPrimarySource</p>
-      <div class="comment">
-         <span class="markdown">Primary data source which indicates where the data was collected. A primary source could for instance be a national registry or a competent authority.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has super-properties</dt>
-            <dd>
-               <a href="#cbcmDataProvenanceRelation"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation">Cross-border company mobility data provenance relation</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has sub-properties</dt>
-            <dd>
-               <a href="#hasDataProvenanceRegistryCountry"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceRegistryCountry">data found in registry from country</a>
-               <sup class="type-op" title="object property">op</sup>, <a href="#hasDataProvenanceDocumentSource"
-                  title="http://w3id.org/um/cbcm/eu-cm-ontology#hasDataProvenanceDocumentSource">has document source</a>
-               <sup class="type-op" title="object property">op</sup>
-            </dd>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Entity" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Entity" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a>
-               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -5697,6 +5727,47 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
          </dl>
       </div>
    </div>
+   <div class="entity" id="used">
+      <h3>Used<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#used</p>
+      <div class="comment">
+         <span class="markdown">Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.
+
+Based on: https://www.w3.org/TR/prov-o/#used</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#cbcmDataProvenanceRelation"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDataProvenanceRelation">Cross-border company mobility data provenance relation</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#usedDataProvenanceRegistryCountry"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceRegistryCountry">Data found in registry from country</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#usedDataProvenanceDocumentSource"
+                  title="http://w3id.org/um/cbcm/eu-cm-ontology#usedDataProvenanceDocumentSource">Has document source</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Process" title="http://w3id.org/um/cbcm/eu-cm-ontology#Process">Process</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Entity" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
 </div><div xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
    <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
@@ -5737,8 +5808,8 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
             title="http://w3id.org/um/cbcm/eu-cm-ontology#yearDivergingEmploymentFigure">Diverging employment figure year</a>
       </li>
       <li>
-         <a href="#generatedAtTime"
-            title="http://w3id.org/um/cbcm/eu-cm-ontology#generatedAtTime">Generated at time</a>
+         <a href="#endedAtTime"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime">Ended at</a>
       </li>
       <li>
          <a href="#EWC" title="http://w3id.org/um/cbcm/eu-cm-ontology#EWC">Has EWC</a>
@@ -6101,21 +6172,21 @@ An economic committee advises the work council about the financial parts of the 
          </dl>
       </div>
    </div>
-   <div class="entity" id="generatedAtTime">
-      <h3>Generated at time<sup class="type-dp" title="data property">dp</sup>
+   <div class="entity" id="endedAtTime">
+      <h3>Ended at<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#generatedAtTime</p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime</p>
       <div class="comment">
-         <span class="markdown">The date and time at which an entity was generated by a process</span>
+         <span class="markdown">The date and time a process ended</span>
       </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Entity" title="http://w3id.org/um/cbcm/eu-cm-ontology#Entity">Entity</a>
+               <a href="#Process" title="http://w3id.org/um/cbcm/eu-cm-ontology#Process">Process</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -7098,6 +7169,12 @@ Merger plan, Seat transfer plan or Division plan. Transaction notice is where th
             <span>sweden</span>
          </a>
       </li>
+      <li>
+         <a href="#unitedkingdom"
+            title="http://w3id.org/um/cbcm/eu-cm-ontology#unitedkingdom">
+            <span>unitedkingdom</span>
+         </a>
+      </li>
    </ul>
    <div class="entity" id="austria">
       <h3>Austria<sup class="type-ni" title="named individual">ni</sup>
@@ -7661,6 +7738,22 @@ Merger plan, Seat transfer plan or Division plan. Transaction notice is where th
       </h3>
       <p>
          <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#sweden</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#EUCountry"
+               title="http://w3id.org/um/cbcm/eu-cm-ontology#EUCountry">EU country</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="unitedkingdom">
+      <h3>unitedkingdom<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://w3id.org/um/cbcm/eu-cm-ontology#unitedkingdom</p>
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
