@@ -5,9 +5,9 @@ cbcm:Organisation
 cbcm:Person
 cbcm:Object
 cbcm:CompanyTransaction
-cbcm:DocumentRepository
-cbcm:Country
 cbcm:CompanyLegalForm
+cbcm:Country
+cbcm:DocumentRepository
 cbcm:Process
 cbcm:Entity
 cbcm:CompanyMerger
@@ -18,6 +18,7 @@ cbcm:CompanyDivision
 cbcm:EmergingCompany
 cbcm:OriginalCompany
 cbcm:RecipientCompany
+cbcm:CompanyConversion
 cbcm:SpatialRegion
 cbcm:TransactionNotice
 cbcm:SEType
@@ -38,7 +39,6 @@ cbcm:CompanyCentralAdministration
 cbcm:CompanyRegisteredOffice
 cbcm:CompanyHeadQuarter
 cbcm:OrganisationalUnit
-cbcm:CompanyConversion
 cbcm:ConversionPlan
 cbcm:DivisionPlan
 cbcm:MergerPlan
@@ -128,8 +128,9 @@ cbcm:cbcmDataProvenanceRelation
 cbcm:cbcmEntityRelation
 cbcm:cbcmOrganisationRelation
 cbcm:cbcmTransactionRelation
-cbcm:containedIn
+cbcm:companyFormCountry
 cbcm:countryHasCompanyForm
+cbcm:containedIn
 cbcm:documentValidatedByDocument
 cbcm:employedBy
 cbcm:hasCompanyStakeholder
@@ -149,8 +150,10 @@ cbcm:hasParentCompany
 cbcm:hasSubsidiaryCompany
 cbcm:hasPart
 cbcm:partOf
+cbcm:hasPostCompanyForm
 cbcm:hasPrimaryRegistrationLocation
 cbcm:locatedIn
+cbcm:hasPriorCompanyForm
 cbcm:hasRecipientCompany
 cbcm:hasSecondaryRegistrationLocation
 cbcm:hasSubProcedure
@@ -185,7 +188,7 @@ cbcm:MCLastEmploymentFigure
 cbcm:MCYearEmploymentFigure
 cbcm:NACECode
 cbcm:NACESector
-cbcm:SNBVoluntaryApplication
+cbcm:SBNVoluntaryApplication
 cbcm:TNIC
 cbcm:WWEmploymentFigureAtTransaction
 cbcm:companiesHaveEconomicCommittee
@@ -198,6 +201,7 @@ cbcm:isListed
 cbcm:isSECreation
 cbcm:lastWWEmploymentFigure
 cbcm:lawfirm
+cbcm:legalFormAcronym
 cbcm:multiCBM
 cbcm:name
 cbcm:natRegistrationNumber
