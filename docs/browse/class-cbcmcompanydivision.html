@@ -2857,13 +2857,13 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
                             
                             <tr>
                                 <td class="firsttd">
-                                    <a class="propcolor" title="cbcm:registeredOffice" href="prop-cbcmregisteredoffice.html">registeredOffice</a>
+                                    <a class="propcolor" title="cbcm:registeredOffice" href="prop-cbcmregisteredoffice.html">Registered Office</a>
                                 </td>
                                 <td class="secondtd">
                                     <i>owl:DatatypeProperty<i>
                                 </td>
                                 <td class="thirdtd">
-                                    <span>--</span>
+                                    <span>Deprecated property</span>
                                 </td>
                                 <td class="fourthtd">
                                     
@@ -3138,17 +3138,17 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
 <span class="s">(c) 	a company being divided transfers part of its assets and liabilities to one or more newly formed companies (‘the recipient companies’), in exchange for the issue of securities or shares in the recipient companies to the company being divided (‘division by separation’).&quot;&quot;&quot;@en ;</span>
 <span class="s">    rdfs:seeAlso &lt;https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html&gt; ;</span>
 <span class="s">    rdfs:subClassOf [ a owl:Restriction ;</span>
-<span class="s">            owl:onProperty cbcm:requiresDocument ;</span>
-<span class="s">            owl:someValuesFrom cbcm:DivisionPlan ],</span>
+<span class="s">            owl:onProperty cbcm:targetCountry ;</span>
+<span class="s">            owl:someValuesFrom cbcm:Country ],</span>
 <span class="s">        [ a owl:Restriction ;</span>
 <span class="s">            owl:onProperty cbcm:sourceCountry ;</span>
 <span class="s">            owl:someValuesFrom cbcm:Country ],</span>
 <span class="s">        [ a owl:Restriction ;</span>
-<span class="s">            owl:onProperty cbcm:targetCountry ;</span>
-<span class="s">            owl:someValuesFrom cbcm:Country ],</span>
-<span class="s">        [ a owl:Restriction ;</span>
 <span class="s">            owl:onProperty cbcm:hasRecipientCompany ;</span>
 <span class="s">            owl:someValuesFrom cbcm:Company ],</span>
+<span class="s">        [ a owl:Restriction ;</span>
+<span class="s">            owl:onProperty cbcm:requiresDocument ;</span>
+<span class="s">            owl:someValuesFrom cbcm:DivisionPlan ],</span>
 <span class="s">        cbcm:CompanyTransaction ;</span>
 <span class="s">    owl:equivalentClass [ a owl:Class ;</span>
 <span class="s">            owl:intersectionOf ( cbcm:CompanyTransaction [ a owl:Restriction ;</span>
@@ -3197,7 +3197,7 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on 20th July 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
+      <p class="text-muted">Documentation automatically generated on 23rd July 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
 
     
     </div>

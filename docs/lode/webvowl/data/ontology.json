@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "de", "no", "fi", "pt", "bg", "dk", "lt", "lv", "hr", "fr", "hu", "undefined", "sk", "ga", "ee", "mt", "en", "is", "gr", "it", "lb", "cz", "pl", "ro", "nl" ],
+    "languages" : [ "de", "no", "fi", "pt", "bg", "dk", "lt", "hr", "lv", "fr", "hu", "undefined", "sk", "ga", "ee", "mt", "en", "is", "gr", "it", "lb", "cz", "pl", "ro", "nl" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://w3id.org/um/cbcm/eu-cm-ontology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
     "title" : {
       "undefined" : "The European Union Company Mobility Ontology (EU-CMO)"
@@ -21,6 +21,21 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
+        "value" : "Walter Simoncini",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Thomas Biermeyer",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Tobias Breuer",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
         "value" : "Kody Moodley",
         "type" : "label"
       }, {
@@ -36,30 +51,10 @@
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Walter Simoncini",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Tobias Breuer",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
-        "value" : "Thomas Biermeyer",
-        "type" : "label"
-      }, {
-        "identifier" : "contributor",
-        "language" : "undefined",
         "value" : "Marcus Meyer",
         "type" : "label"
       } ],
       "wasAttributedTo" : [ {
-        "identifier" : "wasAttributedTo",
-        "language" : "undefined",
-        "value" : "Institute of Data Science at Maastricht University",
-        "type" : "label"
-      }, {
         "identifier" : "wasAttributedTo",
         "language" : "undefined",
         "value" : "The Maastricht Law & Techlab",
@@ -68,6 +63,11 @@
         "identifier" : "wasAttributedTo",
         "language" : "undefined",
         "value" : "Maastricht University",
+        "type" : "label"
+      }, {
+        "identifier" : "wasAttributedTo",
+        "language" : "undefined",
+        "value" : "Institute of Data Science at Maastricht University",
         "type" : "label"
       } ],
       "versionInfo" : [ {
@@ -143,7 +143,7 @@
     "id" : "88",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "121",
+    "id" : "122",
     "type" : "owl:Class"
   }, {
     "id" : "21",
@@ -185,7 +185,7 @@
     "id" : "136",
     "type" : "owl:Class"
   }, {
-    "id" : "157",
+    "id" : "156",
     "type" : "owl:Class"
   }, {
     "id" : "114",
@@ -221,7 +221,7 @@
     "id" : "132",
     "type" : "owl:Class"
   }, {
-    "id" : "283",
+    "id" : "284",
     "type" : "owl:Class"
   }, {
     "id" : "126",
@@ -248,10 +248,10 @@
     "id" : "314",
     "type" : "owl:Class"
   }, {
-    "id" : "288",
+    "id" : "283",
     "type" : "owl:Class"
   }, {
-    "id" : "286",
+    "id" : "292",
     "type" : "owl:Class"
   }, {
     "id" : "56",
@@ -320,7 +320,7 @@
     "id" : "101",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
+    "id" : "44",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "359",
@@ -359,10 +359,10 @@
     "id" : "281",
     "type" : "owl:Class"
   }, {
-    "id" : "231",
+    "id" : "226",
     "type" : "owl:Class"
   }, {
-    "id" : "158",
+    "id" : "157",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "216",
@@ -419,7 +419,7 @@
     "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "44",
+    "id" : "42",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "377",
@@ -542,7 +542,7 @@
     "id" : "118",
     "type" : "owl:Class"
   }, {
-    "id" : "291",
+    "id" : "290",
     "type" : "owl:Class"
   }, {
     "id" : "403",
@@ -735,12 +735,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#SpecialNegotiationBody",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#SpecialNegotiationBody",
+        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
         "type" : "iri"
       } ]
     },
@@ -779,7 +779,7 @@
     "comment" : {
       "en" : "A city (plural \"cities\") is a geo-political region in which there is a large human settlement. The distinction with the term \"town\" (plural \"towns\") is that cities are generally larger than towns. Countries are generally larger than cities and, in fact, usually consist of multiple cities."
     },
-    "id" : "121",
+    "id" : "122",
     "superClasses" : [ "18" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#Person",
@@ -801,6 +801,9 @@
       "en" : "Person"
     },
     "subClasses" : [ "39", "153", "154" ],
+    "comment" : {
+      "en" : "A person is an object that has certain capacities or attributes constituting personhood. A human being that has existed or continues to exist in the world (either deceased or living). Fictional human beings cannot be  instances of this class."
+    },
     "id" : "21",
     "superClasses" : [ "16" ]
   }, {
@@ -843,8 +846,11 @@
       "IRI-based" : "Behaviour",
       "undefined" : "Behaviour"
     },
+    "comment" : {
+      "en" : "Behaviour is the set of actions and mannerisms made by systems (biological or otherwise) in response to stimuli or inputs, whether internal or external, conscious or subconscious, overt or covert, and voluntary or involuntary."
+    },
     "id" : "161",
-    "superClasses" : [ "157" ]
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#GeoPoliticalRegion",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -864,7 +870,10 @@
       "IRI-based" : "GeoPoliticalRegion",
       "undefined" : "Geo-political region"
     },
-    "subClasses" : [ "162", "108", "121" ],
+    "subClasses" : [ "162", "108", "122" ],
+    "comment" : {
+      "en" : "A spatial region on earth whose boundaries are determined by a combination of geographical, ecological, climatic, socio-economic and political criteria."
+    },
     "id" : "18",
     "superClasses" : [ "19" ]
   }, {
@@ -935,8 +944,11 @@
       "undefined" : "Procedure"
     },
     "subClasses" : [ "177", "178", "5" ],
+    "comment" : {
+      "en" : "A procedure is a process that attempts to achieve one or more objectives by following an established set of actions."
+    },
     "id" : "176",
-    "superClasses" : [ "157" ]
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#TransferOfRegisteredOffice",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -1117,7 +1129,10 @@
       "undefined" : "Process"
     },
     "subClasses" : [ "176", "161", "200" ],
-    "id" : "157",
+    "comment" : {
+      "en" : "A process is an entity that is identifiable only through the unfolding of time, has temporal parts, and unless otherwise specified/predicted, cannot be fully identified at any instant of time in which it exists."
+    },
+    "id" : "156",
     "superClasses" : [ "206" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#BoardResolution",
@@ -1156,7 +1171,7 @@
       "IRI-based" : "Organisation",
       "en" : "Organisation"
     },
-    "subClasses" : [ "193", "164", "35", "37", "172", "231", "127" ],
+    "subClasses" : [ "193", "164", "35", "37", "172", "226", "127" ],
     "comment" : {
       "en" : "Represents a collection of people organized together into a community or other social, commercial or political structure. The group has some common purpose or reason for existence which goes beyond the set of people belonging to it and can act as an Agent. Organizations are often decomposable into hierarchical structures."
     },
@@ -1204,7 +1219,7 @@
       "en" : "A data curation activity represents a researcher's involvement in annotating cross border transactions"
     },
     "id" : "200",
-    "superClasses" : [ "157" ]
+    "superClasses" : [ "156" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#Court",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -1317,7 +1332,7 @@
       },
       "labels" : {
         "IRI-based" : "netherlands",
-        "en" : "Netherlands",
+        "en" : "Holland",
         "nl" : "Nederland"
       }
     }, {
@@ -1333,7 +1348,7 @@
       },
       "labels" : {
         "IRI-based" : "france",
-        "en" : "French Republic",
+        "en" : "France",
         "fr" : "République française"
       }
     }, {
@@ -1433,6 +1448,22 @@
         "en" : "Bulgaria"
       }
     }, {
+      "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#italy",
+      "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+      "annotations" : {
+        "iso2code" : [ {
+          "identifier" : "iso2code",
+          "language" : "undefined",
+          "value" : "IT",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "italy",
+        "en" : "Italian Republic",
+        "it" : "Repubblica Italiana"
+      }
+    }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#luxembourg",
       "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
       "annotations" : {
@@ -1446,25 +1477,9 @@
       "labels" : {
         "de" : "Großherzogtum Luxemburg​",
         "IRI-based" : "luxembourg",
-        "lb" : "Lëtzebuerg",
+        "lb" : "Groussherzogtum Lëtzebuerg",
         "en" : "Luxembourg",
         "fr" : "Grand-Duché de Luxembourg"
-      }
-    }, {
-      "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#italy",
-      "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-      "annotations" : {
-        "iso2code" : [ {
-          "identifier" : "iso2code",
-          "language" : "undefined",
-          "value" : "IT",
-          "type" : "label"
-        } ]
-      },
-      "labels" : {
-        "IRI-based" : "italy",
-        "en" : "Italy",
-        "it" : "Italia"
       }
     }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#portugal",
@@ -1480,7 +1495,7 @@
       "labels" : {
         "IRI-based" : "portugal",
         "pt" : "República Portuguesa",
-        "en" : "Portugal"
+        "en" : "Portuguese Republic"
       }
     }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#slovakia",
@@ -1495,23 +1510,14 @@
       },
       "labels" : {
         "IRI-based" : "slovakia",
-        "sk" : "Slovenská republika",
+        "sk" : "Slovensko",
         "en" : "Slovakia"
       }
     }, {
-      "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#cyprus",
+      "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#slovenia",
       "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-      "annotations" : {
-        "iso2code" : [ {
-          "identifier" : "iso2code",
-          "language" : "undefined",
-          "value" : "CY",
-          "type" : "label"
-        } ]
-      },
       "labels" : {
-        "IRI-based" : "cyprus",
-        "en" : "Cyprus"
+        "IRI-based" : "slovenia"
       }
     }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#belgium",
@@ -1530,10 +1536,19 @@
         "fr" : "Belgique"
       }
     }, {
-      "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#slovenia",
+      "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#cyprus",
       "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+      "annotations" : {
+        "iso2code" : [ {
+          "identifier" : "iso2code",
+          "language" : "undefined",
+          "value" : "CY",
+          "type" : "label"
+        } ]
+      },
       "labels" : {
-        "IRI-based" : "slovenia"
+        "IRI-based" : "cyprus",
+        "en" : "Cyprus"
       }
     }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#germany",
@@ -1580,19 +1595,19 @@
         "iso2code" : [ {
           "identifier" : "iso2code",
           "language" : "undefined",
-          "value" : "GR",
+          "value" : "EL",
           "type" : "label"
         }, {
           "identifier" : "iso2code",
           "language" : "undefined",
-          "value" : "EL",
+          "value" : "GR",
           "type" : "label"
         } ]
       },
       "labels" : {
         "IRI-based" : "greece",
         "en" : "Greece",
-        "gr" : "Ellada"
+        "gr" : "Ελλάδα"
       }
     }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hungary",
@@ -1645,7 +1660,7 @@
       },
       "labels" : {
         "IRI-based" : "poland",
-        "en" : "Republic of Poland",
+        "en" : "Poland",
         "pl" : "Polska"
       }
     }, {
@@ -1678,7 +1693,7 @@
       "labels" : {
         "IRI-based" : "lithuania",
         "lt" : "Lietuva",
-        "en" : "Republic of Lithuania"
+        "en" : "Lithuania"
       }
     }, {
       "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#spain",
@@ -1703,6 +1718,9 @@
         "hr" : "Hrvatska"
       }
     } ],
+    "comment" : {
+      "en" : "A country which forms part of the European Union. The European Union is a conglomeration of European countries whose governance structures agree to abide with common political and economic criteria to improve efficiency of goods and services trading as well as movement and migration of inhabitants between these countries"
+    },
     "id" : "256",
     "superClasses" : [ "247" ]
   }, {
@@ -1776,7 +1794,7 @@
         } ]
       },
       "labels" : {
-        "no" : "Kongeriket Norge",
+        "no" : "Norgga gonagasriika",
         "IRI-based" : "norway",
         "en" : "Norway"
       }
@@ -1794,7 +1812,7 @@
       "labels" : {
         "de" : "Fürstentum Liechtenstein",
         "IRI-based" : "liechtenstein",
-        "en" : "Liechtenstein"
+        "en" : "Principality of Liechtenstein"
       }
     } ],
     "subClasses" : [ "256" ],
@@ -1849,7 +1867,7 @@
     "comment" : {
       "en" : "The right of employees or their representatives to be informed on the likely repercussions of the cross-border transaction on employment, which includes the dismissal as well as the hiring of employees or relocation of work. See for instance article 122 of Directive 2017/1132."
     },
-    "id" : "283",
+    "id" : "284",
     "superClasses" : [ "124" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#MemberStateOfficialJournal",
@@ -1912,7 +1930,10 @@
       "IRI-based" : "Entity",
       "undefined" : "Entity"
     },
-    "subClasses" : [ "291", "240", "157", "16", "19" ],
+    "subClasses" : [ "290", "240", "156", "16", "19" ],
+    "comment" : {
+      "en" : "Every thing is an entity."
+    },
     "id" : "206"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
@@ -2053,7 +2074,7 @@
     "comment" : {
       "en" : "The management or administrative organ of the company shall draw up the draft terms of a division. The draft terms of a division shall include at least the particulars listed in article 160d."
     },
-    "id" : "288",
+    "id" : "283",
     "superClasses" : [ "82" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#ConversionPlan",
@@ -2080,7 +2101,7 @@
     "comment" : {
       "en" : "A document providing details of how the conversion of a company will be implemented. Article 86d: The management or administrative organ of the company shall draw up the draft terms of a cross-border conversion. The draft terms of a cross-border conversion shall include at least the particulars listed in article 86d"
     },
-    "id" : "286",
+    "id" : "292",
     "superClasses" : [ "82" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#TransferringCompany",
@@ -2169,6 +2190,9 @@
       "IRI-based" : "CompanyHeadQuarter",
       "en" : "Company headquarter"
     },
+    "comment" : {
+      "en" : "The location of a company headquarter"
+    },
     "attributes" : [ "equivalent" ],
     "id" : "250",
     "superClasses" : [ "15" ]
@@ -2228,7 +2252,7 @@
     "id" : "141"
   }, {
     "instances" : 0,
-    "union" : [ "157", "16" ],
+    "union" : [ "156", "16" ],
     "attributes" : [ "union", "anonymous" ],
     "id" : "223"
   }, {
@@ -2432,7 +2456,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
+    "id" : "44",
     "label" : {
       "IRI-based" : "boolean"
     }
@@ -2639,12 +2663,12 @@
     "comment" : {
       "en" : "An individual authority established by its member state to supervise the compliance with a specific regulation."
     },
-    "id" : "231",
+    "id" : "226",
     "superClasses" : [ "30" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "158",
+    "id" : "157",
     "label" : {
       "IRI-based" : "dateTime"
     }
@@ -2734,12 +2758,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
+        "value" : "https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "https://www.europarl.europa.eu/doceo/document/TA-8-2019-0429_EN.html",
+        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
         "type" : "iri"
       } ]
     },
@@ -2883,7 +2907,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "44",
+    "id" : "42",
     "label" : {
       "IRI-based" : "nonNegativeInteger"
     }
@@ -2937,7 +2961,7 @@
       "en" : "Variable indicating the SE-establishment mode: by merger, conversion, holding-SE, subsidiary-SE or unsure (cases)"
     },
     "id" : "6",
-    "superClasses" : [ "291" ]
+    "superClasses" : [ "290" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#BoardLevelEmployeeRepresentationRight",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -2985,6 +3009,9 @@
       "undefined" : "Agent"
     },
     "subClasses" : [ "15", "21", "30", "32" ],
+    "comment" : {
+      "en" : "An entity or group of entities (either biological or non-biological) that is able to perform actions autonomously in the world."
+    },
     "id" : "16",
     "superClasses" : [ "206" ]
   }, {
@@ -3161,6 +3188,9 @@
       "undefined" : "Object"
     },
     "subClasses" : [ "167", "137", "218" ],
+    "comment" : {
+      "en" : "An object is an inert entity that is wholly identifiable at any instant of time during which it exists. It is inert in the sense that it cannot perform any action autonomously."
+    },
     "id" : "240",
     "superClasses" : [ "206" ]
   }, {
@@ -3211,6 +3241,9 @@
       "undefined" : "Country"
     },
     "subClasses" : [ "247", "87" ],
+    "comment" : {
+      "en" : "A geo-political region that has a distinct and common political governance structure for people that inhabit it for a significant portion of their lives. The majority of people that inhabit such a region are also usually united by common descent, history, culture and language."
+    },
     "id" : "108",
     "superClasses" : [ "18" ]
   }, {
@@ -3418,7 +3451,7 @@
       "en" : "Name given to describe the structure of a corporation or business in the different legal orders. For example Limited (Ltd.), Public Limited Company (PLC), Gesellschaft mit beschränkter Haftung (GmbH), Aktiengesellschaft (AG). The company legal form is regulated under national law and grants specific rights and obligations to the company stakeholders (such as shareholders, management & employees)."
     },
     "id" : "208",
-    "superClasses" : [ "291" ]
+    "superClasses" : [ "290" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#CreditorDecisionRight",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -3583,12 +3616,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
+        "value" : "http://data.europa.eu/eli/dir/2002/14/oj",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://data.europa.eu/eli/dir/2002/14/oj",
+        "value" : "http://data.europa.eu/eli/dir/2017/1132/oj",
         "type" : "iri"
       } ]
     },
@@ -3596,7 +3629,7 @@
       "IRI-based" : "InformationRight",
       "en" : "Information right"
     },
-    "subClasses" : [ "283" ],
+    "subClasses" : [ "284" ],
     "comment" : {
       "en" : "The right of employees or their representatives to be informed and to receive any documents necessary for the exercise of their consultation and board-level employee representation rights in the context of an intended merger/division/conversion/seat transfer."
     },
@@ -3713,7 +3746,7 @@
       "IRI-based" : "TransactionDocument",
       "en" : "Transaction document"
     },
-    "subClasses" : [ "115", "183", "81", "288", "281", "262", "286", "253", "299", "392" ],
+    "subClasses" : [ "115", "183", "81", "283", "281", "262", "292", "253", "299", "392" ],
     "comment" : {
       "en" : "Document required by law to document the step of a company transaction or an agreement made between stakeholders involved in the transaction that are either printed, inserted and mailed, or electronically presented."
     },
@@ -3811,7 +3844,10 @@
       "undefined" : "Attribute"
     },
     "subClasses" : [ "6", "208" ],
-    "id" : "291",
+    "comment" : {
+      "en" : "An attribute is a characteristic of some entity."
+    },
+    "id" : "290",
     "superClasses" : [ "206" ]
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#CrossBorderMergerIntoNewCompany",
@@ -4263,6 +4299,9 @@
       "undefined" : "Spatial region"
     },
     "subClasses" : [ "18" ],
+    "comment" : {
+      "en" : "A spatial region is an object contained in some region of space."
+    },
     "id" : "19",
     "superClasses" : [ "206" ]
   } ],
@@ -4390,7 +4429,7 @@
     "id" : "119",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "122",
+    "id" : "121",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "123",
@@ -4433,10 +4472,10 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "155",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "156",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "158",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "159",
     "type" : "owl:datatypeProperty"
@@ -4642,22 +4681,22 @@
     "id" : "271",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "284",
+    "id" : "285",
     "type" : "owl:someValuesFrom"
   }, {
-    "id" : "285",
+    "id" : "286",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "287",
     "type" : "owl:someValuesFrom"
   }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
     "id" : "289",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "290",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "292",
+    "id" : "291",
     "type" : "owl:someValuesFrom"
   }, {
     "id" : "293",
@@ -4786,7 +4825,7 @@
     "id" : "350",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "228",
+    "id" : "229",
     "type" : "owl:objectProperty"
   }, {
     "id" : "352",
@@ -4843,16 +4882,16 @@
     "id" : "266",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "227",
+    "id" : "228",
     "type" : "owl:objectProperty"
   }, {
     "id" : "310",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "367",
+    "id" : "272",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "272",
+    "id" : "367",
     "type" : "owl:objectProperty"
   }, {
     "id" : "385",
@@ -4888,7 +4927,7 @@
     "id" : "394",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "226",
+    "id" : "227",
     "type" : "owl:objectProperty"
   }, {
     "id" : "395",
@@ -4927,7 +4966,7 @@
     "id" : "406",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "230",
+    "id" : "231",
     "type" : "owl:objectProperty"
   }, {
     "id" : "407",
@@ -5204,23 +5243,9 @@
     "attributes" : [ "datatype" ],
     "id" : "36"
   }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#multiCBM",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "42",
-    "label" : {
-      "IRI-based" : "multiCBM",
-      "en" : "Multi-transaction"
-    },
-    "domain" : "5",
-    "comment" : {
-      "en" : "A transaction whereby more than two companies (i.e. multiple merging companies) are involved and merged into one acquiring company"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "41"
-  }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#MCLastEmploymentFigure",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "44",
+    "range" : "42",
     "label" : {
       "IRI-based" : "MCLastEmploymentFigure",
       "en" : "Last employment figure for the merging company"
@@ -5228,6 +5253,20 @@
     "domain" : "5",
     "comment" : {
       "en" : "The last available annual employment figure for the merging company"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#multiCBM",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "multiCBM",
+      "en" : "Multi-transaction"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "A transaction whereby more than two companies (i.e. multiple merging companies) are involved and merged into one acquiring company"
     },
     "attributes" : [ "datatype" ],
     "id" : "43"
@@ -5460,7 +5499,7 @@
       "en" : "Year in which the last worldwide employment figure was recorded"
     },
     "attributes" : [ "datatype" ],
-    "id" : "122"
+    "id" : "121"
   }, {
     "range" : "93",
     "domain" : "124",
@@ -5554,6 +5593,20 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "152"
   }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "157",
+    "label" : {
+      "IRI-based" : "endedAtTime",
+      "en" : "Ended at"
+    },
+    "domain" : "156",
+    "comment" : {
+      "en" : "The date and time a process ended"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "155"
+  }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#employs",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
     "range" : "23",
@@ -5575,21 +5628,7 @@
       "en" : "(employs ?ENTITY1 ?ENTITY2) means (employedBy ?ENTITY2 ?ENTITY1)"
     },
     "attributes" : [ "object" ],
-    "id" : "155"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#endedAtTime",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "158",
-    "label" : {
-      "IRI-based" : "endedAtTime",
-      "en" : "Ended at"
-    },
-    "domain" : "157",
-    "comment" : {
-      "en" : "The date and time a process ended"
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "156"
+    "id" : "158"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#BLERComposition",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -5699,17 +5738,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
         "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#MergingCompany",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -5766,7 +5805,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "194"
   }, {
-    "range" : "157",
+    "range" : "156",
     "domain" : "176",
     "attributes" : [ "object", "anonymous" ],
     "id" : "195"
@@ -5785,12 +5824,12 @@
     "attributes" : [ "datatype" ],
     "id" : "196"
   }, {
-    "range" : "157",
+    "range" : "156",
     "domain" : "161",
     "attributes" : [ "object", "anonymous" ],
     "id" : "198"
   }, {
-    "range" : "157",
+    "range" : "156",
     "domain" : "200",
     "attributes" : [ "object", "anonymous" ],
     "id" : "199"
@@ -5807,12 +5846,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#RecipientCompany",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#OriginalCompany",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#EmergingCompany",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#RecipientCompany",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -5822,7 +5861,7 @@
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#OriginalCompany",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#EmergingCompany",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -5979,7 +6018,7 @@
     },
     "superproperty" : [ "175" ],
     "domain" : "223",
-    "subproperty" : [ "140", "224", "83", "155", "205" ],
+    "subproperty" : [ "140", "224", "83", "158", "205" ],
     "comment" : {
       "en" : "(hasCompanyStakeholder ?ENTITY1 ?ENTITY2) means that some entity ?ENTITY1, which is either a significant process or agent has another agent ?ENTITY2 with personal interests in benefiting either financially or otherwise from the outcomes of ?ENTITY1 (if it is an event or process), or in its byproducts and profits (if it is an agent)."
     },
@@ -5999,7 +6038,7 @@
       "en" : "Cross-border company mobility entity relation"
     },
     "domain" : "23",
-    "subproperty" : [ "226", "22", "227", "168", "228", "229", "7", "230", "213", "175" ],
+    "subproperty" : [ "227", "22", "228", "168", "229", "230", "7", "231", "213", "175" ],
     "comment" : {
       "en" : "(cbcmEntityRelation ?ENTITY1 ?ENTITY2) means that ?ENTITY1 is related to ?ENTITY2."
     },
@@ -6036,7 +6075,7 @@
     "id" : "237"
   }, {
     "range" : "18",
-    "domain" : "121",
+    "domain" : "122",
     "attributes" : [ "object", "anonymous" ],
     "id" : "238"
   }, {
@@ -6139,7 +6178,7 @@
     "comment" : {
       "en" : "(partOf ?ENTITY1 ?ENTITY2) means (hasPart ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "260"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
@@ -6162,7 +6201,7 @@
     "comment" : {
       "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "261"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry",
@@ -6196,7 +6235,7 @@
     "comment" : {
       "en" : "(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "263"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#cbcmDocumentRelation",
@@ -6264,7 +6303,7 @@
     "comment" : {
       "en" : "(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "275"
   }, {
     "range" : "218",
@@ -6279,12 +6318,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -6308,7 +6347,7 @@
     "comment" : {
       "en" : "(hasRecipientCompany ?ENTITY1 ?ENTITY2) means that some company division transaction ?ENTITY1 produces two or more distinct companies, one of which is ?ENTITY2 (a so-called \"recipient company\")."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "277"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry",
@@ -6342,7 +6381,7 @@
     "comment" : {
       "en" : "(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "279"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
@@ -6365,41 +6404,30 @@
     "comment" : {
       "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "280"
   }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry",
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "108",
+    "range" : "283",
     "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#Country",
-        "type" : "iri"
-      } ],
       "example" : [ {
         "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(targetCountry crossBorderMerger1 belgium)",
+        "language" : "en",
+        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
         "type" : "label"
       } ]
     },
     "label" : {
-      "IRI-based" : "targetCountry",
-      "en" : "target country"
+      "IRI-based" : "requiresDocument",
+      "en" : "requires document"
     },
-    "superproperty" : [ "107" ],
+    "superproperty" : [ "168" ],
     "domain" : "204",
     "comment" : {
-      "en" : "(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2."
+      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "282"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#reportedIn",
@@ -6424,96 +6452,6 @@
     },
     "attributes" : [ "object" ],
     "id" : "271"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "108",
-    "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#Country",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(targetCountry crossBorderMerger1 belgium)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "targetCountry",
-      "en" : "target country"
-    },
-    "superproperty" : [ "107" ],
-    "domain" : "144",
-    "comment" : {
-      "en" : "(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "284"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "286",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "requiresDocument",
-      "en" : "requires document"
-    },
-    "superproperty" : [ "168" ],
-    "domain" : "144",
-    "comment" : {
-      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "285"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "288",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "requiresDocument",
-      "en" : "requires document"
-    },
-    "superproperty" : [ "168" ],
-    "domain" : "204",
-    "comment" : {
-      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "287"
-  }, {
-    "range" : "108",
-    "domain" : "162",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "289"
-  }, {
-    "range" : "108",
-    "domain" : "121",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "290"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -6546,8 +6484,109 @@
     "comment" : {
       "en" : "(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "292"
+    "attributes" : [ "someValues", "object" ],
+    "id" : "285"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "108",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#Country",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(targetCountry crossBorderMerger1 belgium)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "targetCountry",
+      "en" : "target country"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "144",
+    "comment" : {
+      "en" : "(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "286"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#targetCountry",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "108",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#Country",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(targetCountry crossBorderMerger1 belgium)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "targetCountry",
+      "en" : "target country"
+    },
+    "superproperty" : [ "107" ],
+    "domain" : "204",
+    "comment" : {
+      "en" : "(targetCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction result (a company) whose place of business is located in the country ?ENTITY2."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "287"
+  }, {
+    "range" : "108",
+    "domain" : "162",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "108",
+    "domain" : "122",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "292",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requiresDocument",
+      "en" : "requires document"
+    },
+    "superproperty" : [ "168" ],
+    "domain" : "144",
+    "comment" : {
+      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "291"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasMember",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -6575,11 +6614,11 @@
     "comment" : {
       "en" : "(hasMember ?ENTITY1 ?ENTITY2) means that some agent ?ENTITY1 (usually an organisation) has a person ?ENTITY2 that participates in its activities. This need not represent an employment role nor imply financial incentives between the organisation and person."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "293"
   }, {
     "range" : "19",
-    "domain" : "157",
+    "domain" : "156",
     "attributes" : [ "object", "anonymous" ],
     "id" : "294"
   }, {
@@ -6599,7 +6638,7 @@
     "id" : "295"
   }, {
     "range" : "162",
-    "domain" : "121",
+    "domain" : "122",
     "attributes" : [ "object", "anonymous" ],
     "id" : "296"
   }, {
@@ -6635,7 +6674,7 @@
     "comment" : {
       "en" : "(authoredBy ?ENTITY1 ?ENTITY2) means that ?ENTITY1 is an instance of a publication that is created primarily by the entity referred to by ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "298"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo",
@@ -6653,12 +6692,12 @@
       "IRI-based" : "applicableTo",
       "en" : "applicable to"
     },
-    "superproperty" : [ "227" ],
+    "superproperty" : [ "228" ],
     "domain" : "130",
     "comment" : {
       "en" : "(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "301"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#partOf",
@@ -6681,7 +6720,7 @@
     "comment" : {
       "en" : "(partOf ?ENTITY1 ?ENTITY2) means (hasPart ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "302"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#companiesHaveEconomicCommittee",
@@ -6755,12 +6794,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
+        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
+        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
         "type" : "label"
       } ]
     },
@@ -6774,7 +6813,7 @@
     "comment" : {
       "en" : "(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "308"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#owns",
@@ -6797,7 +6836,7 @@
     "comment" : {
       "en" : "(owns ?ENTITY1 ?ENTITY2) means (owns ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "313"
   }, {
     "range" : "87",
@@ -6819,12 +6858,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
+        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
+        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
         "type" : "label"
       } ]
     },
@@ -6838,13 +6877,13 @@
     "comment" : {
       "en" : "(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "316"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput",
     "inverse" : "318",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "68",
+    "range" : "65",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -6869,7 +6908,7 @@
     "comment" : {
       "en" : "(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "317"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput",
@@ -6900,7 +6939,7 @@
     "comment" : {
       "en" : "(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "319"
   }, {
     "range" : "71",
@@ -6911,7 +6950,7 @@
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput",
     "inverse" : "318",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "65",
+    "range" : "68",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -6936,7 +6975,7 @@
     "comment" : {
       "en" : "(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "321"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#used",
@@ -6952,7 +6991,7 @@
     "comment" : {
       "en" : "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.\n\nBased on: https://www.w3.org/TR/prov-o/#used"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "322"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#rawTransactionID",
@@ -6968,96 +7007,6 @@
     },
     "attributes" : [ "datatype" ],
     "id" : "324"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput",
-    "inverse" : "318",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "65",
-    "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(hasTransactionInput crossBorderMerger1 company1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTransactionInput",
-      "en" : "has transaction input"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "150",
-    "subproperty" : [ "179", "207", "203" ],
-    "comment" : {
-      "en" : "(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "326"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "191",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "requiresDocument",
-      "en" : "requires document"
-    },
-    "superproperty" : [ "168" ],
-    "domain" : "148",
-    "comment" : {
-      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "327"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
-    "inverse" : "309",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "37",
-    "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTransactionResult",
-      "en" : "has transaction result"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "148",
-    "subproperty" : [ "310", "311", "312" ],
-    "comment" : {
-      "en" : "(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "328"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput",
     "inverse" : "318",
@@ -7087,7 +7036,97 @@
     "comment" : {
       "en" : "(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
+    "id" : "326"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "191",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requiresDocument",
+      "en" : "requires document"
+    },
+    "superproperty" : [ "168" ],
+    "domain" : "148",
+    "comment" : {
+      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "327"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
+    "inverse" : "309",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "37",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTransactionResult",
+      "en" : "has transaction result"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "148",
+    "subproperty" : [ "310", "311", "312" ],
+    "comment" : {
+      "en" : "(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "328"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionInput",
+    "inverse" : "318",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "65",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(hasTransactionInput crossBorderMerger1 company1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTransactionInput",
+      "en" : "has transaction input"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "150",
+    "subproperty" : [ "179", "207", "203" ],
+    "comment" : {
+      "en" : "(hasTransactionInput ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a prerequisite entity ?ENTITY2 that needs to be considered, assessed, or modified during the transaction referred to by ?ENTITY1."
+    },
+    "attributes" : [ "someValues", "object" ],
     "id" : "329"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#sourceCountry",
@@ -7121,8 +7160,90 @@
     "comment" : {
       "en" : "(sourceCountry ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has some transaction input (a company) whose place of business is located in the country ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "330"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
+    "inverse" : "309",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "37",
+    "annotations" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
+        "type" : "iri"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
+        "type" : "label"
+      }, {
+        "identifier" : "example",
+        "language" : "undefined",
+        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasTransactionResult",
+      "en" : "has transaction result"
+    },
+    "superproperty" : [ "7" ],
+    "domain" : "5",
+    "subproperty" : [ "310", "311", "312" ],
+    "comment" : {
+      "en" : "(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "331"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#reportedIn",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "253",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "(reportedIn crossBorderMerger1 transactionNotice1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "reportedIn",
+      "en" : "reported in"
+    },
+    "superproperty" : [ "168" ],
+    "domain" : "5",
+    "comment" : {
+      "en" : "(reportedIn ?ENTITY1 ?ENTITY2) means that some significant event, process or statement ?ENTITY1 is published or mentioned or declared in writing in some publication, document or database ?ENTITY2."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "332"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "334",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "(applicableTo creditorRight1 person1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "applicableTo",
+      "en" : "applicable to"
+    },
+    "superproperty" : [ "228" ],
+    "domain" : "47",
+    "comment" : {
+      "en" : "(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
+    },
+    "attributes" : [ "someValues", "object" ],
+    "id" : "333"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#transactionValidatedByDocument",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -7155,89 +7276,7 @@
     "comment" : {
       "en" : "(transactionValidatedByDocument ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 went through a process of approval and assessment through various criteria such as veracity, eligibility, legal relevance etc. and a document ?ENTITY2 was produced to prove the satisfaction of the critieria by ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "331"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasTransactionResult",
-    "inverse" : "309",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "37",
-    "annotations" : {
-      "seeAlso" : [ {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction",
-        "type" : "iri"
-      } ],
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
-        "type" : "label"
-      }, {
-        "identifier" : "example",
-        "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "hasTransactionResult",
-      "en" : "has transaction result"
-    },
-    "superproperty" : [ "7" ],
-    "domain" : "5",
-    "subproperty" : [ "310", "311", "312" ],
-    "comment" : {
-      "en" : "(hasTransactionResult ?ENTITY1 ?ENTITY2) means that some company transaction ?ENTITY1 has a byproduct ?ENTITY2 (e.g. a company, transaction certificate etc.) after completion of the process."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "332"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "334",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "(applicableTo creditorRight1 person1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "applicableTo",
-      "en" : "applicable to"
-    },
-    "superproperty" : [ "227" ],
-    "domain" : "47",
-    "comment" : {
-      "en" : "(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
-    },
-    "attributes" : [ "object", "someValues" ],
-    "id" : "333"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#reportedIn",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "253",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "(reportedIn crossBorderMerger1 transactionNotice1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "reportedIn",
-      "en" : "reported in"
-    },
-    "superproperty" : [ "168" ],
-    "domain" : "5",
-    "comment" : {
-      "en" : "(reportedIn ?ENTITY1 ?ENTITY2) means that some significant event, process or statement ?ENTITY1 is published or mentioned or declared in writing in some publication, document or database ?ENTITY2."
-    },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "335"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#NACECode",
@@ -7262,7 +7301,7 @@
       "en" : "Used"
     },
     "superproperty" : [ "22" ],
-    "domain" : "157",
+    "domain" : "156",
     "subproperty" : [ "252", "323" ],
     "comment" : {
       "en" : "Usage is the beginning of utilizing an entity by an activity. Before usage, the activity had not begun to utilize this entity and could not have been affected by the entity.\n\nBased on: https://www.w3.org/TR/prov-o/#used"
@@ -7304,7 +7343,7 @@
     "comment" : {
       "en" : "(partOf ?ENTITY1 ?ENTITY2) means (hasPart ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "341"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasMember",
@@ -7333,7 +7372,7 @@
     "comment" : {
       "en" : "(hasMember ?ENTITY1 ?ENTITY2) means that some agent ?ENTITY1 (usually an organisation) has a person ?ENTITY2 that participates in its activities. This need not represent an employment role nor imply financial incentives between the organisation and person."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "342"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo",
@@ -7351,12 +7390,12 @@
       "IRI-based" : "applicableTo",
       "en" : "applicable to"
     },
-    "superproperty" : [ "227" ],
+    "superproperty" : [ "228" ],
     "domain" : "93",
     "comment" : {
       "en" : "(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "345"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo",
@@ -7374,12 +7413,12 @@
       "IRI-based" : "applicableTo",
       "en" : "applicable to"
     },
-    "superproperty" : [ "227" ],
+    "superproperty" : [ "228" ],
     "domain" : "3",
     "comment" : {
       "en" : "(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "346"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#containedIn",
@@ -7402,7 +7441,7 @@
     "comment" : {
       "en" : "(containedIn ?ENTITY1 ?ENTITY2) means that some document or publication ?ENTITY1 is archived or stored in some other document collection, database or data repository referred to by ?ENTITY2."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "347"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#partOf",
@@ -7425,12 +7464,12 @@
     "comment" : {
       "en" : "(partOf ?ENTITY1 ?ENTITY2) means (hasPart ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "348"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasSubProcedure",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "157",
+    "range" : "156",
     "annotations" : {
       "seeAlso" : [ {
         "identifier" : "seeAlso",
@@ -7487,12 +7526,12 @@
       "en" : "involves the change of"
     },
     "superproperty" : [ "24" ],
-    "domain" : "157",
+    "domain" : "156",
     "comment" : {
       "en" : "(involvesChangeOf ?ENTITY1 ?ENTITY2) means that the process ?ENTITY1 requires the modification or alteration of the entity or object ?ENTITY2."
     },
     "attributes" : [ "object" ],
-    "id" : "228"
+    "id" : "229"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionInputOf",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -7514,7 +7553,7 @@
     "comment" : {
       "en" : "(isTransactionInputOf ?ENTITY1 ?ENTITY2) means (hasTransactionInput ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "352"
   }, {
     "range" : "21",
@@ -7542,7 +7581,7 @@
     "comment" : {
       "en" : "(isTransactionResultOf ?ENTITY1 ?ENTITY2) means (hasTransactionResult ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "354"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#maintainedBy",
@@ -7566,7 +7605,7 @@
     "comment" : {
       "en" : "(maintainedBy ?ENTITY1 ?ENTITY2) means that some digital resource ?ENTITY1 (e.g. database, website, document repository etc.) has stewardship by some agent or organisation ?ENTITY2 who is responsible for the upkeep of ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "355"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#isTransactionInputOf",
@@ -7589,7 +7628,7 @@
     "comment" : {
       "en" : "(isTransactionInputOf ?ENTITY1 ?ENTITY2) means (hasTransactionInput ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "356"
   }, {
     "range" : "21",
@@ -7618,7 +7657,7 @@
     "comment" : {
       "en" : "(maintainedBy ?ENTITY1 ?ENTITY2) means that some digital resource ?ENTITY1 (e.g. database, website, document repository etc.) has stewardship by some agent or organisation ?ENTITY2 who is responsible for the upkeep of ?ENTITY1."
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "358"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasSecondaryRegistrationLocation",
@@ -7643,12 +7682,12 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
@@ -7697,7 +7736,7 @@
       "en" : "Associated with"
     },
     "superproperty" : [ "22" ],
-    "domain" : "157",
+    "domain" : "156",
     "comment" : {
       "en" : "An activity association is an assignment of responsibility to an agent for a process, indicating that the agent had a role in the activity.\n\nBased on: https://www.w3.org/TR/prov-o/#wasAssociatedWith"
     },
@@ -7722,9 +7761,13 @@
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
     "range" : "48",
     "label" : {
-      "IRI-based" : "registeredOffice"
+      "IRI-based" : "registeredOffice",
+      "en" : "Registered Office"
     },
     "domain" : "23",
+    "comment" : {
+      "en" : "Deprecated property"
+    },
     "attributes" : [ "datatype" ],
     "id" : "379"
   }, {
@@ -7855,7 +7898,7 @@
       "en" : "(cbcmObjectRelation ?ENTITY1 ?ENTITY2) means that the relation between ?ENTITY1 and ?ENTITY2 captures information pertaining to an object."
     },
     "attributes" : [ "object" ],
-    "id" : "227"
+    "id" : "228"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasAcquiringCompany",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -7864,17 +7907,17 @@
       "seeAlso" : [ {
         "identifier" : "seeAlso",
         "language" : "undefined",
-        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#MergingCompany",
-        "type" : "iri"
-      }, {
-        "identifier" : "seeAlso",
-        "language" : "undefined",
         "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyMerger",
         "type" : "iri"
       }, {
         "identifier" : "seeAlso",
         "language" : "undefined",
         "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://w3id.org/um/cbcm/eu-cm-ontology#MergingCompany",
         "type" : "iri"
       } ],
       "example" : [ {
@@ -7895,6 +7938,29 @@
     },
     "attributes" : [ "object" ],
     "id" : "310"
+  }, {
+    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
+    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
+    "range" : "167",
+    "annotations" : {
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "requiresDocument",
+      "en" : "requires document"
+    },
+    "superproperty" : [ "168" ],
+    "domain" : "5",
+    "comment" : {
+      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
+    },
+    "attributes" : [ "object" ],
+    "id" : "272"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#locatedIn",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -7919,29 +7985,6 @@
     },
     "attributes" : [ "object" ],
     "id" : "367"
-  }, {
-    "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#requiresDocument",
-    "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "167",
-    "annotations" : {
-      "example" : [ {
-        "identifier" : "example",
-        "language" : "en",
-        "value" : "(requiresDocument crossBorderMerger1 mergerPlan1)",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "requiresDocument",
-      "en" : "requires document"
-    },
-    "superproperty" : [ "168" ],
-    "domain" : "5",
-    "comment" : {
-      "en" : "(requiresDocument ?ENTITY1 ?ENTITY2) means that some significant event or process ?ENTITY1 needs a compulsory document ?ENTITY2 to be submitted and reviewed before the process ?ENTITY1 can be completed."
-    },
-    "attributes" : [ "object" ],
-    "id" : "272"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#transactionStartDate",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
@@ -7972,7 +8015,7 @@
       "IRI-based" : "applicableTo",
       "en" : "applicable to"
     },
-    "superproperty" : [ "227" ],
+    "superproperty" : [ "228" ],
     "domain" : "218",
     "comment" : {
       "en" : "(applicableTo ?ENTITY1 ?ENTITY2) means that some legal right ?ENTITY1 is awarded or assigned to a particular person or agent ?ENTITY2."
@@ -8116,7 +8159,7 @@
     "id" : "394"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#hasPart",
-    "inverse" : "229",
+    "inverse" : "230",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
     "range" : "23",
     "annotations" : {
@@ -8137,7 +8180,7 @@
       "en" : "(hasPart ?ENTITY1 ?ENTITY2) means that the entity referred to by ?ENTITY1 has a constituent entity referred to by ?ENTITY2."
     },
     "attributes" : [ "object" ],
-    "id" : "226"
+    "id" : "227"
   }, {
     "range" : "206",
     "domain" : "16",
@@ -8202,18 +8245,18 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "402"
   }, {
-    "range" : "291",
+    "range" : "290",
     "domain" : "6",
     "attributes" : [ "object", "anonymous" ],
     "id" : "404"
   }, {
-    "range" : "291",
+    "range" : "290",
     "domain" : "208",
     "attributes" : [ "object", "anonymous" ],
     "id" : "405"
   }, {
     "range" : "206",
-    "domain" : "157",
+    "domain" : "156",
     "attributes" : [ "object", "anonymous" ],
     "id" : "406"
   }, {
@@ -8231,10 +8274,10 @@
       "en" : "(companyFormCountry ?ENTITY1 ?ENTITY2) means that ?ENTITY1 is a company form recognized by the law of country ?ENTITY2."
     },
     "attributes" : [ "object" ],
-    "id" : "230"
+    "id" : "231"
   }, {
     "range" : "82",
-    "domain" : "288",
+    "domain" : "283",
     "attributes" : [ "object", "anonymous" ],
     "id" : "407"
   }, {
@@ -8249,7 +8292,7 @@
     "id" : "409"
   }, {
     "range" : "82",
-    "domain" : "286",
+    "domain" : "292",
     "attributes" : [ "object", "anonymous" ],
     "id" : "410"
   }, {
@@ -8269,7 +8312,7 @@
     "id" : "413"
   }, {
     "range" : "206",
-    "domain" : "291",
+    "domain" : "290",
     "attributes" : [ "object", "anonymous" ],
     "id" : "414"
   }, {
@@ -8349,7 +8392,7 @@
     "id" : "422"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#employedBy",
-    "inverse" : "155",
+    "inverse" : "158",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
     "range" : "340",
     "annotations" : {
@@ -8401,7 +8444,7 @@
       "en" : "Generated"
     },
     "superproperty" : [ "22" ],
-    "domain" : "157",
+    "domain" : "156",
     "comment" : {
       "en" : "Generation is the completion of production of a new entity by a process. This entity did not exist before generation and becomes available for usage after this generation.\n\nBased (inverse of) on: https://www.w3.org/TR/prov-o/#wasGeneratedBy"
     },
@@ -8449,7 +8492,7 @@
     "id" : "384"
   }, {
     "range" : "30",
-    "domain" : "231",
+    "domain" : "226",
     "attributes" : [ "object", "anonymous" ],
     "id" : "432"
   }, {
@@ -8483,7 +8526,7 @@
     "id" : "436"
   }, {
     "range" : "124",
-    "domain" : "283",
+    "domain" : "284",
     "attributes" : [ "object", "anonymous" ],
     "id" : "437"
   }, {
@@ -8612,7 +8655,7 @@
     "attributes" : [ "object", "anonymous" ],
     "id" : "444"
   }, {
-    "range" : "157",
+    "range" : "156",
     "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "445"
@@ -8623,7 +8666,7 @@
     "id" : "446"
   }, {
     "range" : "240",
-    "domain" : "291",
+    "domain" : "290",
     "attributes" : [ "object", "anonymous" ],
     "id" : "447"
   }, {
@@ -8641,17 +8684,17 @@
     "attributes" : [ "datatype" ],
     "id" : "448"
   }, {
-    "range" : "157",
-    "domain" : "291",
+    "range" : "156",
+    "domain" : "290",
     "attributes" : [ "object", "anonymous" ],
     "id" : "449"
   }, {
     "range" : "19",
-    "domain" : "291",
+    "domain" : "290",
     "attributes" : [ "object", "anonymous" ],
     "id" : "450"
   }, {
-    "range" : "157",
+    "range" : "156",
     "domain" : "240",
     "attributes" : [ "object", "anonymous" ],
     "id" : "451"
@@ -8738,17 +8781,17 @@
     "comment" : {
       "en" : "(isTransactionResultOf ?ENTITY1 ?ENTITY2) means (hasTransactionResult ?ENTITY2 ?ENTITY1)"
     },
-    "attributes" : [ "object", "someValues" ],
+    "attributes" : [ "someValues", "object" ],
     "id" : "453"
   }, {
-    "range" : "291",
+    "range" : "290",
     "domain" : "16",
     "attributes" : [ "object", "anonymous" ],
     "id" : "454"
   }, {
     "iri" : "http://w3id.org/um/cbcm/eu-cm-ontology#wasGeneratedBy",
     "baseIri" : "http://w3id.org/um/cbcm/eu-cm-ontology",
-    "range" : "157",
+    "range" : "156",
     "label" : {
       "IRI-based" : "wasGeneratedBy",
       "en" : "Generated by"
@@ -8813,12 +8856,12 @@
       "example" : [ {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
+        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
         "type" : "label"
       }, {
         "identifier" : "example",
         "language" : "undefined",
-        "value" : "(hasTransactionResult crossBorderMerger1 acquiringCompany1)",
+        "value" : "(hasTransactionResult crossBorderMerger1 mergerCertificate1)",
         "type" : "label"
       } ]
     },

@@ -2791,13 +2791,13 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
                             
                             <tr>
                                 <td class="firsttd">
-                                    <a class="propcolor" title="cbcm:registeredOffice" href="prop-cbcmregisteredoffice.html">registeredOffice</a>
+                                    <a class="propcolor" title="cbcm:registeredOffice" href="prop-cbcmregisteredoffice.html">Registered Office</a>
                                 </td>
                                 <td class="secondtd">
                                     <i>owl:DatatypeProperty<i>
                                 </td>
                                 <td class="thirdtd">
-                                    <span>--</span>
+                                    <span>Deprecated property</span>
                                 </td>
                                 <td class="fourthtd">
                                     
@@ -3067,15 +3067,15 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
 <span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;The act of changing the location where the company’s business was managed (registered office or headquarters) or the place where that company’s primary business was actually conducted (central administration), across national boundaries.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">rdfs:</span><span class="nt">subClassOf</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">onClass</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">Country</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">targetCountry</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">owl:</span><span class="nt">qualifiedCardinality</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="o">^^</span><span class="ge">xsd:nonNegativeInteger</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">owl:</span><span class="nt">onClass</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">Country</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">sourceCountry</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">qualifiedCardinality</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="o">^^</span><span class="ge">xsd:nonNegativeInteger</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
 <span class="w">        </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">onClass</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">Company</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">hasTransactionInput</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="nn">owl:</span><span class="nt">qualifiedCardinality</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="o">^^</span><span class="ge">xsd:nonNegativeInteger</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
-<span class="w">        </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="nn">owl:</span><span class="nt">onClass</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">Country</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">targetCountry</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">qualifiedCardinality</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="o">^^</span><span class="ge">xsd:nonNegativeInteger</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
 <span class="w">        </span><span class="nn">cbcm:</span><span class="nt">CompanySeatTransfer</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">owl:</span><span class="nt">equivalentClass</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Class</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
@@ -3128,7 +3128,7 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on 20th July 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
+      <p class="text-muted">Documentation automatically generated on 23rd July 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
 
     
     </div>
