@@ -2191,11 +2191,11 @@
   "@id" : "_:genid294",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "126.91251100807739"
+    "@value" : "131.54816779005884"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "194.54094889701943"
+    "@value" : "8.817742238887039"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2205,11 +2205,11 @@
   "@id" : "_:genid295",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "255.28713943923407"
+    "@value" : "234.2005530811132"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "277.7860413201921"
+    "@value" : "268.9536177481755"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2219,11 +2219,11 @@
   "@id" : "_:genid296",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "55.28213929989567"
+    "@value" : "56.28944966538015"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "196.86427483194888"
+    "@value" : "280.96796660163295"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2233,11 +2233,11 @@
   "@id" : "_:genid297",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "67.26592136482995"
+    "@value" : "137.45599283527315"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "195.39358378832364"
+    "@value" : "140.18810313160142"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2247,11 +2247,11 @@
   "@id" : "_:genid298",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "27.24400809699391"
+    "@value" : "262.7768499425678"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "150.84827715993404"
+    "@value" : "245.55110052442663"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2261,11 +2261,11 @@
   "@id" : "_:genid299",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "131.11688892684865"
+    "@value" : "35.38141223492617"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "83.35251365961733"
+    "@value" : "292.3640814981097"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2289,11 +2289,11 @@
   "@id" : "_:genid300",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "182.4609448874594"
+    "@value" : "8.429893106041735"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "175.2035610509981"
+    "@value" : "161.17776704067705"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2303,11 +2303,11 @@
   "@id" : "_:genid301",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "28.764216387775047"
+    "@value" : "112.18668389761085"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "243.23796989617148"
+    "@value" : "198.7975537218199"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2317,11 +2317,11 @@
   "@id" : "_:genid302",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "165.83544115187456"
+    "@value" : "203.15647508716086"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "154.98450044856756"
+    "@value" : "13.47221136421604"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2331,11 +2331,11 @@
   "@id" : "_:genid303",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "86.70589945626561"
+    "@value" : "266.82391948733857"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "80.59915240550438"
+    "@value" : "212.27581118427403"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2345,11 +2345,11 @@
   "@id" : "_:genid304",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "191.645511128654"
+    "@value" : "149.56315097749217"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "139.17768712299383"
+    "@value" : "239.14678840881578"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2359,11 +2359,11 @@
   "@id" : "_:genid305",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "62.432611420326666"
+    "@value" : "30.945899686803486"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "51.099202273356305"
+    "@value" : "29.564885717520582"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2373,11 +2373,11 @@
   "@id" : "_:genid306",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "46.31957247761616"
+    "@value" : "93.06278917729631"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "34.96391683939311"
+    "@value" : "31.878096888108217"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2387,11 +2387,11 @@
   "@id" : "_:genid307",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "13.979425487423738"
+    "@value" : "196.316332036142"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "212.70736804000302"
+    "@value" : "249.95028341974285"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2401,11 +2401,11 @@
   "@id" : "_:genid308",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "30.41568814879539"
+    "@value" : "108.47238212220519"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "44.482295217479006"
+    "@value" : "214.27123601513512"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2415,11 +2415,11 @@
   "@id" : "_:genid309",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "298.5674566125939"
+    "@value" : "30.70103706546807"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "90.52226590467312"
+    "@value" : "82.95180979707261"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2443,11 +2443,11 @@
   "@id" : "_:genid310",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "284.76647483358886"
+    "@value" : "159.42172416207433"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "69.88501053785384"
+    "@value" : "289.50172216822966"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2457,11 +2457,11 @@
   "@id" : "_:genid311",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "255.03229712273688"
+    "@value" : "87.28614759312607"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "132.03848355417568"
+    "@value" : "249.62242605720274"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2471,11 +2471,11 @@
   "@id" : "_:genid312",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "54.567750498984374"
+    "@value" : "18.23164396733823"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "266.3528805993735"
+    "@value" : "104.96258901033252"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2485,11 +2485,11 @@
   "@id" : "_:genid313",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "295.9330197078383"
+    "@value" : "52.12446089724935"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "66.09191894254323"
+    "@value" : "30.267912068108608"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2499,11 +2499,11 @@
   "@id" : "_:genid314",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "226.41529346648915"
+    "@value" : "187.77010907114797"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "151.00297655613727"
+    "@value" : "14.845654119928787"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2513,11 +2513,11 @@
   "@id" : "_:genid315",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "30.621950598679454"
+    "@value" : "71.03680677110084"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "294.2270568539971"
+    "@value" : "52.05298320883994"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2527,11 +2527,11 @@
   "@id" : "_:genid316",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "199.91687244031976"
+    "@value" : "50.58595729952889"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "291.65970907681094"
+    "@value" : "244.26994172626837"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2541,11 +2541,11 @@
   "@id" : "_:genid317",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "290.78934613918614"
+    "@value" : "255.33872816165007"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "285.13237477555566"
+    "@value" : "101.74018980534287"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2555,11 +2555,11 @@
   "@id" : "_:genid318",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "143.47748596911322"
+    "@value" : "64.72631246318619"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "219.3996038495368"
+    "@value" : "61.32884440106744"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2569,11 +2569,11 @@
   "@id" : "_:genid319",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "232.7136997444631"
+    "@value" : "250.28265001612223"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "106.88266359209778"
+    "@value" : "17.779310164409353"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2597,6 +2597,34 @@
   "@id" : "_:genid320",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "176.55479364610375"
+  } ],
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "193.0503398741002"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
+  } ]
+}, {
+  "@id" : "_:genid321",
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "244.43186342713443"
+  } ],
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "242.42091488245512"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
+  } ]
+}, {
+  "@id" : "_:genid322",
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
     "@value" : "44.37433370834429"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
@@ -2608,42 +2636,14 @@
     "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
   } ]
 }, {
-  "@id" : "_:genid321",
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "187.77010907114797"
-  } ],
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "14.845654119928787"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
-  } ]
-}, {
-  "@id" : "_:genid322",
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "250.28265001612223"
-  } ],
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "17.779310164409353"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
-  } ]
-}, {
   "@id" : "_:genid323",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "52.12446089724935"
+    "@value" : "232.7136997444631"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "30.267912068108608"
+    "@value" : "106.88266359209778"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2653,11 +2653,11 @@
   "@id" : "_:genid324",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "159.42172416207433"
+    "@value" : "290.1721926344435"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "289.50172216822966"
+    "@value" : "101.7341322933415"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2667,11 +2667,11 @@
   "@id" : "_:genid325",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "196.316332036142"
+    "@value" : "199.91687244031976"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "249.95028341974285"
+    "@value" : "291.65970907681094"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2681,11 +2681,11 @@
   "@id" : "_:genid326",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "93.06278917729631"
+    "@value" : "30.621950598679454"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "31.878096888108217"
+    "@value" : "294.2270568539971"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2695,11 +2695,11 @@
   "@id" : "_:genid327",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "30.945899686803486"
+    "@value" : "226.41529346648915"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "29.564885717520582"
+    "@value" : "151.00297655613727"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2709,11 +2709,11 @@
   "@id" : "_:genid328",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "149.56315097749217"
+    "@value" : "295.9330197078383"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "239.14678840881578"
+    "@value" : "66.09191894254323"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2723,11 +2723,11 @@
   "@id" : "_:genid329",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "30.70103706546807"
+    "@value" : "200.4737250571208"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "82.95180979707261"
+    "@value" : "61.89354059165436"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2751,11 +2751,11 @@
   "@id" : "_:genid330",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "35.38141223492617"
+    "@value" : "143.47748596911322"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "292.3640814981097"
+    "@value" : "219.3996038495368"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2765,11 +2765,11 @@
   "@id" : "_:genid331",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "203.15647508716086"
+    "@value" : "257.60865771127436"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "13.47221136421604"
+    "@value" : "284.67062326777886"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2779,11 +2779,11 @@
   "@id" : "_:genid332",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "8.429893106041735"
+    "@value" : "290.78934613918614"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "161.17776704067705"
+    "@value" : "285.13237477555566"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2793,11 +2793,11 @@
   "@id" : "_:genid333",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "262.7768499425678"
+    "@value" : "54.567750498984374"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "245.55110052442663"
+    "@value" : "266.3528805993735"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2807,11 +2807,11 @@
   "@id" : "_:genid334",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "198.29243344570858"
+    "@value" : "255.03229712273688"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "243.34073360301582"
+    "@value" : "132.03848355417568"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2821,11 +2821,11 @@
   "@id" : "_:genid335",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "236.74617899157928"
+    "@value" : "165.83544115187456"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "273.1051930252097"
+    "@value" : "154.98450044856756"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2835,11 +2835,11 @@
   "@id" : "_:genid336",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "42.011423587201364"
+    "@value" : "28.764216387775047"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "77.61589925340833"
+    "@value" : "243.23796989617148"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2849,11 +2849,11 @@
   "@id" : "_:genid337",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "35.11706116658252"
+    "@value" : "46.31957247761616"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "293.43814503150423"
+    "@value" : "34.96391683939311"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2863,11 +2863,11 @@
   "@id" : "_:genid338",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "261.3991187414414"
+    "@value" : "62.432611420326666"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "216.3773275625499"
+    "@value" : "51.099202273356305"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2877,11 +2877,11 @@
   "@id" : "_:genid339",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "249.11205052540654"
+    "@value" : "191.645511128654"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "260.3454725364793"
+    "@value" : "139.17768712299383"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2905,11 +2905,11 @@
   "@id" : "_:genid340",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "7.893435210269165"
+    "@value" : "144.54909990026624"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "235.7528455758641"
+    "@value" : "46.502018924869994"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2919,11 +2919,11 @@
   "@id" : "_:genid341",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "65.82910021828245"
+    "@value" : "284.76647483358886"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "10.307924969462757"
+    "@value" : "69.88501053785384"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2933,11 +2933,11 @@
   "@id" : "_:genid342",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "202.01210091125137"
+    "@value" : "298.5674566125939"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "299.5595446738471"
+    "@value" : "90.52226590467312"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2947,11 +2947,11 @@
   "@id" : "_:genid343",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "83.62888044594364"
+    "@value" : "30.41568814879539"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "188.84200669650346"
+    "@value" : "44.482295217479006"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2961,11 +2961,11 @@
   "@id" : "_:genid344",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "238.3474594368345"
+    "@value" : "13.979425487423738"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "123.46221383706843"
+    "@value" : "212.70736804000302"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2975,11 +2975,11 @@
   "@id" : "_:genid345",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "217.781961942788"
+    "@value" : "86.70589945626561"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "224.7979276936274"
+    "@value" : "80.59915240550438"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -2989,11 +2989,11 @@
   "@id" : "_:genid346",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "153.2388903125871"
+    "@value" : "55.28213929989567"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "111.86056274753707"
+    "@value" : "196.86427483194888"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3003,11 +3003,11 @@
   "@id" : "_:genid347",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "110.85517389976832"
+    "@value" : "255.28713943923407"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "271.5994274615904"
+    "@value" : "277.7860413201921"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3017,11 +3017,11 @@
   "@id" : "_:genid348",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "74.06439273412745"
+    "@value" : "126.91251100807739"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "141.5983054032879"
+    "@value" : "194.54094889701943"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3031,11 +3031,11 @@
   "@id" : "_:genid349",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "191.67731560974352"
+    "@value" : "182.4609448874594"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "281.3627119441426"
+    "@value" : "175.2035610509981"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3059,11 +3059,11 @@
   "@id" : "_:genid350",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "41.13541617905973"
+    "@value" : "131.11688892684865"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "11.028683306666812"
+    "@value" : "83.35251365961733"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3071,6 +3071,34 @@
   } ]
 }, {
   "@id" : "_:genid351",
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "27.24400809699391"
+  } ],
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "150.84827715993404"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
+  } ]
+}, {
+  "@id" : "_:genid352",
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "67.26592136482995"
+  } ],
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "195.39358378832364"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
+  } ]
+}, {
+  "@id" : "_:genid353",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
     "@value" : "134.2048824296458"
@@ -3084,7 +3112,7 @@
     "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
   } ]
 }, {
-  "@id" : "_:genid352",
+  "@id" : "_:genid354",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
     "@value" : "272.6072752966426"
@@ -3098,42 +3126,14 @@
     "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
   } ]
 }, {
-  "@id" : "_:genid353",
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "144.54909990026624"
-  } ],
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "46.502018924869994"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
-  } ]
-}, {
-  "@id" : "_:genid354",
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "290.1721926344435"
-  } ],
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "101.7341322933415"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
-  } ]
-}, {
   "@id" : "_:genid355",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "257.60865771127436"
+    "@value" : "191.67731560974352"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "284.67062326777886"
+    "@value" : "281.3627119441426"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3143,11 +3143,11 @@
   "@id" : "_:genid356",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "200.4737250571208"
+    "@value" : "41.13541617905973"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "61.89354059165436"
+    "@value" : "11.028683306666812"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3157,11 +3157,11 @@
   "@id" : "_:genid357",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "244.43186342713443"
+    "@value" : "137.8726186678454"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "242.42091488245512"
+    "@value" : "150.42486588976413"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3171,11 +3171,11 @@
   "@id" : "_:genid358",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "255.33872816165007"
+    "@value" : "153.2388903125871"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "101.74018980534287"
+    "@value" : "111.86056274753707"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3185,11 +3185,11 @@
   "@id" : "_:genid359",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "50.58595729952889"
+    "@value" : "110.85517389976832"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "244.26994172626837"
+    "@value" : "271.5994274615904"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3213,11 +3213,11 @@
   "@id" : "_:genid360",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "71.03680677110084"
+    "@value" : "74.06439273412745"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "52.05298320883994"
+    "@value" : "141.5983054032879"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3227,11 +3227,11 @@
   "@id" : "_:genid361",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "176.55479364610375"
+    "@value" : "106.45559196571034"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "193.0503398741002"
+    "@value" : "69.94751308456023"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3241,11 +3241,11 @@
   "@id" : "_:genid362",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "64.72631246318619"
+    "@value" : "39.26582493769651"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "61.32884440106744"
+    "@value" : "20.559888062141415"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3255,11 +3255,11 @@
   "@id" : "_:genid363",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "18.23164396733823"
+    "@value" : "217.781961942788"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "104.96258901033252"
+    "@value" : "224.7979276936274"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3269,11 +3269,11 @@
   "@id" : "_:genid364",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "87.28614759312607"
+    "@value" : "179.99500355435825"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "249.62242605720274"
+    "@value" : "2.5621061400510543"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3283,11 +3283,11 @@
   "@id" : "_:genid365",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "108.47238212220519"
+    "@value" : "181.53183624074484"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "214.27123601513512"
+    "@value" : "279.75477353816734"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3297,11 +3297,11 @@
   "@id" : "_:genid366",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "266.82391948733857"
+    "@value" : "145.31812860041032"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "212.27581118427403"
+    "@value" : "8.472621286432489"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3311,11 +3311,11 @@
   "@id" : "_:genid367",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "112.18668389761085"
+    "@value" : "226.86760350018855"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "198.7975537218199"
+    "@value" : "168.21082276004154"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3325,11 +3325,11 @@
   "@id" : "_:genid368",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "137.45599283527315"
+    "@value" : "139.53115916189458"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "140.18810313160142"
+    "@value" : "289.20143563808284"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3339,11 +3339,11 @@
   "@id" : "_:genid369",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "56.28944966538015"
+    "@value" : "83.62888044594364"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "280.96796660163295"
+    "@value" : "188.84200669650346"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3367,11 +3367,11 @@
   "@id" : "_:genid370",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "234.2005530811132"
+    "@value" : "139.39903443255537"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "268.9536177481755"
+    "@value" : "142.64906693661192"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3381,11 +3381,11 @@
   "@id" : "_:genid371",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "131.54816779005884"
+    "@value" : "238.3474594368345"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "8.817742238887039"
+    "@value" : "123.46221383706843"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3395,11 +3395,11 @@
   "@id" : "_:genid372",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "143.0121185287264"
+    "@value" : "65.82910021828245"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "175.37034131435243"
+    "@value" : "10.307924969462757"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3407,34 +3407,6 @@
   } ]
 }, {
   "@id" : "_:genid373",
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "225.48046952557277"
-  } ],
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "266.03873148666065"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
-  } ]
-}, {
-  "@id" : "_:genid374",
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "130.95486209419764"
-  } ],
-  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "146.4880897944417"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
-  } ]
-}, {
-  "@id" : "_:genid375",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
     "@value" : "60.104481168433864"
@@ -3448,14 +3420,42 @@
     "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
   } ]
 }, {
-  "@id" : "_:genid376",
+  "@id" : "_:genid374",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "139.53115916189458"
+    "@value" : "202.01210091125137"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "289.20143563808284"
+    "@value" : "299.5595446738471"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
+  } ]
+}, {
+  "@id" : "_:genid375",
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "35.11706116658252"
+  } ],
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "293.43814503150423"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view."
+  } ]
+}, {
+  "@id" : "_:genid376",
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "261.3991187414414"
+  } ],
+  "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#double",
+    "@value" : "216.3773275625499"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3465,11 +3465,11 @@
   "@id" : "_:genid377",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "139.39903443255537"
+    "@value" : "249.11205052540654"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "142.64906693661192"
+    "@value" : "260.3454725364793"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3479,11 +3479,11 @@
   "@id" : "_:genid378",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "181.53183624074484"
+    "@value" : "7.893435210269165"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "279.75477353816734"
+    "@value" : "235.7528455758641"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3493,11 +3493,11 @@
   "@id" : "_:genid379",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "145.31812860041032"
+    "@value" : "225.48046952557277"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "8.472621286432489"
+    "@value" : "266.03873148666065"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3521,11 +3521,11 @@
   "@id" : "_:genid380",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "226.86760350018855"
+    "@value" : "130.95486209419764"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "168.21082276004154"
+    "@value" : "146.4880897944417"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3535,11 +3535,11 @@
   "@id" : "_:genid381",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "106.45559196571034"
+    "@value" : "236.74617899157928"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "69.94751308456023"
+    "@value" : "273.1051930252097"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3549,11 +3549,11 @@
   "@id" : "_:genid382",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "39.26582493769651"
+    "@value" : "42.011423587201364"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "20.559888062141415"
+    "@value" : "77.61589925340833"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3563,11 +3563,11 @@
   "@id" : "_:genid383",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "179.99500355435825"
+    "@value" : "198.29243344570858"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "2.5621061400510543"
+    "@value" : "243.34073360301582"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -3577,11 +3577,11 @@
   "@id" : "_:genid384",
   "http://ontologydesignpatterns.org/opla-sd#entityPositionX" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "137.8726186678454"
+    "@value" : "143.0121185287264"
   } ],
   "http://ontologydesignpatterns.org/opla-sd#entityPositionY" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#double",
-    "@value" : "150.42486588976413"
+    "@value" : "175.37034131435243"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -4275,74 +4275,6 @@
     "@value" : "The Maastricht Law & Techlab"
   } ]
 }, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#ACEmploymentFigureAtTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "number of employees of the acquiring company - at the moment of the transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "AC Employees count at transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#ACLastEmploymentFigure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The last available annual employment figure for the acquiring company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Last employment figure for the acquiring company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#ACTotalEUEmploymentFigure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "total number of employees of the acquiring company in the EU at the moment of the transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Total EU employees"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#ACYearEmploymentFigure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The year the last annual employment figure was obtained for acquiring companies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "AC Last employment figure year"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ]
-}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#AcquiringCompany",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://ontologydesignpatterns.org/opla-sd#entityPosition" : [ {
@@ -4440,43 +4372,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Entity"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#BLER",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Is an employee board level representation/participation (BLER) mechanism applicable prior to the cross-border transaction?\n\n0 = no BLER prior to cross-border transaction\n1 = BLER existing prior to cross-border transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is BLER existing prior"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#BoardLevelEmployeeRepresentationRight"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#BLERComposition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "What is the employee board level representation (BLER) ratio going to be after the completion of the transaction?\n\nThe ratio is ranging from 0.00 (no BLER) to 0.33 (1/3 BLER) to 0.5 (50-50 Mitbestimmung) to (theoretically) 1.00, which would be 100% employee representatives on the board and no shareholder representatives."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "BLER composition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid16"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Behaviour",
@@ -5512,23 +5407,6 @@
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#NonEUCountry"
   } ]
 }, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#EWC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Is the company having a European Works Council (EWC)?"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Has EWC"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#EmergingCompany",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://ontologydesignpatterns.org/opla-sd#entityPosition" : [ {
@@ -5747,57 +5625,6 @@
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#AnnualAccount"
   } ]
 }, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#MCEmploymentFigureAtTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Number of employees of the acquiring company - at the moment of the transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "MC Employees count at transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#MCLastEmploymentFigure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The last available annual employment figure for the merging company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Last employment figure for the merging company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#MCYearEmploymentFigure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The year the last annual employment figure was obtained for merging companies"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "MC Last employment figure year"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
-  } ]
-}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#ManagementBoard",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://ontologydesignpatterns.org/opla-sd#entityPosition" : [ {
@@ -5994,40 +5821,6 @@
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
   }, {
     "@id" : "_:genid224"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#NACECode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "NACE Classification Code for companies. NACE (Nomenclature des Activités Économiques dans la Communauté Européenne) is a European industry standard classification system similar in function to Standard Industry Classification (SIC) and North American Industry Classification System (NAICS) for classifying business activities. From EUROSTAT"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "NACE code"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid21"
-  } ]
-}, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#NACESector",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Company NACE sector. NACE (Nomenclature of Economic Activities) is the European statistical classification of economic activities. Classification of a company according to which kinds of sector (i.e. industry / market / product type) they deal in. From EUROSTAT"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "NACE sector"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#NationalRegistry",
@@ -6429,23 +6222,6 @@
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#TransactionDocument"
   } ]
 }, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#SBNVoluntaryApplication",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Is a Special Negotiating Body (SNB) set up voluntary?\n\nWhether or not a SNB is created/will be created voluntarily.\n\n- Yes: an SNB is created voluntarily;\n- No: no voluntary SNB set up;\n- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;\n- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;\n- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "SNB voluntary application"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#SEType",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -6704,23 +6480,6 @@
     "@id" : "_:genid273"
   } ]
 }, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#TNIC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Is the company having a transnational information and consultation agreement in place? Does the company have an internal body which discusses employee rights and welfare?\n\nDifferent from works council. TNIC is global."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Has TNIC"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#TaxAuthority",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://ontologydesignpatterns.org/opla-sd#entityPosition" : [ {
@@ -6880,23 +6639,6 @@
     "@id" : "_:genid284"
   } ]
 }, {
-  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#WWEmploymentFigureAtTransaction",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "number of employees of company group worldwide at the moment of the transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Total WW employees at transaction"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
-  } ]
-}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#WorksCouncil",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://ontologydesignpatterns.org/opla-sd#entityPosition" : [ {
@@ -6925,6 +6667,74 @@
     "@id" : "_:genid291"
   }, {
     "@id" : "_:genid292"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#acEmploymentFigureAtTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "number of employees of the acquiring company - at the moment of the transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AC Employees count at transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#acLastEmploymentFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The last available annual employment figure for the acquiring company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Last employment figure for the acquiring company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#acTotalEUEmploymentFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "total number of employees of the acquiring company in the EU at the moment of the transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total EU employees"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#acYearEmploymentFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The year the last annual employment figure was obtained for acquiring companies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "AC Last employment figure year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#applicableTo",
@@ -7021,6 +6831,43 @@
   }, {
     "@language" : "en",
     "@value" : "Belgium"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#bler",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is an employee board level representation/participation (BLER) mechanism applicable prior to the cross-border transaction?\n\n0 = no BLER prior to cross-border transaction\n1 = BLER existing prior to cross-border transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is BLER existing prior"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#BoardLevelEmployeeRepresentationRight"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#blerComposition",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "What is the employee board level representation (BLER) ratio going to be after the completion of the transaction?\n\nThe ratio is ranging from 0.00 (no BLER) to 0.33 (1/3 BLER) to 0.5 (50-50 Mitbestimmung) to (theoretically) 1.00, which would be 100% employee representatives on the board and no shareholder representatives."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BLER composition"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid16"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#bulgaria",
@@ -7422,6 +7269,23 @@
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#euOfficialJournal",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/um/cbcm/eu-cm-ontology#OfficialJournal" ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#ewc",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is the company having a European Works Council (EWC)?"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has EWC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#example",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
@@ -8415,6 +8279,57 @@
     "@value" : "Repubblika ta' Malta"
   } ]
 }, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#mcEmploymentFigureAtTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Number of employees of the acquiring company - at the moment of the transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MC Employees count at transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#mcLastEmploymentFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The last available annual employment figure for the merging company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Last employment figure for the merging company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#mcYearEmploymentFigure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The year the last annual employment figure was obtained for merging companies"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MC Last employment figure year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#multiCBM",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -8430,6 +8345,40 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#naceCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "NACE Classification Code for companies. NACE (Nomenclature des Activités Économiques dans la Communauté Européenne) is a European industry standard classification system similar in function to Standard Industry Classification (SIC) and North American Industry Classification System (NAICS) for classifying business activities. From EUROSTAT"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NACE code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid21"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#naceSector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Company NACE sector. NACE (Nomenclature of Economic Activities) is the European statistical classification of economic activities. Classification of a company according to which kinds of sector (i.e. industry / market / product type) they deal in. From EUROSTAT"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NACE sector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#name",
@@ -8742,6 +8691,23 @@
     "@value" : "România"
   } ]
 }, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#sbnVoluntaryApplication",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is a Special Negotiating Body (SNB) set up voluntary?\n\nWhether or not a SNB is created/will be created voluntarily.\n\n- Yes: an SNB is created voluntarily;\n- No: no voluntary SNB set up;\n- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;\n- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;\n- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SNB voluntary application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#se_conversion",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://w3id.org/um/cbcm/eu-cm-ontology#SEType" ]
 }, {
@@ -8844,6 +8810,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#involvesCountry"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#tnic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Is the company having a transnational information and consultation agreement in place? Does the company have an internal body which discusses employee rights and welfare?\n\nDifferent from works council. TNIC is global."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#Company"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has TNIC"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#toBeNegotiatedBLER",
@@ -9115,6 +9098,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#wwEmploymentFigureAtTransaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "number of employees of company group worldwide at the moment of the transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#CompanyTransaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Total WW employees at transaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
   } ]
 }, {
   "@id" : "http://w3id.org/um/cbcm/eu-cm-ontology#yearDivergingEmploymentFigure",

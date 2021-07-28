@@ -198,36 +198,17 @@ Based on: https://www.w3.org/TR/prov-o/#used"
 "cbcm:wasAssociatedWith","Associated with","An activity association is an assignment of responsibility to an agent for a process, indicating that the agent had a role in the activity.
 
 Based on: https://www.w3.org/TR/prov-o/#wasAssociatedWith"
-"cbcm:ACEmploymentFigureAtTransaction","AC Employees count at transaction","number of employees of the acquiring company - at the moment of the transaction"
-"cbcm:ACLastEmploymentFigure","Last employment figure for the acquiring company","The last available annual employment figure for the acquiring company"
-"cbcm:ACTotalEUEmploymentFigure","Total EU employees","total number of employees of the acquiring company in the EU at the moment of the transaction"
-"cbcm:ACYearEmploymentFigure","AC Last employment figure year","The year the last annual employment figure was obtained for acquiring companies"
-"cbcm:BLER","is BLER existing prior","Is an employee board level representation/participation (BLER) mechanism applicable prior to the cross-border transaction?
+"cbcm:acEmploymentFigureAtTransaction","AC Employees count at transaction","number of employees of the acquiring company - at the moment of the transaction"
+"cbcm:acLastEmploymentFigure","Last employment figure for the acquiring company","The last available annual employment figure for the acquiring company"
+"cbcm:acTotalEUEmploymentFigure","Total EU employees","total number of employees of the acquiring company in the EU at the moment of the transaction"
+"cbcm:acYearEmploymentFigure","AC Last employment figure year","The year the last annual employment figure was obtained for acquiring companies"
+"cbcm:bler","is BLER existing prior","Is an employee board level representation/participation (BLER) mechanism applicable prior to the cross-border transaction?
 
 0 = no BLER prior to cross-border transaction
 1 = BLER existing prior to cross-border transaction"
-"cbcm:BLERComposition","BLER composition","What is the employee board level representation (BLER) ratio going to be after the completion of the transaction?
+"cbcm:blerComposition","BLER composition","What is the employee board level representation (BLER) ratio going to be after the completion of the transaction?
 
 The ratio is ranging from 0.00 (no BLER) to 0.33 (1/3 BLER) to 0.5 (50-50 Mitbestimmung) to (theoretically) 1.00, which would be 100% employee representatives on the board and no shareholder representatives."
-"cbcm:EWC","Has EWC","Is the company having a European Works Council (EWC)?"
-"cbcm:MCEmploymentFigureAtTransaction","MC Employees count at transaction","Number of employees of the acquiring company - at the moment of the transaction"
-"cbcm:MCLastEmploymentFigure","Last employment figure for the merging company","The last available annual employment figure for the merging company"
-"cbcm:MCYearEmploymentFigure","MC Last employment figure year","The year the last annual employment figure was obtained for merging companies"
-"cbcm:NACECode","NACE code","NACE Classification Code for companies. NACE (Nomenclature des Activités Économiques dans la Communauté Européenne) is a European industry standard classification system similar in function to Standard Industry Classification (SIC) and North American Industry Classification System (NAICS) for classifying business activities. From EUROSTAT"
-"cbcm:NACESector","NACE sector","Company NACE sector. NACE (Nomenclature of Economic Activities) is the European statistical classification of economic activities. Classification of a company according to which kinds of sector (i.e. industry / market / product type) they deal in. From EUROSTAT"
-"cbcm:SBNVoluntaryApplication","SNB voluntary application","Is a Special Negotiating Body (SNB) set up voluntary?
-
-Whether or not a SNB is created/will be created voluntarily.
-
-- Yes: an SNB is created voluntarily;
-- No: no voluntary SNB set up;
-- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
-- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
-- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
-"cbcm:TNIC","Has TNIC","Is the company having a transnational information and consultation agreement in place? Does the company have an internal body which discusses employee rights and welfare?
-
-Different from works council. TNIC is global."
-"cbcm:WWEmploymentFigureAtTransaction","Total WW employees at transaction","number of employees of company group worldwide at the moment of the transaction"
 "cbcm:companiesHaveEconomicCommittee","Companies have Economic Committee","Are the companies involved in the transaction having an economic committee?
 
 An economic committee advises the work council about the financial parts of the transaction."
@@ -235,6 +216,7 @@ An economic committee advises the work council about the financial parts of the 
 "cbcm:companiesHaveWorksCouncil","Companies have Works Council","Are the companies involved in the transaction having a works council? Works councils safeguard employees' welfare"
 "cbcm:divergingEmploymentFigure","Diverging employment figure","If a different employee number for the acquiring company is found, it is recorded in this field"
 "cbcm:endedAtTime","Ended at","The date and time a process ended"
+"cbcm:ewc","Has EWC","Is the company having a European Works Council (EWC)?"
 "cbcm:impactOnEmployees","Impact on employees","Is the impact on employees of the envisaged transaction specified in the transaction document (e.g. the merger plan)?
 
 Part of merger plan that specifies how the transaction will affect employees.
@@ -249,7 +231,12 @@ Part of merger plan that specifies how the transaction will affect employees.
 "cbcm:lastWWEmploymentFigure","Last WW employment figure","Last available employment figure for the total worldwide employees"
 "cbcm:lawfirm","Law Firm","Name of the lawfirm involved in the transaction, if available (for internal use; cross-border divisions and seat transfers are currently not possible within an EU legal framework.)"
 "cbcm:legalFormAcronym","Legal form acronym","The acronym of a company legal form"
+"cbcm:mcEmploymentFigureAtTransaction","MC Employees count at transaction","Number of employees of the acquiring company - at the moment of the transaction"
+"cbcm:mcLastEmploymentFigure","Last employment figure for the merging company","The last available annual employment figure for the merging company"
+"cbcm:mcYearEmploymentFigure","MC Last employment figure year","The year the last annual employment figure was obtained for merging companies"
 "cbcm:multiCBM","Multi-transaction","A transaction whereby more than two companies (i.e. multiple merging companies) are involved and merged into one acquiring company"
+"cbcm:naceCode","NACE code","NACE Classification Code for companies. NACE (Nomenclature des Activités Économiques dans la Communauté Européenne) is a European industry standard classification system similar in function to Standard Industry Classification (SIC) and North American Industry Classification System (NAICS) for classifying business activities. From EUROSTAT"
+"cbcm:naceSector","NACE sector","Company NACE sector. NACE (Nomenclature of Economic Activities) is the European statistical classification of economic activities. Classification of a company according to which kinds of sector (i.e. industry / market / product type) they deal in. From EUROSTAT"
 "cbcm:name","Organization name","The name of the organization"
 "cbcm:natRegistrationNumber","NAT registration number","The national registration number of an acquiring/receiving/entry company. A company registration number is a unique combination of numbers and/or letters. It is used to identify a company and verify its legal existence as an incorporated entity."
 "cbcm:negotiatedAgreement","Has negotiated agreement","Is the management of the companies involved starting the process of setting up a Special Negotiating Body (SNB) in order to reach a negotiated agreement on the future employee participation mechanism (BLER) after the transaction?
@@ -265,6 +252,15 @@ BLER (Board-Level Employee Represenation): highest level of employee involvement
 
 This id is the old ID-structure used before entry into the CbCMdb"
 "cbcm:registeredOffice","Registered Office","Deprecated property"
+"cbcm:sbnVoluntaryApplication","SNB voluntary application","Is a Special Negotiating Body (SNB) set up voluntary?
+
+Whether or not a SNB is created/will be created voluntarily.
+
+- Yes: an SNB is created voluntarily;
+- No: no voluntary SNB set up;
+- Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
+- Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
+- Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
 "cbcm:standardRulesApplication","Standard rules application","Are the standard rules applied directly without and instead of the start of negotiations with a Special Negotiating Body (SNB)?
 
 Instead of an SNB being set up, the standard rules are applied instead.
@@ -274,6 +270,9 @@ Instead of an SNB being set up, the standard rules are applied instead.
 - Not applicable: the conditions are not met (e.g. no employees, BLER threshold not met) for this criterion to be applicable;
 - Unclear: the wording of the document is unclear with regard to the impact/effect/measures taken;
 - Not mentioned: given the parameters, this aspect should be addressed in the transaction document, but is not mentioned"
+"cbcm:tnic","Has TNIC","Is the company having a transnational information and consultation agreement in place? Does the company have an internal body which discusses employee rights and welfare?
+
+Different from works council. TNIC is global."
 "cbcm:toBeNegotiatedBLER","BLER to be negotiated","Is an employee board level representation/participation (BLER) mechanism going to be re-negotiated in the process of the cross-border transaction?
 
 - Yes: BLER be (re-)negotiated with the SNB;
@@ -291,5 +290,6 @@ This is the final step of a transaction process"
 Merger plan, Seat transfer plan or Division plan. Transaction notice is where the transaction is announced. The other documents are where the nature and details of the transaction are specified."
 "cbcm:transactionStartDate","Transaction notice date","Date of the transaction notice (document announcing the transaction) constituting the start of the transaction process. Date that the document was published (which is the important date because this is when it becomes legally binding)"
 "cbcm:website","Website","Homepage of a company/organization website"
+"cbcm:wwEmploymentFigureAtTransaction","Total WW employees at transaction","number of employees of company group worldwide at the moment of the transaction"
 "cbcm:yearDivergingEmploymentFigure","Diverging employment figure year","The year for which a diverging employee number is recorded"
 "cbcm:yearWWEmploymentFigure","Last WW employment figure year","Year in which the last worldwide employment figure was recorded"
