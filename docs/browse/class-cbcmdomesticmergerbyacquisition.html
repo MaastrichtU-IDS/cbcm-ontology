@@ -3133,12 +3133,12 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
 <span class="w">    </span><span class="nn">rdfs:</span><span class="nt">comment</span><span class="w"> </span><span class="s">&quot;Article 89: The operation whereby one or more companies are wound up without going into liquidation and transfer to another all their assets and liabilities in exchange for the issue to the shareholders of the company or companies being acquired of shares in the acquiring company and a cash payment, if any, not exceeding 10 % of the nominal value of the shares so issued or, where they have no nominal value, of their accounting par value. All companies involved are from a single country.&quot;</span><span class="o">@</span><span class="ge">en</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">rdfs:</span><span class="nt">seeAlso</span><span class="w"> </span><span class="nv">&lt;http://data.europa.eu/eli/dir/2017/1132/oj&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">rdfs:</span><span class="nt">subClassOf</span><span class="w"> </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">hasTransactionResult</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">            </span><span class="nn">owl:</span><span class="nt">someValuesFrom</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">MergingCompany</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
+<span class="w">        </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">onClass</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">AcquiringCompany</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">hasTransactionInput</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">            </span><span class="nn">owl:</span><span class="nt">qualifiedCardinality</span><span class="w"> </span><span class="s">&quot;1&quot;</span><span class="o">^^</span><span class="ge">xsd:nonNegativeInteger</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
-<span class="w">        </span><span class="p">[</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">owl:</span><span class="nt">Restriction</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="nn">owl:</span><span class="nt">onProperty</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">hasTransactionResult</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">            </span><span class="nn">owl:</span><span class="nt">someValuesFrom</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">MergingCompany</span><span class="w"> </span><span class="p">],</span><span class="w"></span>
 <span class="w">        </span><span class="nn">cbcm:</span><span class="nt">DomesticMerger</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">owl:</span><span class="nt">disjointWith</span><span class="w"> </span><span class="nn">cbcm:</span><span class="nt">DomesticMergerIntoNewCompany</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </pre></div>
@@ -3180,7 +3180,7 @@ Based on: https://www.w3.org/TR/prov-o/#wasGeneratedBy</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on 28th July 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
+      <p class="text-muted">Documentation automatically generated on 29th July 2021 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v1.9.8.3)</p>
 
     
     </div>
