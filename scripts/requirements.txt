@@ -1,2 +1,2 @@
 owlready2==0.26
-jupyterlab==3.0.8
+jupyterlab==3.0.17
