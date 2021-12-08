@@ -13,16 +13,14 @@
 	 prov:wasAttributedTo :agent6;
 	 prov:wasAttributedTo :agent7;
 	 prov:wasAttributedTo :agent8;
-	 prov:wasAttributedTo :agent9;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
 :agent0 a prov:Agent; foaf:name "Institute of Data Science at Maastricht University".
 :agent1 a prov:Agent; foaf:name "Maastricht University".
-:agent2 a prov:Agent; foaf:name "The Maastricht Law & Techlab".
-:agent3 a prov:Agent; foaf:name "Kody Moodley".
-:agent4 a prov:Agent; foaf:name "Marcus Meyer".
-:agent5 a prov:Agent; foaf:name "Ruta Liepina".
-:agent6 a prov:Agent; foaf:name "Stephan Rammeloo".
-:agent7 a prov:Agent; foaf:name "Thomas Biermeyer".
-:agent8 a prov:Agent; foaf:name "Tobias Breuer".
-:agent9 a prov:Agent; foaf:name "Walter Simoncini".
+:agent2 a prov:Agent; foaf:name "Kody Moodley".
+:agent3 a prov:Agent; foaf:name "Marcus Meyer".
+:agent4 a prov:Agent; foaf:name "Ruta Liepina".
+:agent5 a prov:Agent; foaf:name "Stephan Rammeloo".
+:agent6 a prov:Agent; foaf:name "Thomas Biermeyer".
+:agent7 a prov:Agent; foaf:name "Tobias Breuer".
+:agent8 a prov:Agent; foaf:name "Walter Simoncini".

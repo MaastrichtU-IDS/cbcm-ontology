@@ -3,13 +3,10 @@ cbcm:Agent
 cbcm:CompanyMobilityDocument
 cbcm:Organisation
 cbcm:Person
-cbcm:Object
 cbcm:CompanyTransaction
 cbcm:CompanyLegalForm
 cbcm:Country
 cbcm:DocumentRepository
-cbcm:Process
-cbcm:Entity
 cbcm:CompanyMerger
 cbcm:Company
 cbcm:AcquiringCompany
@@ -19,7 +16,6 @@ cbcm:EmergingCompany
 cbcm:OriginalCompany
 cbcm:RecipientCompany
 cbcm:CompanyConversion
-cbcm:SpatialRegion
 cbcm:TransactionNotice
 cbcm:SEType
 cbcm:BoardLevelEmployeeRepresentationRight
