@@ -5,4 +5,4 @@ An OWL ontology to describe terms concerning EU company mobility
 
 [Documentation](https://maastrichtu-ids.github.io/cbcm-ontology/docs/browse/index.html)
 
-[Visualisation](https://webvowl.semanticscience.org/#iri=https://raw.githubusercontent.com/MaastrichtU-IDS/cbcm-ontology/master/working_copy/eu-cm-ontology.owl)
+[Visualisation](http://owlgred.lumii.lv/online_visualization/6miq#)
