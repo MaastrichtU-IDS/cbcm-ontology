@@ -2,25 +2,25 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix : <> .
-<http://w3id.org/um/cbcm/eu-cm-ontology/1.2.1> a prov:Entity;
-	 dc:title "The European Union Company Mobility Ontology (EU-CMO)";
+<http://w3id.org/um/cbcm/eu-cm-ontology/1.2.2> a prov:Entity;
+	 dc:title "The European Union Company Mobility Ontology (EUCM ontology)";
+	 prov:wasAttributedTo <https://www.wikidata.org/wiki/Q59418334>;
+	 dc:creator <https://www.wikidata.org/wiki/Q59418334>;
 	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo :agent1;
 	 prov:wasAttributedTo :agent2;
 	 prov:wasAttributedTo :agent3;
 	 prov:wasAttributedTo :agent4;
+	 prov:wasAttributedTo <http://www.wikidata.org/wiki/Q58177227>;
+	 dc:contributor <http://www.wikidata.org/wiki/Q58177227>;
 	 prov:wasAttributedTo :agent5;
 	 prov:wasAttributedTo :agent6;
-	 prov:wasAttributedTo :agent7;
-	 prov:wasAttributedTo :agent8;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
-:agent0 a prov:Agent; foaf:name "Institute of Data Science at Maastricht University".
-:agent1 a prov:Agent; foaf:name "Maastricht University".
-:agent2 a prov:Agent; foaf:name "Kody Moodley".
-:agent3 a prov:Agent; foaf:name "Marcus Meyer".
-:agent4 a prov:Agent; foaf:name "Ruta Liepina".
-:agent5 a prov:Agent; foaf:name "Stephan Rammeloo".
-:agent6 a prov:Agent; foaf:name "Thomas Biermeyer".
-:agent7 a prov:Agent; foaf:name "Tobias Breuer".
-:agent8 a prov:Agent; foaf:name "Walter Simoncini".
+:agent0 a prov:Agent; foaf:name "Marcus Meyer".
+:agent1 a prov:Agent; foaf:name "Stephan Rammeloo".
+:agent2 a prov:Agent; foaf:name "Thomas Biermeyer".
+:agent3 a prov:Agent; foaf:name "Institute of Data Science at Maastricht University".
+:agent4 a prov:Agent; foaf:name "Maastricht University".
+:agent5 a prov:Agent; foaf:name "Tobias Breuer".
+:agent6 a prov:Agent; foaf:name "Walter Simoncini".

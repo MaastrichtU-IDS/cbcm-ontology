@@ -102,6 +102,7 @@ cbcm:OfficialJournalRepository
 cbcm:ParentCompany
 cbcm:PreDivisionCertificate
 cbcm:PreMergerCertificate
+cbcm:SocietasEuropaeaMerger
 cbcm:ShareholderExitRight
 cbcm:ShareholderInformationRight
 cbcm:ShareholderResolution
