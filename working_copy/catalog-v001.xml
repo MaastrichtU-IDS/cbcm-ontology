@@ -2,9 +2,9 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo/2019-08-26/bfo.owl" uri="http://purl.obolibrary.org/obo/bfo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1639044013720" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology%20-%20backup.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639044013720" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639044013720" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology_owlxml.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1639044013720" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology_rdfxml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644580902337" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology%20-%20backup.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644580902337" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644580902337" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology_owlxml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644580902337" name="duplicate:http://ids.maastrichtuniversity.nl/ontologies/cbm/eu-cm-ontology" uri="eu-cm-ontology_rdfxml.owl"/>
     </group>
 </catalog>
