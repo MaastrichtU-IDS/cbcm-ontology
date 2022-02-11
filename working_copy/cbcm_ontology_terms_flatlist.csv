@@ -19,6 +19,7 @@ cbcm:CompanyConversion
 cbcm:TransactionNotice
 cbcm:SEType
 cbcm:BoardLevelEmployeeRepresentationRight
+cbcm:Vocabulary
 cbcm:AnnualAccount
 cbcm:AnnualReport
 cbcm:Attribute
